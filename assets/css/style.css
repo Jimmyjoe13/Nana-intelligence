@@ -192,8 +192,10 @@ header .logo-img {
 .hero {
     position: relative;
     padding: 8rem 1.5rem 6rem;
-    background: radial-gradient(circle at top right, rgba(212, 175, 55, 0.15), transparent 40%),
-                radial-gradient(circle at bottom left, rgba(59, 130, 246, 0.1), transparent 40%);
+    /* Overlay sombre + Image de fond */
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('../img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 
