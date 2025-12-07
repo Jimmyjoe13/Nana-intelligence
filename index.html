@@ -16,20 +16,36 @@
     <meta property="og:url" content="https://nana-intelligence.com">
     <meta property="og:type" content="website">
 
-    <!-- Schema.org for Local Business / Service -->
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://nana-intelligence.com/index.html">
+
+    <!-- Schema.org for Local Business & Breadcrumbs -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Nana Intelligence",
-      "image": "assets/img/favicon.jpg",
-      "description": "Expert en génération de leads via Mass Mailing et Audit SEO technique.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "FR"
-      },
-      "priceRange": "$$$"
-    }
+    [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Nana Intelligence",
+          "image": "assets/img/favicon.png",
+          "description": "Expert en génération de leads via Mass Mailing et Audit SEO technique.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "FR"
+          },
+          "priceRange": "$$$",
+          "url": "https://nana-intelligence.com"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://nana-intelligence.com"
+          }]
+        }
+    ]
     </script>
 
     <!-- Favicon -->
