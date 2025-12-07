@@ -1,49 +1,110 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contactez-moi pour un Audit | Jimmy</title>
-        <link rel="icon" type="image/png" href="assets/img/favicon.jpg">
-        <meta name="description" content="Prêt à faire décoller votre business ? Contactez-moi dès maintenant pour discuter de vos besoins et définir une stratégie gagnante.">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Nana Intelligence</title>
+    <meta name="description" content="Prenez rendez-vous ou contactez-moi pour discuter de votre projet de croissance.">
+    
+    <link rel="icon" type="image/png" href="assets/img/favicon.jpg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 <body>
+
+    <!-- Header -->
     <header>
-        <nav>
-            <div class="logo">Nana Intelligence
-                <a href="index.html">
-                    <img src="assets/img/favicon.jpg" alt="Logo JimmyDev" class="logo-img">
+        <div class="container">
+            <nav>
+                <div class="logo">Nana Intelligence
+                    <a href="index.html">
+                        <img src="assets/img/favicon.jpg" alt="Logo JimmyDev" class="logo-img">
+                    </a>
+                </div>
+                
+                <div class="burger" id="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+                <div class="nav-links" id="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="about.html">À propos</a>
+                    <a href="services.html">Services</a>
+                    <a href="https://jimmyjoe13.github.io/Porfolio_jimmy/" target="_blank">Portfolio</a>
+                    <a href="contact.html" class="active btn btn-primary" style="padding: 10px 24px; color: var(--primary-dark);">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container fade-in">
+            <div class="text-center mb-2">
+                <h1>Contactez-moi</h1>
+                <p class="text-muted">Un projet ? Une question ? Je réponds sous 24h.</p>
             </div>
-            <div class="burger" id="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+
+            <div class="contact-container">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" name="name" id="name" placeholder="Votre nom" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email professionnel</label>
+                        <input type="email" name="email" id="email" placeholder="votre@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Votre message</label>
+                        <textarea name="message" id="message" rows="5" placeholder="Décrivez votre besoin..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Envoyer le message</button>
+                    
+                </form>
+                
+                <div style="margin-top: 2rem; text-align: center; font-size: 0.9rem; color: var(--text-muted);">
+                   Ou directement par email : <a href="mailto:contact@nana-intelligence.com" class="text-gold">contact@nana-intelligence.com</a>
+                </div>
             </div>
-            <div class="nav-links" id="nav-links">
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="logo">
+                    <span class="text-gold">Nana</span> Intelligence
+                </div>
+                <p style="margin-top: 1rem; color: var(--text-muted);">
+                    Expertise en développement commercial et stratégie digitale.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
                 <a href="index.html">Accueil</a>
                 <a href="about.html">À propos</a>
                 <a href="services.html">Services</a>
-                <a href="https://jimmyjoe13.github.io/Porfolio_jimmy/">Portfolio</a>
                 <a href="contact.html">Contact</a>
             </div>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Contactez-moi</h1>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Votre nom" required>
-                <input type="email" name="email" placeholder="Votre email" required>
-                <textarea name="message" placeholder="Votre message" required></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Nana Intelligence. Tous droits réservés.</p>
+            <div class="footer-col">
+                <h4>Réseaux</h4>
+                <a href="https://www.linkedin.com/company/nana-intelligence/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:contact@nana-intelligence.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Nana Intelligence. Tous droits réservés.
+        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

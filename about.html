@@ -1,68 +1,115 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>À propos de moi | Jimmy - Expert Vente</title>
-        <link rel="icon" type="image/png" href="assets/img/favicon.jpg">
-        <meta name="description" content="Qui est Jimmy ? Business Developer passionné avec une expérience solide pour transformer vos processus commerciaux et maximiser votre potentiel.">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos | Nana Intelligence</title>
+    <meta name="description" content="Découvrez qui est Jimmy, le consultant derrière Nana Intelligence. Passionné de vente et de stratégie depuis plus de 10 ans.">
+    
+    <link rel="icon" type="image/png" href="assets/img/favicon.jpg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 <body>
+
+    <!-- Header -->
     <header>
-        <nav>
-            <div class="logo">Nana Intelligence
-                <a href="index.html">
-                    <img src="assets/img/favicon.jpg" alt="Logo JimmyDev" class="logo-img">
+        <div class="container">
+            <nav>
+                <div class="logo">Nana Intelligence
+                    <a href="index.html">
+                        <img src="assets/img/favicon.jpg" alt="Logo JimmyDev" class="logo-img">
+                    </a>
+                </div>
+                
+                <div class="burger" id="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+                <div class="nav-links" id="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="about.html" class="active">À propos</a>
+                    <a href="services.html">Services</a>
+                    <a href="https://jimmyjoe13.github.io/Porfolio_jimmy/" target="_blank">Portfolio</a>
+                    <a href="contact.html" class="btn btn-primary" style="padding: 10px 24px; color: var(--primary-dark);">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container fade-in">
+            <div class="text-center mb-2">
+                <h1>À propos de moi</h1>
+                <p class="text-gold">Passion, Expertise, Résultats</p>
             </div>
-            <div class="burger" id="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+
+            <div class="card" style="max-width: 900px; margin: 0 auto; background: var(--primary-light);">
+                <div style="display: flex; flex-direction: column; gap: 2rem;">
+                    <!-- Placeholder for maybe a profile picture or just text -->
+                    <!-- <img src="assets/img/profile.jpg" alt="Jimmy" style="width: 150px; height: 150px; border-radius: 50%; margin: 0 auto;"> -->
+                    
+                    <div style="color: var(--text-muted); line-height: 1.8;">
+                        <p class="mb-1">
+                            Bonjour, je suis <strong>Jimmy</strong>. Depuis toujours, je suis fasciné par la psychologie humaine et les mécanismes de prise de décision. Cette curiosité m'a naturellement mené vers le monde de la vente et du marketing.
+                        </p>
+                        <p class="mb-1">
+                            Avec <strong>Nana Intelligence</strong>, mon objectif est clair : offrir aux entreprises une expertise pointue pour transformer leurs prospects en clients fidèles. Je ne crois pas aux formules magiques, mais à la méthode, à la data et à l'humain.
+                        </p>
+                        <p>
+                            Mon approche combine les techniques éprouvées de la vieille école (relationnel, négociation) avec les outils modernes du Growth Hacking et de l'automatisation.
+                        </p>
+                    </div>
+
+                    <div class="grid-3" style="margin-top: 2rem;">
+                        <div class="text-center">
+                            <h3 class="text-gold" style="font-size: 2.5rem;">10+</h3>
+                            <p>Années d'expérience</p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-gold" style="font-size: 2.5rem;">50+</h3>
+                            <p>Clients accompagnés</p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-gold" style="font-size: 2.5rem;">2M€+</h3>
+                            <p>Générés pour mes clients</p>
+                        </div>
+                    </div>
+                
+                </div>
             </div>
-            <div class="nav-links" id="nav-links">
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="logo">
+                    <span class="text-gold">Nana</span> Intelligence
+                </div>
+                <p style="margin-top: 1rem; color: var(--text-muted);">
+                    Expertise en développement commercial et stratégie digitale.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
                 <a href="index.html">Accueil</a>
                 <a href="about.html">À propos</a>
                 <a href="services.html">Services</a>
-                <a href="https://jimmyjoe13.github.io/Porfolio_jimmy/">Portfolio</a>
                 <a href="contact.html">Contact</a>
             </div>
-        </nav>
-    </header>
-    <main>
-        <section class="about">
-            <h1>Qui suis-je ?</h1>
-                <div class ="about-text1">
-                    <p><strong>Je suis Jimmy, Growth Hacker et développeur full-stack spécialisé dans l'automatisation commerciale et l'intelligence artificielle. Actuellement en alternance chez Media Start, je transforme les processus de vente grâce à des solutions techniques sur-mesure qui génèrent des résultats concrets.<br>
-                    Ma mission ? Faire converger marketing, développement et IA pour créer des systèmes de génération de leads performants et automatisés.</strong><br>
-                </p></div>
-
-                <div class ="about-text2">
-                    <p><strong>Mon expertise</strong><br>
-                        <br>
-                    Automatisation & Lead Generation<br>
-                    Je conçois et déploie des workflows intelligents (n8n, HubSpot, API) qui permettent de :<br>
-                    Automatiser la prospection multi-canal (email, Instagram, LinkedIn)<br>
-                    Scorer et enrichir automatiquement les leads<br>
-                    Créer des dashboards de performance en temps réel<br>
-                    Développement & Intégration IA<br>
-                    Développeur polyvalent (Python, JavaScript, SQL), je développe :<br>
-                    Des agents IA pour l'automatisation commerciale<br>
-                    Des systèmes de web scraping et d'enrichissement de données<br>
-                    Des applications web complètes (front-end et back-end)>br>
-                    Intelligence Artificielle Appliquée<br>
-                    Je fine-tune et intègre des modèles LLM (OpenAI, DeepSeek, Claude) pour créer des outils d'aide à la vente : chatbots intelligents, assistants de prospection, systèmes de qualification automatique.<br>
-                </p></div>
-
-                <div class ="about-text3">
-                    <strong>Mon parcours</strong><br>
-                    Formé à la Rocket School en tant que Growth Hacker, j'ai rapidement développé une double compétence technique et marketing. Chez Media Start, je gère des campagnes d'acquisition pour des publications prestigieuses (Le Figaro, Le Point) tout en développant l'infrastructure technologique qui les rend scalables.<br>
-                    Mon approche ? Tester, mesurer, automatiser, optimiser. Chaque projet est une opportunité de créer un système qui fonctionne en autonomie et délivre des résultats prévisibles.</p>
-                </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Nana Intelligence. Tous droits réservés.</p>
+            <div class="footer-col">
+                <h4>Réseaux</h4>
+                <a href="https://www.linkedin.com/company/nana-intelligence/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:contact@nana-intelligence.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Nana Intelligence. Tous droits réservés.
+        </div>
     </footer>
 
     <script src="assets/js/script.js"></script>

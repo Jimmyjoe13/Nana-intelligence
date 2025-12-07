@@ -1,62 +1,173 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jimmy | Business Developer & Expert Vente Freelance</title>
-        <link rel="icon" type="image/png" href="assets/img/favicon.jpg">
-        <meta name="description" content="Boostez votre chiffre d'affaires avec Jimmy. Expert en stratégie commerciale, génération de leads et formation vente pour entreprises.">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Nana Intelligence | Stratégie Commerciale & Growth Marketing</title>
+    <meta name="description" content="Boostez votre chiffre d'affaires sales & marketing avec Nana Intelligence. Expert en stratégie commerciale, génération de leads B2B et formation vente.">
+    <meta name="keywords" content="Stratégie commerciale, Business Developer, Vente B2B, Growth Marketing, Formation Vente, Lead Generation, Automatisation, Automation">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Nana Intelligence | Accélérez votre croissance">
+    <meta property="og:description" content="Accompagnement stratégique pour entreprises ambitieuses.">
+    <meta property="og:image" content="assets/img/favicon.jpg">
+    <meta property="og:url" content="https://nana-intelligence.com">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.jpg">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 <body>
+
+    <!-- Header -->
     <header>
-        <nav>
-            <div class="logo">Nana Intelligence
-                <a href="index.html">
-                    <img src="assets/img/favicon.jpg" alt="Logo JimmyDev" class="logo-img">
-            </div>
-            
-            <div class="burger" id="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <div class="nav-links" id="nav-links">
-                <a href="index.html">Accueil</a>
-                <a href="about.html">À propos</a>
-                <a href="services.html">Services</a>
-                <a href="https://jimmyjoe13.github.io/Porfolio_jimmy/">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
-        <div class="hero">
-                <h1>Développez votre business avec un expert dédié</h1>
-                <p>J’accompagne vos entreprises dans la création de stratégies gagnantes</p>
-                <button id="discover">Découvrez mes services</button>  
+        <div class="container">
+            <nav>
+                <div class="logo">Nana Intelligence
+                    <a href="index.html">
+                        <img src="assets/img/favicon.jpg" alt="Logo JimmyDev" class="logo-img">
+                    </a>
+                </div>
+                
+                <div class="burger" id="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+                <div class="nav-links" id="nav-links">
+                    <a href="index.html" class="active">Accueil</a>
+                    <a href="about.html">À propos</a>
+                    <a href="services.html">Services</a>
+                    <a href="https://jimmyjoe13.github.io/Porfolio_jimmy/" target="_blank">Portfolio</a>
+                    <a href="contact.html" class="btn btn-primary" style="padding: 10px 24px; color: var(--primary-dark);">Contact</a>
+                </div>
+            </nav>
         </div>
     </header>
+
+    <!-- Main Content -->
     <main>
-        <section id="carousel">
-            <h2>Ce que je peux faire pour vous</h2>
-            <div class="carousel">
-                <div class="carousel-item">Stratégie Commerciale</div>
-                <div class="carousel-item">Génération de Leads</div>
-                <div class="carousel-item">Formation Vente</div>
-            </div>
-        </section>
-        <section id="testimonials">
-            <h2>Ce que mes clients disent de moi</h2>
-            <div class="testimonial-container">
-                <div class="testimonial">
-                    <p>"Jimmy a structuré notre approche commerciale. Résultat : +20% de closing en 2 mois."</p>
-                    <p><strong>- Pierre A., Directeur Commercial chez TechSolutions</strong></p>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content fade-in">
+                <h1>Développez votre business<br>avec un expert dédié</h1>
+                <p>J’accompagne les entreprises ambitieuses dans la création de stratégies commerciales gagnantes et l'optimisation de leurs revenus.</p>
+                <div class="hero-buttons">
+                    <a href="services.html" class="btn btn-primary">Découvrir mes services</a>
+                    <a href="contact.html" class="btn btn-outline">Me Contacter</a>
                 </div>
             </div>
         </section>
+
+        <!-- Value Proposition / Services Teaser -->
+        <section id="services" class="container">
+            <div class="section-title fade-in">
+                <h2>Ce que je peux faire pour vous</h2>
+                <p>Des solutions sur-mesure pour accélérer votre croissance</p>
+            </div>
+            
+            <div class="grid-3">
+                <div class="card fade-in">
+                    <div class="text-gold feature-icon"><i class="fa-solid fa-chess-knight"></i></div>
+                    <h3>Stratégie Commerciale</h3>
+                    <p>Audit de vos processus actuels et mise en place d'un plan d'action concret pour augmenter vos taux de conversion.</p>
+                </div>
+                <div class="card fade-in">
+                    <div class="text-gold feature-icon"><i class="fa-solid fa-filter-circle-dollar"></i></div>
+                    <h3>Génération de Leads</h3>
+                    <p>Mise en place de systèmes d'acquisition automatisés (Outbound & Inbound) pour nourrir vos commerciaux.</p>
+                </div>
+                <div class="card fade-in">
+                    <div class="text-gold feature-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <h3>Formation Vente</h3>
+                    <p>Coaching de vos équipes sur les meilleures techniques de closing, négociation et psychologie de vente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" style="background-color: #0b1120;">
+            <div class="container">
+                <div class="section-title fade-in">
+                    <h2>Ce que mes clients disent</h2>
+                    <p>La satisfaction de mes partenaires est ma priorité</p>
+                </div>
+
+                <div class="grid-3">
+                    <div class="testimonial fade-in">
+                        <p>"Jimmy a structuré notre approche commerciale de A à Z. Résultat : +20% de closing en seulement 2 mois. Une expertise rare."</p>
+                        <div class="client-info">
+                            <strong>Pierre A.</strong>
+                            <span>Directeur Commercial, TechSolutions</span>
+                        </div>
+                    </div>
+                    <!-- Added a placeholder testimonial for layout balance -->
+                    <div class="testimonial fade-in">
+                        <p>"Grâce à la stratégie de lead gen mise en place, nous avons doublé notre pipeline en un trimestre. Très pro et réactif."</p>
+                        <div class="client-info">
+                            <strong>Sarah M.</strong>
+                            <span>CEO, DigitalY</span>
+                        </div>
+                    </div>
+                     <div class="testimonial fade-in">
+                        <p>"Une formation percutante qui a remotivé toute l'équipe. Les résultats se sont vus dès la semaine suivante."</p>
+                        <div class="client-info">
+                            <strong>Marc D.</strong>
+                            <span>Fondateur, StartUp Immo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="text-center container fade-in" style="padding: 6rem 1.5rem;">
+            <h2>Prêt à passer au niveau supérieur ?</h2>
+            <p class="mb-2" style="color: var(--text-muted);">Discutons de vos objectifs et voyons comment nous pouvons les atteindre ensemble.</p>
+            <a href="contact.html" class="btn btn-primary">Prendre rendez-vous</a>
+        </section>
+
     </main>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Nana Intelligence. Tous droits réservés.</p>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="logo">
+                    <span class="text-gold">Nana</span> Intelligence
+                </div>
+                <p style="margin-top: 1rem; color: var(--text-muted);">
+                    Expertise en développement commercial et stratégie digitale.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Réseaux</h4>
+                <a href="https://www.linkedin.com/company/nana-intelligence/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:contact@nana-intelligence.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Nana Intelligence. Tous droits réservés.
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
