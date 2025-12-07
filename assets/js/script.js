@@ -1,20 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
-    
+
+    // --- 0. INITIALISATION EMAILJS ---
+    // IMPORTANT : Colle ta "Public Key" ci-dessous (ex: "user_xxx...")
+    emailjs.init("MjBf_OU0LjfGJ_XMh");
+
     // --- 1. GESTION DU MENU MOBILE ---
     const burger = document.getElementById('burger');
     const nav = document.getElementById('nav-links');
 
-    // On vérifie si le menu existe sur la page avant d'agir
     if (burger && nav) {
         burger.addEventListener('click', () => {
-            // Basculer la classe qui fait glisser le menu
             nav.classList.toggle('nav-active');
-            // Basculer l'animation du bouton (transformer en croix)
             burger.classList.toggle('toggle');
         });
     }
 
-    // --- 2. BOUTON DÉCOUVRIR (Page Accueil) ---
+    // --- 2. BOUTON DÉCOUVRIR ---
     const discoverBtn = document.getElementById('discover');
     if (discoverBtn) {
         discoverBtn.addEventListener('click', function() {
@@ -22,51 +23,39 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // --- 3. FORMULAIRE DE CONTACT (Connecté) ---
+    // --- 3. FORMULAIRE DE CONTACT (Via EmailJS) ---
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault(); 
 
+            // Animation du bouton
             const submitBtn = contactForm.querySelector('button');
             const originalText = submitBtn.innerText;
             submitBtn.innerText = "Envoi en cours...";
             submitBtn.disabled = true;
 
-            const formData = new FormData(contactForm);
-
-            // CORRECTION ICI : Utilisation de ton adresse Gmail pour le test + Ajout du Header
-            fetch("https://formsubmit.co/ajax/jimmygay13180@gmail.com", {
-                method: "POST",
-                headers: { 
-                    'Accept': 'application/json'
-                },
-                body: formData
-            })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Erreur réseau ou service');
-                }
-                return response.json();
-            })
-            .then(data => {
-                alert('Merci pour votre message ! Je reviens vers vous sous 24h.');
-                contactForm.reset();
-            })
-            .catch(error => {
-                // On affiche l'erreur dans la console pour comprendre
-                console.error('Détail erreur:', error);
-                alert('Oups ! Une erreur est survenue. Vérifiez votre connexion ou réessayez.');
-            })
-            .finally(() => {
-                submitBtn.innerText = originalText;
-                submitBtn.disabled = false;
-            });
+            // Envoi via EmailJS
+            // REMPLACE CI-DESSOUS PAR TON SERVICE ID et TEMPLATE ID
+            emailjs.sendForm('service_ix9u5ml', 'template_l8wb78c', this)
+                .then(function() {
+                    // Succès
+                    alert('Merci ! Votre message a bien été envoyé. Je reviens vers vous vite.');
+                    contactForm.reset();
+                }, function(error) {
+                    // Erreur
+                    console.error('Erreur EmailJS:', error);
+                    alert('Une erreur est survenue lors de l\'envoi...');
+                })
+                .finally(() => {
+                    // Remet le bouton à la normale
+                    submitBtn.innerText = originalText;
+                    submitBtn.disabled = false;
+                });
         });
     }
 
     // --- 4. EFFETS VISUELS ---
-    // Effet Parallax sur la bannière Hero
     const hero = document.querySelector('.hero');
     if (hero) {
         window.addEventListener('scroll', function() {
@@ -75,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Effet de zoom sur les items (Carousel)
     const carouselItems = document.querySelectorAll(".carousel-item");
     if (carouselItems.length > 0) {
         carouselItems.forEach(item => {
