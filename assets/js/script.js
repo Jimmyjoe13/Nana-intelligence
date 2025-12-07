@@ -22,13 +22,42 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // --- 3. FORMULAIRE DE CONTACT ---
+    // --- 3. FORMULAIRE DE CONTACT (Connecté) ---
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault(); // Empêche le rechargement de page
-            alert('Merci pour votre message ! Nous reviendrons vers vous sous peu.');
-            contactForm.reset(); // Vide les champs après envoi
+
+            // 1. On montre à l'utilisateur que ça charge (Optionnel mais pro)
+            const submitBtn = contactForm.querySelector('button');
+            const originalText = submitBtn.innerText;
+            submitBtn.innerText = "Envoi en cours...";
+            submitBtn.disabled = true;
+
+            // 2. Récupération des données du formulaire
+            const formData = new FormData(contactForm);
+
+            // 3. Envoi sécurisé via FormSubmit (Remplace l'email ci-dessous !)
+            fetch("https://formsubmit.co/ajax/contact@nana-intelligence.fr", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Succès
+                alert('Merci pour votre message ! Je reviens vers vous sous 24h.');
+                contactForm.reset();
+            })
+            .catch(error => {
+                // Erreur
+                alert('Une erreur est survenue. Vous pouvez me contacter directement par email.');
+                console.error('Erreur:', error);
+            })
+            .finally(() => {
+                // On remet le bouton comme avant
+                submitBtn.innerText = originalText;
+                submitBtn.disabled = false;
+            });
         });
     }
 
