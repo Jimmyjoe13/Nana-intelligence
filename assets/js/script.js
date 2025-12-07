@@ -26,35 +26,39 @@ document.addEventListener("DOMContentLoaded", function() {
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // Empêche le rechargement de page
+            e.preventDefault(); 
 
-            // 1. On montre à l'utilisateur que ça charge (Optionnel mais pro)
             const submitBtn = contactForm.querySelector('button');
             const originalText = submitBtn.innerText;
             submitBtn.innerText = "Envoi en cours...";
             submitBtn.disabled = true;
 
-            // 2. Récupération des données du formulaire
             const formData = new FormData(contactForm);
 
-            // 3. Envoi sécurisé via FormSubmit (Remplace l'email ci-dessous !)
-            fetch("https://formsubmit.co/ajax/contact@nana-intelligence.fr", {
+            // CORRECTION ICI : Utilisation de ton adresse Gmail pour le test + Ajout du Header
+            fetch("https://formsubmit.co/ajax/jimmygay13180@gmail.com", {
                 method: "POST",
+                headers: { 
+                    'Accept': 'application/json'
+                },
                 body: formData
             })
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erreur réseau ou service');
+                }
+                return response.json();
+            })
             .then(data => {
-                // Succès
                 alert('Merci pour votre message ! Je reviens vers vous sous 24h.');
                 contactForm.reset();
             })
             .catch(error => {
-                // Erreur
-                alert('Une erreur est survenue. Vous pouvez me contacter directement par email.');
-                console.error('Erreur:', error);
+                // On affiche l'erreur dans la console pour comprendre
+                console.error('Détail erreur:', error);
+                alert('Oups ! Une erreur est survenue. Vérifiez votre connexion ou réessayez.');
             })
             .finally(() => {
-                // On remet le bouton comme avant
                 submitBtn.innerText = originalText;
                 submitBtn.disabled = false;
             });
