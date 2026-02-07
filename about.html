@@ -3,141 +3,332 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À propos de Jimmy | Expert Mass Mailing & SEO</title>
-    <meta name="description" content="Découvrez qui est Jimmy, expert en campagnes de Mass Mailing B2B et Audit SEO. Une double compétence technique et sales au service de votre croissance.">
     
+    <!-- SEO Meta Tags -->
+    <title>À propos de Jimmy | Expert Lead Generation B2B | Nana Intelligence</title>
+    <meta name="description" content="Découvrez Jimmy, expert en Lead Generation B2B, Cold Emailing et Automatisation Sales. +5 ans d'expérience, +100k€/mois générés pour mes clients.">
+    <meta name="keywords" content="Expert Lead Generation, Cold Emailing, Scraping B2B, Automatisation, Marseille, PACA">
+    <meta name="author" content="Nana Intelligence">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="À propos de Jimmy | Expert Lead Generation B2B">
+    <meta property="og:description" content="Expert en Lead Generation B2B, Cold Emailing et Automatisation Sales depuis +5 ans.">
+    <meta property="og:image" content="https://nana-intelligence.fr/assets/img/photo-profil.jpeg">
+    <meta property="og:url" content="https://nana-intelligence.fr/about.html">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://nana-intelligence.fr/about.html">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Canonical Tag -->
-    <link rel="canonical" href="https://nana-intelligence.com/about.html">
-
-    <!-- Schema.org Breadcrumbs -->
+    
+    <!-- Schema.org -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Accueil",
-        "item": "https://nana-intelligence.com"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "À propos",
-        "item": "https://nana-intelligence.com/about.html"
-      }]
-    }
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Jimmy",
+            "jobTitle": "Expert Lead Generation B2B",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Nana Intelligence"
+            },
+            "description": "Expert en Lead Generation B2B, Cold Emailing, Scraping et Automatisation Sales.",
+            "url": "https://nana-intelligence.fr/about.html",
+            "image": "https://nana-intelligence.fr/assets/img/photo-profil.jpeg",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Marseille",
+                "addressRegion": "PACA",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Accueil",
+                    "item": "https://nana-intelligence.fr"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "À propos",
+                    "item": "https://nana-intelligence.fr/about.html"
+                }
+            ]
+        }
+    ]
     </script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
-    <!-- Header -->
-    <header>
+    <!-- ========== HEADER ========== -->
+    <header class="header">
         <div class="container">
-            <nav>
-                <div class="logo">Nana Intelligence
-                    <a href="index.html">
-                        <img src="assets/img/favicon.png" alt="Logo Nana Intelligence" class="logo-img">
+            <nav class="header__inner">
+                <a href="index.html" class="header__logo" aria-label="Nana Intelligence - Accueil">
+                    <img src="assets/img/favicon.png" alt="" class="header__logo-icon" width="40" height="40">
+                    <span class="header__logo-text"><span>Nana</span> Intelligence</span>
+                </a>
+                
+                <div class="header__nav" id="nav-links">
+                    <a href="index.html" class="header__nav-link">Accueil</a>
+                    <a href="agence-lead-generation.html" class="header__nav-link">Agence</a>
+                    <a href="services.html" class="header__nav-link">Services</a>
+                    <a href="about.html" class="header__nav-link active">À propos</a>
+                    <a href="contact.html" class="btn btn-primary btn-sm header__cta">
+                        Audit Gratuit
                     </a>
                 </div>
                 
-                <div class="burger" id="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-
-                <div class="nav-links" id="nav-links">
-                    <a href="index.html">Accueil</a>
-                    <a href="about.html" class="active">À propos</a>
-                    <a href="services.html">Services</a>
-                    <a href="https://jimmyjoe13.github.io/Porfolio_jimmy/" target="_blank">Portfolio</a>
-                    <a href="contact.html" class="btn btn-primary" style="padding: 10px 24px; color: var(--primary-dark);">Contact</a>
-                </div>
+                <button class="header__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="container fade-in">
-            <div class="text-center mb-2">
-                <h1>L'Expertise Nana Intelligence</h1>
-                <p class="text-gold">La data au service de la vente</p>
+    <!-- ========== MAIN ========== -->
+    <main id="main-content">
+        
+        <!-- Hero Section -->
+        <section class="hero" style="padding-bottom: var(--space-12);">
+            <div class="hero__content fade-in">
+                <div class="hero__badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    À propos
+                </div>
+                <h1 class="hero__title">L'expertise <span class="hero__title-highlight">Nana Intelligence</span></h1>
+                <p class="hero__subtitle">La data au service de la vente</p>
             </div>
+        </section>
 
-            <div class="card" style="max-width: 900px; margin: 0 auto; background: var(--primary-light);">
-                <div style="display: flex; flex-direction: column; gap: 2rem;">
-                    <!-- Photo de Profil -->
-                    <img src="assets/img/photo-profil.jpeg" alt="Jimmy - Expert Lead Generation et Growth Hacking" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 4px solid var(--accent-gold); margin: 0 auto; box-shadow: var(--shadow-glow);">
-                    
-                    <div style="color: var(--text-muted); line-height: 1.8;">
-                        <p class="mb-1">
-                            Bonjour, je suis <strong>Jimmy</strong>. Mon approche est simple : utiliser la technologie pour libérer le potentiel commercial.
-                        </p>
-                        <p class="mb-1">
-                            Expert en <strong>Automatisation</strong>, <strong>Growth Hacking</strong> et <strong>Mass Mailing</strong>, je construis des écosystèmes complets pour mes clients. Je ne me contente pas de générer des leads, j'automatise leur traitement et je vous aide à les convertir.
-                        </p>
-                        <p>
-                            Ma philosophie : Automatiser le répétitif (via l'IA et le No-Code) pour que vos équipes se concentrent sur l'humain et le Closing.
-                        </p>
-                    </div>
-
-                    <div class="grid-3" style="margin-top: 2rem;">
-                        <div class="text-center">
-                            <h3 class="text-gold" style="font-size: 2.5rem;">5+</h3>
-                            <p>Années d'expérience</p>
+        <!-- Profile Section -->
+        <section>
+            <div class="container">
+                <div class="container--narrow">
+                    <div class="card fade-in" style="text-align: center; padding: var(--space-12);">
+                        <!-- Photo -->
+                        <img 
+                            src="assets/img/photo-profil.jpeg" 
+                            alt="Jimmy - Expert Lead Generation et Growth Hacking" 
+                            style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 4px solid var(--color-accent-primary); margin: 0 auto var(--space-8); box-shadow: var(--shadow-glow);"
+                            width="160"
+                            height="160"
+                        >
+                        
+                        <!-- Bio -->
+                        <div style="text-align: left; max-width: 600px; margin: 0 auto;">
+                            <p class="mb-4" style="font-size: var(--text-lg); color: var(--color-text-secondary);">
+                                Bonjour, je suis <strong>Jimmy</strong>. Mon approche est simple : utiliser la technologie pour libérer le potentiel commercial.
+                            </p>
+                            <p class="mb-4" style="color: var(--color-text-muted);">
+                                Expert en <strong>Automatisation</strong>, <strong>Growth Hacking</strong> et <strong>Mass Mailing</strong>, je construis des écosystèmes complets pour mes clients. Je ne me contente pas de générer des leads, j'automatise leur traitement et je vous aide à les convertir.
+                            </p>
+                            <p style="color: var(--color-text-muted);">
+                                Ma philosophie : <em>Automatiser le répétitif</em> (via l'IA et le No-Code) pour que vos équipes se concentrent sur l'humain et le Closing.
+                            </p>
                         </div>
-
-                        <div class="text-center">
-                            <h3 class="text-gold" style="font-size: 2.5rem;">100k€+/mois</h3>
-                            <p>Générés pour mes clients</p>
+                        
+                        <!-- Stats -->
+                        <div class="grid grid-3 mt-12" style="max-width: 500px; margin-left: auto; margin-right: auto;">
+                            <div class="metric">
+                                <div class="metric__value">5+</div>
+                                <div class="metric__label">Années d'expérience</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric__value">100k€+</div>
+                                <div class="metric__label">Générés/mois</div>
+                                <div class="metric__sublabel">pour mes clients</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric__value">50+</div>
+                                <div class="metric__label">Clients accompagnés</div>
+                            </div>
                         </div>
                     </div>
-                
                 </div>
             </div>
         </section>
+
+        <!-- Skills Section -->
+        <section class="section--alt">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-header__label">Compétences</span>
+                    <h2 class="section-header__title">Mon expertise</h2>
+                </div>
+                
+                <div class="grid grid-3">
+                    <div class="card fade-in fade-in-delay-1">
+                        <div class="card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z"/><path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10"/></svg>
+                        </div>
+                        <h3 class="card__title">Cold Emailing</h3>
+                        <p class="card__description">
+                            Maîtrise complète des campagnes outbound : copywriting de conversion, délivrabilité, warm-up, séquences multi-touch.
+                        </p>
+                    </div>
+                    
+                    <div class="card fade-in fade-in-delay-2">
+                        <div class="card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
+                        </div>
+                        <h3 class="card__title">Scraping & Data</h3>
+                        <p class="card__description">
+                            Extraction et enrichissement de données B2B. LinkedIn, Google Maps, annuaires professionnels. Bases qualifiées et vérifiées.
+                        </p>
+                    </div>
+                    
+                    <div class="card fade-in fade-in-delay-3">
+                        <div class="card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+                        </div>
+                        <h3 class="card__title">Automatisation</h3>
+                        <p class="card__description">
+                            Création de workflows avec Zapier, Make, n8n. Intégration CRM (HubSpot, Pipedrive, Salesforce). Gain de temps massif.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section>
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-header__label">Valeurs</span>
+                    <h2 class="section-header__title">Ma façon de travailler</h2>
+                </div>
+                
+                <div class="container--narrow">
+                    <div class="steps">
+                        <div class="step fade-in">
+                            <div class="step__number" style="--step-number: '✓';" aria-hidden="true"></div>
+                            <div class="step__content">
+                                <h3 class="step__title">Transparence totale</h3>
+                                <p class="step__description">
+                                    Reporting en temps réel, accès complet à vos données. Vous savez exactement où en est votre campagne à tout moment.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="step fade-in">
+                            <div class="step__number" aria-hidden="true"></div>
+                            <div class="step__content">
+                                <h3 class="step__title">Résultats mesurables</h3>
+                                <p class="step__description">
+                                    Je travaille avec des KPIs clairs : taux d'ouverture, taux de réponse, nombre de RDV. Si ça ne fonctionne pas, on ajuste.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="step fade-in">
+                            <div class="step__number" aria-hidden="true"></div>
+                            <div class="step__content">
+                                <h3 class="step__title">Accompagnement personnalisé</h3>
+                                <p class="step__description">
+                                    Chaque entreprise est unique. Je prends le temps de comprendre votre offre et votre marché pour créer une stratégie sur-mesure.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container fade-in">
+                <h2 class="cta-section__title">Envie d'en savoir plus ?</h2>
+                <p class="cta-section__subtitle">
+                    Réservez un appel découverte de 30 minutes. On discute de vos objectifs et je vous montre comment je peux vous aider.
+                </p>
+                <div class="cta-section__actions">
+                    <a href="contact.html" class="btn btn-primary btn-lg">
+                        Prendre rendez-vous
+                    </a>
+                    <a href="services.html" class="btn btn-outline btn-lg">
+                        Voir mes services
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-col">
-                <div class="logo">
-                    <span class="text-gold">Nana</span> Intelligence
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <span>Nana</span> Intelligence
+                    </div>
+                    <p class="footer__tagline">
+                        Expert en Lead Generation B2B. Cold Emailing, Scraping et Automatisation Sales.
+                    </p>
                 </div>
-                <p style="margin-top: 1rem; color: var(--text-muted);">
-                    Agence spécialisée en <strong>Lead Generation</strong> et stratégie digitale B2B.
+                
+                <div class="footer__col">
+                    <h4 class="footer__heading">Navigation</h4>
+                    <div class="footer__links">
+                        <a href="index.html" class="footer__link">Accueil</a>
+                        <a href="about.html" class="footer__link">À propos</a>
+                        <a href="services.html" class="footer__link">Services</a>
+                        <a href="contact.html" class="footer__link">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="footer__col">
+                    <h4 class="footer__heading">Ressources</h4>
+                    <div class="footer__links">
+                        <a href="agence-lead-generation.html" class="footer__link">Agence Lead Generation</a>
+                    </div>
+                </div>
+                
+                <div class="footer__col">
+                    <h4 class="footer__heading">Contact</h4>
+                    <div class="footer__links">
+                        <a href="mailto:contact@nana-intelligence.fr" class="footer__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            contact@nana-intelligence.fr
+                        </a>
+                        <span class="footer__link" style="cursor: default;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Marseille, PACA, France
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2025 Nana Intelligence. Tous droits réservés.
                 </p>
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/company/nana-intelligence/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="mailto:contact@nana-intelligence.fr" class="footer__social-link" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </a>
+                </div>
             </div>
-            <div class="footer-col">
-                <h4>Navigation</h4>
-                <a href="index.html">Accueil</a>
-                <a href="about.html">À propos</a>
-                <a href="services.html">Services</a>
-                <a href="agence-lead-generation.html">Agence Lead Generation</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="footer-col">
-                <h4>Réseaux</h4>
-                <a href="https://www.linkedin.com/company/nana-intelligence/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                <a href="mailto:contact@nana-intelligence.com"><i class="fa-solid fa-envelope"></i> Email</a>
-            </div>
-            <div class="footer-col">
-                <h4>Zone d'intervention</h4>
-                <p style="color: var(--text-muted); font-size: 0.9rem;">
-                    <i class="fa-solid fa-location-dot text-gold"></i> Marseille, Aix-en-Provence, PACA, France
-                </p>
-                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">
-                    Expert en génération de leads qualifiés B2B
-                </p>
-            </div>
-        </div>
-        <div class="copyright">
-            &copy; 2025 Nana Intelligence. Tous droits réservés. | Lead Generation Marseille - PACA - France
         </div>
     </footer>
 
