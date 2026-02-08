@@ -1,11 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
 /* ============================================================
    NANA INTELLIGENCE - DESIGN SYSTEM v2.0
-   Modern B2B Landing Page - Conversion Optimized
    ============================================================ */
-
-/* --- 1. DESIGN TOKENS (Variables) --- */
-/* Typography: Space Grotesk (headings) + Plus Jakarta Sans (body) - Distinctive & Premium */
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
 :root {
   /* === COLORS === */
@@ -277,13 +274,13 @@ svg {
 .container {
   width: 100%;
   max-width: var(--container-max);
-  margin: 0 auto;
+  margin-inline: auto;
   padding-inline: var(--space-6);
 }
 
 .container--narrow {
   max-width: var(--container-narrow);
-  position: center;
+  margin-inline: auto;
 }
 
 .container--wide {

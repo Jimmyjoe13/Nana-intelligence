@@ -47,44 +47,81 @@
                         <form id="contact-form" class="form">
                             <!-- Honeypot anti-spam (hidden) -->
                             <div class="form-hp" aria-hidden="true">
-                                <label for="website">Ne pas remplir</label>
-                                <input type="text" name="website" id="website" tabindex="-1" autocomplete="off">
+                                <label for="honeypot">Ne pas remplir</label>
+                                <input type="text" name="honeypot" id="honeypot" tabindex="-1" autocomplete="off">
                             </div>
 
+                            <!-- Prénom -->
                             <div class="form-group">
-                                <label for="name" class="form-label">Nom complet <span style="color: var(--color-accent-primary);">*</span></label>
-                                <input type="text" name="name" id="name" class="form-input" placeholder="Votre nom" required>
+                                <label for="firstname" class="form-label">Prénom <span style="color: var(--color-accent-primary);">*</span></label>
+                                <input type="text" name="firstname" id="firstname" class="form-input" placeholder="Votre prénom" required>
                             </div>
                             
+                            <!-- Nom -->
                             <div class="form-group">
-                                <label for="email" class="form-label">Email professionnel <span style="color: var(--color-accent-primary);">*</span></label>
+                                <label for="lastname" class="form-label">Nom <span style="color: var(--color-accent-primary);">*</span></label>
+                                <input type="text" name="lastname" id="lastname" class="form-input" placeholder="Votre nom" required>
+                            </div>
+                            
+                            <!-- Email Pro -->
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Pro <span style="color: var(--color-accent-primary);">*</span></label>
                                 <input type="email" name="email" id="email" class="form-input" placeholder="votre@email.com" required>
                             </div>
 
+                            <!-- Entreprise -->
                             <div class="form-group">
                                 <label for="company" class="form-label">Entreprise</label>
                                 <input type="text" name="company" id="company" class="form-input" placeholder="Nom de votre entreprise">
                             </div>
 
+                            <!-- Site Web -->
                             <div class="form-group">
-                                <label for="service" class="form-label">Service souhaité</label>
-                                <select name="service" id="service" class="form-input" style="cursor: pointer;">
+                                <label for="website" class="form-label">Site Web</label>
+                                <input type="url" name="website" id="website" class="form-input" placeholder="https://votre-site.fr">
+                            </div>
+
+                            <!-- Type de service (dropdown avec IDs Tally) -->
+                            <div class="form-group">
+                                <label for="service" class="form-label">Type de service <span style="color: var(--color-accent-primary);">*</span></label>
+                                <select name="service" id="service" class="form-input" style="cursor: pointer;" required>
                                     <option value="">Sélectionnez un service</option>
-                                    <option value="lead-generation">Lead Generation & Cold Email</option>
-                                    <option value="automatisation">Automatisation & IA</option>
-                                    <option value="seo">Growth Hacking & SEO</option>
-                                    <option value="coaching">Coaching Vente</option>
-                                    <option value="autre">Autre / Sur-mesure</option>
+                                    <option value="10477feb-78b4-4a5d-96d2-c525b23c9896">Mass Mailing & Lead Gen</option>
+                                    <option value="c30f2b45-95ab-4327-a09f-375c18b471d8">Automatisation & IA</option>
+                                    <option value="34e6ddc8-54ed-4948-b62e-9bde294056e3">SEO & Growth Hacking</option>
                                 </select>
                             </div>
 
+                            <!-- Votre Besoin (textarea) -->
                             <div class="form-group">
-                                <label for="message" class="form-label">Votre message <span style="color: var(--color-accent-primary);">*</span></label>
+                                <label for="message" class="form-label">Votre Besoin <span style="color: var(--color-accent-primary);">*</span></label>
                                 <textarea name="message" id="message" class="form-textarea" rows="5" placeholder="Décrivez votre besoin, vos objectifs, votre cible..." required></textarea>
                             </div>
 
+                            <!-- Budget estimé (dropdown avec IDs Tally) -->
+                            <div class="form-group">
+                                <label for="budget" class="form-label">Budget estimé</label>
+                                <select name="budget" id="budget" class="form-input" style="cursor: pointer;">
+                                    <option value="">Sélectionnez un budget</option>
+                                    <option value="5c526960-ed53-4f05-a70e-096956f3f7ef">< 1 000€</option>
+                                    <option value="7ccf8026-f040-432d-90f1-ad9f8c982857">1–3k€</option>
+                                    <option value="c4443dd7-6e0b-4f9c-a086-d632e77062e5">3–7k€</option>
+                                    <option value="b8492354-915d-4d79-8446-411d6e3ee0cf">7–15k€</option>
+                                    <option value="03caa44d-4618-40f6-9d3b-5ebb1a07eb16">15k€+</option>
+                                    <option value="34c7da66-b3e9-4c92-ba5f-d65dc94c7797">Je ne sais pas</option>
+                                </select>
+                            </div>
+
+                            <!-- Consentement (checkbox) -->
+                            <div class="form-group">
+                                <label class="form-checkbox">
+                                    <input type="checkbox" name="consent" id="consent" required>
+                                    <span class="form-checkbox-text">J'accepte d'être recontacté au sujet de ma demande de devis. <span style="color: var(--color-accent-primary);">*</span></span>
+                                </label>
+                            </div>
+
                             <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-                                Envoyer le message
+                                Envoyer ma demande
                             </button>
 
                             <p class="text-center text-sm text-muted mt-4">
@@ -157,7 +194,6 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
