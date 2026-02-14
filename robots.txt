@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nana-intelligence.com/sitemap.xml
+Sitemap: https://nana-intelligence.fr/sitemap.xml
