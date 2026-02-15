@@ -8,48 +8,90 @@
     
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body style="display: flex; flex-direction: column; min-height: 100vh;">
 
-    <!-- Header -->
-    <header>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header">
         <div class="container">
-            <nav>
-                <div class="logo">Nana Intelligence
-                    <a href="index.html">
-                        <img src="assets/img/favicon.png" alt="Logo Nana Intelligence" class="logo-img">
+            <nav class="header__inner">
+                <a href="index.html" class="header__logo" aria-label="Nana Intelligence - Accueil">
+                    <img src="assets/img/favicon.png" alt="Nana Intelligence - Agence SEO et Lead Gen Marseille" class="header__logo-icon" width="40" height="40">
+                    <span class="header__logo-text"><span>Nana</span> Intelligence</span>
+                </a>
+                
+                <div class="header__nav" id="nav-links">
+                    <a href="index.html" class="header__nav-link">Accueil</a>
+                    <a href="agence-lead-generation/index.html" class="header__nav-link">Agence</a>
+                    <a href="services/index.html" class="header__nav-link">Services</a>
+                    <a href="about/index.html" class="header__nav-link">À propos</a>
+                    <a href="contact/index.html" class="btn btn-primary btn-sm header__cta">
+                        Audit Gratuit
                     </a>
                 </div>
+                
+                <button class="header__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </nav>
         </div>
     </header>
 
-    <main style="flex: 1; display: flex; align-items: center; justify-content: center;">
+    <!-- ========== MAIN ========== -->
+    <main id="main-content" style="flex: 1; display: flex; align-items: center; justify-content: center;">
         <section class="container text-center fade-in">
-            <div style="font-size: 6rem; font-weight: 700; color: var(--accent-gold); margin-bottom: 1rem;">404</div>
+            <div style="font-size: 6rem; font-weight: 700; background: var(--gradient-accent); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem;">404</div>
             <h1>Oups ! Cette page n'existe pas.</h1>
-            <p style="color: var(--text-muted); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+            <p style="color: var(--color-text-muted); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
                 Il semble que le lien que vous avez suivi soit cassé ou que la page ait été déplacée.
             </p>
-            <div class="hero-buttons" style="justify-content: center;">
-                <a href="index.html" class="btn btn-primary">Retour à l'accueil</a>
-                <a href="services.html" class="btn btn-outline">Voir nos services</a>
+            <div class="cta-section__actions" style="justify-content: center;">
+                <a href="index.html" class="btn btn-primary btn-lg">Retour à l'accueil</a>
+                <a href="services/index.html" class="btn btn-outline btn-lg">Voir nos services</a>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-col">
-                <div class="logo">
-                    <span class="text-gold">Nana</span> Intelligence
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo"><span>Nana</span> Intelligence</div>
+                    <p class="footer__tagline">Expert en Lead Generation B2B.</p>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Navigation</h4>
+                    <div class="footer__links">
+                        <a href="index.html" class="footer__link">Accueil</a>
+                        <a href="about/index.html" class="footer__link">À propos</a>
+                        <a href="services/index.html" class="footer__link">Services</a>
+                        <a href="contact/index.html" class="footer__link">Contact</a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Contact</h4>
+                    <div class="footer__links">
+                        <a href="mailto:contact@nana-intelligence.fr" class="footer__link">contact@nana-intelligence.fr</a>
+                        <span class="footer__link">Marseille, PACA, France</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="copyright">
-            &copy; 2025 Nana Intelligence. Tous droits réservés.
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 Nana Intelligence. Tous droits réservés.</p>
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/company/nana-intelligence/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="mailto:contact@nana-intelligence.fr" class="footer__social-link" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 

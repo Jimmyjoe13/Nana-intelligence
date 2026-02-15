@@ -15,10 +15,16 @@ Ce dépôt contient la nouvelle version du site web **Nana Intelligence**, optim
 ```
 nana-intelligence/
 ├── index.html                  # Landing Page Principale (Conversion)
-├── about.html                  # Page À propos / Expert
-├── services.html               # Page Services détaillée
-├── contact.html                # Page Contact avec formulaire
-├── agence-lead-generation.html # Landing Page SEO local
+├── about/
+│   └── index.html              # Page À propos / Expert
+├── services/
+│   └── index.html              # Page Services détaillée
+├── contact/
+│   └── index.html              # Page Contact avec formulaire
+├── agence-lead-generation/
+│   └── index.html              # Landing Page SEO local
+├── testimonials/
+│   └── index.html              # Page Témoignages
 ├── assets/
 │   ├── css/
 │   │   └── style.css           # Design System complet
