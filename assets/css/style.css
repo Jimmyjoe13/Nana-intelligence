@@ -637,6 +637,9 @@ section {
 
   .header__nav-link {
     font-size: var(--text-lg);
+    padding: var(--space-4) 0;
+    display: block;
+    width: 100%;
   }
 
   .header__cta {
@@ -1275,6 +1278,13 @@ section {
   display: flex;
   align-items: center;
   gap: var(--space-2);
+  padding: var(--space-2) 0;
+}
+
+@media (max-width: 768px) {
+  .footer__link {
+    padding: var(--space-3) 0;
+  }
 }
 
 .footer__link:hover {
