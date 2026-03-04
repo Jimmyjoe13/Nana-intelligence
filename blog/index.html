@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog SEO B2B et Prospection | Nana Intelligence</title>
+    <meta name="description" content="Découvrez tous nos articles et guides complets sur le Cold Emailing, le Scraping, l'acquisition client B2B et la génération de leads en France.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nana-intelligence.fr/blog/">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .blog-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: var(--space-8);
+            margin-bottom: var(--space-16);
+        }
+        .blog-card {
+            background: var(--color-bg-tertiary);
+            border: 1px solid var(--color-border-default);
+            border-radius: var(--radius-lg);
+            padding: var(--space-6);
+            transition: all var(--transition-base);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .blog-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--color-accent-primary);
+            box-shadow: var(--shadow-glow-sm);
+        }
+        .blog-card__title {
+            font-size: var(--text-xl);
+            margin-bottom: var(--space-3);
+            flex-grow: 1;
+        }
+        .blog-card__date {
+            font-size: var(--text-sm);
+            color: var(--color-text-subtle);
+            margin-bottom: var(--space-4);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__inner">
+                <a href="/" class="header__logo">
+                    <img src="../assets/img/favicon.png" alt="Nana Intelligence" class="header__logo-icon" width="40" height="40">
+                    <span class="header__logo-text"><span>Nana</span> Intelligence</span>
+                </a>
+                <div class="header__nav" id="nav-links">
+                    <a href="/" class="header__nav-link">Accueil</a>
+                    <a href="/agence-lead-generation" class="header__nav-link">Agence</a>
+                    <a href="/services" class="header__nav-link">Services</a>
+                    <a href="/about" class="header__nav-link">À propos</a>
+                    <a href="/blog/" class="header__nav-link">Blog</a>
+                    <a href="/blog/" class="header__nav-link active">Blog</a>
+                    <a href="/contact" class="btn btn-primary btn-sm header__cta">Audit Gratuit</a>
+                </div>
+                <button class="header__burger" id="burger" aria-label="Ouvrir le menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" style="padding: var(--space-16) var(--space-6) var(--space-12);">
+            <div class="container container--narrow text-center fade-in">
+                <h1 class="hero__title">
+                    L'expertise <span class="hero__title-highlight">Prospection B2B</span>
+                </h1>
+                <p class="hero__subtitle">
+                    Guides pratiques, templates de cold emailing et méthodologies de scraping pour la génération de leads de demain.
+                </p>
+            </div>
+        </section>
+
+        <section class="container fade-in">
+            <div class="blog-list">
+                <!-- Article 1 -->
+                <a href="/blog/agence-prospection-b2b-marseille.html" class="blog-card">
+                    <div class="badge badge--success mb-4" style="align-self: flex-start;">Stratégie Commerciale</div>
+                    <h2 class="blog-card__title">Agence de prospection B2B ou commercial interne : Que choisir ?</h2>
+                    <div class="text-muted mb-4">Le comparatif complet des coûts et des avantages pour développer ses ventes B2B. Doit-on externaliser ?</div>
+                    <div class="blog-card__date">3 Mars 2026 • 6 min lecture</div>
+                    <div style="color:var(--color-accent-primary); font-weight:var(--font-semibold);">Lire l'article →</div>
+                </a>
+                
+                <!-- Article 2 -->
+                <a href="/blog/guide-cold-emailing-b2b.html" class="blog-card">
+                    <div class="badge badge--success mb-4" style="align-self: flex-start;">Cold Emailing</div>
+                    <h2 class="blog-card__title">Guide du Cold Emailing B2B en 2026 (Sans finir en Spam)</h2>
+                    <div class="text-muted mb-4">Tout comprendre sur le Setup SPF/DKIM/DMARC et l'art de rédiger un email froid à haute conversion.</div>
+                    <div class="blog-card__date">3 Mars 2026 • 10 min lecture</div>
+                    <div style="color:var(--color-accent-primary); font-weight:var(--font-semibold);">Lire l'article →</div>
+                </a>
+                
+                <!-- Article 3 -->
+                <a href="/blog/scraping-b2b-nouvelle-prospection.html" class="blog-card">
+                    <div class="badge badge--success mb-4" style="align-self: flex-start;">Data / Scraping</div>
+                    <h2 class="blog-card__title">Comment utiliser le Scraping B2B pour trouver des clients ?</h2>
+                    <div class="text-muted mb-4">Comprendre comment extraire des centaines de leads qualifiés sur LinkedIn & Google Maps légalement (RGPD).</div>
+                    <div class="blog-card__date">3 Mars 2026 • 7 min lecture</div>
+                    <div style="color:var(--color-accent-primary); font-weight:var(--font-semibold);">Lire l'article →</div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo"><span>Nana</span> Intelligence</div>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Navigation</h4>
+                    <div class="footer__links">
+                        <a href="/" class="footer__link">Accueil</a>
+                        <a href="/agence-lead-generation" class="footer__link">Agence Lead Gen</a>
+                        <a href="/blog/" class="footer__link">Blog SEO</a>
+                        <a href="/contact" class="footer__link">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 Nana Intelligence. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
