@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // =========================================
   // 4. CONTACT FORM (Tally Webhook Format)
   // =========================================
-  const WEBHOOK_URL = "https://agent-juliette.onrender.com/webhook/tally";
+  const WEBHOOK_URL = "https://api.nana-intelligence.fr/webhook/tally";
   
   // Helper: Generate UUID v4
   function generateUUID() {
