@@ -1,0 +1,31 @@
+name: SEO Autonome — nana-intelligence.fr
+
+on:
+  schedule:
+    - cron: '0 7 1 * *'   # 1er du mois a 7h UTC
+  workflow_dispatch:       # declenchement manuel depuis Actions
+
+jobs:
+  trigger-vps:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Declencher le pipeline SEO sur le VPS
+        env:
+          SEO_WEBHOOK_SECRET: ${{ secrets.SEO_WEBHOOK_SECRET }}
+        run: |
+          echo "Declenchement du pipeline SEO sur le VPS..."
+          HTTP_STATUS=$(curl -s -o /tmp/response.txt -w "%{http_code}" \
+            -X POST http://51.38.99.226:9001/webhook/seo-audit \
+            -H "Authorization: Bearer $SEO_WEBHOOK_SECRET" \
+            -H "Content-Type: application/json" \
+            --max-time 15)
+          cat /tmp/response.txt
+          echo ""
+          if [ "$HTTP_STATUS" = "200" ]; then
+            echo "Pipeline SEO lance avec succes."
+            echo "Le VPS va : extraire GSC → analyser avec Claude → optimiser HTML → push → redeployer le site."
+          else
+            echo "Erreur webhook : HTTP $HTTP_STATUS"
+            exit 1
+          fi

@@ -1,174 +1,163 @@
+#!/usr/bin/env python3
 """
-GSC Report Extractor — nana-intelligence.fr
-Fetches Search Console data for the last 30 days and writes gsc_report_latest.json
+gsc_report.py — Extracts Google Search Console data for nana-intelligence.fr
+Outputs: scripts/gsc_report_latest.json
+
+Required env vars:
+  GSC_CLIENT_ID
+  GSC_CLIENT_SECRET
+  GSC_REFRESH_TOKEN
 """
 
-import json
 import os
-import sys
+import json
 from datetime import date, timedelta
 
-import requests
+from google.oauth2.credentials import Credentials
+from google.auth.transport.requests import Request
+from googleapiclient.discovery import build
 
-# ---------------------------------------------------------------------------
-# Config
-# ---------------------------------------------------------------------------
-CLIENT_ID     = os.environ["GSC_CLIENT_ID"]
-CLIENT_SECRET = os.environ["GSC_CLIENT_SECRET"]
-REFRESH_TOKEN = os.environ["GSC_REFRESH_TOKEN"]
-SITE_URL      = "sc-domain:nana-intelligence.fr"
+# sc-domain property includes both www and non-www
+SITE_URL = "sc-domain:nana-intelligence.fr"
+SCOPES = ["https://www.googleapis.com/auth/webmasters.readonly"]
+OUTPUT_PATH = "scripts/gsc_report_latest.json"
 
-OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "gsc_report_latest.json")
 
-# ---------------------------------------------------------------------------
-# OAuth2 helpers
-# ---------------------------------------------------------------------------
-def get_access_token() -> str:
-    resp = requests.post(
-        "https://oauth2.googleapis.com/token",
-        data={
-            "client_id":     CLIENT_ID,
-            "client_secret": CLIENT_SECRET,
-            "refresh_token": REFRESH_TOKEN,
-            "grant_type":    "refresh_token",
-        },
-        timeout=15,
+def get_credentials():
+    creds = Credentials(
+        token=None,
+        refresh_token=os.environ["GSC_REFRESH_TOKEN"],
+        token_uri="https://oauth2.googleapis.com/token",
+        client_id=os.environ["GSC_CLIENT_ID"],
+        client_secret=os.environ["GSC_CLIENT_SECRET"],
+        scopes=SCOPES,
     )
-    resp.raise_for_status()
-    return resp.json()["access_token"]
+    creds.refresh(Request())
+    return creds
 
 
-# ---------------------------------------------------------------------------
-# GSC API query
-# ---------------------------------------------------------------------------
-def query_gsc(
-    access_token: str,
-    start_date: str,
-    end_date: str,
-    dimensions: list[str],
-    row_limit: int = 50,
-    order_by_clicks: bool = True,
-    extra_filters: list | None = None,
-) -> list[dict]:
-    url = f"https://searchconsole.googleapis.com/webmasters/v3/sites/{requests.utils.quote(SITE_URL, safe='')}/searchAnalytics/query"
-    headers = {"Authorization": f"Bearer {access_token}", "Content-Type": "application/json"}
-
-    body: dict = {
-        "startDate":  start_date,
-        "endDate":    end_date,
+def query_gsc(service, start, end, dimensions, extra_filters=None, row_limit=50, order_by_clicks=True):
+    body = {
+        "startDate": start,
+        "endDate": end,
         "dimensions": dimensions,
-        "rowLimit":   row_limit,
+        "rowLimit": row_limit,
     }
     if order_by_clicks:
         body["orderBy"] = [{"fieldName": "clicks", "sortOrder": "DESCENDING"}]
     if extra_filters:
         body["dimensionFilterGroups"] = extra_filters
-
-    resp = requests.post(url, headers=headers, json=body, timeout=30)
-    resp.raise_for_status()
-    rows = resp.json().get("rows", [])
-
-    results = []
-    for row in rows:
-        item = {d: row["keys"][i] for i, d in enumerate(dimensions)}
-        item["clicks"]      = row.get("clicks", 0)
-        item["impressions"] = row.get("impressions", 0)
-        item["ctr"]         = round(row.get("ctr", 0) * 100, 2)
-        item["position"]    = round(row.get("position", 0), 1)
-        results.append(item)
-    return results
+    response = service.searchanalytics().query(siteUrl=SITE_URL, body=body).execute()
+    return response.get("rows", [])
 
 
-# ---------------------------------------------------------------------------
-# Main
-# ---------------------------------------------------------------------------
 def main():
-    end_date   = date.today() - timedelta(days=3)   # GSC data has ~3-day lag
-    start_date = end_date - timedelta(days=29)       # 30-day window
+    print("Authentification GSC...")
+    creds = get_credentials()
+    service = build("searchconsole", "v1", credentials=creds)
 
-    start_str = start_date.isoformat()
-    end_str   = end_date.isoformat()
+    end_date = (date.today() - timedelta(days=3)).isoformat()
+    start_date = (date.today() - timedelta(days=33)).isoformat()
 
-    print(f"Fetching GSC data from {start_str} to {end_str} …", flush=True)
+    print(f"Extraction donnees du {start_date} au {end_date}...")
 
-    token = get_access_token()
+    # Overall metrics
+    overall_rows = query_gsc(service, start_date, end_date, [], order_by_clicks=False, row_limit=1)
+    overall = overall_rows[0] if overall_rows else {}
 
-    # --- Overall metrics (no dimensions) ---
-    overall_resp = requests.post(
-        f"https://searchconsole.googleapis.com/webmasters/v3/sites/{requests.utils.quote(SITE_URL, safe='')}/searchAnalytics/query",
-        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
-        json={"startDate": start_str, "endDate": end_str, "rowLimit": 1},
-        timeout=30,
-    )
-    overall_resp.raise_for_status()
-    overall_data = overall_resp.json()
-    overall = {
-        "clicks":      overall_data.get("clicks", 0),
-        "impressions": overall_data.get("impressions", 0),
-        "ctr":         round(overall_data.get("ctr", 0) * 100, 2),
-        "position":    round(overall_data.get("position", 0), 1),
-    }
-    # Fallback: sum from rows if top-level fields absent
-    if not any(overall.values()) and overall_data.get("rows"):
-        r = overall_data["rows"][0]
-        overall = {
-            "clicks":      r.get("clicks", 0),
-            "impressions": r.get("impressions", 0),
-            "ctr":         round(r.get("ctr", 0) * 100, 2),
-            "position":    round(r.get("position", 0), 1),
-        }
+    # Top 50 queries by clicks
+    top_queries = query_gsc(service, start_date, end_date, ["query"], row_limit=50)
 
-    # --- Top queries ---
-    top_queries = query_gsc(token, start_str, end_str, ["query"], row_limit=50)
+    # Top 20 pages by clicks
+    top_pages = query_gsc(service, start_date, end_date, ["page"], row_limit=20)
 
-    # --- Top pages ---
-    top_pages = query_gsc(token, start_str, end_str, ["page"], row_limit=20)
-
-    # --- Quick wins: positions 5–15, sorted by impressions ---
-    # NOTE: GSC API does NOT support 'position' as a filter dimension.
-    # We fetch all query+page combos and filter in Python.
+    # Quick wins: queries between position 5 and 15
+    # NOTE: GSC API does NOT support 'position' as a filter dimension (HTTP 400).
+    # Fetch all query+page rows and filter by position in Python instead.
     all_query_pages = query_gsc(
-        token, start_str, end_str,
+        service, start_date, end_date,
         ["query", "page"],
         row_limit=200,
         order_by_clicks=False,
     )
-    quick_wins = [
+    quick_wins_raw = [
         r for r in all_query_pages
         if 4 < r.get("position", 0) < 16
     ]
-    # Sort by impressions desc, keep top 30
-    quick_wins.sort(key=lambda x: x.get("impressions", 0), reverse=True)
-    quick_wins = quick_wins[:30]
+    quick_wins_raw.sort(key=lambda x: x.get("impressions", 0), reverse=True)
+    quick_wins_raw = quick_wins_raw[:30]
 
-    # --- Low CTR pages (position < 10, CTR < 2%) ---
-    all_pages_with_pos = query_gsc(
-        token, start_str, end_str,
-        ["page"],
-        row_limit=100,
-        order_by_clicks=False,
-    )
+    # Low CTR pages: impressions > 5 but CTR < 3%
+    all_pages = query_gsc(service, start_date, end_date, ["page"], row_limit=100, order_by_clicks=False)
     low_ctr_pages = [
-        r for r in all_pages_with_pos
-        if r.get("position", 99) < 10 and r.get("ctr", 100) < 2 and r.get("impressions", 0) > 5
+        r for r in all_pages
+        if r.get("impressions", 0) > 5 and r.get("ctr", 1) < 0.03
     ]
-    low_ctr_pages.sort(key=lambda x: x.get("impressions", 0), reverse=True)
 
     report = {
-        "period":        {"start": start_str, "end": end_str},
-        "overall":       overall,
-        "top_queries":   top_queries,
-        "top_pages":     top_pages,
-        "quick_wins":    quick_wins,
-        "low_ctr_pages": low_ctr_pages,
+        "generated_at": date.today().isoformat(),
+        "period": {"start": start_date, "end": end_date},
+        "site": SITE_URL,
+        "overall": {
+            "clicks": int(overall.get("clicks", 0)),
+            "impressions": int(overall.get("impressions", 0)),
+            "ctr": round(overall.get("ctr", 0) * 100, 2),
+            "position": round(overall.get("position", 0), 1),
+        },
+        "top_queries": [
+            {
+                "query": r["keys"][0],
+                "clicks": int(r.get("clicks", 0)),
+                "impressions": int(r.get("impressions", 0)),
+                "ctr": round(r.get("ctr", 0) * 100, 2),
+                "position": round(r.get("position", 0), 1),
+            }
+            for r in top_queries
+        ],
+        "top_pages": [
+            {
+                "page": r["keys"][0],
+                "clicks": int(r.get("clicks", 0)),
+                "impressions": int(r.get("impressions", 0)),
+                "ctr": round(r.get("ctr", 0) * 100, 2),
+                "position": round(r.get("position", 0), 1),
+            }
+            for r in top_pages
+        ],
+        "quick_wins": [
+            {
+                "query": r["keys"][0],
+                "page": r["keys"][1],
+                "clicks": int(r.get("clicks", 0)),
+                "impressions": int(r.get("impressions", 0)),
+                "ctr": round(r.get("ctr", 0) * 100, 2),
+                "position": round(r.get("position", 0), 1),
+            }
+            for r in quick_wins_raw
+        ],
+        "low_ctr_pages": [
+            {
+                "page": r["keys"][0],
+                "impressions": int(r.get("impressions", 0)),
+                "ctr": round(r.get("ctr", 0) * 100, 2),
+                "position": round(r.get("position", 0), 1),
+            }
+            for r in low_ctr_pages
+        ],
     }
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    os.makedirs("scripts", exist_ok=True)
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2)
 
-    print(f"Report saved → {OUTPUT_FILE}", flush=True)
-    print(f"Overall: {overall}", flush=True)
-    print(f"Queries: {len(top_queries)} | Pages: {len(top_pages)} | Quick wins: {len(quick_wins)}", flush=True)
+    print(f"\nRapport GSC sauvegarde : {OUTPUT_PATH}")
+    print(f"  Periode     : {start_date} -> {end_date}")
+    print(f"  Clics       : {report['overall']['clicks']}")
+    print(f"  Impressions : {report['overall']['impressions']}")
+    print(f"  CTR         : {report['overall']['ctr']}%")
+    print(f"  Position    : {report['overall']['position']}")
+    print(f"  Quick wins  : {len(report['quick_wins'])} requetes pos. 5-15")
+    print(f"  CTR faible  : {len(report['low_ctr_pages'])} pages")
 
 
 if __name__ == "__main__":

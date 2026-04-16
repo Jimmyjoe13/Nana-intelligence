@@ -1,0 +1,32 @@
+From github.com:Jimmyjoe13/Nana-intelligence
+ * branch            main       -> FETCH_HEAD
+   7283121..032b7d1  main       -> origin/main
+Updating 7283121..032b7d1
+Fast-forward
+ .github/workflows/seo-audit.yml | 56 ++++++++++++++------------------------
+ scripts/seo_prompt.txt          | 59 +++++++++++++++++++++++++++++++----------
+ 2 files changed, 65 insertions(+), 50 deletions(-)
+Push effectué. Déploiement GitHub Pages déclenché.
+
+---
+
+## Résumé SEO — Avril 2026
+
+### Métriques GSC
+**Non disponibles** — le fichier `scripts/gsc_report_latest.json` n'existe pas. Les secrets GitHub (`GSC_CLIENT_ID`, `GSC_CLIENT_SECRET`, `GSC_REFRESH_TOKEN`) ne sont probablement pas configurés. Le workflow Actions du 1er avril n'a pas pu extraire les données.
+
+### Fichiers modifiés (3/3)
+
+| Fichier | Modification |
+|---------|-------------|
+| `index.html` | Title : 66→56 chars avec "Marseille" · Meta desc : 163→138 chars · H1 : ajout keyword géo "Lead Generation B2B à Marseille & PACA" |
+| `blog/agence-prospection-b2b-marseille.html` | Meta desc : 197→147 chars, keyword "prospection B2B Marseille" en début |
+| `blog/guide-cold-emailing-b2b.html` | Title : 73→63 chars · Meta desc : 161→137 chars |
+
+### 3 actions prioritaires pour mai 2026
+
+1. **Configurer les secrets GSC** dans GitHub Actions (Settings → Secrets) pour activer l'extraction automatique des données réelles
+2. **Créer `/cold-emailing-marseille/`** — page dédiée pour capter les recherches locales "cold emailing marseille" non couvertes
+3. **Auditer `scraping-b2b-nouvelle-prospection.html`** — vérifier title/meta et ajouter un Schema FAQPage si absent
+
+**Site déployé** : https://nana-intelligence.fr (actif dans ~2 minutes)
