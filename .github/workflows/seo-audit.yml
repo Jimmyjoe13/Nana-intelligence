@@ -1,18 +1,15 @@
-name: SEO — Extraction GSC mensuelle
+name: SEO Autonome — nana-intelligence.fr
 
 on:
   schedule:
-    # Le 1er du mois a 7h00 UTC
-    - cron: '0 7 1 * *'
-  # Declenchement manuel depuis l'onglet Actions
-  workflow_dispatch:
+    - cron: '0 7 1 * *'   # 1er du mois a 7h UTC
+  workflow_dispatch:       # declenchement manuel depuis Actions
 
 jobs:
-  gsc-extract:
+  seo-pipeline:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
 
     steps:
       - name: Checkout
@@ -35,39 +32,26 @@ jobs:
           GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
         run: python scripts/gsc_report.py
 
-      - name: Commit rapport et creer branche SEO
+      - name: Commit rapport GSC sur main
         run: |
           git config user.email "seo-bot@nana-intelligence.fr"
           git config user.name "SEO Bot"
-          MONTH=$(date +%Y-%m)
-          git checkout -b seo/auto-$MONTH 2>/dev/null || git checkout seo/auto-$MONTH
           git add scripts/gsc_report_latest.json
-          git diff --cached --quiet && echo "Aucun changement" || \
-            git commit -m "seo: rapport GSC $MONTH extrait"
-          git push origin seo/auto-$MONTH
+          git diff --cached --quiet || git commit -m "seo: rapport GSC $(date +%Y-%m) extrait"
+          git push origin main
 
-      - name: Creer Pull Request
+      - name: Declencher Claude sur VPS
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SEO_WEBHOOK_SECRET: ${{ secrets.SEO_WEBHOOK_SECRET }}
         run: |
-          MONTH=$(date +%Y-%m)
-          gh pr create \
-            --base main \
-            --head seo/auto-$MONTH \
-            --title "SEO $MONTH — rapport GSC pret" \
-            --body "## Rapport GSC $MONTH extrait automatiquement
-
-          Le fichier \`scripts/gsc_report_latest.json\` contient les donnees du mois.
-
-          ### Prochaine etape
-          Utilise le **RemoteTrigger Claude Desktop** \`trig_01QyXj5HDFEKrfChSdeTL5hP\` pour :
-          - Analyser le rapport GSC
-          - Appliquer les optimisations on-page (title, meta, h1/h2, FAQ schema)
-          - Commiter les modifications dans cette branche
-
-          ### Merger ensuite
-          - [ ] Review des modifications HTML
-          - [ ] Merger -> deploiement automatique GitHub Pages
-
-          🤖 Extraction automatique — analyse via Claude Desktop (plan Pro)" \
-            2>/dev/null || echo "PR deja existante"
+          HTTP_STATUS=$(curl -s -o /tmp/webhook_response.txt -w "%{http_code}" \
+            -X POST http://51.38.99.226:9001/webhook/seo-audit \
+            -H "Authorization: Bearer $SEO_WEBHOOK_SECRET" \
+            -H "Content-Type: application/json" \
+            --max-time 10)
+          cat /tmp/webhook_response.txt
+          if [ "$HTTP_STATUS" != "200" ]; then
+            echo "Webhook failed with status $HTTP_STATUS"
+            exit 1
+          fi
+          echo "Pipeline SEO declenche sur le VPS (Claude analyse et optimise en arriere-plan)"
