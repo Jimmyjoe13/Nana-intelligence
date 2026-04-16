@@ -17,7 +17,8 @@ from google.oauth2.credentials import Credentials
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 
-SITE_URL = "https://nana-intelligence.fr/"
+# sc-domain property includes both www and non-www
+SITE_URL = "sc-domain:nana-intelligence.fr"
 SCOPES = ["https://www.googleapis.com/auth/webmasters.readonly"]
 OUTPUT_PATH = "scripts/gsc_report_latest.json"
 
@@ -58,9 +59,9 @@ def main():
     end_date = (date.today() - timedelta(days=3)).isoformat()
     start_date = (date.today() - timedelta(days=33)).isoformat()
 
-    print("Extraction des données...")
+    print(f"Extraction donnees du {start_date} au {end_date}...")
 
-    # Overall metrics (no dimensions)
+    # Overall metrics
     overall_rows = query_gsc(service, start_date, end_date, [], order_by_clicks=False, row_limit=1)
     overall = overall_rows[0] if overall_rows else {}
 
@@ -148,8 +149,8 @@ def main():
         json.dump(report, f, ensure_ascii=False, indent=2)
 
     print(f"\nRapport GSC sauvegarde : {OUTPUT_PATH}")
-    print(f"  Periode  : {start_date} -> {end_date}")
-    print(f"  Clics    : {report['overall']['clicks']}")
+    print(f"  Periode     : {start_date} -> {end_date}")
+    print(f"  Clics       : {report['overall']['clicks']}")
     print(f"  Impressions : {report['overall']['impressions']}")
     print(f"  CTR         : {report['overall']['ctr']}%")
     print(f"  Position    : {report['overall']['position']}")
