@@ -1,0 +1,97 @@
+name: SEO Audit Mensuel — nana-intelligence.fr
+
+on:
+  schedule:
+    # Le 1er du mois a 7h00 UTC
+    - cron: '0 7 1 * *'
+  # Declenchement manuel depuis l'onglet Actions
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run — extrait GSC sans editer le site'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  seo-audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install Python deps
+        run: pip install -r scripts/requirements.txt
+
+      - name: Extraction rapport GSC
+        env:
+          GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
+          GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
+          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
+        run: python scripts/gsc_report.py
+
+      - name: Setup Node.js
+        if: ${{ inputs.dry_run != 'true' }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code CLI
+        if: ${{ inputs.dry_run != 'true' }}
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Optimisations SEO via Claude Code
+        if: ${{ inputs.dry_run != 'true' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_SKIP_AUTO_UPDATE: '1'
+        run: |
+          claude -p "$(cat scripts/seo_prompt.txt)" \
+            --allowedTools "Read,Edit,MultiEdit,Glob,Grep,Write,Bash" \
+            --output-format text \
+            --max-turns 30
+
+      - name: Commit et push branche SEO
+        run: |
+          git config user.email "seo-bot@nana-intelligence.fr"
+          git config user.name "SEO Bot"
+          MONTH=$(date +%Y-%m)
+          git checkout -b seo/auto-$MONTH 2>/dev/null || git checkout seo/auto-$MONTH
+          git add scripts/gsc_report_latest.json
+          git add '*.html' 2>/dev/null || true
+          git diff --cached --quiet && echo "Aucun changement" || git commit -m "seo: audit et optimisations on-page $MONTH"
+          git push origin seo/auto-$MONTH
+
+      - name: Creer Pull Request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          MONTH=$(date +%Y-%m)
+          gh pr create \
+            --base main \
+            --head seo/auto-$MONTH \
+            --title "SEO automatique $MONTH" \
+            --body "## Audit SEO mensuel $MONTH
+
+          ### Contenu de la PR
+          - Rapport GSC extrait via l'API Search Console
+          - Optimisations on-page appliquees par Claude Code (title, meta, h1/h2, FAQ schema)
+
+          ### Avant de merger
+          - [ ] Verifier les modifications HTML
+          - [ ] Lire le rapport dans \`scripts/gsc_report_latest.json\`
+          - [ ] Merger -> deploiement automatique via GitHub Pages
+
+          🤖 Genere par le workflow SEO mensuel" \
+            2>/dev/null || echo "PR deja existante ou pas de nouveaux commits"
