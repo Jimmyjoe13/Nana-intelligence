@@ -6,52 +6,26 @@ on:
   workflow_dispatch:       # declenchement manuel depuis Actions
 
 jobs:
-  seo-pipeline:
+  trigger-vps:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Python 3.11
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-          cache: 'pip'
-          cache-dependency-path: scripts/requirements.txt
-
-      - name: Install deps
-        run: pip install -r scripts/requirements.txt
-
-      - name: Extraction rapport GSC
-        env:
-          GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
-          GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
-          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
-        run: python scripts/gsc_report.py
-
-      - name: Commit rapport GSC sur main
-        run: |
-          git config user.email "seo-bot@nana-intelligence.fr"
-          git config user.name "SEO Bot"
-          git add scripts/gsc_report_latest.json
-          git diff --cached --quiet || git commit -m "seo: rapport GSC $(date +%Y-%m) extrait"
-          git push origin main
-
-      - name: Declencher Claude sur VPS
+      - name: Declencher le pipeline SEO sur le VPS
         env:
           SEO_WEBHOOK_SECRET: ${{ secrets.SEO_WEBHOOK_SECRET }}
         run: |
-          HTTP_STATUS=$(curl -s -o /tmp/webhook_response.txt -w "%{http_code}" \
+          echo "Declenchement du pipeline SEO sur le VPS..."
+          HTTP_STATUS=$(curl -s -o /tmp/response.txt -w "%{http_code}" \
             -X POST http://51.38.99.226:9001/webhook/seo-audit \
             -H "Authorization: Bearer $SEO_WEBHOOK_SECRET" \
             -H "Content-Type: application/json" \
-            --max-time 10)
-          cat /tmp/webhook_response.txt
-          if [ "$HTTP_STATUS" != "200" ]; then
-            echo "Webhook failed with status $HTTP_STATUS"
+            --max-time 15)
+          cat /tmp/response.txt
+          echo ""
+          if [ "$HTTP_STATUS" = "200" ]; then
+            echo "Pipeline SEO lance avec succes."
+            echo "Le VPS va : extraire GSC → analyser avec Claude → optimiser HTML → push → redeployer le site."
+          else
+            echo "Erreur webhook : HTTP $HTTP_STATUS"
             exit 1
           fi
-          echo "Pipeline SEO declenche sur le VPS (Claude analyse et optimise en arriere-plan)"
