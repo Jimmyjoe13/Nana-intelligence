@@ -1,0 +1,8 @@
+html5up-eventually/
+nana-v2/
+analytics-credentials/
+reports/
+.playwright-mcp/
+__pycache__/
+*.log
+*.tmp

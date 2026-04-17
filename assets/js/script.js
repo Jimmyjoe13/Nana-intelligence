@@ -315,6 +315,16 @@ document.addEventListener("DOMContentLoaded", function () {
         // Send to webhook
         await sendToTallyWebhook(payload);
 
+        // Google Analytics Conversion Tracking
+        if (typeof gtag === 'function') {
+          gtag('event', 'generate_lead', {
+            'event_category': 'engagement',
+            'event_label': 'contact_form_submission',
+            'value': 1.0
+          });
+          console.log('GA4: generate_lead event sent');
+        }
+
         // Success
         showFormMessage(
           contactForm,
@@ -429,5 +439,25 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentYear = new Date().getFullYear();
   yearElements.forEach((el) => {
     el.textContent = currentYear;
+  });
+
+  // =========================================
+  // 8. GA4 BUTTON CLICK TRACKING
+  // =========================================
+  document.addEventListener("click", function (e) {
+    const target = e.target.closest("a, button");
+    if (!target) return;
+
+    const text = (target.innerText || target.textContent || "").toLowerCase();
+    const contactKeywords = ["contact", "devis", "demander", "appel", "démarrer", "commencer"];
+
+    if (contactKeywords.some(keyword => text.includes(keyword))) {
+      if (typeof gtag === 'function') {
+        gtag('event', 'click_contact_button', {
+          'button_text': text.trim(),
+          'page_path': window.location.pathname
+        });
+      }
+    }
   });
 });
