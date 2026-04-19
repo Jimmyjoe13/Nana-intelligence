@@ -6,3 +6,6 @@ reports/
 __pycache__/
 *.log
 *.tmp
+GEMINI.md
+MEMORY.md
+test-analytics.js
