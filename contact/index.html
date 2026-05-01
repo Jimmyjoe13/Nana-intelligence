@@ -92,8 +92,47 @@
 
         <section>
             <div class="container">
-                <div class="container--narrow">
-                    <div class="card fade-in" style="padding: var(--space-10);">
+                <div class="contact-layout fade-in">
+                    <!-- Colonne Réassurance -->
+                    <div class="contact-reassurance">
+                        <div class="reassurance-item">
+                            <div class="reassurance-item__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="reassurance-item__title">Réponse sous 24h</h3>
+                                <p class="reassurance-item__text">Je traite chaque demande personnellement. Vous recevrez une réponse concrète dans la journée.</p>
+                            </div>
+                        </div>
+
+                        <div class="reassurance-item">
+                            <div class="reassurance-item__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="reassurance-item__title">Audit Gratuit & Sans Engagement</h3>
+                                <p class="reassurance-item__text">30 minutes pour analyser votre tunnel d'acquisition actuel et identifier vos leviers de croissance.</p>
+                            </div>
+                        </div>
+
+                        <div class="reassurance-item">
+                            <div class="reassurance-item__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="reassurance-item__title">+50 entreprises accompagnées</h3>
+                                <p class="reassurance-item__text">Une expertise reconnue en Lead Generation B2B et Cold Emailing en région PACA.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card--highlight" style="margin-top: var(--space-4);">
+                            <p class="text-sm" style="font-style: italic; margin-bottom: 0;">"Efficacité redoutable. Jimmy a compris nos enjeux business immédiatement. Les premiers rendez-vous sont arrivés en moins de 10 jours."</p>
+                            <p class="text-xs text-gold mt-2" style="font-weight: bold;">— Directeur Commercial, Tech B2B</p>
+                        </div>
+                    </div>
+
+                    <!-- Colonne Formulaire -->
+                    <div class="card" style="padding: var(--space-8);">
                         <form id="contact-form" class="form">
                             <!-- Honeypot anti-spam (hidden) -->
                             <div class="form-hp" aria-hidden="true">
@@ -124,66 +163,47 @@
                                 </select>
                             </div>
 
-                            <!-- Votre Besoin (textarea) -->
-                            <div class="form-group">
-                                <label for="message" class="form-label">Parlez-moi de votre projet <span style="color: var(--color-accent-primary);">*</span></label>
-                                <textarea name="message" id="message" class="form-textarea" rows="4" placeholder="Objectifs, cible, problématiques actuelles..." required></textarea>
-                            </div>
-
-                            <!-- Budget estimé (dropdown avec IDs Tally) -->
-                            <div class="form-group">
-                                <label for="budget" class="form-label">Budget mensuel estimé</label>
-                                <select name="budget" id="budget" class="form-input" style="cursor: pointer;">
-                                    <option value="">Sélectionnez une fourchette</option>
-                                    <option value="5c526960-ed53-4f05-a70e-096956f3f7ef">< 1 000€</option>
-                                    <option value="7ccf8026-f040-432d-90f1-ad9f8c982857">1k€ – 3k€</option>
-                                    <option value="c4443dd7-6e0b-4f9c-a086-d632e77062e5">3k€ – 7k€</option>
-                                    <option value="b8492354-915d-4d79-8446-411d6e3ee0cf">7k€+</option>
-                                    <option value="34c7da66-b3e9-4c92-ba5f-d65dc94c7797">Je ne sais pas encore</option>
-                                </select>
-                            </div>
-
                             <!-- Consentement (checkbox) -->
                             <div class="form-group">
                                 <label class="form-checkbox">
                                     <input type="checkbox" name="consent" id="consent" required>
-                                    <span class="form-checkbox-text">J'accepte d'être recontacté au sujet de ma demande de devis. <span style="color: var(--color-accent-primary);">*</span></span>
+                                    <span class="form-checkbox-text">J'accepte d'être recontacté au sujet de ma demande. <span style="color: var(--color-accent-primary);">*</span></span>
                                 </label>
                             </div>
 
                             <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-                                Envoyer ma demande
+                                Obtenir mon audit gratuit
                             </button>
 
-                            <p class="text-center text-sm text-muted mt-4">
-                                Ou directement : <a href="mailto:contact@nana-intelligence.fr" class="text-gold">contact@nana-intelligence.fr</a>
+                            <p class="text-center text-xs text-muted mt-4">
+                                Pas fan des formulaires ? <a href="mailto:contact@nana-intelligence.fr" class="text-gold">contact@nana-intelligence.fr</a>
                             </p>
                         </form>
                     </div>
+                </div>
 
-                    <!-- Additional Contact Info -->
-                    <div class="grid grid-3 mt-12" style="text-align: center;">
-                        <div class="fade-in">
-                            <div class="card__icon" style="margin: 0 auto var(--space-4);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                            </div>
-                            <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">Email</h3>
-                            <a href="mailto:contact@nana-intelligence.fr" class="text-muted">contact@nana-intelligence.fr</a>
+                <!-- Additional Contact Info -->
+                <div class="grid grid-3 mt-12" style="text-align: center;">
+                    <div class="fade-in">
+                        <div class="card__icon" style="margin: 0 auto var(--space-4);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                         </div>
-                        <div class="fade-in">
-                            <div class="card__icon" style="margin: 0 auto var(--space-4);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-                            </div>
-                            <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">LinkedIn</h3>
-                            <a href="https://www.linkedin.com/company/nana-intelligence/" target="_blank" rel="noopener noreferrer" class="text-muted">Nana Intelligence</a>
+                        <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">Email</h3>
+                        <a href="mailto:contact@nana-intelligence.fr" class="text-muted">contact@nana-intelligence.fr</a>
+                    </div>
+                    <div class="fade-in">
+                        <div class="card__icon" style="margin: 0 auto var(--space-4);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
                         </div>
-                        <div class="fade-in">
-                            <div class="card__icon" style="margin: 0 auto var(--space-4);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-                            </div>
-                            <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">Localisation</h3>
-                            <p class="text-muted">Marseille, PACA, France</p>
+                        <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">LinkedIn</h3>
+                        <a href="https://www.linkedin.com/company/nana-intelligence/" target="_blank" rel="noopener noreferrer" class="text-muted">Nana Intelligence</a>
+                    </div>
+                    <div class="fade-in">
+                        <div class="card__icon" style="margin: 0 auto var(--space-4);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
                         </div>
+                        <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">Localisation</h3>
+                        <p class="text-muted">Marseille, PACA, France</p>
                     </div>
                 </div>
             </div>
@@ -209,7 +229,7 @@
                 <div class="footer__col">
                     <h4 class="footer__heading">Ressources</h4>
                     <div class="footer__links">
-                        <a href="/agence-lead-generation/" class="footer__link">Lead Generation Marseille</a>
+                        <a href="/agence-lead-generation-marseille/" class="footer__link">Lead Generation Marseille</a>
                         <a href="/agence-lead-generation-aix/" class="footer__link">Lead Generation Aix-en-Provence</a>
                         <a href="/agence-lead-generation-toulon/" class="footer__link">Lead Generation Toulon</a>
                         <a href="/blog/" class="footer__link">Blog</a>
