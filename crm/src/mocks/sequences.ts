@@ -1,0 +1,65 @@
+export const sequencesData = [
+  {
+    id: 1,
+    name: "S03 - Cold Outreach Tech",
+    status: "Active",
+    touches: 4,
+    sent: 1250,
+    open: "45.2%",
+    reply: "12.4%",
+  },
+  {
+    id: 2,
+    name: "S02 - Relance LinkedIn",
+    status: "Active",
+    touches: 2,
+    sent: 840,
+    open: "62.1%",
+    reply: "8.1%",
+  },
+  {
+    id: 3,
+    name: "S01 - Inbound Followup",
+    status: "Paused",
+    touches: 3,
+    sent: 450,
+    open: "78.4%",
+    reply: "5.9%",
+  },
+  {
+    id: 4,
+    name: "S04 - Partnership 2026",
+    status: "Draft",
+    touches: 5,
+    sent: 0,
+    open: "-",
+    reply: "-",
+  },
+];
+
+export const sequenceSteps = [
+  {
+    id: 1,
+    title: "Touch 1",
+    delay: "Dès l'ajout",
+    type: "Email",
+    subject: "Audit de prospection — {{company}}",
+    body: "Bonjour {{firstName}},\n\nJ'ai analysé la stratégie d'acquisition de {{company}} et j'ai relevé 3 axes d'amélioration majeurs...",
+  },
+  {
+    id: 2,
+    title: "Touch 2",
+    delay: "J + 3",
+    type: "LinkedIn",
+    subject: "-",
+    body: "Hello {{firstName}}, je vous ai envoyé un email il y a quelques jours concernant votre stratégie d'acquisition. Au plaisir d'en discuter.",
+  },
+  {
+    id: 3,
+    title: "Touch 3",
+    delay: "J + 7",
+    type: "Email",
+    subject: "Re: Audit de prospection",
+    body: "Bonjour {{firstName}},\n\nJe me permets de vous relancer car je n'ai pas eu de retour. Êtes-vous disponible mardi prochain ?",
+  },
+];
