@@ -5,10 +5,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Si vous déployez sur une sous-page (ex: jimmyjoe13.github.io/Nana-intelligence/)
-  // décommentez les lignes ci-dessous. Mais pour un domaine custom, pas besoin.
-  // basePath: '/Nana-intelligence',
-  // assetPrefix: '/Nana-intelligence',
+  // GitHub Pages n'est pas à la racine du domaine jimmyjoe13.github.io
+  // donc on ajoute le nom du repo sauf si le CNAME est actif.
+  // Comme tu as un CNAME (nana-intelligence.fr), PAS de basePath.
 };
 
 export default nextConfig;
