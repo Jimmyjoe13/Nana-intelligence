@@ -1,7 +1,5 @@
-"use client";
-
 import React from "react";
-import { useParams } from "next/navigation";
+import { Metadata } from "next";
 import { blogPosts } from "@/mocks/blog";
 import { Tag } from "@/components/ui/Tag";
 import { Button } from "@/components/ui/Button";
@@ -11,9 +9,23 @@ import Link from "next/link";
 import Image from "next/image";
 import { EmptyState } from "@/components/ui/EmptyState";
 
-export default function BlogPostPage() {
-  const params = useParams();
-  const id = parseInt(params.id as string);
+interface Props {
+  params: { id: string };
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const id = parseInt(params.id);
+  const post = blogPosts.find((p) => p.id === id);
+  if (!post) return {};
+
+  return {
+    title: post.title,
+    description: post.excerpt,
+  };
+}
+
+export default function BlogPostPage({ params }: Props) {
+  const id = parseInt(params.id);
   const post = blogPosts.find((p) => p.id === id);
 
   if (!post) {
@@ -107,7 +119,7 @@ export default function BlogPostPage() {
 
           {/* Sidebar */}
           <aside className="lg:col-span-4 flex flex-col gap-10">
-            <Box variant="default" className="p-10 flex flex-col gap-8 sticky top-32">
+            <Box variant="default" className="p-10 flex flex-col gap-8 sticky top-32 bg-cream">
                <div className="flex flex-col gap-2">
                   <span className="font-mono text-[11px] text-orange uppercase font-bold tracking-widest">Newsletter</span>
                   <h3 className="font-display text-[24px] leading-tight">Recevez nos <span className="italic">deep-dives</span>.</h3>
@@ -139,4 +151,10 @@ export default function BlogPostPage() {
       </section>
     </div>
   );
+}
+
+export async function generateStaticParams() {
+  return blogPosts.map((post) => ({
+    id: post.id.toString(),
+  }));
 }
