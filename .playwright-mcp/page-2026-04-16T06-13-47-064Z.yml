@@ -1,0 +1,236 @@
+- generic [active] [ref=e1]:
+  - navigation "Navigation principale" [ref=e2]:
+    - generic [ref=e3]:
+      - link "Nana Intelligence" [ref=e4] [cursor=pointer]:
+        - /url: ../index.html
+      - list [ref=e5]:
+        - listitem [ref=e6]:
+          - link "Accueil" [ref=e7] [cursor=pointer]:
+            - /url: ../index.html
+        - listitem [ref=e8]:
+          - link "Services" [ref=e9] [cursor=pointer]:
+            - /url: ../services/index.html
+        - listitem [ref=e10]:
+          - link "À propos" [ref=e11] [cursor=pointer]:
+            - /url: ../about/index.html
+        - listitem [ref=e12]:
+          - link "Blog" [ref=e13] [cursor=pointer]:
+            - /url: ../blog/index.html
+        - listitem [ref=e14]:
+          - link "Contact" [ref=e15] [cursor=pointer]:
+            - /url: ../contact/index.html
+  - generic [ref=e17]:
+    - paragraph [ref=e18]: Ce que nous faisons
+    - heading "Nos services Lead Generation B2B" [level=1] [ref=e19]
+    - paragraph [ref=e20]: Des prestations sur-mesure pour industrialiser votre prospection commerciale et générer des rendez-vous qualifiés en continu.
+  - generic [ref=e23]:
+    - img "Cold emailing B2B" [ref=e25]
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - generic [ref=e28]: 
+        - text: Cold Emailing
+      - heading "Campagnes cold email qui décrochent des RDV" [level=2] [ref=e29]
+      - paragraph [ref=e30]: "Nous gérons l'intégralité de vos campagnes d'outreach : de la configuration technique (SPF, DKIM, DMARC, warm-up de domaines) jusqu'à la rédaction des séquences et l'optimisation continue."
+      - list [ref=e31]:
+        - listitem [ref=e32]:
+          - generic [ref=e33]: 
+          - text: Setup technique complet (nouveaux domaines, warm-up)
+        - listitem [ref=e34]:
+          - generic [ref=e35]: 
+          - text: Rédaction de séquences 3 à 5 emails ultra-personnalisées
+        - listitem [ref=e36]:
+          - generic [ref=e37]: 
+          - text: A/B testing et optimisation des taux de réponse
+        - listitem [ref=e38]:
+          - generic [ref=e39]: 
+          - text: Rapport hebdomadaire détaillé
+        - listitem [ref=e40]:
+          - generic [ref=e41]: 
+          - text: Qualification des réponses et prise de RDV
+      - link "Lancer ma campagne" [ref=e42] [cursor=pointer]:
+        - /url: ../contact/index.html
+  - generic [ref=e45]:
+    - img "Scraping données B2B" [ref=e47]
+    - generic [ref=e48]:
+      - generic [ref=e49]:
+        - generic [ref=e50]: 
+        - text: Scraping & Data
+      - heading "Bases de données prospects ultra-ciblées" [level=2] [ref=e51]
+      - paragraph [ref=e52]: Nous extrayons et enrichissons des listes de prospects qualifiés depuis LinkedIn Sales Navigator, Google Maps, annuaires sectoriels et sources publiques — en pleine conformité RGPD.
+      - list [ref=e53]:
+        - listitem [ref=e54]:
+          - generic [ref=e55]: 
+          - text: Scraping LinkedIn Sales Navigator
+        - listitem [ref=e56]:
+          - generic [ref=e57]: 
+          - text: Extraction Google Maps (artisans, commerces, professions libérales)
+        - listitem [ref=e58]:
+          - generic [ref=e59]: 
+          - text: Enrichissement email, téléphone, LinkedIn URL
+        - listitem [ref=e60]:
+          - generic [ref=e61]: 
+          - text: Vérification et déduplication des contacts
+        - listitem [ref=e62]:
+          - generic [ref=e63]: 
+          - text: Livraison CSV/Google Sheets ou intégration CRM directe
+      - link "Obtenir une base" [ref=e64] [cursor=pointer]:
+        - /url: ../contact/index.html
+  - generic [ref=e66]:
+    - generic [ref=e67]:
+      - heading "Automatisation Sales" [level=2] [ref=e68]
+      - paragraph [ref=e69]: "Libérez vos commerciaux des tâches répétitives et concentrez-vous sur ce qui compte : vendre."
+    - generic [ref=e70]:
+      - generic [ref=e71]:
+        - generic [ref=e73]: 
+        - heading "LinkedIn Outreach" [level=3] [ref=e74]
+        - paragraph [ref=e75]: Automatisation des connexions, messages et follow-ups LinkedIn. Campagnes multicanal email + LinkedIn pour maximiser les points de contact.
+      - generic [ref=e76]:
+        - generic [ref=e78]: 
+        - heading "Workflows Sales" [level=3] [ref=e79]
+        - paragraph [ref=e80]: Création de workflows de nurturing et de relance dans votre CRM (HubSpot, Pipedrive, Salesforce). Automatisation des tâches et notifications.
+      - generic [ref=e81]:
+        - generic [ref=e83]: 
+        - heading "Reporting & KPIs" [level=3] [ref=e84]
+        - paragraph [ref=e85]: "Tableau de bord personnalisé avec toutes vos métriques de prospection : envois, ouvertures, clics, réponses, RDV pris. Mise à jour en temps réel."
+  - generic [ref=e87]:
+    - generic [ref=e88]:
+      - heading "Tarifs" [level=2] [ref=e89]
+      - paragraph [ref=e90]: Des prestations flexibles adaptées à votre stade de développement.
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - heading "Starter" [level=3] [ref=e94]
+          - generic [ref=e95]:
+            - text: À partir de
+            - strong [ref=e96]: 800€
+            - text: /mois
+        - list [ref=e97]:
+          - listitem [ref=e98]:
+            - generic [ref=e99]: 
+            - text: 1 campagne cold email
+          - listitem [ref=e100]:
+            - generic [ref=e101]: 
+            - text: Base de 500 prospects/mois
+          - listitem [ref=e102]:
+            - generic [ref=e103]: 
+            - text: Séquence 3 emails
+          - listitem [ref=e104]:
+            - generic [ref=e105]: 
+            - text: Setup technique inclus
+          - listitem [ref=e106]:
+            - generic [ref=e107]: 
+            - text: Rapport mensuel
+        - link "Démarrer" [ref=e108] [cursor=pointer]:
+          - /url: ../contact/index.html
+      - generic [ref=e109]:
+        - generic [ref=e110]: Populaire
+        - generic [ref=e111]:
+          - heading "Growth" [level=3] [ref=e112]
+          - generic [ref=e113]:
+            - text: À partir de
+            - strong [ref=e114]: 1 500€
+            - text: /mois
+        - list [ref=e115]:
+          - listitem [ref=e116]:
+            - generic [ref=e117]: 
+            - text: 2-3 campagnes simultanées
+          - listitem [ref=e118]:
+            - generic [ref=e119]: 
+            - text: Base de 1 500 prospects/mois
+          - listitem [ref=e120]:
+            - generic [ref=e121]: 
+            - text: Séquences 5 emails + LinkedIn
+          - listitem [ref=e122]:
+            - generic [ref=e123]: 
+            - text: A/B testing continu
+          - listitem [ref=e124]:
+            - generic [ref=e125]: 
+            - text: Rapport hebdomadaire + call mensuel
+        - link "Démarrer" [ref=e126] [cursor=pointer]:
+          - /url: ../contact/index.html
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - heading "Enterprise" [level=3] [ref=e129]
+          - strong [ref=e131]: Sur devis
+        - list [ref=e132]:
+          - listitem [ref=e133]:
+            - generic [ref=e134]: 
+            - text: Volume illimité de prospects
+          - listitem [ref=e135]:
+            - generic [ref=e136]: 
+            - text: Campagnes multicanal
+          - listitem [ref=e137]:
+            - generic [ref=e138]: 
+            - text: Intégration CRM complète
+          - listitem [ref=e139]:
+            - generic [ref=e140]: 
+            - text: Account manager dédié
+          - listitem [ref=e141]:
+            - generic [ref=e142]: 
+            - text: SLA garanti
+        - link "Nous contacter" [ref=e143] [cursor=pointer]:
+          - /url: ../contact/index.html
+  - generic [ref=e145]:
+    - heading "Vous avez un projet ? Parlons-en." [level=2] [ref=e146]
+    - paragraph [ref=e147]: Audit gratuit et devis personnalisé sous 24h.
+    - link "Obtenir un devis" [ref=e148] [cursor=pointer]:
+      - /url: ../contact/index.html
+  - contentinfo [ref=e149]:
+    - generic [ref=e150]:
+      - generic [ref=e151]:
+        - generic [ref=e152]:
+          - generic [ref=e153]: Nana Intelligence
+          - paragraph [ref=e154]: Expert en Lead Generation B2B. Cold Emailing, Scraping et Automatisation Sales pour accélérer votre croissance commerciale.
+        - generic [ref=e155]:
+          - heading "Navigation" [level=4] [ref=e156]
+          - list [ref=e157]:
+            - listitem [ref=e158]:
+              - link "Accueil" [ref=e159] [cursor=pointer]:
+                - /url: ../index.html
+            - listitem [ref=e160]:
+              - link "À propos" [ref=e161] [cursor=pointer]:
+                - /url: ../about/index.html
+            - listitem [ref=e162]:
+              - link "Services" [ref=e163] [cursor=pointer]:
+                - /url: ../services/index.html
+            - listitem [ref=e164]:
+              - link "Contact" [ref=e165] [cursor=pointer]:
+                - /url: ../contact/index.html
+        - generic [ref=e166]:
+          - heading "Ressources" [level=4] [ref=e167]
+          - list [ref=e168]:
+            - listitem [ref=e169]:
+              - link "Lead Gen Marseille" [ref=e170] [cursor=pointer]:
+                - /url: ../agence-lead-generation/index.html
+            - listitem [ref=e171]:
+              - link "Lead Gen Aix" [ref=e172] [cursor=pointer]:
+                - /url: ../agence-lead-generation-aix/index.html
+            - listitem [ref=e173]:
+              - link "Lead Gen Toulon" [ref=e174] [cursor=pointer]:
+                - /url: ../agence-lead-generation-toulon/index.html
+            - listitem [ref=e175]:
+              - link "Blog" [ref=e176] [cursor=pointer]:
+                - /url: ../blog/index.html
+        - generic [ref=e177]:
+          - heading "Contact" [level=4] [ref=e178]
+          - list [ref=e179]:
+            - listitem [ref=e180]:
+              - link "contact@nana-intelligence.fr" [ref=e181] [cursor=pointer]:
+                - /url: mailto:contact@nana-intelligence.fr
+                - img [ref=e182]
+                - text: contact@nana-intelligence.fr
+            - listitem [ref=e185]:
+              - img [ref=e186]
+              - text: Marseille, France
+      - generic [ref=e189]:
+        - paragraph [ref=e190]: © 2026 Nana Intelligence. Tous droits réservés.
+        - generic [ref=e191]:
+          - link "LinkedIn" [ref=e192] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/nana-intelligence
+            - generic [ref=e193]: 
+          - link "Email" [ref=e194] [cursor=pointer]:
+            - /url: mailto:contact@nana-intelligence.fr
+            - generic [ref=e195]: 
+          - link "Malt" [ref=e196] [cursor=pointer]:
+            - /url: https://www.malt.fr/profile/nana-intelligence
+            - generic [ref=e197]: 

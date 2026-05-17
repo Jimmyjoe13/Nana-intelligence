@@ -1,0 +1,187 @@
+- generic [active] [ref=e1]:
+  - navigation "Navigation principale" [ref=e2]:
+    - generic [ref=e3]:
+      - link "Nana Intelligence" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+      - list [ref=e5]:
+        - listitem [ref=e6]:
+          - link "Accueil" [ref=e7] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=e8]:
+          - link "Services" [ref=e9] [cursor=pointer]:
+            - /url: services/index.html
+        - listitem [ref=e10]:
+          - link "À propos" [ref=e11] [cursor=pointer]:
+            - /url: about/index.html
+        - listitem [ref=e12]:
+          - link "Blog" [ref=e13] [cursor=pointer]:
+            - /url: blog/index.html
+        - listitem [ref=e14]:
+          - link "Contact" [ref=e15] [cursor=pointer]:
+            - /url: contact/index.html
+  - generic [ref=e17]:
+    - paragraph [ref=e18]: Agence B2B · Marseille
+    - heading "Remplissez votre pipeline de prospects qualifiés" [level=1] [ref=e19]
+    - paragraph [ref=e20]: Cold emailing, scraping de données et automatisation sales — nous construisons votre machine à leads B2B clé en main.
+    - generic [ref=e21]:
+      - link "Obtenir un audit gratuit" [ref=e22] [cursor=pointer]:
+        - /url: contact/index.html
+      - link "Nos services" [ref=e23] [cursor=pointer]:
+        - /url: services/index.html
+  - generic [ref=e26]:
+    - generic [ref=e27]: +200Entreprises accompagnées
+    - generic [ref=e28]: 45%Taux d'ouverture moyen
+    - generic [ref=e29]: 3×Plus de RDV qualifiés
+    - generic [ref=e30]: 48hDélai de lancement
+  - generic [ref=e32]:
+    - generic [ref=e33]:
+      - heading "Nos services lead generation" [level=2] [ref=e34]
+      - paragraph [ref=e35]: Une offre complète pour industrialiser votre prospection B2B de A à Z.
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - generic [ref=e39]: 
+        - heading "Cold Emailing B2B" [level=3] [ref=e40]
+        - paragraph [ref=e41]: Setup technique, copywriting et délivrabilité optimisés. Nous écrivons les séquences qui décrochent des rendez-vous sans finir en spam.
+        - link "En savoir plus →" [ref=e42] [cursor=pointer]:
+          - /url: services/index.html
+      - generic [ref=e43]:
+        - generic [ref=e45]: 
+        - heading "Scraping & Data B2B" [level=3] [ref=e46]
+        - paragraph [ref=e47]: Extraction de bases prospects ultra-ciblées sur LinkedIn, Google Maps et annuaires sectoriels. Des contacts vérifiés, prêts à être prospectés.
+        - link "En savoir plus →" [ref=e48] [cursor=pointer]:
+          - /url: services/index.html
+      - generic [ref=e49]:
+        - generic [ref=e51]: 
+        - heading "Automatisation Sales" [level=3] [ref=e52]
+        - paragraph [ref=e53]: Workflows LinkedIn, séquences multicanal et intégrations CRM. Votre équipe commerciale se concentre sur la vente, pas sur les tâches répétitives.
+        - link "En savoir plus →" [ref=e54] [cursor=pointer]:
+          - /url: services/index.html
+  - generic [ref=e56]:
+    - generic [ref=e57]:
+      - heading "Comment ça fonctionne ?" [level=2] [ref=e58]
+      - paragraph [ref=e59]: Un processus en 4 étapes pour lancer votre machine à leads en moins de 2 semaines.
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - generic [ref=e62]: "01"
+        - heading "Audit & Ciblage" [level=3] [ref=e63]
+        - paragraph [ref=e64]: Analyse de votre ICP, de vos concurrents et de votre marché. Nous définissons ensemble les segments à adresser en priorité.
+      - generic [ref=e65]:
+        - generic [ref=e66]: "02"
+        - heading "Collecte de données" [level=3] [ref=e67]
+        - paragraph [ref=e68]: Scraping et enrichissement de bases prospects ciblées. Vérification des emails pour garantir la délivrabilité.
+      - generic [ref=e69]:
+        - generic [ref=e70]: "03"
+        - heading "Lancement des campagnes" [level=3] [ref=e71]
+        - paragraph [ref=e72]: Rédaction des séquences, setup technique (SPF/DKIM/DMARC) et envoi progressif. Optimisation continue des taux d'ouverture et de réponse.
+      - generic [ref=e73]:
+        - generic [ref=e74]: "04"
+        - heading "Reporting & Scaling" [level=3] [ref=e75]
+        - paragraph [ref=e76]: Dashboard de suivi en temps réel. Identification des messages qui convertissent et scale des campagnes gagnantes.
+  - generic [ref=e79]:
+    - heading "Une équipe dédiée à votre croissance commerciale" [level=2] [ref=e80]
+    - paragraph [ref=e81]: Basés à Marseille, nous accompagnons des startups, PME et grands comptes dans toute la France. Notre approche combine expertise data, copywriting et automatisation pour des résultats mesurables dès le premier mois.
+    - link "Découvrir l'équipe" [ref=e82] [cursor=pointer]:
+      - /url: about/index.html
+  - generic [ref=e84]:
+    - heading "Ce que disent nos clients" [level=2] [ref=e86]
+    - generic [ref=e87]:
+      - generic [ref=e88]:
+        - paragraph [ref=e89]: "\"Nana Intelligence a transformé notre prospection. En 3 semaines, nous avions 12 rendez-vous qualifiés avec des DSI de PME industrielles.\""
+        - generic [ref=e90]:
+          - generic [ref=e91]: TM
+          - generic [ref=e92]:
+            - strong [ref=e93]: Thomas M.
+            - text: CEO, SaaS B2B Lyon
+      - generic [ref=e94]:
+        - paragraph [ref=e95]: "\"La qualité des bases prospects est impressionnante. Nos commerciaux passent leur temps à vendre, plus à chercher des contacts.\""
+        - generic [ref=e96]:
+          - generic [ref=e97]: SL
+          - generic [ref=e98]:
+            - strong [ref=e99]: Sophie L.
+            - text: Directrice Commerciale, ESN Marseille
+      - generic [ref=e100]:
+        - paragraph [ref=e101]: "\"45% de taux d'ouverture sur les campagnes cold email — je n'aurais pas cru ces chiffres possibles avant de les voir moi-même.\""
+        - generic [ref=e102]:
+          - generic [ref=e103]: AC
+          - generic [ref=e104]:
+            - strong [ref=e105]: Antoine C.
+            - text: Fondateur, Agence digitale Paris
+  - generic [ref=e107]:
+    - heading "Questions fréquentes" [level=2] [ref=e109]
+    - generic [ref=e110]:
+      - button "Combien de temps pour voir les premiers résultats ? +" [ref=e112] [cursor=pointer]:
+        - text: Combien de temps pour voir les premiers résultats ?
+        - generic [ref=e113]: +
+      - button "Est-ce que le cold emailing est légal en B2B ? +" [ref=e115] [cursor=pointer]:
+        - text: Est-ce que le cold emailing est légal en B2B ?
+        - generic [ref=e116]: +
+      - button "Quel est le budget minimum pour démarrer ? +" [ref=e118] [cursor=pointer]:
+        - text: Quel est le budget minimum pour démarrer ?
+        - generic [ref=e119]: +
+      - button "Travaillez-vous uniquement avec des entreprises de Marseille ? +" [ref=e121] [cursor=pointer]:
+        - text: Travaillez-vous uniquement avec des entreprises de Marseille ?
+        - generic [ref=e122]: +
+  - generic [ref=e124]:
+    - heading "Prêt à remplir votre agenda de RDV qualifiés ?" [level=2] [ref=e125]
+    - paragraph [ref=e126]: Audit gratuit de votre stratégie de prospection — réponse sous 24h.
+    - link "Demander mon audit" [ref=e127] [cursor=pointer]:
+      - /url: contact/index.html
+  - contentinfo [ref=e128]:
+    - generic [ref=e129]:
+      - generic [ref=e130]:
+        - generic [ref=e131]:
+          - generic [ref=e132]: Nana Intelligence
+          - paragraph [ref=e133]: Expert en Lead Generation B2B. Cold Emailing, Scraping et Automatisation Sales pour accélérer votre croissance commerciale.
+        - generic [ref=e134]:
+          - heading "Navigation" [level=4] [ref=e135]
+          - list [ref=e136]:
+            - listitem [ref=e137]:
+              - link "Accueil" [ref=e138] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e139]:
+              - link "À propos" [ref=e140] [cursor=pointer]:
+                - /url: about/index.html
+            - listitem [ref=e141]:
+              - link "Services" [ref=e142] [cursor=pointer]:
+                - /url: services/index.html
+            - listitem [ref=e143]:
+              - link "Contact" [ref=e144] [cursor=pointer]:
+                - /url: contact/index.html
+        - generic [ref=e145]:
+          - heading "Ressources" [level=4] [ref=e146]
+          - list [ref=e147]:
+            - listitem [ref=e148]:
+              - link "Lead Gen Marseille" [ref=e149] [cursor=pointer]:
+                - /url: agence-lead-generation/index.html
+            - listitem [ref=e150]:
+              - link "Lead Gen Aix" [ref=e151] [cursor=pointer]:
+                - /url: agence-lead-generation-aix/index.html
+            - listitem [ref=e152]:
+              - link "Lead Gen Toulon" [ref=e153] [cursor=pointer]:
+                - /url: agence-lead-generation-toulon/index.html
+            - listitem [ref=e154]:
+              - link "Blog" [ref=e155] [cursor=pointer]:
+                - /url: blog/index.html
+        - generic [ref=e156]:
+          - heading "Contact" [level=4] [ref=e157]
+          - list [ref=e158]:
+            - listitem [ref=e159]:
+              - link "contact@nana-intelligence.fr" [ref=e160] [cursor=pointer]:
+                - /url: mailto:contact@nana-intelligence.fr
+                - img [ref=e161]
+                - text: contact@nana-intelligence.fr
+            - listitem [ref=e164]:
+              - img [ref=e165]
+              - text: Marseille, France
+      - generic [ref=e168]:
+        - paragraph [ref=e169]: © 2026 Nana Intelligence. Tous droits réservés.
+        - generic [ref=e170]:
+          - link "LinkedIn" [ref=e171] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/nana-intelligence
+            - generic [ref=e172]: 
+          - link "Email" [ref=e173] [cursor=pointer]:
+            - /url: mailto:contact@nana-intelligence.fr
+            - generic [ref=e174]: 
+          - link "Malt" [ref=e175] [cursor=pointer]:
+            - /url: https://www.malt.fr/profile/nana-intelligence
+            - generic [ref=e176]: 

@@ -1,90 +1,36 @@
-# 🚀 Nana Intelligence - Website Refactor (2025)
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Ce dépôt contient la nouvelle version du site web **Nana Intelligence**, optimisée pour la conversion (structure landing page), la performance et l'accessibilité.
+## Getting Started
 
-## 🛠️ Stack Technique
+First, run the development server:
 
-- **HTML5** Sémantique
-- **CSS3** : Variables (Design Tokens), Flexbox/Grid, Animations CSS
-- **JavaScript** (Vanilla) : Aucun framework lourd
-- **Police** : Space Grotesk (Titres) & Plus Jakarta Sans (Corps)
-- **Icônes** : SVG Inline (Performance maximale)
-
-## 📂 Structure du Projet
-
-```
-nana-intelligence/
-├── index.html                  # Landing Page Principale (Conversion)
-├── about/
-│   └── index.html              # Page À propos / Expert
-├── services/
-│   └── index.html              # Page Services détaillée
-├── contact/
-│   └── index.html              # Page Contact avec formulaire
-├── agence-lead-generation/
-│   └── index.html              # Landing Page SEO local
-├── testimonials/
-│   └── index.html              # Page Témoignages
-├── assets/
-│   ├── css/
-│   │   └── style.css           # Design System complet
-│   ├── js/
-│   │   └── script.js           # Logique (Menu, Form, FAQ)
-│   └── img/                    # Images optimisées
-└── sitemap.xml                 # Plan du site pour SEO
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## 🎨 Design System
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Le design est géré via `assets/css/style.css` et repose sur des **Design Tokens** :
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- **Couleurs** : Gold (`#d4af37`), Dark Blue (`#0a0f1a`), Gray scale.
-- **Typographie** : Fluide (taille adaptative) avec `clamp()`.
-- **Composants** :
-  - `.btn`, `.btn-primary`, `.btn-outline`
-  - `.card`, `.card--highlight`
-  - `.section`, `.container`
-  - `.metric`, `.badge`
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## 🚀 Optimisations
+## Learn More
 
-- **Images** : Toutes les images (favicon, hero, photo) ont été compressées (< 100kb).
-- **SEO** : Balises Meta, Open Graph, Schema.org (JSON-LD), Canonical tags.
-- **Accessibilité** : Contrastes vérifiés, `aria-labels`, navigation clavier, `prefers-reduced-motion`.
-- **Performance** : Chargement différé, pas de CSS blocking superflu.
+To learn more about Next.js, take a look at the following resources:
 
-## 📝 Déploiement
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Le site est statique (HTML/CSS/JS uniquement). Il peut être hébergé n'importe où :
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-- Netlify (Recommandé)
-- Vercel
-- GitHub Pages
-- Hébergement FTP classique
+## Deploy on Vercel
 
-### Configuration Formulaire (Contact)
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Le formulaire utilise **EmailJS** pour l'envoi d'emails sans backend.
-
-1. Créer un compte sur [EmailJS](https://www.emailjs.com/)
-2. Récupérer votre `Service ID`, `Template ID` et `Public Key`
-3. Mettre à jour `assets/js/script.js` avec vos clés :
-   ```javascript
-   emailjs.init("VOTRE_PUBLIC_KEY");
-   // ...
-   emailjs.sendForm('VOTRE_SERVICE_ID', 'VOTRE_TEMPLATE_ID', ...);
-   ```
-
-## ✅ Checklist Avant Mise en Production
-
-- [x] Optimiser les images
-- [x] Vérifier les liens (internes et externes)
-- [x] Tester le formulaire de contact
-- [x] Vérifier le responsive mobile
-- [x] Valider le HTML/CSS (W3C)
-- [ ] Configurer EmailJS avec les vraies clés de production
-- [ ] Mettre à jour le sitemap.xml si de nouvelles pages sont ajoutées
-
----
-
-**Développé avec 🧠 par Nana Intelligence**
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

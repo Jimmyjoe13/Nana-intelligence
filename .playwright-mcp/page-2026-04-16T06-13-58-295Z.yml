@@ -1,0 +1,127 @@
+- generic [active] [ref=e1]:
+  - navigation "Navigation principale" [ref=e2]:
+    - generic [ref=e3]:
+      - link "Nana Intelligence" [ref=e4] [cursor=pointer]:
+        - /url: ../index.html
+      - list [ref=e5]:
+        - listitem [ref=e6]:
+          - link "Accueil" [ref=e7] [cursor=pointer]:
+            - /url: ../index.html
+        - listitem [ref=e8]:
+          - link "Services" [ref=e9] [cursor=pointer]:
+            - /url: ../services/index.html
+        - listitem [ref=e10]:
+          - link "À propos" [ref=e11] [cursor=pointer]:
+            - /url: ../about/index.html
+        - listitem [ref=e12]:
+          - link "Blog" [ref=e13] [cursor=pointer]:
+            - /url: ../blog/index.html
+        - listitem [ref=e14]:
+          - link "Contact" [ref=e15] [cursor=pointer]:
+            - /url: ../contact/index.html
+  - generic [ref=e17]:
+    - paragraph [ref=e18]: Parlons de votre projet
+    - heading "Obtenez votre audit gratuit" [level=1] [ref=e19]
+    - paragraph [ref=e20]: Décrivez votre besoin en prospection B2B. Nous vous répondons sous 24h avec une analyse de votre situation et des recommandations concrètes.
+  - generic [ref=e22]:
+    - generic [ref=e23]:
+      - heading "Nos coordonnées" [level=2] [ref=e24]
+      - generic [ref=e25]:
+        - generic [ref=e26]: 
+        - generic [ref=e27]:
+          - strong [ref=e28]: Email
+          - link "contact@nana-intelligence.fr" [ref=e29] [cursor=pointer]:
+            - /url: mailto:contact@nana-intelligence.fr
+      - generic [ref=e30]:
+        - generic [ref=e31]: 
+        - generic [ref=e32]:
+          - strong [ref=e33]: Localisation
+          - text: Marseille, France (Interventions nationales)
+      - generic [ref=e34]:
+        - generic [ref=e35]: 
+        - generic [ref=e36]:
+          - strong [ref=e37]: LinkedIn
+          - link "Nana Intelligence" [ref=e38] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/nana-intelligence
+      - generic [ref=e39]:
+        - generic [ref=e40]: 
+        - generic [ref=e41]:
+          - strong [ref=e42]: Délai de réponse
+          - text: Moins de 24h (jours ouvrés)
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - generic [ref=e46]: Votre nom *
+        - textbox "Votre nom *" [ref=e47]:
+          - /placeholder: Jean Dupont
+      - generic [ref=e48]:
+        - generic [ref=e49]: Email professionnel *
+        - textbox "Email professionnel *" [ref=e50]:
+          - /placeholder: jean@entreprise.fr
+      - generic [ref=e51]:
+        - generic [ref=e52]: Entreprise
+        - textbox "Entreprise" [ref=e53]:
+          - /placeholder: Nom de votre société
+      - generic [ref=e54]:
+        - generic [ref=e55]: Votre besoin *
+        - textbox "Votre besoin *" [ref=e56]:
+          - /placeholder: Décrivez votre projet de prospection, votre cible, votre secteur…
+      - button "Envoyer ma demande" [ref=e57] [cursor=pointer]
+  - contentinfo [ref=e58]:
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - generic [ref=e62]: Nana Intelligence
+          - paragraph [ref=e63]: Expert en Lead Generation B2B. Cold Emailing, Scraping et Automatisation Sales pour accélérer votre croissance commerciale.
+        - generic [ref=e64]:
+          - heading "Navigation" [level=4] [ref=e65]
+          - list [ref=e66]:
+            - listitem [ref=e67]:
+              - link "Accueil" [ref=e68] [cursor=pointer]:
+                - /url: ../index.html
+            - listitem [ref=e69]:
+              - link "À propos" [ref=e70] [cursor=pointer]:
+                - /url: ../about/index.html
+            - listitem [ref=e71]:
+              - link "Services" [ref=e72] [cursor=pointer]:
+                - /url: ../services/index.html
+            - listitem [ref=e73]:
+              - link "Contact" [ref=e74] [cursor=pointer]:
+                - /url: ../contact/index.html
+        - generic [ref=e75]:
+          - heading "Ressources" [level=4] [ref=e76]
+          - list [ref=e77]:
+            - listitem [ref=e78]:
+              - link "Lead Gen Marseille" [ref=e79] [cursor=pointer]:
+                - /url: ../agence-lead-generation/index.html
+            - listitem [ref=e80]:
+              - link "Lead Gen Aix" [ref=e81] [cursor=pointer]:
+                - /url: ../agence-lead-generation-aix/index.html
+            - listitem [ref=e82]:
+              - link "Lead Gen Toulon" [ref=e83] [cursor=pointer]:
+                - /url: ../agence-lead-generation-toulon/index.html
+            - listitem [ref=e84]:
+              - link "Blog" [ref=e85] [cursor=pointer]:
+                - /url: ../blog/index.html
+        - generic [ref=e86]:
+          - heading "Contact" [level=4] [ref=e87]
+          - list [ref=e88]:
+            - listitem [ref=e89]:
+              - link "contact@nana-intelligence.fr" [ref=e90] [cursor=pointer]:
+                - /url: mailto:contact@nana-intelligence.fr
+                - img [ref=e91]
+                - text: contact@nana-intelligence.fr
+            - listitem [ref=e94]:
+              - img [ref=e95]
+              - text: Marseille, France
+      - generic [ref=e98]:
+        - paragraph [ref=e99]: © 2026 Nana Intelligence. Tous droits réservés.
+        - generic [ref=e100]:
+          - link "LinkedIn" [ref=e101] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/nana-intelligence
+            - generic [ref=e102]: 
+          - link "Email" [ref=e103] [cursor=pointer]:
+            - /url: mailto:contact@nana-intelligence.fr
+            - generic [ref=e104]: 
+          - link "Malt" [ref=e105] [cursor=pointer]:
+            - /url: https://www.malt.fr/profile/nana-intelligence
+            - generic [ref=e106]: 
