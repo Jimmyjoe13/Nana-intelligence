@@ -26,9 +26,9 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "Nana Intelligence | Agence de Prospection B2B & Lead Generation Marseille",
-  description: "Agence spécialisée en Lead Generation, Cold Emailing et Scraping B2B à Marseille. Automatisez votre acquisition et générez +250 RDV qualifiés par mois.",
-  keywords: ["agence prospection b2b marseille", "lead generation", "cold emailing", "scraping b2b", "automatisation sales"],
+  title: "Nana Intelligence | Agence Prospection B2B & Lead Generation",
+  description: "L'ingénierie commerciale au service de votre croissance. Agence spécialisée en Lead Generation, Cold Emailing et Scraping B2B à Marseille.",
+  keywords: ["agence prospection b2b marseille", "lead generation", "cold emailing", "scraping b2b", "automatisation sales", "nana intelligence"],
 };
 
 export default function RootLayout({
