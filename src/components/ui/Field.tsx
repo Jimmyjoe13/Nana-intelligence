@@ -9,13 +9,20 @@ export interface FieldProps
 }
 
 const Field = React.forwardRef<HTMLInputElement, FieldProps>(
-  ({ className, label, error, helperText, ...props }, ref) => {
+  ({ className, label, error, helperText, id: providedId, ...props }, ref) => {
+    const generatedId = React.useId();
+    const id = providedId || generatedId;
+
     return (
       <div className="flex flex-col gap-2 w-full">
-        <label className="font-mono text-[11px] font-medium tracking-[0.06em] uppercase text-ink">
+        <label 
+          htmlFor={id}
+          className="font-mono text-[11px] font-medium tracking-[0.06em] uppercase text-ink"
+        >
           {label}
         </label>
         <input
+          id={id}
           className={cn(
             "w-full border-[1.5px] border-ink bg-cream-2 px-4 py-[14px] font-mono text-[13px] text-ink placeholder:text-ink-4 focus:border-orange focus:outline-none transition-colors disabled:opacity-50",
             error && "border-error",

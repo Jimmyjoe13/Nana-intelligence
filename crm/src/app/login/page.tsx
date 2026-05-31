@@ -1,17 +1,46 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { Box } from "@/components/ui/Box";
 import { Field } from "@/components/ui/Field";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Loader2 } from "lucide-react";
+import { supabase } from "@/lib/supabase";
+import { useRouter } from "next/navigation";
 
 export default function LoginPage() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const router = useRouter();
+
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setError(null);
+
+    try {
+      const { error: authError } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+
+      if (authError) throw authError;
+
+      router.push("/dashboard");
+    } catch (err: any) {
+      setError(err.message || "Une erreur est survenue lors de la connexion.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="flex min-h-screen bg-cream overflow-hidden">
       {/* Left side: Editorial */}
-      <div className="hidden lg:flex lg:w-1/2 flex-col justify-between p-20 border-r-[1.5px] border-ink">
+      <div className="hidden lg:flex lg:w-1/2 flex-col justify-between p-20 border-r-[1.5px] border-ink">       
         <div className="flex flex-col gap-2">
           <span className="font-display text-[24px] font-medium text-ink">N. Intelligence</span>
           <div className="h-[1.5px] w-12 bg-orange" />
@@ -19,7 +48,7 @@ export default function LoginPage() {
 
         <div className="flex flex-col gap-8">
           <h1 className="font-display text-[64px] leading-[0.95] tracking-tight text-ink">
-            La prospection est une <em className="italic text-orange font-normal">science</em>, pas un art.
+            La prospection est une <em className="italic text-orange font-normal">science</em>, pas un art.     
           </h1>
           <p className="font-sans text-xl text-ink-2 max-w-md leading-relaxed">
             Optimisez chaque étape de votre tunnel de vente avec une précision chirurgicale.
@@ -44,18 +73,42 @@ export default function LoginPage() {
             <p className="text-ink-3 text-sm">Entrez vos accès pour accéder au CRM.</p>
           </div>
 
-          <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
-            <Field label="Email professionnel" type="email" placeholder="nom@entreprise.ai" />
+          <form className="flex flex-col gap-6" onSubmit={handleLogin}>
+            <Field 
+              label="Email professionnel" 
+              type="email" 
+              placeholder="nom@entreprise.ai" 
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
             <div className="flex flex-col gap-2">
-               <Field label="Mot de passe" type="password" placeholder="••••••••" />
+               <Field 
+                label="Mot de passe" 
+                type="password" 
+                placeholder="••••••••" 
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+               />
                <Link href="#" className="font-mono text-[10px] text-ink-3 hover:text-orange text-right uppercase tracking-wider">Mot de passe oublié ?</Link>
             </div>
 
-            <Link href="/dashboard" className="w-full">
-              <Button variant="primary" className="w-full" icon={<ArrowRight size={18} />}>
-                Accéder au Dashboard
-              </Button>
-            </Link>
+            {error && (
+              <div className="bg-red-50 border border-red-200 p-3 text-red-600 text-xs font-mono">
+                {error}
+              </div>
+            )}
+
+            <Button 
+              type="submit"
+              variant="primary" 
+              className="w-full" 
+              disabled={loading}
+              icon={loading ? <Loader2 className="animate-spin" size={18} /> : <ArrowRight size={18} />}
+            >
+              {loading ? "Connexion..." : "Accéder au Dashboard"}
+            </Button>
           </form>
 
           <div className="pt-10 border-t border-cream-3 flex flex-col gap-4 items-center">

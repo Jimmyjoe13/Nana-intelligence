@@ -3,6 +3,7 @@ import { Inter, Fraunces, JetBrains_Mono, Caveat } from "next/font/google";
 import "@/styles/tokens.css";
 import "./globals.css";
 import { SiteLayout } from "@/components/layout/SiteLayout";
+import GoogleAnalytics from "@/components/layout/GoogleAnalytics";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${inter.variable} ${fraunces.variable} ${jetbrainsMono.variable} ${caveat.variable}`}>
       <body className="font-sans antialiased bg-cream text-ink">
+        <GoogleAnalytics GA_MEASUREMENT_ID="G-NRSE8H0WCE" />
         <SiteLayout>
           {children}
         </SiteLayout>

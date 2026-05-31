@@ -3,19 +3,21 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { supabase } from "@/lib/supabase";
 import { 
   LayoutDashboard, 
   Users, 
-  Kanban, 
-  Mail, 
-  Send, 
-  BarChart3, 
-  Settings, 
+  Kanban,
+  Mail,
+  Send,
+  BarChart3,
+  Settings,
   HelpCircle,
   Search,
-  Bell
+  Bell,
+  LogOut
 } from "lucide-react";
 
 interface NavItem {
@@ -40,15 +42,21 @@ const secondaryNavItems: NavItem[] = [
 
 export function AppLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
+  const router = useRouter();
 
   const isNavItemActive = (href: string) => {
     return pathname.startsWith(href);
   };
 
+  const handleLogout = async () => {
+    await supabase.auth.signOut();
+    router.push("/login");
+  };
+
   return (
     <div className="flex h-screen bg-cream">
       {/* Sidebar */}
-      <aside className="w-[240px] flex-shrink-0 border-r-[1.5px] border-ink flex flex-col bg-cream z-20">
+      <aside className="w-[240px] flex-shrink-0 border-r-[1.5px] border-ink flex flex-col bg-cream z-20">       
         <div className="h-14 flex items-center px-6 border-b-[1.5px] border-ink">
           <span className="font-display text-[18px] font-medium text-ink">
             N. Intelligence
@@ -102,12 +110,12 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
       {/* Main Content */}
       <div className="flex-1 flex flex-col min-w-0">
         {/* Topbar */}
-        <header className="h-14 border-b-[1.5px] border-ink flex items-center justify-between px-10 bg-cream">
+        <header className="h-14 border-b-[1.5px] border-ink flex items-center justify-between px-10 bg-cream">  
           <div className="flex items-center gap-3 text-ink-4 max-w-md w-full">
             <Search size={18} />
-            <input 
-              type="text" 
-              placeholder="RECHERCHE GLOBALE..." 
+            <input
+              type="text"
+              placeholder="RECHERCHE GLOBALE..."
               className="bg-transparent border-none focus:outline-none font-mono text-[11px] tracking-wider w-full"
             />
           </div>
@@ -115,14 +123,23 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
             <button className="text-ink-3 hover:text-ink transition-colors">
               <Bell size={20} />
             </button>
-            <div className="h-8 w-8 rounded-full border-[1.5px] border-ink overflow-hidden bg-cream-2 relative">
-              <Image 
-                src="https://api.dicebear.com/7.x/avataaars/svg?seed=Jimmy" 
-                alt="User Avatar" 
-                fill
-                className="object-cover"
-                unoptimized
-              />
+            <div className="flex items-center gap-3">
+              <div className="h-8 w-8 rounded-full border-[1.5px] border-ink overflow-hidden bg-cream-2 relative">
+                <Image
+                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=Jimmy"
+                  alt="User Avatar"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+              <button 
+                onClick={handleLogout}
+                className="p-2 border-[1.5px] border-ink hover:bg-ink hover:text-cream transition-colors"
+                title="Déconnexion"
+              >
+                <LogOut size={16} />
+              </button>
             </div>
           </div>
         </header>

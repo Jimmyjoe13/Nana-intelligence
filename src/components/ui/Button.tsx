@@ -1,6 +1,6 @@
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
-import { cn } from "@/lib/utils";
+import { cn, trackEvent } from "@/lib/utils";
 import { Loader2 } from "lucide-react";
 
 const buttonVariants = cva(
@@ -30,15 +30,28 @@ export interface ButtonProps
     VariantProps<typeof buttonVariants> {
   loading?: boolean;
   icon?: React.ReactNode;
+  trackLabel?: string;
+  sectionId?: string;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, loading, icon, children, ...props }, ref) => {
+  ({ className, variant, size, loading, icon, children, trackLabel, sectionId, onClick, ...props }, ref) => {
+    const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+      if (trackLabel) {
+        trackEvent("cta_click", {
+          cta_text: trackLabel,
+          section_id: sectionId || "unknown"
+        });
+      }
+      if (onClick) onClick(e);
+    };
+
     return (
       <button
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         disabled={loading || props.disabled}
+        onClick={handleClick}
         {...props}
       >
         {loading ? (

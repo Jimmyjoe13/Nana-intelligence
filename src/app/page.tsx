@@ -34,12 +34,23 @@ export default function Home() {
              </p>
              <div className="flex flex-col sm:flex-row items-center gap-6">
                <Link href="/contact">
-                 <Button variant="primary" size="lg" icon={<ArrowRight size={20} />}>
+                 <Button 
+                    variant="primary" 
+                    size="lg" 
+                    icon={<ArrowRight size={20} />}
+                    trackLabel="hero_audit_gratuit"
+                    sectionId="hero"
+                  >
                    Réserver mon audit gratuit (30 min)
                  </Button>
                </Link>
                <Link href="#methode">
-                 <Button variant="ghost" size="lg">
+                 <Button 
+                    variant="ghost" 
+                    size="lg"
+                    trackLabel="hero_decouvrir_methode"
+                    sectionId="hero"
+                  >
                    Découvrir notre méthode
                  </Button>
                </Link>
@@ -109,7 +120,14 @@ export default function Home() {
               </h2>
             </div>
             <Link href="/services">
-               <Button variant="ink" icon={<ArrowRight size={16} />}>Voir tous les services</Button>
+               <Button 
+                  variant="ink" 
+                  icon={<ArrowRight size={16} />}
+                  trackLabel="voir_tous_services"
+                  sectionId="solution"
+                >
+                  Voir tous les services
+                </Button>
             </Link>
           </div>
 
@@ -147,7 +165,13 @@ export default function Home() {
               Tout ce que vous devez savoir sur notre approche technique de la prospection B2B.
             </p>
             <Link href="/contact" className="mt-4">
-              <Button variant="ink">Poser une autre question</Button>
+              <Button 
+                variant="ink"
+                trackLabel="faq_poser_question"
+                sectionId="faq"
+              >
+                Poser une autre question
+              </Button>
             </Link>
           </div>
 
@@ -198,7 +222,13 @@ export default function Home() {
                Réservez votre audit gratuit de 30 minutes. Nous analysons votre potentiel et construisons votre stratégie d&apos;acquisition personnalisée.
              </p>
              <Link href="/contact">
-               <Button variant="primary" size="lg" icon={<Sparkles size={20} />}>
+               <Button 
+                  variant="primary" 
+                  size="lg" 
+                  icon={<Sparkles size={20} />}
+                  trackLabel="final_cta_audit"
+                  sectionId="final_cta"
+                >
                  Réserver mon audit gratuit
                </Button>
              </Link>

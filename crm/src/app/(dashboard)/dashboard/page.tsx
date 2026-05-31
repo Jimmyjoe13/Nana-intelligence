@@ -1,25 +1,82 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Button } from "@/components/ui/Button";
 import { Metric } from "@/components/ui/Metric";
 import { Box } from "@/components/ui/Box";
 import { AreaChart } from "@/components/charts/AreaChart";
-import { 
-  kpiData, 
-  rdvChartData, 
-  topOpportunities, 
-  recentActivity, 
-  sequencePerformance 
-} from "@/mocks/dashboard";
-import { Sparkles, ArrowUpRight } from "lucide-react";
+import { supabase } from "@/lib/supabase";
+import { Sparkles, ArrowUpRight, Loader2 } from "lucide-react";
+import Link from "next/link";
 
 export default function DashboardPage() {
+  const [loading, setLoading] = useState(true);
+  const [stats, setStats] = useState({
+    prospectsCount: 0,
+    rdvCount: 0,
+    pipelineValue: 0,
+    conversionRate: 24, // Keep static for now
+    topDeals: [] as any[],
+    recentProspects: [] as any[],
+    campaigns: [] as any[]
+  });
+
+  useEffect(() => {
+    fetchDashboardData();
+  }, []);
+
+  async function fetchDashboardData() {
+    setLoading(true);
+    
+    const [
+      { count: pCount },
+      { count: rCount },
+      { data: deals },
+      { data: recentP },
+      { data: camps }
+    ] = await Promise.all([
+      supabase.from('prospects').select('*', { count: 'exact', head: true }),
+      supabase.from('prospects').select('*', { count: 'exact', head: true }).eq('status', 'Rendez-vous'),
+      supabase.from('deals').select('*').order('value', { ascending: false }).limit(5),
+      supabase.from('prospects').select('*').order('updated_at', { ascending: false }).limit(4),
+      supabase.from('campaigns').select('*').limit(3)
+    ]);
+
+    const totalValue = (deals || []).reduce((sum, d) => sum + Number(d.value || 0), 0);
+
+    setStats({
+      prospectsCount: pCount || 0,
+      rdvCount: rCount || 0,
+      pipelineValue: totalValue,
+      conversionRate: 24,
+      topDeals: deals || [],
+      recentProspects: recentP || [],
+      campaigns: camps || []
+    });
+
+    setLoading(false);
+  }
+
+  const kpis = [
+    { label: "Prospects", value: stats.prospectsCount.toString(), trend: "+12%", trendVariant: "positive" as const },
+    { label: "RDV Bookés", value: stats.rdvCount.toString(), trend: "+5%", trendVariant: "positive" as const },
+    { label: "Pipeline", value: Math.round(stats.pipelineValue / 1000).toString(), prefix: "€", suffix: "k", trend: "+18%", trendVariant: "positive" as const },
+    { label: "Taux Conv.", value: stats.conversionRate.toString(), suffix: "%", trend: "-2%", trendVariant: "negative" as const },
+  ];
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-[400px]">
+        <Loader2 className="animate-spin text-orange" size={40} />
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-col gap-12">
       <PageHeader
-        kicker="Aujourd'hui — 16 Mai 2026"
+        kicker={`Aujourd'hui — ${new Date().toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}`}
         title="Bonjour,"
         emphasis="Jimmy."
         description="Voici un aperçu de votre activité de prospection pour aujourd'hui."
@@ -32,8 +89,8 @@ export default function DashboardPage() {
 
       {/* KPI Strip */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-        {kpiData.map((kpi, index) => (
-          <Metric 
+        {kpis.map((kpi, index) => (
+          <Metric
             key={index}
             label={kpi.label}
             value={kpi.value}
@@ -53,7 +110,12 @@ export default function DashboardPage() {
               RDV BOOKÉS / 30 JOURS
             </span>
           </div>
-          <AreaChart data={rdvChartData} height={350} />
+          <AreaChart data={[
+            { name: "Sem 1", value: 12 },
+            { name: "Sem 2", value: 18 },
+            { name: "Sem 3", value: 15 },
+            { name: "Sem 4", value: stats.rdvCount },
+          ]} height={350} />
         </Box>
 
         <Box className="flex flex-col gap-6">
@@ -64,19 +126,21 @@ export default function DashboardPage() {
             <ArrowUpRight size={16} className="text-ink-3" />
           </div>
           <div className="flex flex-col gap-6">
-            {topOpportunities.map((opp) => (
+            {stats.topDeals.map((opp) => (
               <div key={opp.id} className="flex flex-col gap-1 group cursor-pointer">
                 <span className="font-display text-[17px] group-hover:text-orange transition-colors">
                   {opp.name}
                 </span>
                 <div className="flex items-center justify-between">
                   <span className="font-mono text-[11px] text-ink-3">€{opp.value}</span>
-                  <span className="font-mono text-[11px] text-orange">{opp.status}</span>
+                  <span className="font-mono text-[11px] text-orange">{opp.stage}</span>
                 </div>
               </div>
             ))}
           </div>
-          <Button variant="ghost" size="sm" className="mt-auto">Voir tout le pipeline</Button>
+          <Link href="/pipeline" className="mt-auto">
+            <Button variant="ghost" size="sm" className="w-full">Voir tout le pipeline</Button>
+          </Link>
         </Box>
       </div>
 
@@ -89,18 +153,15 @@ export default function DashboardPage() {
             </span>
           </div>
           <div className="flex flex-col gap-5">
-            {recentActivity.map((activity) => (
-              <div key={activity.id} className="flex gap-4 items-start">
+            {stats.recentProspects.map((p) => (
+              <div key={p.id} className="flex gap-4 items-start">
                 <div className="h-1.5 w-1.5 rounded-full bg-orange mt-[7px]" />
                 <div className="flex flex-col gap-0.5">
                   <span className="font-mono text-[11px] text-ink-4">
-                    {activity.time}
+                    {new Date(p.updated_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                   </span>
                   <p className="text-[14px] leading-tight">
-                    {activity.text}{" "}
-                    <span className="italic font-medium text-ink">
-                      {activity.emphasis}
-                    </span>
+                    Mise à jour de <span className="italic font-medium text-ink">{p.name}</span> ({p.company})
                   </p>
                 </div>
               </div>
@@ -115,20 +176,22 @@ export default function DashboardPage() {
             </span>
           </div>
           <div className="flex flex-col gap-6">
-            {sequencePerformance.map((seq) => (
+            {stats.campaigns.map((seq) => (
               <div key={seq.id} className="flex items-center justify-between">
                 <div className="flex flex-col gap-1">
                   <span className="text-[14px] font-medium">{seq.name}</span>
                   <span className="font-mono text-[11px] text-ink-4 uppercase">SÉQUENCE ACTIVE</span>
                 </div>
                 <div className="flex flex-col items-end gap-1">
-                  <span className="font-display text-[20px] text-orange">{seq.rate}</span>
-                  <span className="font-mono text-[11px] text-ink-3 uppercase">{seq.label}</span>
+                  <span className="font-display text-[20px] text-orange">{seq.kpi}</span>
+                  <span className="font-mono text-[11px] text-ink-3 uppercase">Taux Réponse</span>
                 </div>
               </div>
             ))}
           </div>
-          <Button variant="ghost" size="sm" className="mt-auto">Gérer les séquences</Button>
+          <Link href="/campaigns" className="mt-auto">
+            <Button variant="ghost" size="sm" className="w-full">Gérer les séquences</Button>
+          </Link>
         </Box>
       </div>
     </div>

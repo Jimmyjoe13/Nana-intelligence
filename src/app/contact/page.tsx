@@ -1,14 +1,31 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Button } from "@/components/ui/Button";
 import { Box } from "@/components/ui/Box";
 import { Field } from "@/components/ui/Field";
 import { Mail, MessageSquare, Globe, ArrowRight } from "lucide-react";
 import { Tag } from "@/components/ui/Tag";
+import { trackEvent } from "@/lib/utils";
 
 export default function ContactPage() {
+  const [formStarted, setFormStarted] = useState(false);
+
+  const handleFormStart = () => {
+    if (!formStarted) {
+      trackEvent("form_start");
+      setFormStarted(true);
+    }
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    trackEvent("generate_lead");
+    // Logique d'envoi du formulaire ici (ex: API call)
+    alert("Demande envoyée avec succès ! (Mode démo)");
+  };
+
   return (
     <div className="flex flex-col">
       {/* Header Section */}
@@ -81,14 +98,35 @@ export default function ContactPage() {
                      <h3 className="font-display text-[32px] font-medium">Réservez votre créneau.</h3>
                   </div>
 
-                  <form className="grid grid-cols-1 md:grid-cols-2 gap-8" onSubmit={(e) => e.preventDefault()}>
-                    <Field label="Prénom" placeholder="ex: Jean" required />
-                    <Field label="Nom" placeholder="ex: Dupont" required />
+                  <form className="grid grid-cols-1 md:grid-cols-2 gap-8" onSubmit={handleSubmit}>
+                    <Field 
+                      label="Prénom" 
+                      placeholder="ex: Jean" 
+                      required 
+                      onFocus={handleFormStart}
+                    />
+                    <Field 
+                      label="Nom" 
+                      placeholder="ex: Dupont" 
+                      required 
+                      onFocus={handleFormStart}
+                    />
                     <div className="md:col-span-2">
-                      <Field label="Email professionnel" type="email" placeholder="jean@entreprise.ai" required />
+                      <Field 
+                        label="Email professionnel" 
+                        type="email" 
+                        placeholder="jean@entreprise.ai" 
+                        required 
+                        onFocus={handleFormStart}
+                      />
                     </div>
                     <div className="md:col-span-2">
-                      <Field label="Entreprise" placeholder="Nom de votre société" required />
+                      <Field 
+                        label="Entreprise" 
+                        placeholder="Nom de votre société" 
+                        required 
+                        onFocus={handleFormStart}
+                      />
                     </div>
                     <div className="md:col-span-2 flex flex-col gap-2">
                        <label className="font-mono text-[11px] font-bold uppercase text-ink">Vos Besoins</label>
@@ -96,11 +134,19 @@ export default function ContactPage() {
                         rows={6}
                         className="w-full bg-cream-2 border-[1.5px] border-ink px-4 py-4 font-mono text-[13px] focus:outline-none focus:border-orange transition-colors"
                         placeholder="Quels sont vos défis actuels (Lead Gen, Automatisation, SEO...) ?"
+                        onFocus={handleFormStart}
                        />
                     </div>
                     
                     <div className="md:col-span-2 pt-6">
-                      <Button variant="primary" size="lg" className="w-full" icon={<ArrowRight size={18} />}>
+                      <Button 
+                        variant="primary" 
+                        size="lg" 
+                        className="w-full" 
+                        icon={<ArrowRight size={18} />}
+                        trackLabel="envoyer_demande_audit"
+                        sectionId="contact_form"
+                      >
                         Envoyer ma demande d&apos;audit
                       </Button>
                       <p className="mt-6 text-[11px] text-ink-4 font-mono uppercase text-center leading-relaxed">

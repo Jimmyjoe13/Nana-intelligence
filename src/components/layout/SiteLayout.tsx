@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/Button";
-import { cn } from "@/lib/utils";
+import { cn, trackEvent } from "@/lib/utils";
 import { Mail, ArrowRight, Linkedin } from "lucide-react";
 
 interface NavItem {
@@ -15,6 +15,7 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { label: "Accueil", href: "/" },
+  { label: "Scraper B2B", href: "/scraper-b2b" },
   { label: "Agence", href: "/agence-lead-generation" },
   { label: "Services", href: "/services" },
   { label: "À propos", href: "/about" },
@@ -64,8 +65,24 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
           </nav>
 
           <div className="flex items-center gap-6">
+            <Link href="https://spider.nana-intelligence.fr" target="_blank" className="hidden lg:block">
+              <Button 
+                variant="secondary" 
+                size="sm"
+                trackLabel="header_scraper_external"
+                sectionId="header"
+              >
+                Scraper B2B (En ligne)
+              </Button>
+            </Link>
             <Link href="/contact" className="hidden sm:block">
-              <Button variant="primary" size="sm" icon={<ArrowRight size={14} />}>
+              <Button 
+                variant="primary" 
+                size="sm" 
+                icon={<ArrowRight size={14} />}
+                trackLabel="header_audit_gratuit"
+                sectionId="header"
+              >
                 Audit Gratuit
               </Button>
             </Link>
@@ -107,10 +124,20 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
                 Nous automatisons votre prospection commerciale B2B à Marseille et partout en France.
               </p>
               <div className="flex items-center gap-4">
-                <a href="https://www.linkedin.com/company/nana-intelligence/" target="_blank" className="h-10 w-10 border border-cream/20 flex items-center justify-center hover:border-orange hover:text-orange transition-colors">
+                <a 
+                  href="https://www.linkedin.com/company/nana-intelligence/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  onClick={() => trackEvent("outbound_click", { destination: "linkedin" })}
+                  className="h-10 w-10 border border-cream/20 flex items-center justify-center hover:border-orange hover:text-orange transition-colors"
+                >
                   <Linkedin size={18} />
                 </a>
-                <a href="mailto:contact@nana-intelligence.fr" className="h-10 w-10 border border-cream/20 flex items-center justify-center hover:border-orange hover:text-orange transition-colors">
+                <a 
+                  href="mailto:contact@nana-intelligence.fr"
+                  onClick={() => trackEvent("contact_intent", { method: "email" })}
+                  className="h-10 w-10 border border-cream/20 flex items-center justify-center hover:border-orange hover:text-orange transition-colors"
+                >
                   <Mail size={18} />
                 </a>
               </div>
@@ -146,14 +173,16 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
                 <h4 className="font-display text-[20px]">Recevez nos analyses <span className="italic text-orange">lead gen</span>.</h4>
               </div>
               <div className="flex flex-col gap-4">
-                <div className="flex gap-2">
+                <form className="flex gap-2" onSubmit={(e) => { e.preventDefault(); trackEvent("newsletter_signup"); alert("Inscription réussie !"); }}>
                    <input 
                     type="email" 
                     placeholder="VOTRE@EMAIL.COM" 
+                    aria-label="Adresse email pour la newsletter"
+                    required
                     className="flex-1 bg-cream-2/5 border border-cream/20 px-4 py-3 font-mono text-[11px] text-cream placeholder:text-cream/30 focus:outline-none focus:border-orange transition-colors"
                   />
-                  <Button variant="primary" size="sm" className="px-6 border-none">OK</Button>
-                </div>
+                  <Button variant="primary" size="sm" className="px-6 border-none" type="submit">OK</Button>
+                </form>
                 <p className="text-[10px] text-cream/40 font-mono uppercase tracking-wider">
                   Toutes les semaines, dans votre boîte mail.
                 </p>
