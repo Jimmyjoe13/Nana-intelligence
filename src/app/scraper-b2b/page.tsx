@@ -31,8 +31,8 @@ export default function ScraperB2BPage() {
               </Button>
             </Link>
             <Link href="https://spider.nana-intelligence.fr" target="_blank">
-              <Button variant="outline" size="lg">
-                Voir l'outil en ligne
+              <Button variant="ghost" size="lg">
+                Voir l&apos;outil en ligne
               </Button>
             </Link>
           </div>
@@ -49,7 +49,7 @@ export default function ScraperB2BPage() {
               </div>
               <h3 className="font-display text-[22px] font-medium">Paiement à la performance</h3>
               <p className="text-ink-2 text-sm leading-relaxed">
-                Oubliez les abonnements mensuels coûteux. Payez uniquement pour les leads extraits et valides. Pas d'empreinte bancaire inutile.
+                Oubliez les abonnements mensuels coûteux. Payez uniquement pour les leads extraits et valides. Pas d&apos;empreinte bancaire inutile.
               </p>
             </Box>
 
@@ -69,7 +69,7 @@ export default function ScraperB2BPage() {
               </div>
               <h3 className="font-display text-[22px] font-medium">Ciblage Chirurgical</h3>
               <p className="text-ink-2 text-sm leading-relaxed">
-                Filtrez par secteur, taille d'entreprise, localisation et bien plus. Obtenez exactement les prospects que vous recherchez.
+                Filtrez par secteur, taille d&apos;entreprise, localisation et bien plus. Obtenez exactement les prospects que vous recherchez.
               </p>
             </Box>
 
@@ -92,7 +92,7 @@ export default function ScraperB2BPage() {
            <div className="flex flex-col gap-8">
               <h2 className="font-display text-[44px] leading-tight font-medium">La fin des fichiers de prospection <span className="italic text-orange font-normal">périmés</span>.</h2>
               <p className="font-sans text-lg text-ink-2 leading-relaxed">
-                Le marché change vite. Un prospect d'hier n'est plus forcément la cible d'aujourd'hui. Notre outil "Spider" parcourt les meilleures sources B2B (Google Maps, Annuaires professionnels, Réseaux sociaux) pour construire votre liste en direct.
+                Le marché change vite. Un prospect d&apos;hier n&apos;est plus forcément la cible d&apos;aujourd&apos;hui. Notre outil &quot;Spider&quot; parcourt les meilleures sources B2B (Google Maps, Annuaires professionnels, Réseaux sociaux) pour construire votre liste en direct.
               </p>
               <div className="flex flex-wrap gap-4">
                  <Tag variant="outline">Google Maps Scraping</Tag>
@@ -138,20 +138,20 @@ export default function ScraperB2BPage() {
                 </li>
                 <li className="flex items-start gap-3 text-sm text-ink-2">
                   <div className="mt-1 h-1.5 w-1.5 rounded-full bg-ink-4 shrink-0" />
-                  Export limité par des "crédits" complexes
+                  Export limité par des &quot;crédits&quot; complexes
                 </li>
               </ul>
             </Box>
             <Box className="bg-cream p-10 flex flex-col gap-6 border-l-4 border-l-orange">
-              <h4 className="font-display text-[24px] font-medium text-orange">L'approche Nana Spider</h4>
+              <h4 className="font-display text-[24px] font-medium text-orange">L&apos;approche Nana Spider</h4>
               <ul className="flex flex-col gap-4">
                 <li className="flex items-start gap-3 text-sm text-ink-2">
                   <div className="mt-1 h-1.5 w-1.5 rounded-full bg-orange shrink-0" />
-                  Extraction en temps réel (données d'aujourd'hui)
+                  Extraction en temps réel (données d&apos;aujourd&apos;hui)
                 </li>
                 <li className="flex items-start gap-3 text-sm text-ink-2">
                   <div className="mt-1 h-1.5 w-1.5 rounded-full bg-orange shrink-0" />
-                  Paiement à l'acte (pas de frais fixes)
+                  Paiement à l&apos;acte (pas de frais fixes)
                 </li>
                 <li className="flex items-start gap-3 text-sm text-ink-2">
                   <div className="mt-1 h-1.5 w-1.5 rounded-full bg-orange shrink-0" />
@@ -173,7 +173,7 @@ export default function ScraperB2BPage() {
                <Button variant="primary" size="lg" icon={<ArrowRight size={20} />}>Démarrer une extraction</Button>
              </Link>
              <Link href="/contact">
-               <Button variant="outline" size="lg" className="text-cream border-cream/20 hover:bg-cream/10">Besoin d'un accompagnement ?</Button>
+               <Button variant="ghost" size="lg" className="text-cream border-cream/20 hover:bg-cream/10">Besoin d&apos;un accompagnement ?</Button>
              </Link>
            </div>
         </div>

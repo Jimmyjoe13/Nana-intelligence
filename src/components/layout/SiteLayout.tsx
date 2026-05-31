@@ -67,7 +67,7 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
           <div className="flex items-center gap-6">
             <Link href="https://spider.nana-intelligence.fr" target="_blank" className="hidden lg:block">
               <Button 
-                variant="secondary" 
+                variant="ghost" 
                 size="sm"
                 trackLabel="header_scraper_external"
                 sectionId="header"
