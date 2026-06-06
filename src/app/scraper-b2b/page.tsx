@@ -230,15 +230,15 @@ export default function ScraperB2BPage() {
                  <h4 className="font-display text-3xl font-medium text-cream">L&apos;intelligence intégrée</h4>
               </div>
               <ul className="flex flex-col gap-4">
-                <li className="flex items-center gap-3 text-sm text-cream/80">
+                <li className="flex items-center gap-3 text-sm text-cream">
                    <CheckCircle2 size={16} className="text-orange" />
                    Extraction + Recherche d&apos;emails nominatifs
                 </li>
-                <li className="flex items-center gap-3 text-sm text-cream/80">
+                <li className="flex items-center gap-3 text-sm text-cream">
                    <CheckCircle2 size={16} className="text-orange" />
                    Vérification SMTP en temps réel incluse
                 </li>
-                <li className="flex items-center gap-3 text-sm text-cream/80">
+                <li className="flex items-center gap-3 text-sm text-cream">
                    <CheckCircle2 size={16} className="text-orange" />
                    Formatage automatique pour votre CRM
                 </li>
