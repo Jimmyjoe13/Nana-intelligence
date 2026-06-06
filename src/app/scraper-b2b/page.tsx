@@ -4,32 +4,32 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { Button } from "@/components/ui/Button";
 import { Box } from "@/components/ui/Box";
 import { Tag } from "@/components/ui/Tag";
-import { ArrowRight, Sparkles, Zap, MapPin, Linkedin, Mail, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Sparkles, Zap, MapPin, Linkedin, Mail, CheckCircle2, Search, Filter, Database } from "lucide-react";
 import Link from "next/link";
 import { FAQSection } from "@/components/sections/FAQSection";
 
 export const metadata: Metadata = {
-  title: "Meilleur Outil Scraping B2B (Google Maps, LinkedIn) | Nana Spider",
-  description: "Logiciel de scraping B2B en ligne. Extraction de données Google Maps et LinkedIn, email finder intégré. Fichier de prospection CSV exportable sans abonnement.",
-  keywords: ["outil scraping b2b", "scraper google maps", "scraper linkedin", "email finder b2b", "fichier de prospection", "extraction de données", "logiciel sans code"],
+  title: "Scraping & Enrichissement B2B : Fichiers de Prospection Clés en Main | Nana Spider",
+  description: "Extrayez vos prospects sur LinkedIn et Google Maps, puis enrichissez-les avec des emails professionnels vérifiés. L'outil tout-en-un pour vos fichiers de prospection sans abonnement.",
+  keywords: ["scraping et enrichissement b2b", "extraction emails linkedin", "scraper google maps enrichi", "email finder b2b", "base de données prospects", "automatisation prospection"],
 };
 
 const faqData = [
   {
-    question: "Le scraping B2B est-il légal et conforme au RGPD ?",
-    answer: "Oui. En France, le scraping B2B est légal si la donnée est publique, s'il s'agit d'un email professionnel, et si votre démarche commerciale justifie un intérêt légitime. Nana Spider intègre nativement des filtres pour respecter ces 3 piliers."
+    question: "Quelle est la différence entre scraping et enrichissement ?",
+    answer: "Le scraping consiste à extraire les données publiques (noms, entreprises, postes). L'enrichissement va plus loin en trouvant les coordonnées directes (emails pros nominatifs, téléphones) qui ne sont pas forcément visibles, puis en les vérifiant pour garantir leur délivrabilité."
   },
   {
-    question: "Puis-je scraper Google Maps pour des commerces locaux ?",
-    answer: "Absolument. Spider est l'un des meilleurs outils pour le scraping Google Maps. Vous pouvez cibler n'importe quel type de commerce (restaurants, agences immobilières, artisans) dans une ville spécifique et récupérer les numéros de téléphone et sites web."
+    question: "Comment Spider trouve-t-il les adresses emails ?",
+    answer: "Spider utilise des algorithmes de prédiction combinés à des bases de données de partenaires et des vérificateurs SMTP en temps réel. Nous ne 'devinons' pas les emails, nous testons leur existence pour éviter tout rebond (bounce) dans vos campagnes."
   },
   {
-    question: "L'outil propose-t-il un Email Finder pour LinkedIn ?",
-    answer: "Oui. Notre algorithme ne se contente pas de scraper LinkedIn, il enrichit automatiquement les profils trouvés (CEO, DRH, etc.) avec leurs adresses emails professionnelles nominatives et vérifiées."
+    question: "Les données Google Maps incluent-elles les emails ?",
+    answer: "Google Maps fournit rarement les emails directement. Spider va donc scanner le site web de l'entreprise extraite pour y trouver les contacts pertinents et enrichir votre fichier automatiquement."
   },
   {
-    question: "Faut-il payer un abonnement mensuel ?",
-    answer: "Non. Nana Spider fonctionne au paiement à la performance (Pay-As-You-Go). Vous ne payez que pour les leads valides extraits et enrichis. Aucun engagement, aucune carte bancaire pour tester."
+    question: "Puis-je importer mon fichier dans mon CRM ?",
+    answer: "Oui. Spider livre un fichier CSV/Excel structuré avec des colonnes propres (Prénom, Nom, Poste, Email, LinkedIn, Ville). Il est prêt à être importé dans HubSpot, Salesforce, Pipedrive ou Lemlist."
   }
 ];
 
@@ -43,22 +43,9 @@ const jsonLdSoftware = {
     "@type": "Offer",
     "price": "0",
     "priceCurrency": "EUR",
-    "description": "Modèle Pay-As-You-Go (Paiement à la performance)"
+    "description": "Paiement à la performance (Crédits d'enrichissement)"
   },
-  "description": "Logiciel de scraping B2B puissant pour extraire des prospects sur Google Maps et LinkedIn avec enrichissement d'adresses email."
-};
-
-const jsonLdFaq = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": faqData.map(faq => ({
-    "@type": "Question",
-    "name": faq.question,
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": faq.answer
-    }
-  }))
+  "description": "Plateforme tout-en-un de scraping et d'enrichissement de données B2B pour la création de fichiers de prospection qualifiés."
 };
 
 export default function ScraperB2BPage() {
@@ -68,148 +55,210 @@ export default function ScraperB2BPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSoftware) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
-      />
 
       {/* Hero Section */}
       <section className="bg-cream pt-20 pb-32 border-b-[1.5px] border-ink">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10">
           <PageHeader
-            kicker="Outil de Scraping B2B en Ligne"
-            title="Le Meilleur Logiciel de Scraping Google Maps & LinkedIn"
-            emphasis="sans abonnement"
-            description="L'extracteur de données B2B (Email Finder, Numéros, Postes) qui transforme le web en fichier de prospection CSV prêt à l'emploi. Pas de code, paiement à la performance."
+            kicker="Scraping + Enrichissement B2B"
+            title="Ne récupérez plus des listes, obtenez des"
+            emphasis="rendez-vous"
+            description="Spider extrait vos cibles sur LinkedIn et Google Maps, puis trouve et vérifie les emails professionnels nominatifs. Un flux de données fraîches, enrichies et 100% prêtes à l'emploi pour vos campagnes."
           />
           <div className="mt-12 flex flex-wrap gap-4">
             <Link href="https://spider.nana-intelligence.fr/order/new" target="_blank">
               <Button variant="primary" size="lg" icon={<Sparkles size={20} />} trackLabel="hero_launch_spider" sectionId="hero_scraper">
-                Lancer une extraction
+                Lancer mon extraction enrichie
               </Button>
             </Link>
             <Link href="https://spider.nana-intelligence.fr" target="_blank">
               <Button variant="ghost" size="lg" trackLabel="hero_view_spider" sectionId="hero_scraper">
-                Voir l&apos;outil en ligne
+                Tester l&apos;outil gratuitement
               </Button>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Features Grid */}
+      {/* Dual Capability Section */}
       <section className="bg-cream-2 py-32 border-b-[1.5px] border-ink">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10">
-          <div className="flex flex-col gap-4 mb-16 text-center items-center">
-            <h2 className="font-display text-[44px] leading-tight font-medium">Les fonctionnalités de <span className="text-orange italic">notre extracteur B2B</span></h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Box className="flex flex-col gap-6 bg-cream group hover:border-orange transition-all">
-              <div className="h-12 w-12 rounded-full bg-orange/10 flex items-center justify-center text-orange">
-                <MapPin size={24} />
-              </div>
-              <h3 className="font-display text-[22px] font-medium">Scraping Google Maps</h3>
-              <p className="text-ink-2 text-sm leading-relaxed">
-                Extraction massive des données Google Maps : noms, adresses, numéros de téléphone et sites web des entreprises locales.
-              </p>
-            </Box>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+             <div className="flex flex-col gap-10">
+                <div className="flex flex-col gap-4">
+                   <Tag variant="outline" dot>Le Duo Gagnant</Tag>
+                   <h2 className="font-display text-[44px] md:text-[56px] leading-tight font-medium">
+                     L&apos;intelligence au service de votre <span className="italic text-orange font-normal">data</span>.
+                   </h2>
+                </div>
+                
+                <div className="flex flex-col gap-8">
+                   <div className="flex gap-6">
+                      <div className="h-14 w-14 shrink-0 rounded-xl bg-ink text-cream flex items-center justify-center shadow-sm">
+                         <Search size={28} />
+                      </div>
+                      <div className="flex flex-col gap-2">
+                         <h3 className="font-display text-2xl font-medium">1. Scraping Haute Précision</h3>
+                         <p className="text-ink-2 leading-relaxed">
+                            Nous ciblons les sources les plus fiables (LinkedIn, Google Maps, Annuaires) pour extraire les informations publiques : noms, fonctions, sites web et réseaux sociaux.
+                         </p>
+                      </div>
+                   </div>
 
-            <Box className="flex flex-col gap-6 bg-cream group hover:border-orange transition-all">
-              <div className="h-12 w-12 rounded-full bg-orange/10 flex items-center justify-center text-orange">
-                <Linkedin size={24} />
-              </div>
-              <h3 className="font-display text-[22px] font-medium">Scraping LinkedIn</h3>
-              <p className="text-ink-2 text-sm leading-relaxed">
-                Ciblez les décideurs sur LinkedIn et Sales Navigator. Exportez les profils, postes et localisations en un clic.
-              </p>
-            </Box>
+                   <div className="flex gap-6">
+                      <div className="h-14 w-14 shrink-0 rounded-xl bg-orange text-ink flex items-center justify-center shadow-sm">
+                         <Zap size={28} />
+                      </div>
+                      <div className="flex flex-col gap-2">
+                         <h3 className="font-display text-2xl font-medium">2. Enrichissement & Vérification</h3>
+                         <p className="text-ink-2 leading-relaxed">
+                            Spider trouve l&apos;email professionnel nominatif et vérifie sa validité via un test SMTP. Résultat : un taux de bounce proche de zéro pour vos campagnes.
+                         </p>
+                      </div>
+                   </div>
+                </div>
+             </div>
 
-            <Box className="flex flex-col gap-6 bg-cream group hover:border-orange transition-all">
-              <div className="h-12 w-12 rounded-full bg-orange/10 flex items-center justify-center text-orange">
-                <Mail size={24} />
-              </div>
-              <h3 className="font-display text-[22px] font-medium">Email Finder B2B</h3>
-              <p className="text-ink-2 text-sm leading-relaxed">
-                Enrichissement automatique : nous trouvons et vérifions l&apos;adresse email professionnelle nominative de vos cibles.
-              </p>
-            </Box>
-
-            <Box className="flex flex-col gap-6 bg-cream group hover:border-orange transition-all">
-              <div className="h-12 w-12 rounded-full bg-orange/10 flex items-center justify-center text-orange">
-                <Zap size={24} />
-              </div>
-              <h3 className="font-display text-[22px] font-medium">Export CSV direct</h3>
-              <p className="text-ink-2 text-sm leading-relaxed">
-                Téléchargez un fichier de prospection Excel/CSV propre, nettoyé des doublons, prêt à être importé dans votre CRM.
-              </p>
-            </Box>
+             <Box className="bg-cream border-[1.5px] p-0 overflow-hidden shadow-2xl rotate-1">
+                <div className="bg-ink p-4 flex items-center gap-2">
+                   <div className="flex gap-1.5">
+                      <div className="h-2 w-2 rounded-full bg-red-400" />
+                      <div className="h-2 w-2 rounded-full bg-yellow-400" />
+                      <div className="h-2 w-2 rounded-full bg-green-400" />
+                   </div>
+                   <div className="h-5 w-64 bg-cream/10 rounded-full mx-auto" />
+                </div>
+                <div className="p-8 flex flex-col gap-6">
+                   <div className="grid grid-cols-4 gap-4 pb-4 border-b border-cream-3 font-mono text-[10px] text-ink-3 uppercase tracking-widest">
+                      <div>Contact</div>
+                      <div>Poste</div>
+                      <div>Email Pro</div>
+                      <div>Status</div>
+                   </div>
+                   <div className="flex flex-col gap-4">
+                      {[
+                        { name: "Marc A.", role: "CEO", email: "m.arnoud@tech.io", status: "Vérifié" },
+                        { name: "Julie D.", role: "CMO", email: "j.dupont@saas.com", status: "Vérifié" },
+                        { name: "Thomas L.", role: "Founder", email: "t.legrand@startup.fr", status: "Vérifié" }
+                      ].map((row, i) => (
+                        <div key={i} className="grid grid-cols-4 gap-4 items-center animate-pulse" style={{ animationDelay: `${i * 0.2}s` }}>
+                           <div className="text-sm font-medium">{row.name}</div>
+                           <div className="text-xs text-ink-3">{row.role}</div>
+                           <div className="text-xs font-mono text-orange">{row.email}</div>
+                           <div className="flex items-center gap-1.5">
+                              <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
+                              <span className="text-[10px] font-bold uppercase text-green-600">{row.status}</span>
+                           </div>
+                        </div>
+                      ))}
+                   </div>
+                   <div className="mt-4 p-4 bg-orange/5 border border-orange/20 rounded flex items-center justify-between">
+                      <span className="text-xs font-medium text-ink-2">Enrichissement en cours...</span>
+                      <Sparkles size={16} className="text-orange animate-spin-slow" />
+                   </div>
+                </div>
+             </Box>
           </div>
         </div>
       </section>
 
-      {/* SEO Use Cases Section */}
+      {/* Detailed Features */}
       <section className="bg-cream py-32 border-b-[1.5px] border-ink">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10">
-          <div className="flex flex-col md:flex-row gap-16">
-            <div className="md:w-1/3 flex flex-col gap-6">
-               <Tag variant="outline">Cas d&apos;usages</Tag>
-               <h2 className="font-display text-[40px] leading-tight font-medium">Qui utilise un logiciel de <span className="italic text-orange font-normal">scraping de données</span> ?</h2>
-               <p className="text-ink-2 leading-relaxed">
-                 Générer des leads qualifiés n&apos;a jamais été aussi stratégique. Nana Spider s&apos;adapte aux besoins spécifiques de chaque métier de la prospection commerciale.
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="flex flex-col gap-6">
+               <div className="h-12 w-12 bg-cream-2 border border-ink flex items-center justify-center">
+                  <Filter size={20} />
+               </div>
+               <h3 className="font-display text-2xl font-medium">Segmentation Fine</h3>
+               <p className="text-ink-3 text-sm leading-relaxed">
+                  Ne perdez pas de temps sur des cibles hors-sujet. Filtrez par effectif, secteur d&apos;activité exact, et zone géographique précise.
                </p>
             </div>
-            <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-8">
-               <div className="flex flex-col gap-3">
-                 <div className="flex items-center gap-3">
-                    <CheckCircle2 size={20} className="text-orange" />
-                    <h3 className="font-display text-2xl font-medium">Agences Immobilières</h3>
-                 </div>
-                 <p className="text-ink-3 text-sm">Scraping de professionnels locaux sur Google Maps pour proposer des services B2B (syndic, gestion de parcs, nettoyage).</p>
+            <div className="flex flex-col gap-6">
+               <div className="h-12 w-12 bg-cream-2 border border-ink flex items-center justify-center">
+                  <Database size={20} />
                </div>
-               <div className="flex flex-col gap-3">
-                 <div className="flex items-center gap-3">
-                    <CheckCircle2 size={20} className="text-orange" />
-                    <h3 className="font-display text-2xl font-medium">Cabinets de Recrutement</h3>
-                 </div>
-                 <p className="text-ink-3 text-sm">Extraction LinkedIn pour identifier les talents ou sourcer de nouvelles entreprises qui recrutent dans la Tech.</p>
+               <h3 className="font-display text-2xl font-medium">Clean Data</h3>
+               <p className="text-ink-3 text-sm leading-relaxed">
+                  Nous nettoyons automatiquement les emojis dans les noms, les majuscules inutiles et les doublons pour un fichier prêt à l&apos;import.
+               </p>
+            </div>
+            <div className="flex flex-col gap-6">
+               <div className="h-12 w-12 bg-cream-2 border border-ink flex items-center justify-center">
+                  <CheckCircle2 size={20} />
                </div>
-               <div className="flex flex-col gap-3">
-                 <div className="flex items-center gap-3">
-                    <CheckCircle2 size={20} className="text-orange" />
-                    <h3 className="font-display text-2xl font-medium">Agences Web & SEO</h3>
-                 </div>
-                 <p className="text-ink-3 text-sm">Ciblage des e-commerçants via annuaires ou Google Maps pour proposer la refonte de leur site ou l&apos;optimisation de leur référencement.</p>
-               </div>
-               <div className="flex flex-col gap-3">
-                 <div className="flex items-center gap-3">
-                    <CheckCircle2 size={20} className="text-orange" />
-                    <h3 className="font-display text-2xl font-medium">Startups & SaaS</h3>
-                 </div>
-                 <p className="text-ink-3 text-sm">Création massive de listes d&apos;emails qualifiés pour alimenter des séquences de Cold Emailing ultra-personnalisées.</p>
-               </div>
+               <h3 className="font-display text-2xl font-medium">Conformité RGPD</h3>
+               <p className="text-ink-3 text-sm leading-relaxed">
+                  Nous ne récoltons que des données professionnelles et publiques, garantissant la légalité de votre prospection commerciale.
+               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ & SEO Guide */}
+      {/* Comparison Section */}
+      <section className="bg-cream-2 py-32 border-b-[1.5px] border-ink">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex flex-col gap-16">
+          <div className="flex flex-col items-center text-center gap-4">
+            <h2 className="font-display text-[44px] md:text-[64px] font-medium max-w-3xl">La puissance de l&apos;automatisation <span className="italic text-orange font-normal">tout-en-un</span>.</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <Box className="bg-cream p-10 flex flex-col gap-8">
+              <div className="flex flex-col gap-2">
+                 <span className="font-mono text-[10px] text-ink-3 uppercase tracking-widest">Le Scraper Classique</span>
+                 <h4 className="font-display text-3xl font-medium">L&apos;extraction brute</h4>
+              </div>
+              <ul className="flex flex-col gap-4">
+                <li className="flex items-center gap-3 text-sm text-ink-3">
+                   <div className="h-1 w-1 rounded-full bg-ink-4" />
+                   Récupère uniquement ce qui est visible
+                </li>
+                <li className="flex items-center gap-3 text-sm text-ink-3">
+                   <div className="h-1 w-1 rounded-full bg-ink-4" />
+                   Nécessite des outils tiers pour les emails
+                </li>
+                <li className="flex items-center gap-3 text-sm text-ink-3">
+                   <div className="h-1 w-1 rounded-full bg-ink-4" />
+                   Données souvent sales (emojis, majuscules)
+                </li>
+              </ul>
+            </Box>
+            <Box className="bg-ink p-10 flex flex-col gap-8 border-orange">
+              <div className="flex flex-col gap-2">
+                 <span className="font-mono text-[10px] text-orange uppercase tracking-widest">Spider by Nana</span>
+                 <h4 className="font-display text-3xl font-medium text-cream">L&apos;intelligence intégrée</h4>
+              </div>
+              <ul className="flex flex-col gap-4">
+                <li className="flex items-center gap-3 text-sm text-cream/80">
+                   <CheckCircle2 size={16} className="text-orange" />
+                   Extraction + Recherche d&apos;emails nominatifs
+                </li>
+                <li className="flex items-center gap-3 text-sm text-cream/80">
+                   <CheckCircle2 size={16} className="text-orange" />
+                   Vérification SMTP en temps réel incluse
+                </li>
+                <li className="flex items-center gap-3 text-sm text-cream/80">
+                   <CheckCircle2 size={16} className="text-orange" />
+                   Formatage automatique pour votre CRM
+                </li>
+              </ul>
+            </Box>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
       <section className="bg-cream py-32 border-b-[1.5px] border-ink">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-12 gap-20">
           <div className="lg:col-span-5 flex flex-col gap-8">
-            <Tag variant="outline" dot>FAQ Scraping</Tag>
+            <Tag variant="outline" dot>FAQ</Tag>
             <h2 className="font-display text-[44px] md:text-[56px] leading-tight font-medium">
-              Questions sur l&apos;<span className="italic font-normal text-orange">extraction de données</span>.
+              Visez la <span className="italic font-normal text-orange">clarté</span>.
             </h2>
             <p className="font-sans text-lg text-ink-2 leading-relaxed">
-              Tout savoir sur la conformité, la légalité et le fonctionnement d&apos;un scraper B2B en ligne sans code.
+              Tout ce que vous devez savoir sur notre processus de scraping et d&apos;enrichissement de données B2B.
             </p>
-            <div className="mt-4 flex flex-col gap-3 p-6 border-[1.5px] border-ink bg-cream-2">
-               <h4 className="font-mono text-sm font-bold uppercase tracking-widest">Ressources Utiles</h4>
-               <ul className="flex flex-col gap-2">
-                  <li><Link href="/blog/3" className="text-orange hover:underline text-sm font-medium">↳ Le Scraping B2B est-il légal ?</Link></li>
-                  <li><Link href="/blog/4" className="text-orange hover:underline text-sm font-medium">↳ Guide complet de l&apos;outil Spider</Link></li>
-               </ul>
-            </div>
           </div>
 
           <FAQSection items={faqData} />
@@ -219,14 +268,16 @@ export default function ScraperB2BPage() {
       {/* Final CTA */}
       <section className="bg-ink py-40">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex flex-col items-center text-center gap-10">
-           <h2 className="font-display text-[44px] md:text-[64px] text-cream leading-none font-medium">Prêt à télécharger votre <span className="italic text-orange font-normal">fichier CSV</span> ?</h2>
-           <p className="text-cream/60 max-w-xl text-lg">Testez le meilleur outil de web scraping gratuitement et ne payez que si les données extraites vous conviennent. Parfait pour vos campagnes de lead generation.</p>
+           <h2 className="font-display text-[44px] md:text-[80px] text-cream leading-[0.9] font-medium max-w-4xl">
+              Transformez le web en votre <span className="italic text-orange font-normal">force de vente</span>.
+           </h2>
+           <p className="text-cream/60 max-w-xl text-lg">Testez Spider gratuitement dès maintenant. Ne payez que pour les données valides qui vous rapportent des clients.</p>
            <div className="flex flex-col sm:flex-row gap-6">
              <Link href="https://spider.nana-intelligence.fr/order/new" target="_blank">
                <Button variant="primary" size="lg" icon={<ArrowRight size={20} />} trackLabel="final_cta_launch_spider" sectionId="footer_scraper">Démarrer une extraction</Button>
              </Link>
              <Link href="/contact">
-               <Button variant="ghost" size="lg" className="text-cream border-cream/20 hover:bg-cream/10" trackLabel="final_cta_contact" sectionId="footer_scraper">Déléguer la prospection</Button>
+               <Button variant="ghost" size="lg" className="text-cream border-cream/20 hover:bg-cream/10" trackLabel="final_cta_contact" sectionId="footer_scraper">Besoin d&apos;un expert ?</Button>
              </Link>
            </div>
         </div>
