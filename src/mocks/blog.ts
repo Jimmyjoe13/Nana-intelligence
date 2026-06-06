@@ -1,5 +1,42 @@
 export const blogPosts = [
   {
+    id: 4,
+    title: "Spider B2B : L'outil ultime pour scraper LinkedIn et Google Maps",
+    excerpt: "DÃ©couvrez Spider, notre nouvel outil de scraping B2B haute performance pour construire des listes de prospects qualifiÃ©s en quelques clics.",
+    category: "DATA / SCRAPING",
+    date: "31 Mai 2026",
+    readTime: "8 MIN",
+    image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=800&auto=format&fit=crop",
+    content: `
+      <p>Le scraping est le socle de toute machine de prospection moderne. Chez Nana Intelligence, nous avons dÃ©veloppÃ© un outil interne exclusif dÃ©sormais ouvert au public : <strong>Spider B2B</strong>.</p>
+
+      <p>Accessible sur <a href="https://spider.nana-intelligence.fr" target="_blank">spider.nana-intelligence.fr</a>, cet outil rÃ©volutionne la maniÃ¨re dont les PME et startups collectent leurs donnÃ©es commerciales.</p>
+
+      <h2>1. Pourquoi utiliser Spider B2B ?</h2>
+      <p>La plupart des outils de scraping du marchÃ© sont soit trop complexes (nÃ©cessitant du code), soit trop chers. Spider a Ã©tÃ© conÃ§u avec un objectif simple : <strong>la performance brute accessible Ã  tous.</strong></p>
+
+      <h3>Les fonctionnalitÃ©s clÃ©s :</h3>
+      <ul>
+          <li><strong>Extraction Google Maps</strong> : RÃ©cupÃ©rez instantanÃ©ment les contacts de toutes les entreprises d'une ville ou d'un secteur prÃ©cis.</li>
+          <li><strong>Automatisation LinkedIn</strong> : Identifiez les dÃ©cideurs (CEO, CMO, Sales) et extrayez leurs informations publiques en toute conformitÃ©.</li>
+          <li><strong>Enrichissement d'emails</strong> : Spider ne se contente pas de scraper ; il trouve et vÃ©rifie les adresses emails professionnelles nominatives.</li>
+      </ul>
+
+      <h2>2. Le Workflow optimal avec Spider</h2>
+      <p>Pour maximiser vos rÃ©sultats, nous vous conseillons de suivre ce process :</p>
+      <ol>
+          <li><strong>Ciblage</strong> : DÃ©finissez votre ICP (Ideal Customer Profile) sur Spider.</li>
+          <li><strong>Extraction</strong> : Lancez le script et rÃ©cupÃ©rez votre fichier CSV propre et enrichi.</li>
+          <li><strong>Import</strong> : Injectez vos donnÃ©es dans votre outil de <a href="/blog/2">Cold Emailing</a>.</li>
+      </ol>
+
+      <h2>3. ConformitÃ© RGPD intÃ©grÃ©e</h2>
+      <p>Comme nous l'avons expliquÃ© dans notre article sur <a href="/blog/3">la lÃ©galitÃ© du scraping</a>, la protection des donnÃ©es est primordiale. Spider intÃ¨gre des filtres natifs pour ne collecter que des donnÃ©es professionnelles et publiques, garantissant un intÃ©rÃªt lÃ©gitime pour vos campagnes.</p>
+
+      <p>Testez dÃ¨s maintenant la puissance de l'automatisation. Rendez-vous sur <a href="/scraper-b2b">notre page dÃ©diÃ©e</a> ou directement sur la plateforme <a href="https://spider.nana-intelligence.fr" target="_blank">Spider B2B</a>.</p>
+    `
+  },
+  {
     id: 1,
     title: "Agence de prospection B2B ou commercial interne : Que choisir ?",
     excerpt: "Le comparatif complet des coûts et des avantages pour développer ses ventes B2B. Doit-on externaliser sa prospection commerciale ?",
