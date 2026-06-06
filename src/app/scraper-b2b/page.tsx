@@ -4,7 +4,7 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { Button } from "@/components/ui/Button";
 import { Box } from "@/components/ui/Box";
 import { Tag } from "@/components/ui/Tag";
-import { ArrowRight, Sparkles, Zap, MapPin, Linkedin, Mail, CheckCircle2, Search, Filter, Database } from "lucide-react";
+import { ArrowRight, Sparkles, Zap, CheckCircle2, Search, Filter, Database } from "lucide-react";
 import Link from "next/link";
 import { FAQSection } from "@/components/sections/FAQSection";
 

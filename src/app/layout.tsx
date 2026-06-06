@@ -29,7 +29,7 @@ const caveat = Caveat({
 export const metadata: Metadata = {
   metadataBase: new URL("https://nana-intelligence.fr"),
   title: "Nana Intelligence | Agence Prospection B2B & Lead Generation",
-  description: "L'ingÃ©nierie commerciale au service de votre croissance. Agence spÃ©cialisÃ©e en Lead Generation, Cold Emailing et Scraping B2B Ã  Marseille.",
+  description: "L'ingénierie commerciale au service de votre croissance. Agence spécialisée en Lead Generation, Cold Emailing et Scraping B2B à Marseille.",
   keywords: ["agence prospection b2b marseille", "lead generation", "cold emailing", "scraping b2b", "automatisation sales", "nana intelligence"],
   openGraph: {
     title: "Nana Intelligence | Agence Prospection B2B",
