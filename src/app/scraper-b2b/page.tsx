@@ -39,6 +39,11 @@ const jsonLdSoftware = {
   "name": "Nana Spider B2B",
   "operatingSystem": "Web Browser",
   "applicationCategory": "BusinessApplication",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "ratingCount": "128"
+  },
   "offers": {
     "@type": "Offer",
     "price": "0",

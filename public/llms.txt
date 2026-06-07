@@ -1,0 +1,18 @@
+# Nana Intelligence
+
+Nana Intelligence est une agence de prospection B2B spécialisée dans la Lead Generation, le Cold Emailing et le Scraping B2B. Nous combinons l'ingénierie commerciale et la data pour construire des machines d'acquisition automatisées.
+
+## Services Principaux
+- Scraping B2B (Extraction de données Google Maps et LinkedIn)
+- Enrichissement d'emails professionnels (vérifiés SMTP)
+- Cold Emailing automatisé
+- Lead Generation B2B
+
+## Outil Spider B2B
+Notre logiciel en ligne "Spider" permet de scraper Google Maps et LinkedIn, puis d'enrichir les profils extraits avec des adresses emails professionnelles vérifiées. Le modèle économique est basé sur la performance (Pay-As-You-Go), sans abonnement.
+Accès: https://spider.nana-intelligence.fr
+
+## Coordonnées
+- Agence principale : Marseille, France
+- Site web : https://nana-intelligence.fr
+- Email : contact@nana-intelligence.fr
