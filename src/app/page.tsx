@@ -9,14 +9,66 @@ import { ArrowRight, Sparkles, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 import { FAQSection } from "@/components/sections/FAQSection";
 
+const jsonLdService = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Lead Generation B2B",
+  "provider": {
+    "@type": "Organization",
+    "name": "Nana Intelligence",
+    "url": "https://nana-intelligence.fr"
+  },
+  "areaServed": ["France", "Marseille", "Aix-en-Provence", "Toulon"],
+  "description": "Service de Lead Generation B2B : Cold Emailing, Scraping LinkedIn/Google Maps et Automatisation Sales pour générer des RDV qualifiés.",
+  "serviceType": "Prospection Commerciale B2B",
+  "offers": {
+    "@type": "Offer",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "priceCurrency": "EUR",
+      "description": "Audit gratuit de 30 minutes"
+    }
+  }
+};
+
+const jsonLdBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://nana-intelligence.fr"
+    }
+  ]
+};
+
 export const metadata: Metadata = {
-  title: "Générez +250 RDV Qualifiés / Mois | Nana Intelligence",
-  description: "L'agence de prospection B2B qui transforme votre acquisition en science exacte. Lead Generation, Cold Emailing et Scraping à Marseille.",
+  title: "Générez +250 RDV Qualifiés / Mois | Nana Intelligence — Agence Lead Gen B2B",
+  description: "Agence de Lead Generation B2B à Marseille. Cold Emailing, Scraping et Automatisation Sales pour remplir votre agenda de RDV qualifiés. Audit gratuit 30 min.",
+  keywords: [
+    "lead generation b2b marseille",
+    "agence prospection b2b",
+    "cold emailing france",
+    "scraping linkedin b2b",
+    "automatisation sales",
+    "rdv qualifies b2b",
+    "nana intelligence"
+  ],
 };
 
 export default function Home() {
   return (
     <div className="flex flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdService) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }}
+      />
       {/* Hero Section */}
       <section className="bg-cream pt-20 pb-32 border-b-[1.5px] border-ink">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex flex-col gap-20">
@@ -164,6 +216,11 @@ export default function Home() {
             <p className="font-sans text-lg text-ink-2 leading-relaxed">
               Tout ce que vous devez savoir sur notre approche technique de la prospection B2B.
             </p>
+            <div className="flex flex-col gap-4 mt-4">
+              <Link href="/services" className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold hover:underline">
+                → Découvrir nos services de lead generation
+              </Link>
+            </div>
             <Link href="/contact" className="mt-4">
               <Button 
                 variant="ink"

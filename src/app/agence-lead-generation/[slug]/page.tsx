@@ -24,6 +24,35 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+function getJsonLd(data: typeof agenciesData[string]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": `Nana Intelligence - Agence ${data.cityName}`,
+    "description": data.heroSubtitle,
+    "url": `https://nana-intelligence.fr/agence-lead-generation/${data.slug}`,
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Nana Intelligence",
+      "url": "https://nana-intelligence.fr"
+    },
+    "areaServed": { "@type": "City", "name": data.cityName },
+    "serviceArea": { "@type": "State", "name": "Provence-Alpes-Côte d'Azur" }
+  };
+}
+
+function getBreadcrumb(data: typeof agenciesData[string]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://nana-intelligence.fr" },
+      { "@type": "ListItem", "position": 2, "name": "Agences", "item": "https://nana-intelligence.fr/agence-lead-generation" },
+      { "@type": "ListItem", "position": 3, "name": data.cityName, "item": `https://nana-intelligence.fr/agence-lead-generation/${data.slug}` }
+    ]
+  };
+}
+
 export default function AgencyCityPage({ params }: Props) {
   const data = agenciesData[params.slug];
 
@@ -33,6 +62,14 @@ export default function AgencyCityPage({ params }: Props) {
 
   return (
     <div className="flex flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getJsonLd(data)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumb(data)) }}
+      />
       {/* Hero Section */}
       <section className="bg-cream pt-20 pb-32 border-b-[1.5px] border-ink">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex flex-col gap-12">

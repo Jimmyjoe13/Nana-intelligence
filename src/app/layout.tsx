@@ -29,12 +29,12 @@ const caveat = Caveat({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://nana-intelligence.fr"),
-  title: "Nana Intelligence | Agence Prospection B2B & Lead Generation",
-  description: "L'ingénierie commerciale au service de votre croissance. Agence spécialisée en Lead Generation, Cold Emailing et Scraping B2B à Marseille.",
-  keywords: ["agence prospection b2b marseille", "lead generation", "cold emailing", "scraping b2b", "automatisation sales", "nana intelligence"],
+  title: "Nana Intelligence | Agence Lead Generation B2B à Marseille, Aix, Toulon",
+  description: "Agence de prospection B2B en région PACA. +250 RDV qualifiés/mois pour nos clients PME. Cold Emailing, Scraping LinkedIn & Automatisation Sales. 🎁 Audit gratuit 30 min →",
+  keywords: ["agence lead generation b2b marseille", "agence prospection commerciale marseille", "cold emailing b2b", "scraping linkedin", "lead gen paca", "agence acquisition client"],
   openGraph: {
-    title: "Nana Intelligence | Agence Prospection B2B",
-    description: "Générez un flux continu de RDV qualifiés via le Cold Emailing et le Scraping intelligent.",
+    title: "Nana Intelligence | Agence Lead Generation B2B PACA",
+    description: "+250 RDV qualifiés/mois. Cold Emailing, Scraping LinkedIn & Automatisation. Audit gratuit 30 min.",
     url: "https://nana-intelligence.fr",
     siteName: "Nana Intelligence",
     images: [
@@ -51,10 +51,13 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": ["Organization", "LocalBusiness"],
   "name": "Nana Intelligence",
+  "alternateName": "Nana Intelligence Agence B2B",
   "url": "https://nana-intelligence.fr",
   "logo": "https://nana-intelligence.fr/img/logo-icon.png",
+  "image": "https://nana-intelligence.fr/img/logo-icon.png",
+  "description": "Agence spécialisée en Lead Generation, Cold Emailing et Scraping B2B à Marseille. Nous automatisons votre prospection commerciale pour générer des RDV qualifiés.",
   "sameAs": [
     "https://www.linkedin.com/company/nana-intelligence/"
   ],
@@ -62,8 +65,23 @@ const jsonLd = {
     "@type": "PostalAddress",
     "addressLocality": "Marseille",
     "addressRegion": "Provence-Alpes-Côte d'Azur",
+    "postalCode": "13001",
     "addressCountry": "FR"
-  }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Marseille" },
+    { "@type": "City", "name": "Aix-en-Provence" },
+    { "@type": "City", "name": "Toulon" },
+    { "@type": "Country", "name": "France" }
+  ],
+  "priceRange": "€€",
+  "knowsAbout": [
+    "Lead Generation B2B",
+    "Cold Emailing",
+    "Scraping B2B",
+    "Automatisation Sales",
+    "Prospection Commerciale"
+  ]
 };
 
 export default function RootLayout({

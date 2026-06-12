@@ -7,13 +7,42 @@ import { teamMembers, values, history, techStack } from "@/mocks/about";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "À Propos | Agence Nana Intelligence",
-  description: "Découvrez l'équipe derrière Nana Intelligence. Experts en data engineering et automatisation sales pour votre prospection B2B.",
+  title: "À Propos | Nana Intelligence — Agence Lead Generation B2B Marseille",
+  description: "Nana Intelligence, agence de prospection B2B à Marseille. Fondé par Jimmy Khotsombat. +250 RDV qualifiés/mois, +200 PME accompagnées en région PACA. Cold Emailing, Scraping & Automatisation.",
+  keywords: [
+    "nana intelligence marseille",
+    "agence lead generation b2b",
+    "jimmy khotsombat fondateur",
+    "prospection b2b france",
+    "expert cold emailing",
+    "automatisation commerciale"
+  ],
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "À Propos — Nana Intelligence",
+  "description": "Découvrez Nana Intelligence, agence de prospection B2B à Marseille. Fondateur Jimmy Khotsombat, expert en Cold Emailing, Scraping et Automatisation Sales.",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Nana Intelligence",
+    "url": "https://nana-intelligence.fr",
+    "founder": {
+      "@type": "Person",
+      "name": "Jimmy Khotsombat",
+      "jobTitle": "Fondateur & Lead Engineer"
+    }
+  }
 };
 
 export default function AboutPage() {
   return (
     <div className="flex flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Header Section */}
       <section className="bg-cream pt-20 pb-32 border-b-[1.5px] border-ink">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10">
@@ -33,7 +62,7 @@ export default function AboutPage() {
              <div className="aspect-square border-[1.5px] border-ink relative overflow-hidden bg-cream grayscale hover:grayscale-0 transition-all duration-700 group">
                 <Image 
                   src={teamMembers[0].image} 
-                  alt={teamMembers[0].name} 
+                   alt="Jimmy Khotsombat - Fondateur Nana Intelligence, expert Lead Generation B2B à Marseille" 
                   fill 
                   className="object-cover"
                   unoptimized

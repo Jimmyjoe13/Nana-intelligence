@@ -1,9 +1,8 @@
-# *
 User-agent: *
 Allow: /
 
-# Host
-Host: https://nana-intelligence.fr
-
-# Sitemaps
+# Sitemap
 Sitemap: https://nana-intelligence.fr/sitemap.xml
+
+# Bloquer les pages internes / sensibles
+Disallow: /api/

@@ -15,7 +15,6 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { label: "Accueil", href: "/" },
-  { label: "Scraper B2B", href: "/scraper-b2b" },
   { label: "Agence", href: "/agence-lead-generation" },
   { label: "Services", href: "/services" },
   { label: "À propos", href: "/about" },
@@ -65,16 +64,6 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
           </nav>
 
           <div className="flex items-center gap-6">
-            <Link href="https://spider.nana-intelligence.fr" target="_blank" className="hidden lg:block">
-              <Button 
-                variant="ghost" 
-                size="sm"
-                trackLabel="header_scraper_external"
-                sectionId="header"
-              >
-                Scraper B2B (En ligne)
-              </Button>
-            </Link>
             <Link href="/contact" className="hidden sm:block">
               <Button 
                 variant="primary" 

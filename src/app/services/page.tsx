@@ -10,13 +10,67 @@ import { ArrowRight, Check, Zap, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Services Lead Generation & Automatisation | Nana Intelligence",
-  description: "Prospection B2B, Cold Emailing, Scraping et Automatisation Sales. Découvrez nos services pour accélérer votre croissance commerciale.",
+  title: "Services Lead Generation B2B : Cold Emailing, Scraping, Automatisation | Nana Intelligence",
+  description: "Services de prospection B2B en région PACA. Cold Emailing haute délivrabilité, Scraping LinkedIn & Google Maps, Automatisation Sales. Démarrage sous 15 jours. 🎁 Audit gratuit →",
+  keywords: [
+    "service lead generation b2b",
+    "cold emailing france",
+    "scraping linkedin google maps",
+    "automatisation sales crm",
+    "agence prospection b2b marseille",
+    "rdv qualifies"
+  ],
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Services de Prospection B2B",
+  "provider": {
+    "@type": "Organization",
+    "name": "Nana Intelligence",
+    "url": "https://nana-intelligence.fr"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services Lead Generation B2B",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Cold Emailing B2B",
+          "description": "Séquences de cold email personnalisées avec setup technique complet (SPF, DKIM, warm-up) pour maximiser la délivrabilité."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Scraping & Enrichissement B2B",
+          "description": "Extraction de données prospects sur LinkedIn et Google Maps, enrichissement avec emails professionnels vérifiés."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Automatisation Sales",
+          "description": "Connexion CRM, workflows automatisés et reporting en temps réel pour libérer vos commerciaux des tâches répétitives."
+        }
+      }
+    ]
+  },
+  "areaServed": ["France", "Marseille", "Aix-en-Provence", "Toulon"]
 };
 
 export default function ServicesPage() {
   return (
     <div className="flex flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Header Section */}
       <section className="bg-cream pt-20 pb-32 border-b-[1.5px] border-ink">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10">

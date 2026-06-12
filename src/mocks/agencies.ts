@@ -17,7 +17,7 @@ export const agenciesData: Record<string, AgencyData> = {
     heroTitle: "Agence Prospection B2B à Marseille",
     heroSubtitle: "Boostez votre croissance phocéenne. Nous aidons les PME et startups de Marseille à automatiser leur acquisition client via le Cold Emailing et le Scraping intelligent.",
     metaTitle: "Agence Prospection B2B Marseille | +250 RDV Qualifiés / Mois",
-    metaDescription: "Expert en Lead Generation B2B à Marseille. Nous automatisons votre prospection commerciale via Cold Emailing & Scraping ciblé. Audit gratuit de 30 min !",
+    metaDescription: "Agence de prospection B2B à Marseille. +250 RDV qualifiés/mois pour nos clients PME. Cold Emailing, Scraping LinkedIn & Automatisation. 🎁 Audit gratuit 30 min →",
     faq: [
       {
         question: "Qu'est-ce qu'une agence de prospection commerciale B2B à Marseille ?",
@@ -40,7 +40,7 @@ export const agenciesData: Record<string, AgencyData> = {
     heroTitle: "Agence Lead Generation B2B à Aix-en-Provence",
     heroSubtitle: "Agence spécialisée en prospection B2B. Nous aidons les entreprises du Pays d'Aix et de la région PACA à accélérer leur développement commercial.",
     metaTitle: "Boostez vos Ventes B2B | Agence Lead Generation Aix-en-Provence",
-    metaDescription: "Automatisez votre acquisition. Notre agence à Aix-en-Provence génère des rendez-vous qualifiés via Cold Emailing & Scraping. 🎁 Audit de 30 min offert !",
+    metaDescription: "Agence Lead Generation B2B à Aix-en-Provence. Prospection commerciale automatisée pour PME du Pays d'Aix. Cold Emailing & Scraping ciblé. Audit gratuit 30 min →",
     faq: [
       {
         question: "Qu'est-ce qu'une agence de lead generation B2B à Aix-en-Provence ?",
@@ -63,7 +63,7 @@ export const agenciesData: Record<string, AgencyData> = {
     heroTitle: "Agence Prospection Commerciale B2B à Toulon",
     heroSubtitle: "Agence spécialisée en lead generation B2B. Nous aidons les entreprises de Toulon et du Var à remplir leur agenda de rendez-vous qualifiés grâce au Cold Emailing et au Scraping B2B.",
     metaTitle: "Générez + de Leads B2B | Agence Prospection Toulon | Nana Intelligence",
-    metaDescription: "Boostez votre croissance. Notre agence de Lead Generation B2B à Toulon automatise votre prospection : Cold Emailing & Scraping ciblé. Réservez votre audit gratuit !",
+    metaDescription: "Agence de prospection commerciale B2B à Toulon. Cold Emailing & Scraping pour entreprises du Var. +150 RDV qualifiés/mois. Démarrage sous 48h. 🎁 Audit gratuit →",
     faq: [
       {
         question: "Qu'est-ce qu'une agence de prospection commerciale B2B à Toulon ?",

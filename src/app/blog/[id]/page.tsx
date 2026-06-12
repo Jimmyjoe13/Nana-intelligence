@@ -24,6 +24,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+function getArticleJsonLd(post: typeof blogPosts[number], id: number) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.excerpt,
+    "author": {
+      "@type": "Organization",
+      "name": "Nana Intelligence"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nana Intelligence",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://nana-intelligence.fr/img/logo-icon.png"
+      }
+    },
+    "datePublished": post.date,
+    "image": post.image,
+    "url": `https://nana-intelligence.fr/blog/${id}`,
+    "keywords": post.category
+  };
+}
+
 export default function BlogPostPage({ params }: Props) {
   const id = parseInt(params.id);
   const post = blogPosts.find((p) => p.id === id);
@@ -48,6 +73,21 @@ export default function BlogPostPage({ params }: Props) {
 
   return (
     <div className="flex flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getArticleJsonLd(post, id)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org", "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://nana-intelligence.fr" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nana-intelligence.fr/blog" },
+            { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://nana-intelligence.fr/blog/${id}` }
+          ]
+        }) }}
+      />
       {/* Article Header */}
       <section className="bg-cream pt-20 pb-32 border-b-[1.5px] border-ink">
         <div className="max-w-[900px] mx-auto px-6 md:px-10 flex flex-col gap-10">

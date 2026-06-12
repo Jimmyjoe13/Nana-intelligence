@@ -9,13 +9,52 @@ import { ArrowRight, MapPin, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Nos Agences de Prospection B2B | Nana Intelligence",
-  description: "Découvrez nos implantations locales à Marseille, Aix-en-Provence et Toulon. Une expertise de proximité pour votre lead generation en région PACA.",
+  title: "Agence Lead Generation B2B en Région PACA : Marseille, Aix, Toulon | Nana Intelligence",
+  description: "Agence de prospection B2B à Marseille, Aix-en-Provence et Toulon. +200 PME accompagnées en région PACA. Cold Emailing, Scraping LinkedIn & Automatisation Sales. Audit gratuit 30 min →",
+  keywords: [
+    "agence lead generation b2b marseille",
+    "agence prospection b2b aix en provence",
+    "agence cold emailing toulon",
+    "lead generation region paca",
+    "prospection commerciale b2b sud france",
+    "agence de prospection commerciale marseille",
+    "agence lead gen marseille"
+  ],
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Agences Nana Intelligence en région PACA",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Agence Prospection B2B Marseille",
+      "url": "https://nana-intelligence.fr/agence-lead-generation/marseille"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Agence Lead Generation Aix-en-Provence",
+      "url": "https://nana-intelligence.fr/agence-lead-generation/aix-en-provence"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Agence Prospection B2B Toulon",
+      "url": "https://nana-intelligence.fr/agence-lead-generation/toulon"
+    }
+  ]
 };
 
 export default function AgencyPage() {
   return (
     <div className="flex flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Header Section */}
       <section className="bg-cream pt-20 pb-32 border-b-[1.5px] border-ink">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10">

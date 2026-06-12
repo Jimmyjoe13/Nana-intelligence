@@ -7,8 +7,16 @@ import { blogPosts, blogCategories } from "@/mocks/blog";
 import { BlogList } from "@/components/blog/BlogList";
 
 export const metadata: Metadata = {
-  title: "Blog & Ressources Prospection B2B | Nana Intelligence",
-  description: "Analyses, guides et conseils techniques sur le Cold Emailing, le Scraping et l'automatisation commerciale pour les entreprises B2B.",
+  title: "Blog Lead Generation B2B : Cold Emailing, Scraping, Automatisation | Nana Intelligence",
+  description: "Blog prospection B2B : guides Cold Emailing, Scraping LinkedIn/Google Maps, Automatisation Sales. Conseils d'experts pour générer des RDV qualifiés à Marseille et en région PACA.",
+  keywords: [
+    "blog lead generation b2b",
+    "guide cold emailing",
+    "scraping linkedin google maps",
+    "automatisation sales",
+    "conseils prospection b2b",
+    "rdv qualifies"
+  ],
 };
 
 export default function BlogPage() {

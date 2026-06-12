@@ -9,6 +9,30 @@ import { Mail, MessageSquare, Globe, ArrowRight } from "lucide-react";
 import { Tag } from "@/components/ui/Tag";
 import { trackEvent } from "@/lib/utils";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact — Nana Intelligence",
+  "description": "Contactez Nana Intelligence pour un audit gratuit de 30 minutes. Agence de Lead Generation B2B à Marseille.",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Nana Intelligence",
+    "url": "https://nana-intelligence.fr",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contact@nana-intelligence.fr",
+      "contactType": "sales",
+      "areaServed": ["FR"],
+      "availableLanguage": ["French"]
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Marseille",
+      "addressCountry": "FR"
+    }
+  }
+};
+
 export default function ContactPage() {
   const [formStarted, setFormStarted] = useState(false);
 
@@ -27,8 +51,12 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="flex flex-col">
-      {/* Header Section */}
+    <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      {/* Hero Section */}
       <section className="bg-cream pt-20 pb-32 border-b-[1.5px] border-ink">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10">
           <PageHeader
