@@ -100,6 +100,20 @@ export default function RootLayout({
       <body className="font-sans antialiased bg-cream text-ink">
         <GoogleAnalytics GA_MEASUREMENT_ID="G-NRSE8H0WCE" />
         <Script
+          id="canonical-redirect"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(){
+                var p = window.location.pathname;
+                if (p.endsWith('/index.html')) {
+                  window.location.replace(p.replace(/\\/index\\.html$/, '/') + window.location.search + window.location.hash);
+                }
+              })();
+            `,
+          }}
+        />
+        <Script
           id="microsoft-clarity"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
