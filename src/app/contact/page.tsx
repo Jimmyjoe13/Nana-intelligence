@@ -33,8 +33,14 @@ const jsonLd = {
   }
 };
 
+// Webhook de réception des leads (n8n). L'URL est publique (appelée côté navigateur).
+const LEAD_WEBHOOK_URL =
+  process.env.NEXT_PUBLIC_LEAD_WEBHOOK_URL ||
+  "https://n8n.nana-intelligence.fr/webhook/0182624b-bac0-4b3b-a258-8b62f851b5df";
+
 export default function ContactPage() {
   const [formStarted, setFormStarted] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
   const handleFormStart = () => {
     if (!formStarted) {
@@ -43,11 +49,30 @@ export default function ContactPage() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    trackEvent("generate_lead");
-    // Logique d'envoi du formulaire ici (ex: API call)
-    alert("Demande envoyée avec succès ! (Mode démo)");
+    const form = e.currentTarget;
+    // Récupère les valeurs via les attributs name des champs
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    setStatus("sending");
+    try {
+      if (!LEAD_WEBHOOK_URL) throw new Error("Webhook non configuré");
+      const res = await fetch(LEAD_WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...data, source: "contact_form", page: "/contact" }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+      trackEvent("generate_lead"); // Conversion — à marquer comme key event dans GA4
+      setStatus("success");
+      form.reset();
+      setFormStarted(false);
+    } catch (err) {
+      trackEvent("form_error", { message: String(err) });
+      setStatus("error");
+    }
   };
 
   return (
@@ -127,56 +152,73 @@ export default function ContactPage() {
                   </div>
 
                   <form className="grid grid-cols-1 md:grid-cols-2 gap-8" onSubmit={handleSubmit}>
-                    <Field 
-                      label="Prénom" 
-                      placeholder="ex: Jean" 
-                      required 
+                    <Field
+                      label="Prénom"
+                      name="prenom"
+                      placeholder="ex: Jean"
+                      required
                       onFocus={handleFormStart}
                     />
-                    <Field 
-                      label="Nom" 
-                      placeholder="ex: Dupont" 
-                      required 
+                    <Field
+                      label="Nom"
+                      name="nom"
+                      placeholder="ex: Dupont"
+                      required
                       onFocus={handleFormStart}
                     />
                     <div className="md:col-span-2">
-                      <Field 
-                        label="Email professionnel" 
-                        type="email" 
-                        placeholder="jean@entreprise.ai" 
-                        required 
+                      <Field
+                        label="Email professionnel"
+                        name="email"
+                        type="email"
+                        placeholder="jean@entreprise.ai"
+                        required
                         onFocus={handleFormStart}
                       />
                     </div>
                     <div className="md:col-span-2">
-                      <Field 
-                        label="Entreprise" 
-                        placeholder="Nom de votre société" 
-                        required 
+                      <Field
+                        label="Entreprise"
+                        name="entreprise"
+                        placeholder="Nom de votre société"
+                        required
                         onFocus={handleFormStart}
                       />
                     </div>
                     <div className="md:col-span-2 flex flex-col gap-2">
                        <label className="font-mono text-[11px] font-bold uppercase text-ink">Vos Besoins</label>
-                       <textarea 
+                       <textarea
+                        name="besoins"
                         rows={6}
                         className="w-full bg-cream-2 border-[1.5px] border-ink px-4 py-4 font-mono text-[13px] focus:outline-none focus:border-orange transition-colors"
                         placeholder="Quels sont vos défis actuels (Lead Gen, Automatisation, SEO...) ?"
                         onFocus={handleFormStart}
                        />
                     </div>
-                    
+
                     <div className="md:col-span-2 pt-6">
-                      <Button 
-                        variant="primary" 
-                        size="lg" 
-                        className="w-full" 
+                      <Button
+                        type="submit"
+                        variant="primary"
+                        size="lg"
+                        className="w-full"
+                        loading={status === "sending"}
                         icon={<ArrowRight size={18} />}
                         trackLabel="envoyer_demande_audit"
                         sectionId="contact_form"
                       >
                         Envoyer ma demande d&apos;audit
                       </Button>
+                      {status === "success" && (
+                        <p className="mt-6 text-[12px] font-mono uppercase text-center text-orange font-bold leading-relaxed">
+                          Demande envoyée ✓ On revient vers vous sous 24h.
+                        </p>
+                      )}
+                      {status === "error" && (
+                        <p className="mt-6 text-[12px] font-mono uppercase text-center text-error font-bold leading-relaxed">
+                          Une erreur est survenue. Écrivez-nous à contact@nana-intelligence.fr
+                        </p>
+                      )}
                       <p className="mt-6 text-[11px] text-ink-4 font-mono uppercase text-center leading-relaxed">
                         Zéro engagement. Uniquement de la valeur ajoutée.
                       </p>

@@ -1,0 +1,27 @@
+# Redirections 301 — Cloudflare Pages
+# Consolide le SEO des anciennes URLs (indexées Google) vers la nouvelle structure.
+
+# --- Anciennes pages villes (format à tiret) ---
+/agence-lead-generation-marseille/   /agence-lead-generation/marseille          301
+/agence-lead-generation-marseille    /agence-lead-generation/marseille          301
+/agence-lead-generation-aix/         /agence-lead-generation/aix-en-provence    301
+/agence-lead-generation-aix          /agence-lead-generation/aix-en-provence    301
+/agence-lead-generation-toulon/      /agence-lead-generation/toulon             301
+/agence-lead-generation-toulon       /agence-lead-generation/toulon             301
+
+# --- Changement de slug Aix (aix -> aix-en-provence) ---
+/agence-lead-generation/aix          /agence-lead-generation/aix-en-provence    301
+
+# --- Anciens articles de blog (.html) ---
+/blog/scraping-b2b-nouvelle-prospection.html   /blog/3                          301
+/blog/agence-prospection-b2b-marseille.html    /agence-lead-generation/marseille 301
+
+# --- Outil supprimé ---
+/scraper-b2b                         /services                                  301
+
+# --- Anciennes pages statiques .html -> URLs propres ---
+/index.html                          /                                          301
+/about.html                          /about                                     301
+/services.html                       /services                                  301
+/contact.html                        /contact                                   301
+/agence-lead-generation.html         /agence-lead-generation                    301

@@ -96,9 +96,14 @@ export default function AgencyCityPage({ params }: Props) {
               <h2 className="font-display text-[44px] md:text-[56px] leading-[1.1] font-medium">
                 Pourquoi externaliser sa prospection à <span className="italic text-orange font-normal">{data.cityName}</span> ?
               </h2>
-              <p className="font-sans text-lg text-ink-2 leading-relaxed">
-                Le tissu économique de {data.cityName} est en pleine mutation. Pour se démarquer, le &quot;bouche-à-oreille&quot; ne suffit plus. Nous apportons aux entreprises locales une rigueur technologique souvent réservée aux grands groupes.
-              </p>
+              <div className="flex flex-col gap-6 font-sans text-lg text-ink-2 leading-relaxed">
+                {data.detailedContent.map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
+                <p>
+                  Découvrez également nos guides experts sur le <Link href="/blog/2" className="text-orange hover:underline">Cold Emailing</Link> et le <Link href="/blog/3" className="text-orange hover:underline">Scraping B2B</Link> pour optimiser votre machine de vente.
+                </p>
+              </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
                  <div className="flex items-start gap-3">
                     <CheckCircle2 size={18} className="text-orange mt-1 shrink-0" />

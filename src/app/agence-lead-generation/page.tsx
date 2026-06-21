@@ -9,7 +9,7 @@ import { ArrowRight, MapPin, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Agence Lead Generation B2B en Région PACA : Marseille, Aix, Toulon | Nana Intelligence",
+  title: "Agence Lead Generation B2B Marseille, Aix, Toulon | Nana",
   description: "Agence de prospection B2B à Marseille, Aix-en-Provence et Toulon. +200 PME accompagnées en région PACA. Cold Emailing, Scraping LinkedIn & Automatisation Sales. Audit gratuit 30 min →",
   keywords: [
     "agence lead generation b2b marseille",

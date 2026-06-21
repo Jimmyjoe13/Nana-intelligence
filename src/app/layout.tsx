@@ -49,39 +49,63 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
+const organizationJsonLd = {
   "@context": "https://schema.org",
-  "@type": ["Organization", "LocalBusiness"],
+  "@type": "Organization",
   "name": "Nana Intelligence",
-  "alternateName": "Nana Intelligence Agence B2B",
   "url": "https://nana-intelligence.fr",
   "logo": "https://nana-intelligence.fr/img/logo-icon.png",
-  "image": "https://nana-intelligence.fr/img/logo-icon.png",
-  "description": "Agence spécialisée en Lead Generation, Cold Emailing et Scraping B2B à Marseille. Nous automatisons votre prospection commerciale pour générer des RDV qualifiés.",
   "sameAs": [
     "https://www.linkedin.com/company/nana-intelligence/"
-  ],
+  ]
+};
+
+const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nana Intelligence",
+  "image": "https://nana-intelligence.fr/img/logo-icon.png",
+  "@id": "https://nana-intelligence.fr",
+  "url": "https://nana-intelligence.fr",
+  "telephone": "+33000000000",
+  "priceRange": "€€",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "13001 Marseille",
     "addressLocality": "Marseille",
-    "addressRegion": "Provence-Alpes-Côte d'Azur",
     "postalCode": "13001",
     "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 43.2965,
+    "longitude": 5.3698
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "09:00",
+    "closes": "18:00"
   },
   "areaServed": [
     { "@type": "City", "name": "Marseille" },
     { "@type": "City", "name": "Aix-en-Provence" },
-    { "@type": "City", "name": "Toulon" },
-    { "@type": "Country", "name": "France" }
+    { "@type": "City", "name": "Toulon" }
   ],
-  "priceRange": "€€",
   "knowsAbout": [
     "Lead Generation B2B",
     "Cold Emailing",
-    "Scraping B2B",
+    "Web Scraping B2B",
     "Automatisation Sales",
     "Prospection Commerciale"
-  ]
+  ],
+  "description": "Agence spécialisée en Lead Generation, Cold Emailing et Scraping B2B à Marseille."
 };
 
 export default function RootLayout({
@@ -94,7 +118,11 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
         />
       </head>
       <body className="font-sans antialiased bg-cream text-ink">
@@ -133,4 +161,3 @@ export default function RootLayout({
     </html>
   );
 }
-

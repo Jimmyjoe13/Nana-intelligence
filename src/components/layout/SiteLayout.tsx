@@ -34,7 +34,7 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
             <div className="h-10 w-10 relative overflow-hidden">
                <Image 
                 src="/img/logo-icon.png" 
-                alt="Logo Nana Intelligence" 
+                alt="Nana Intelligence - Expertise Lead Generation B2B" 
                 fill 
                 className="object-contain"
                 unoptimized
@@ -95,7 +95,7 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
                    <div className="h-10 w-10 relative">
                      <Image 
                       src="/img/logo-icon.png" 
-                      alt="Logo Icon" 
+                      alt="Expertise Lead Generation B2B - Nana Intelligence" 
                       fill 
                       className="object-contain grayscale brightness-200"
                       unoptimized
