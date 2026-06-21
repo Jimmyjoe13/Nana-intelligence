@@ -9,6 +9,18 @@ import { detailedServices, processSteps } from "@/mocks/services";
 import { ArrowRight, Check, Zap, Sparkles } from "lucide-react";
 import Link from "next/link";
 
+// Mappe les blocs du hub vers leurs landing pages dédiées (maillage interne / SEO)
+const serviceLinks: Record<string, { href: string; label: string }> = {
+  "cold-email": { href: "/services/cold-emailing-b2b", label: "Cold Emailing B2B" },
+  "automation": { href: "/services/automatisation-sales", label: "Automatisation Sales" },
+};
+
+const detailedServicePages = [
+  { href: "/services/cold-emailing-b2b", label: "Cold Emailing B2B" },
+  { href: "/services/scraping-b2b", label: "Scraping & Enrichissement B2B" },
+  { href: "/services/automatisation-sales", label: "Automatisation Sales" },
+];
+
 export const metadata: Metadata = {
   title: "Services Lead Generation B2B : Cold Emailing, Scraping, Automatisation | Nana Intelligence",
   description: "Services de prospection B2B en région PACA. Cold Emailing haute délivrabilité, Scraping LinkedIn & Google Maps, Automatisation Sales. Démarrage sous 15 jours. 🎁 Audit gratuit →",
@@ -80,6 +92,15 @@ export default function ServicesPage() {
             emphasis="prospection B2B"
             description="Générez des opportunités qualifiées sans effort grâce à nos services de Lead Generation spécialisés."
           />
+          <div className="flex flex-wrap gap-3 pt-10">
+            {detailedServicePages.map((s) => (
+              <Link key={s.href} href={s.href}>
+                <Tag variant="outline" className="hover:border-orange hover:text-orange transition-colors cursor-pointer">
+                  {s.label} →
+                </Tag>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -113,6 +134,13 @@ export default function ServicesPage() {
                     </div>
                   ))}
                 </div>
+                {serviceLinks[service.id] && (
+                  <Link href={serviceLinks[service.id].href} className="pt-2 w-fit">
+                    <span className="inline-flex items-center gap-2 font-mono text-[12px] font-bold uppercase tracking-wider text-orange hover:gap-3 transition-all">
+                      En savoir plus : {serviceLinks[service.id].label} <ArrowRight size={14} />
+                    </span>
+                  </Link>
+                )}
               </div>
 
               <div className="lg:col-span-7">
