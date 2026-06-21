@@ -147,9 +147,10 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
               <div className="flex flex-col gap-6">
                 <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-cream/40">Ressources</span>
                 <nav className="flex flex-col gap-4">
-                  <Link href="/agence-lead-generation/marseille" className="text-[14px] hover:text-orange transition-colors">Lead Gen Marseille</Link>
-                  <Link href="/agence-lead-generation/aix" className="text-[14px] hover:text-orange transition-colors">Lead Gen Aix-en-Provence</Link>
-                  <Link href="/agence-lead-generation/toulon" className="text-[14px] hover:text-orange transition-colors">Lead Gen Toulon</Link>
+                  <Link href="/agence-lead-generation/marseille" className="text-[14px] hover:text-orange transition-colors">Prospection B2B Marseille</Link>
+                  <Link href="/agence-lead-generation/aix-en-provence" className="text-[14px] hover:text-orange transition-colors">Prospection B2B Aix-en-Provence</Link>
+                  <Link href="/agence-lead-generation/toulon" className="text-[14px] hover:text-orange transition-colors">Prospection B2B Toulon</Link>
+                  <Link href="/agence-lead-generation/nice" className="text-[14px] hover:text-orange transition-colors">Prospection B2B Nice</Link>
                   <Link href="/blog" className="text-[14px] hover:text-orange transition-colors">Nos Guides</Link>
                 </nav>
               </div>

@@ -9,16 +9,16 @@ import { ArrowRight, MapPin, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Agence Lead Generation B2B Marseille, Aix, Toulon | Nana",
-  description: "Agence de prospection B2B à Marseille, Aix-en-Provence et Toulon. +200 PME accompagnées en région PACA. Cold Emailing, Scraping LinkedIn & Automatisation Sales. Audit gratuit 30 min →",
+  title: "Agence Prospection Commerciale B2B PACA : Marseille, Aix, Toulon, Nice",
+  description: "Agence de prospection commerciale B2B à Marseille, Aix-en-Provence, Toulon et Nice. +200 PME accompagnées en région PACA. Cold Emailing, Scraping LinkedIn & Automatisation Sales. Audit gratuit 30 min →",
   keywords: [
-    "agence lead generation b2b marseille",
-    "agence prospection b2b aix en provence",
-    "agence cold emailing toulon",
+    "agence prospection commerciale b2b marseille",
+    "agence prospection commerciale b2b aix en provence",
+    "agence prospection commerciale b2b toulon",
+    "agence prospection commerciale b2b nice",
     "lead generation region paca",
     "prospection commerciale b2b sud france",
-    "agence de prospection commerciale marseille",
-    "agence lead gen marseille"
+    "agence cold emailing paca"
   ],
 };
 
@@ -44,6 +44,12 @@ const jsonLd = {
       "position": 3,
       "name": "Agence Prospection B2B Toulon",
       "url": "https://nana-intelligence.fr/agence-lead-generation/toulon"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Agence Prospection B2B Nice",
+      "url": "https://nana-intelligence.fr/agence-lead-generation/nice"
     }
   ]
 };
