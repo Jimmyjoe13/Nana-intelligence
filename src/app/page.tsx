@@ -45,7 +45,7 @@ const jsonLdBreadcrumb = {
 };
 
 export const metadata: Metadata = {
-  title: "Générez +250 RDV Qualifiés / Mois | Nana Intelligence — Agence Lead Gen B2B",
+  title: "Générez +250 RDV B2B par Mois | Nana Intelligence",
   description: "Agence de Lead Generation B2B à Marseille. Cold Emailing, Scraping et Automatisation Sales pour remplir votre agenda de RDV qualifiés. Audit gratuit 30 min.",
   keywords: [
     "lead generation b2b marseille",
@@ -188,15 +188,19 @@ export default function Home() {
               <Box key={i} className="flex flex-col gap-8 group hover:border-orange transition-all duration-300 bg-cream">
                 <div className="flex flex-col gap-2">
                   <span className="font-mono text-[10px] text-ink-3 uppercase tracking-widest">{service.kicker}</span>
-                  <h3 className="font-display text-[28px] font-medium group-hover:text-orange transition-colors">
-                    {service.title}
-                  </h3>
+                  <Link href={service.link}>
+                    <h3 className="font-display text-[28px] font-medium group-hover:text-orange transition-colors">
+                      {service.title}
+                    </h3>
+                  </Link>
                 </div>
                 <p className="text-ink-2 leading-relaxed text-sm">
                   {service.description}
                 </p>
                 <div className="mt-auto pt-6 border-t border-cream-3 flex items-center justify-between">
-                   <Tag variant="outline">Disponible</Tag>
+                   <Link href={service.link} className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold hover:underline">
+                      En savoir plus →
+                   </Link>
                    <CheckCircle2 size={18} className="text-orange" />
                 </div>
               </Box>

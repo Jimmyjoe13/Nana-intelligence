@@ -9,8 +9,8 @@ import { ArrowRight, MapPin, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Agence Prospection Commerciale B2B PACA : Marseille, Aix, Toulon, Nice",
-  description: "Agence de prospection commerciale B2B à Marseille, Aix-en-Provence, Toulon et Nice. +200 PME accompagnées en région PACA. Cold Emailing, Scraping LinkedIn & Automatisation Sales. Audit gratuit 30 min →",
+  title: "Nos Agences de Prospection B2B | Nana Intelligence",
+  description: "Agences de prospection commerciale B2B à Marseille, Aix, Toulon et Nice. Cold Emailing, Scraping LinkedIn et Automatisation Sales.",
   keywords: [
     "agence prospection commerciale b2b marseille",
     "agence prospection commerciale b2b aix en provence",

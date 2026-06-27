@@ -22,8 +22,8 @@ const detailedServicePages = [
 ];
 
 export const metadata: Metadata = {
-  title: "Services Lead Generation B2B : Cold Emailing, Scraping, Automatisation | Nana Intelligence",
-  description: "Services de prospection B2B en région PACA. Cold Emailing haute délivrabilité, Scraping LinkedIn & Google Maps, Automatisation Sales. Démarrage sous 15 jours. 🎁 Audit gratuit →",
+  title: "Services Prospection & Acquisition B2B | Nana Intelligence",
+  description: "Services de prospection B2B : Cold Emailing haute délivrabilité, Scraping LinkedIn & Google Maps, et Automatisation Sales. Demandez votre audit gratuit.",
   keywords: [
     "service lead generation b2b",
     "cold emailing france",

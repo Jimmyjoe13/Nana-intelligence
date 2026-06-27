@@ -7,8 +7,8 @@ import { teamMembers, values, history, techStack } from "@/mocks/about";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "À Propos | Nana Intelligence — Agence Lead Generation B2B Marseille",
-  description: "Nana Intelligence, agence de prospection B2B à Marseille. Fondé par Jimmy Khotsombat. +250 RDV qualifiés/mois, +200 PME accompagnées en région PACA. Cold Emailing, Scraping & Automatisation.",
+  title: "À Propos de Nana Intelligence | Agence B2B Marseille",
+  description: "Découvrez Nana Intelligence, agence de prospection commerciale B2B à Marseille. Fondée par Jimmy Khotsombat, expert en Cold Emailing & Automatisation.",
   keywords: [
     "nana intelligence marseille",
     "agence lead generation b2b",

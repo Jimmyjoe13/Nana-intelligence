@@ -7,8 +7,8 @@ import { blogPosts, blogCategories } from "@/mocks/blog";
 import { BlogList } from "@/components/blog/BlogList";
 
 export const metadata: Metadata = {
-  title: "Blog Lead Generation B2B : Cold Emailing, Scraping, Automatisation | Nana Intelligence",
-  description: "Blog prospection B2B : guides Cold Emailing, Scraping LinkedIn/Google Maps, Automatisation Sales. Conseils d'experts pour générer des RDV qualifiés à Marseille et en région PACA.",
+  title: "Le Blog de l'Acquisition B2B | Nana Intelligence",
+  description: "Découvrez nos guides sur le Cold Emailing, le scraping et l'automatisation sales pour générer des rendez-vous qualifiés B2B.",
   keywords: [
     "blog lead generation b2b",
     "guide cold emailing",

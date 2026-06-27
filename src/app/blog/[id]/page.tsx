@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return {};
 
   return {
-    title: `${post.title} | Blog Nana Intelligence`,
+    title: `${post.title} | Nana`,
     description: post.excerpt,
   };
 }
