@@ -160,10 +160,9 @@ export default function ContactPage() {
                       onFocus={handleFormStart}
                     />
                     <Field
-                      label="Nom"
+                      label="Nom (Optionnel)"
                       name="nom"
                       placeholder="ex: Dupont"
-                      required
                       onFocus={handleFormStart}
                     />
                     <div className="md:col-span-2">
