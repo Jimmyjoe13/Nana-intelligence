@@ -9,6 +9,7 @@ export interface ServiceDetail {
   features: string[];
   detailedContent: string[];
   faq: { question: string; answer: string }[];
+  relatedCities: { slug: string; label: string }[];
 }
 
 export const serviceDetails: Record<string, ServiceDetail> = {
@@ -31,7 +32,13 @@ export const serviceDetails: Record<string, ServiceDetail> = {
       "Avant le premier envoi, nous configurons toute l'infrastructure technique : authentification des domaines (SPF, DKIM, DMARC), utilisation de domaines d'envoi secondaires pour protéger votre domaine principal, et warm-up progressif des boîtes pour bâtir une réputation d'expéditeur saine. C'est cette rigueur technique qui fait la différence entre une campagne qui convertit et une campagne qui brûle votre domaine.",
       "Côté message, nous appliquons les principes du copywriting de conversion : accroche centrée sur le problème du prospect, proposition de valeur claire, et appel à l'action unique. Chaque séquence est testée en A/B sur l'objet, l'angle et le call-to-action pour identifier ce qui déclenche le plus de réponses dans votre marché.",
       "Le cold emailing B2B est parfaitement légal en France dans un cadre professionnel : la prospection sans opt-in préalable est autorisée dès lors que l'offre est en lien direct avec la fonction de l'interlocuteur, avec un lien de désinscription systématique. Nous opérons en conformité RGPD sur l'ensemble de nos campagnes.",
-      "Concrètement, vous recevez un flux de rendez-vous qualifiés directement dans votre agenda, sans avoir à gérer la technique, la rédaction ou les relances. Notre reporting vous donne une visibilité totale : nombre de prospects contactés, taux d'ouverture, taux de réponse et rendez-vous obtenus. Ce service s'articule naturellement avec notre offre de scraping et enrichissement B2B, qui alimente vos campagnes en données fraîches et vérifiées.",
+      "Concrètement, vous recevez un flux de rendez-vous qualifiés directement dans votre agenda, sans avoir à gérer la technique, la rédaction ou les relances. Notre reporting vous donne une visibilité totale : nombre de prospects contactés, taux d'ouverture, taux de réponse et rendez-vous obtenus. Ce service s'articule naturellement avec notre offre de scraping et enrichissement B2B, qui alimente vos campagnes en données fraîches et vérifiées. Nous déployons ce service localement : découvrez notre agence de cold emailing à Marseille, à Aix-en-Provence, à Toulon ou à Nice.",
+    ],
+    relatedCities: [
+      { slug: "marseille", label: "Marseille" },
+      { slug: "aix-en-provence", label: "Aix-en-provence" },
+      { slug: "toulon", label: "Toulon" },
+      { slug: "nice", label: "Nice" },
     ],
     faq: [
       {
@@ -71,7 +78,13 @@ export const serviceDetails: Record<string, ServiceDetail> = {
       "Nous extrayons les données là où se trouvent vos prospects : sur LinkedIn pour cibler par fonction, secteur et taille d'entreprise, et sur Google Maps pour les approches géolocalisées (commerces, agences, entreprises locales). Notre infrastructure de scraping est conçue pour collecter à grande échelle tout en respectant les bonnes pratiques techniques.",
       "L'extraction n'est que la première étape. Chaque contact est ensuite enrichi avec un email professionnel vérifié par validation SMTP, ce qui réduit drastiquement le taux de bounce de vos campagnes. Nous dédupliquons et nettoyons la base pour vous livrer une liste prête à l'emploi, segmentée selon vos critères (secteur, effectif, intitulé de poste, zone géographique).",
       "Le scraping B2B est encadré : nous ne collectons que des données professionnelles publiques et nous appuyons sur l'intérêt légitime de la prospection, dans le respect du RGPD. Cette approche protège votre entreprise tout en alimentant votre machine commerciale.",
-      "Cette donnée constitue le carburant de vos campagnes de cold emailing : un ciblage chirurgical permet des messages plus pertinents, donc des taux de réponse supérieurs. Pour les besoins récurrents, notre outil en ligne Spider permet de scraper et d'enrichir à la demande, en mode pay-as-you-go. Découvrez aussi notre guide complet sur le scraping B2B pour comprendre la méthode en détail.",
+      "Cette donnée constitue le carburant de vos campagnes de cold emailing : un ciblage chirurgical permet des messages plus pertinents, donc des taux de réponse supérieurs. Pour les besoins récurrents, notre outil en ligne Spider permet de scraper et d'enrichir à la demande, en mode pay-as-you-go. Découvrez aussi notre guide complet sur le scraping B2B pour comprendre la méthode en détail. Nous couvrez le scraping de données ciblées sur les bassins de Marseille, Aix-en-Provence, Toulon et Nice.",
+    ],
+    relatedCities: [
+      { slug: "marseille", label: "Marseille" },
+      { slug: "aix-en-provence", label: "Aix-en-provence" },
+      { slug: "toulon", label: "Toulon" },
+      { slug: "nice", label: "Nice" },
     ],
     faq: [
       {
@@ -111,7 +124,13 @@ export const serviceDetails: Record<string, ServiceDetail> = {
       "Nous commençons par cartographier votre flux commercial actuel, de la génération du lead à la signature. Nous identifions ensuite les points de friction et les tâches automatisables : création automatique de fiches CRM, attribution des leads, déclenchement de relances selon le comportement du prospect, mise à jour des statuts. L'objectif est que vos commerciaux n'aient plus qu'à intervenir au moment décisif : l'échange humain qui conclut la vente.",
       "Concrètement, nous connectons vos outils (CRM type HubSpot, Salesforce ou Pipedrive) via des plateformes d'automatisation comme Zapier, Make ou n8n. Nous mettons en place des workflows de nurturing qui entretiennent automatiquement les leads non encore prêts à acheter, ainsi que des séquences de relance qui ne laissent plus aucune opportunité refroidir faute de suivi.",
       "Là où c'est pertinent, nous intégrons des agents IA pour qualifier les leads entrants, répondre aux premières questions ou enrichir les fiches en temps réel. Le tout est piloté par un reporting clair qui vous montre où en est chaque opportunité et où se situent les goulots d'étranglement de votre pipeline.",
-      "Cette automatisation est le prolongement naturel d'une stratégie d'acquisition : une fois que le cold emailing et le scraping remplissent le haut de votre pipeline, l'automatisation sales garantit qu'aucun lead ne se perd et que votre équipe travaille à plein régime sur ce qui compte vraiment — convertir.",
+      "Cette automatisation est le prolongement naturel d'une stratégie d'acquisition : une fois que le cold emailing et le scraping remplissent le haut de votre pipeline, l'automatisation sales garantit qu'aucun lead ne se perd et que votre équipe travaille à plein régime sur ce qui compte vraiment — convertir. Nous automatisons les pipelines commerciaux des PME à Marseille, Aix-en-Provence, Toulon et Nice.",
+    ],
+    relatedCities: [
+      { slug: "marseille", label: "Marseille" },
+      { slug: "aix-en-provence", label: "Aix-en-provence" },
+      { slug: "toulon", label: "Toulon" },
+      { slug: "nice", label: "Nice" },
     ],
     faq: [
       {
