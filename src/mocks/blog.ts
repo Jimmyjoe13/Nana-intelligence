@@ -8,7 +8,7 @@ export const blogPosts = [
     readTime: "6 MIN",
     image: "https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=800&auto=format&fit=crop",
     content: `
-      <p>La question du développement commercial est centrale pour toute entreprise ambitieuse. Face à la stagnation des ventes ou à la volonté d'accélérer, le dilemme se pose presque invariablement : faut-il embaucher des commerciaux en interne ou externaliser cette tâche complexe auprès d'une <a href="/contact">agence de prospection B2B</a> ?</p>
+      <p>La question du développement commercial est centrale pour toute entreprise ambitieuse. Face à la stagnation des ventes ou à la volonté d'accélérer, le dilemme se pose presque invariablement : faut-il embaucher des commerciaux en interne ou externaliser cette tâche complexe auprès d'une <a href="/agence-lead-generation">agence de prospection B2B externe</a> ?</p>
 
       <p>Ce choix n'est pas anodin, car il implique des budgets, des stratégies et des méthodologies très différentes. Dans cet article, nous allons décortiquer les éléments clés à prendre en compte, depuis le temps de déploiement jusqu'au retour sur investissement final (ROI).</p>
 
@@ -32,7 +32,7 @@ export const blogPosts = [
       <h2>2. L'Agence de Prospection B2B : Rapidité, Data et Scalabilité</h2>
       <p>L'externalisation de la génération de leads s'est transformée. Finie l'époque des centres d'appels rudimentaires ; aujourd'hui, une <strong>agence prospection B2B</strong> opère comme un véritable hub technologique.</p>
 
-      <p>Elle déploie pour vous des ingénieries complexes allant du <a href="/blog/3">scraping de données B2B</a> à l'automatisation de séquences de <a href="/blog/2">Cold Emailing</a> hyper-personnalisées.</p>
+      <p>Elle déploie pour vous des ingénieries complexes allant du <a href="/blog/3">scraping de données B2B (guide complet)</a> à l'automatisation de séquences de <a href="/blog/2">guide cold emailing B2B</a> hyper-personnalisées.</p>
 
       <h3>Les avantages d'une agence Lead Generation :</h3>
       <ul>
@@ -84,7 +84,7 @@ export const blogPosts = [
       <h2>4. Comment scaler sans risques ?</h2>
       <p>Pour envoyer plus de 100 emails par jour, utilisez l'<strong>inbox rotation</strong> : distribuez la charge sur plusieurs adresses différentes pour rester sous les radars des filtres antispam.</p>
 
-      <p>Besoin d'aide pour configurer votre infrastructure ? <a href="/contact">Contactez Nana Intelligence</a> pour un audit gratuit.</p>
+      <p>Besoin d'aide pour configurer votre infrastructure ? <a href="/contact">audit gratuit de votre stratégie outbound</a> pour un audit gratuit.</p>
     `
   },
   {
@@ -107,7 +107,7 @@ export const blogPosts = [
       <h2>2. Quelles sources utiliser ?</h2>
       <ul>
           <li><strong>LinkedIn Sales Navigator</strong> : Incontournable pour identifier le poste précis d'un décideur (CEO, Head of Marketing) grâce aux filtres avancés.</li>
-          <li><strong>Google Maps</strong> : La mine d'or pour les entreprises physiques. Idéal pour cibler des secteurs locaux (boulangeries, agences immobilières, restaurants).</li>
+          <li><strong>Google Maps</strong> : La mine d'or pour les entreprises physiques. Idéal pour cibler des secteurs locaux (boulangeries, agences immobilières, restaurants) — comme le démontre notre approche d'<a href="/agence-lead-generation/nice">agence de scraping B2B à Nice</a> pour les commerces de la Côte d'Azur.</li>
           <li><strong>Annuaires métiers</strong> : Pour récupérer des données administratives publiques et officielles.</li>
       </ul>
 
@@ -119,7 +119,7 @@ export const blogPosts = [
           <li><strong>Intérêt légitime :</strong> Votre offre doit être liée à la fonction du prospect, et vous devez inclure un lien de désinscription (Opt-out).</li>
       </ol>
 
-      <p>Gérer ces listes est chronophage. En confiant votre stratégie à une <a href="/services">agence de génération de leads</a>, vous concentrez vos équipes sur la vente.</p>
+      <p>Gérer ces listes est chronophage. En confiant votre stratégie à une <a href="/agence-lead-generation">agence de génération de leads B2B</a>, vous concentrez vos équipes sur la vente.</p>
     `
   },
 ];

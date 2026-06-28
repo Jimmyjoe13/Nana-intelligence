@@ -19,9 +19,46 @@ export const metadata: Metadata = {
   ],
 };
 
+
+function getBlogJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Blog Nana Intelligence \u2014 Articles Lead Generation B2B",
+    "description": "Articles, guides et analyses sur le Cold Emailing, le Scraping B2B et l'automatisation sales.",
+    "numberOfItems": blogPosts.length,
+    "itemListElement": blogPosts.map((post, idx) => ({
+      "@type": "ListItem",
+      "position": idx + 1,
+      "name": post.title,
+      "url": `https://nana-intelligence.fr/blog/${post.id}`,
+      "datePublished": post.date
+    }))
+  };
+}
+
+function getBlogBreadcrumb() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://nana-intelligence.fr" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nana-intelligence.fr/blog" }
+    ]
+  };
+}
+
 export default function BlogPage() {
   return (
     <div className="flex flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getBlogJsonLd()) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getBlogBreadcrumb()) }}
+      />
       {/* Header Section */}
       <section className="bg-cream pt-20 pb-32 border-b-[1.5px] border-ink">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10">
