@@ -199,7 +199,7 @@ export default function Home() {
                 </p>
                 <div className="mt-auto pt-6 border-t border-cream-3 flex items-center justify-between">
                    <Link href={service.link} className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold hover:underline">
-                      En savoir plus →
+                      Découvrir : {service.title} →
                    </Link>
                    <CheckCircle2 size={18} className="text-orange" />
                 </div>
