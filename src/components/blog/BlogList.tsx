@@ -133,7 +133,7 @@ export function BlogList({ posts, categories }: BlogListProps) {
                      {post.excerpt}
                    </p>
                    <Link href={`/blog/${post.id}`} className="mt-auto pt-6 flex items-center gap-2 font-mono text-[11px] font-bold uppercase text-ink group-hover:text-orange transition-colors">
-                     En savoir plus <ArrowRight size={14} />
+                     Lire : {post.title} <ArrowRight size={14} />
                    </Link>
                 </div>
               </Box>
