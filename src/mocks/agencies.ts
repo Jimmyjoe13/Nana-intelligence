@@ -8,6 +8,7 @@ export interface AgencyData {
   metaDescription: string;
   detailedContent: string[];
   faq: { question: string; answer: string }[];
+  relatedServices: { slug: string; label: string }[];
 }
 
 export const agenciesData: Record<string, AgencyData> = {
@@ -24,7 +25,12 @@ export const agenciesData: Record<string, AgencyData> = {
       "Nous maîtrisons les spécificités du marché local, des zones industrielles de l'Est marseillais aux startups de la French Tech Méditerranée, en passant par le port et la logistique du quartier d'affaires d'Euroméditerranée. Notre approche repose sur trois piliers : la qualité de la donnée extraite (Scraping), la pertinence du message (Copywriting) et la maîtrise technique de l'infrastructure d'envoi qui garantit une délivrabilité maximale.",
       "Concrètement, notre prospection B2B à Marseille se déroule en quatre temps : nous définissons votre client idéal (ICP) avec vous, nous extrayons et enrichissons une base de prospects qualifiés sur Marseille et les Bouches-du-Rhône, nous rédigeons des séquences de Cold Emailing personnalisées, puis nous pilotons les campagnes jusqu'à la prise de rendez-vous. Vous ne récupérez que les leads chauds, prêts à échanger.",
       "Ce modèle convient particulièrement aux entreprises marseillaises des secteurs Tech, SaaS, services aux entreprises, immobilier d'entreprise et logistique, dont le panier moyen justifie une approche directe des décideurs plutôt qu'une publicité de masse coûteuse et peu ciblée.",
-      "En travaillant avec Nana Intelligence à Marseille, vous bénéficiez d'un partenaire de proximité capable de scaler votre prospection au niveau national tout en gardant une agilité propre aux structures expertes. Notre rémunération s'appuie largement sur la performance : notre intérêt est aligné sur le vôtre, générer des rendez-vous qui se transforment en clients."
+      "En travaillant avec Nana Intelligence à Marseille, vous bénéficiez d'un partenaire de proximité capable de scaler votre prospection au niveau national tout en gardant une agilité propre aux structures expertes. Notre rémunération s'appuie largement sur la performance : notre intérêt est aligné sur le vôtre, générer des rendez-vous qui se transforment en clients. Nos trois piliers sur Marseille : le Cold Emailing B2B pour la prise de contact, le Scraping B2B pour le ciblage, et l'Automatisation Sales pour ne laisser aucune opportunité se perdre."
+    ],
+    relatedServices: [
+      { slug: "cold-emailing-b2b", label: "Cold Emailing B2B" },
+      { slug: "scraping-b2b", label: "Scraping B2B" },
+      { slug: "automatisation-sales", label: "Automatisation Sales" },
     ],
     faq: [
       {
@@ -58,7 +64,12 @@ export const agenciesData: Record<string, AgencyData> = {
       "Nous construisons des tunnels de prospection qui imitent le comportement humain tout en bénéficiant de la puissance de l'automatisation. Notre expertise en Cold Emailing haute délivrabilité garantit que vos messages arrivent en boîte de réception principale, et non en spam — un point critique quand on s'adresse à des dirigeants sur-sollicités.",
       "Le tissu économique du Pays d'Aix — du pôle d'activités d'Aix-les-Milles aux entreprises innovantes de la Duranne, en passant par le secteur tertiaire du centre-ville — se prête particulièrement à une prospection B2B ciblée. Nous identifions les entreprises qui correspondent exactement à votre client idéal, puis nous engageons la conversation à votre place.",
       "Notre méthode combine extraction de données (Scraping Google Maps et LinkedIn), enrichissement des emails professionnels vérifiés, et séquences de relances multicanales. Chaque campagne est mesurée : taux d'ouverture, taux de réponse, rendez-vous obtenus — vous gardez une visibilité totale sur votre retour sur investissement.",
-      "Situés au cœur de la Provence, nous accompagnons les PME aixoises pour transformer leur CRM en une véritable machine à revenus prévisibles, sans recruter ni former une équipe commerciale en interne."
+      "Situés au cœur de la Provence, nous accompagnons les PME aixoises pour transformer leur CRM en une véritable machine à revenus prévisibles, sans recruter ni former une équipe commerciale en interne. Trois services modulables à Aix : le Cold Emailing B2B pour vos premiers messages, le Scraping B2B pour constituer votre base de prospects, et l'Automatisation Sales pour industrialiser le suivi."
+    ],
+    relatedServices: [
+      { slug: "cold-emailing-b2b", label: "Cold Emailing B2B" },
+      { slug: "scraping-b2b", label: "Scraping B2B" },
+      { slug: "automatisation-sales", label: "Automatisation Sales" },
     ],
     faq: [
       {
@@ -92,7 +103,12 @@ export const agenciesData: Record<string, AgencyData> = {
       "Notre infrastructure permet de générer un flux régulier de rendez-vous qualifiés sans que vous ayez à décrocher votre téléphone ni à passer vos soirées sur LinkedIn. Nous nous occupons de toute la chaîne : de l'identification précise de la cible dans le Var et la métropole Toulon-Provence-Méditerranée jusqu'à la rédaction du premier message accrocheur et des relances.",
       "La prospection B2B à Toulon présente une spécificité : un marché de taille intermédiaire où la réputation et la proximité comptent. C'est pourquoi nous privilégions des messages personnalisés et pertinents plutôt que du volume générique — une approche qui protège votre image de marque tout en remplissant votre pipeline commercial.",
       "Nos campagnes s'appuient sur un Cold Emailing à haute délivrabilité, un scraping ciblé des entreprises varoises correspondant à votre client idéal, et un enrichissement des contacts avec des emails professionnels vérifiés. Vous recevez un reporting clair à chaque étape : prospects contactés, taux de réponse, rendez-vous bookés.",
-      "L'objectif de notre agence toulonnaise est simple : vous libérer du temps pour que vous puissiez vous concentrer sur votre cœur de métier — la vente et le conseil — pendant que nous alimentons votre pipeline de prospects qualifiés, mois après mois."
+      "L'objectif de notre agence toulonnaise est simple : vous libérer du temps pour que vous puissiez vous concentrer sur votre cœur de métier — la vente et le conseil — pendant que nous alimentons votre pipeline de prospects qualifiés, mois après mois. Nous combinons sur Toulon le Cold Emailing B2B, le Scraping B2B et l'Automatisation Sales pour un pipeline 100 % managé."
+    ],
+    relatedServices: [
+      { slug: "cold-emailing-b2b", label: "Cold Emailing B2B" },
+      { slug: "scraping-b2b", label: "Scraping B2B" },
+      { slug: "automatisation-sales", label: "Automatisation Sales" },
     ],
     faq: [
       {
@@ -126,7 +142,12 @@ export const agenciesData: Record<string, AgencyData> = {
       "La prospection traditionnelle (phoning à froid, salons, bouche-à-oreille) atteint vite ses limites sur un marché aussi étendu que les Alpes-Maritimes. Nous y répondons par une approche outbound automatisée : identification précise de votre client idéal, extraction et enrichissement d'une base de prospects locaux, puis séquences de Cold Emailing personnalisées qui déclenchent des conversations commerciales réelles.",
       "Sophia Antipolis, première technopole d'Europe, regroupe des milliers d'entreprises Tech, SaaS et deep-tech : un terrain idéal pour une prospection ciblée par secteur et par fonction. Nous savons aussi adresser les acteurs du tourisme, de l'événementiel et des services premium qui font la spécificité de l'économie niçoise.",
       "Notre méthode est entièrement mesurable : chaque campagne de lead generation à Nice est suivie en temps réel (taux d'ouverture, taux de réponse, rendez-vous obtenus). Notre infrastructure de Cold Emailing à haute délivrabilité garantit que vos messages atteignent la boîte de réception principale, condition indispensable pour convertir des décideurs sollicités de toutes parts.",
-      "Que vous soyez une startup de Sophia, une PME de services à Nice ou un acteur de la Côte d'Azur visant un développement national, nous construisons une machine d'acquisition prévisible. Vous ne récupérez que des leads chauds, et notre modèle largement basé sur la performance aligne nos intérêts sur vos résultats commerciaux."
+      "Que vous soyez une startup de Sophia, une PME de services à Nice ou un acteur de la Côte d'Azur visant un développement national, nous construisons une machine d'acquisition prévisible. Vous ne récupérez que des leads chauds, et notre modèle largement basé sur la performance aligne nos intérêts sur vos résultats commerciaux. Nos trois expertises déployées à Nice et sur la Côte d'Azur : le Cold Emailing B2B, le Scraping B2B et l'Automatisation Sales."
+    ],
+    relatedServices: [
+      { slug: "cold-emailing-b2b", label: "Cold Emailing B2B" },
+      { slug: "scraping-b2b", label: "Scraping B2B" },
+      { slug: "automatisation-sales", label: "Automatisation Sales" },
     ],
     faq: [
       {
