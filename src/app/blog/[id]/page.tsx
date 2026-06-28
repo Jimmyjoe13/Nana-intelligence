@@ -25,6 +25,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 function getArticleJsonLd(post: typeof blogPosts[number], id: number) {
+  const plainText = post.content.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+  const wordCount = plainText.split(/\s+/).length;
+
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -32,20 +35,30 @@ function getArticleJsonLd(post: typeof blogPosts[number], id: number) {
     "description": post.excerpt,
     "author": {
       "@type": "Organization",
-      "name": "Nana Intelligence"
+      "name": "Nana Intelligence",
+      "url": "https://nana-intelligence.fr"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Nana Intelligence",
+      "url": "https://nana-intelligence.fr",
       "logo": {
         "@type": "ImageObject",
         "url": "https://nana-intelligence.fr/img/logo-icon.png"
       }
     },
     "datePublished": post.date,
+    "dateModified": post.date,
     "image": post.image,
     "url": `https://nana-intelligence.fr/blog/${id}`,
-    "keywords": post.category
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://nana-intelligence.fr/blog/${id}`
+    },
+    "articleSection": post.category,
+    "keywords": post.category,
+    "wordCount": wordCount,
+    "inLanguage": "fr-FR"
   };
 }
 
