@@ -75,7 +75,7 @@ export default function BlogPostPage({ params }: Props) {
           action={
             <Link href="/blog">
               <Button variant="ink" icon={<ArrowLeft size={16} />}>
-                Retour au blog
+                ← Blog prospection B2B
               </Button>
             </Link>
           }
@@ -200,6 +200,21 @@ export default function BlogPostPage({ params }: Props) {
                ))}
             </div>
           </aside>
+        </div>
+      </section>
+
+      {/* Related Services — internal linking */}
+      <section className="bg-cream-2 border-b-[1.5px] border-ink py-16">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10">
+          <div className="flex flex-col gap-6">
+            <span className="font-mono text-[11px] text-orange uppercase tracking-[0.2em] font-bold">Services associés</span>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/services/cold-emailing-b2b" className="font-mono text-[12px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-5 py-3 hover:border-orange hover:text-orange transition-colors">Cold Emailing B2B →</Link>
+              <Link href="/services/scraping-b2b" className="font-mono text-[12px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-5 py-3 hover:border-orange hover:text-orange transition-colors">Scraping B2B →</Link>
+              <Link href="/services/automatisation-sales" className="font-mono text-[12px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-5 py-3 hover:border-orange hover:text-orange transition-colors">Automatisation Sales →</Link>
+              <Link href="/agence-lead-generation" className="font-mono text-[12px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-5 py-3 hover:border-orange hover:text-orange transition-colors">Agence Lead PACA →</Link>
+            </div>
+          </div>
         </div>
       </section>
     </div>

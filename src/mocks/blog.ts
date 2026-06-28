@@ -15,7 +15,7 @@ export const blogPosts = [
       { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
     ],
     content: `
-      <p>La question du développement commercial est centrale pour toute entreprise ambitieuse. Face à la stagnation des ventes ou à la volonté d'accélérer, le dilemme se pose presque invariablement : faut-il embaucher des commerciaux en interne ou externaliser cette tâche complexe auprès d'une <a href="/agence-lead-generation">agence de prospection B2B externe</a> ?</p>
+      <p>La question du développement commercial est centrale pour toute entreprise ambitieuse. Face à la stagnation des ventes ou à la volonté d'accélérer, le dilemme se pose presque invariablement : faut-il embaucher des commerciaux en interne ou externaliser cette tâche complexe auprès d'une <a href="/agence-lead-generation">agence lead generation B2B</a> ?</p>
 
       <p>Basée en région PACA, Nana Intelligence accompagne les dirigeants locaux comme une véritable <a href="/agence-lead-generation/marseille">agence de lead generation à Marseille</a> ou une <a href="/agence-lead-generation/aix-en-provence">agence de prospection à Aix-en-Provence</a>, avec une connaissance fine du tissu économique régional.</p>
 
@@ -55,7 +55,7 @@ export const blogPosts = [
       <p><strong>Si vous avez déjà une équipe Sales :</strong> L'agence agit comme un département de "Growth Marketing" externe pour alimenter vos closers avec 10 à 30 leads qualifiés par mois.</p>
 
       <p>Chez <strong>Nana Intelligence</strong>, nous nous positionnons comme l'extension naturelle de votre force de vente. Prêt à transformer votre acquisition ?</p>
-      <p>Découvrez nos <a href="/services">solutions de prospection</a> : <a href="/services/cold-emailing-b2b">cold emailing</a>, <a href="/services/scraping-b2b">scraping B2B</a> et <a href="/services/automatisation-sales">automatisation sales</a>.</p>
+      <p>Découvrez nos <a href="/services">services de lead generation B2B</a> : <a href="/services/cold-emailing-b2b">cold emailing</a>, <a href="/services/scraping-b2b">offre scraping B2B</a> et <a href="/services/automatisation-sales">automatisation sales</a>.</p>
     `
   },
   {
@@ -145,7 +145,7 @@ export const blogPosts = [
           <li><strong>Intérêt légitime :</strong> Votre offre doit être liée à la fonction du prospect, et vous devez inclure un lien de désinscription (Opt-out).</li>
       </ol>
 
-      <p>Gérer ces listes est chronophage. En confiant votre stratégie à une <a href="/agence-lead-generation">agence de génération de leads B2B</a>, vous concentrez vos équipes sur la vente.</p>
+      <p>Gérer ces listes est chronophage. En confiant votre stratégie à une <a href="/agence-lead-generation">agence lead generation PACA</a>, vous concentrez vos équipes sur la vente.</p>
       <p>Pour aller plus loin, explorez aussi nos services de <a href="/services/cold-emailing-b2b">cold emailing B2B</a> et d'<a href="/services/automatisation-sales">automatisation sales</a>.</p>
     `
   },
@@ -163,7 +163,7 @@ export const blogPosts = [
       <p>Les PME qui ont sauté le constatent rapidement : des rendez-vous plus nombreux, moins d'efforts répétifs dans l'équipe, et un pipeline enfin prévisible. Voici comment l'IA transforme concrètement votre prospection, étape par étape.</p>
 
       <h2>1. Scraping intelligent : la donnée prospect en temps réel</h2>
-      <p>Le point de départ de toute prospection qui convertit, c'est une cible précise. Les bases de données achetées en unpacked sont souvent obsolètes et peu qualifiées. Le <a href="/services/scraping-b2b">scraping B2B</a> piloté par IA change la donne.</p>
+      <p>Le point de départ de toute prospection qui convertit, c'est une cible précise. Les bases de données achetées en unpacked sont souvent obsolètes et peu qualifiées. Le <a href="/services/scraping-b2b">offre scraping B2B</a> piloté par IA change la donne.</p>
       <p>En combinant des scripts d'extraction sur LinkedIn et Google Maps avec des modèles de langage capables de qualifier automatiquement les profils (poste, secteur, taille d'entreprise, stack technique), vous construisez une base de prospects fraîche, exploitable immédiatement et mise à jour en continu.</p>
 
       <h2>2. Cold emailing augmenté par l'IA : personnaliser à grande échelle</h2>

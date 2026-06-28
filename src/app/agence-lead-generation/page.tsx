@@ -126,9 +126,12 @@ export default function AgencyPage() {
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex flex-col items-center text-center gap-10">
            <h2 className="font-display text-[44px] md:text-[64px] text-cream leading-none font-medium">Vous ne trouvez pas votre ville ?</h2>
            <p className="text-cream/60 max-w-xl text-lg">Nous accompagnons les entreprises sur toute la France. Discutons de votre projet dès maintenant.</p>
-           <Link href="/contact">
-             <Button variant="primary" size="lg" icon={<Sparkles size={20} />}>Démarrer un Audit Global</Button>
-           </Link>
+           <div className="flex flex-wrap gap-4 justify-center">
+             <Link href="/services">
+               <Button variant="primary" size="lg" icon={<Sparkles size={20} />}>Démarrer un Audit Global</Button>
+             </Link>
+             <Link href="/blog" className="font-mono text-[11px] text-orange uppercase tracking-widest font-bold self-center hover:underline">Blog prospection B2B</Link>
+           </div>
         </div>
       </section>
     </div>

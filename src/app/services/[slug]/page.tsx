@@ -101,7 +101,11 @@ export default function ServiceDetailPage({ params }: Props) {
             <p className="pt-2">
               Ce service s&apos;intègre dans notre offre globale de{" "}
               <Link href="/agence-lead-generation" className="text-orange hover:underline">prospection commerciale B2B</Link>.
-              Consultez aussi nos <Link href="/blog" className="text-orange hover:underline">guides experts</Link>.
+              Consultez aussi nos <Link href="/blog" className="text-orange hover:underline">guides prospection B2B</Link>.
+              Découvrez aussi nos autres services :{" "}
+              <Link href="/services/cold-emailing-b2b" className="text-orange hover:underline">Cold Emailing B2B</Link>,{" "}
+              <Link href="/services/scraping-b2b" className="text-orange hover:underline">Scraping B2B</Link> et{" "}
+              <Link href="/services/automatisation-sales" className="text-orange hover:underline">Automatisation Sales</Link>.
             </p>
           </div>
 
