@@ -92,7 +92,7 @@ export default function AgencyPage() {
                   {agency.heroSubtitle}
                 </p>
                 <Link href={`/agence-lead-generation/${agency.slug}`} className="mt-auto">
-                  <Button variant="ink" className="w-full" icon={<ArrowRight size={16} />}>Découvrir l&apos;agence</Button>
+                  <Button variant="ink" className="w-full" icon={<ArrowRight size={16} />}>Découvrir : {agency.cityName}</Button>
                 </Link>
               </Box>
             ))}
