@@ -137,7 +137,7 @@ export default function ServicesPage() {
                 {serviceLinks[service.id] && (
                   <Link href={serviceLinks[service.id].href} className="pt-2 w-fit">
                     <span className="inline-flex items-center gap-2 font-mono text-[12px] font-bold uppercase tracking-wider text-orange hover:gap-3 transition-all">
-                      En savoir plus : {serviceLinks[service.id].label} <ArrowRight size={14} />
+                      → {serviceLinks[service.id].label} : détail de l&apos;offre <ArrowRight size={14} />
                     </span>
                   </Link>
                 )}

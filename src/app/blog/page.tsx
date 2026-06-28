@@ -5,6 +5,7 @@ import { Box } from "@/components/ui/Box";
 import { Button } from "@/components/ui/Button";
 import { blogPosts, blogCategories } from "@/mocks/blog";
 import { BlogList } from "@/components/blog/BlogList";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Le Blog de l'Acquisition B2B | Nana Intelligence",
@@ -72,6 +73,23 @@ export default function BlogPage() {
       </section>
 
       <BlogList posts={blogPosts} categories={blogCategories} />
+
+      {/* Internal linking — services & agence */}
+      <section className="bg-cream border-b-[1.5px] border-ink py-16">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-10">
+          <div className="flex flex-col gap-2">
+            <span className="font-mono text-[11px] text-orange uppercase tracking-[0.2em] font-bold">Passez à l&apos;action</span>
+            <p className="font-sans text-lg text-ink-2">Découvrez nos services et notre agence locale en PACA.</p>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/services/cold-emailing-b2b" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Cold Emailing B2B</Link>
+            <Link href="/services/scraping-b2b" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Scraping B2B</Link>
+            <Link href="/services/automatisation-sales" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Automatisation Sales</Link>
+            <Link href="/agence-lead-generation" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Agence Lead PACA</Link>
+            <Link href="/contact" className="font-mono text-[11px] text-cream uppercase tracking-widest font-bold bg-ink border border-ink px-4 py-2 hover:border-orange hover:text-orange transition-colors">Audit gratuit</Link>
+          </div>
+        </div>
+      </section>
 
       {/* Newsletter Signup */}
       <section className="bg-cream-2 py-40">

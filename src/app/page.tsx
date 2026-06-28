@@ -222,7 +222,13 @@ export default function Home() {
             </p>
             <div className="flex flex-col gap-4 mt-4">
               <Link href="/services" className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold hover:underline">
-                → Découvrir nos services de lead generation
+                → Services lead generation B2B
+              </Link>
+              <Link href="/agence-lead-generation" className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold hover:underline">
+                → Agence lead generation PACA
+              </Link>
+              <Link href="/blog" className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold hover:underline">
+                → Blog lead generation B2B
               </Link>
             </div>
             <Link href="/contact" className="mt-4">
