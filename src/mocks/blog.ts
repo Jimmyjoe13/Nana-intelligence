@@ -8,7 +8,7 @@ export const blogPosts = [
     readTime: "6 MIN",
     image: "https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=800&auto=format&fit=crop",
     content: `
-      <p>La question du développement commercial est centrale pour toute entreprise ambitieuse. Face à la stagnation des ventes ou à la volonté d'accélérer, le dilemme se pose presque invariablement : faut-il embaucher des commerciaux en interne ou externaliser cette tâche complexe auprès d'une <a href="/contact">agence de prospection B2B</a> ?</p>
+      <p>La question du développement commercial est centrale pour toute entreprise ambitieuse. Face à la stagnation des ventes ou à la volonté d'accélérer, le dilemme se pose presque invariablement : faut-il embaucher des commerciaux en interne ou externaliser cette tâche complexe auprès d'une <a href="/agence-lead-generation">agence lead generation B2B</a> ?</p>
 
       <p>Ce choix n'est pas anodin, car il implique des budgets, des stratégies et des méthodologies très différentes. Dans cet article, nous allons décortiquer les éléments clés à prendre en compte, depuis le temps de déploiement jusqu'au retour sur investissement final (ROI).</p>
 
@@ -32,7 +32,7 @@ export const blogPosts = [
       <h2>2. L'Agence de Prospection B2B : Rapidité, Data et Scalabilité</h2>
       <p>L'externalisation de la génération de leads s'est transformée. Finie l'époque des centres d'appels rudimentaires ; aujourd'hui, une <strong>agence prospection B2B</strong> opère comme un véritable hub technologique.</p>
 
-      <p>Elle déploie pour vous des ingénieries complexes allant du <a href="/blog/3">scraping de données B2B</a> à l'automatisation de séquences de <a href="/blog/2">Cold Emailing</a> hyper-personnalisées.</p>
+      <p>Elle déploie pour vous des ingénieries complexes allant du <a href="/services/scraping-b2b">scraping B2B</a> à l'automatisation de séquences de <a href="/services/cold-emailing-b2b">cold emailing B2B</a> hyper-personnalisées, le tout orchestré par une <a href="/services/automatisation-sales">automatisation sales</a> intelligente.</p>
 
       <h3>Les avantages d'une agence Lead Generation :</h3>
       <ul>
@@ -46,6 +46,8 @@ export const blogPosts = [
       <p><strong>Si vous avez déjà une équipe Sales :</strong> L'agence agit comme un département de "Growth Marketing" externe pour alimenter vos closers avec 10 à 30 leads qualifiés par mois.</p>
 
       <p>Chez <strong>Nana Intelligence</strong>, nous nous positionnons comme l'extension naturelle de votre force de vente. Prêt à transformer votre acquisition ?</p>
+
+      <p>Nous intervenons sur toute la PACA : découvrez notre <a href="/agence-lead-generation/marseille">agence lead generation Marseille</a>, notre <a href="/agence-lead-generation/aix-en-provence">agence lead generation Aix-en-Provence</a>, ou directement notre <a href="/services/cold-emailing-b2b">service cold emailing B2B</a> pour démarrer rapidement.</p>
     `
   },
   {
@@ -70,7 +72,7 @@ export const blogPosts = [
       </ul>
 
       <h2>2. La Data (Scraping) : Le carburant de la campagne</h2>
-      <p>Le meilleur email envoyé à la mauvaise personne fera 0% de taux de réponse. Vous devez investir dans la qualité de votre base, souvent via le <a href="/blog/3">web scraping B2B</a>.</p>
+      <p>Le meilleur email envoyé à la mauvaise personne fera 0% de taux de réponse. Vous devez investir dans la qualité de votre base, souvent via le <a href="/services/scraping-b2b">scraping B2B</a>. Vous pouvez aussi combiner cette approche avec une <a href="/services/automatisation-sales">automatisation sales</a> pour ne jamais manquer un relance.</p>
       <p>Assurez-vous que les emails soient vérifiés via des logiciels de "Catch-all Checkers" avant tout envoi, afin d'abaisser votre taux de rebond (Bounce Rate) en dessous de 3%.</p>
 
       <h2>3. Le Copywriting : Court, direct, curieux</h2>
@@ -84,7 +86,7 @@ export const blogPosts = [
       <h2>4. Comment scaler sans risques ?</h2>
       <p>Pour envoyer plus de 100 emails par jour, utilisez l'<strong>inbox rotation</strong> : distribuez la charge sur plusieurs adresses différentes pour rester sous les radars des filtres antispam.</p>
 
-      <p>Besoin d'aide pour configurer votre infrastructure ? <a href="/contact">Contactez Nana Intelligence</a> pour un audit gratuit.</p>
+      <p>Besoin d'aide pour configurer votre infrastructure ? <a href="/services/cold-emailing-b2b">Notre service cold emailing B2B</a> prend en charge le setup complet — ou <a href="/agence-lead-generation/nice">notre agence à Nice</a> pour un accompagnement local.</p>
     `
   },
   {
@@ -119,7 +121,9 @@ export const blogPosts = [
           <li><strong>Intérêt légitime :</strong> Votre offre doit être liée à la fonction du prospect, et vous devez inclure un lien de désinscription (Opt-out).</li>
       </ol>
 
-      <p>Gérer ces listes est chronophage. En confiant votre stratégie à une <a href="/services">agence de génération de leads</a>, vous concentrez vos équipes sur la vente.</p>
+      <p>Gérer ces listes est chronophage. En confiant votre stratégie à une <a href="/services/scraping-b2b">agence scraping B2B</a> comme Nana Intelligence, vous concentrez vos équipes sur la vente.</p>
+
+      <p>Pour aller plus loin, lisez aussi notre <a href="/blog/2">guide du cold emailing B2B</a> et découvrez notre <a href="/services/automatisation-sales">automatisation sales</a> pour un nurturing automatisé de vos prospects.</p>
     `
   },
 ];
