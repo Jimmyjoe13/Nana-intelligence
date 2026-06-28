@@ -7,6 +7,13 @@ export const blogPosts = [
     date: "03 Mars 2026",
     readTime: "6 MIN",
     image: "https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=800&auto=format&fit=crop",
+    structuredInternalLinks: [
+      { "@type": "WebPage", "url": "/blog/2", "name": "Guide du Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/blog/3", "name": "Scraping B2B pour trouver des clients" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "Scraping B2B" },
+      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+    ],
     content: `
       <p>La question du développement commercial est centrale pour toute entreprise ambitieuse. Face à la stagnation des ventes ou à la volonté d'accélérer, le dilemme se pose presque invariablement : faut-il embaucher des commerciaux en interne ou externaliser cette tâche complexe auprès d'une <a href="/agence-lead-generation">agence de prospection B2B externe</a> ?</p>
 
@@ -58,6 +65,13 @@ export const blogPosts = [
     date: "03 Mars 2026",
     readTime: "10 MIN",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+    structuredInternalLinks: [
+      { "@type": "WebPage", "url": "/blog/1", "name": "Agence de prospection B2B ou commercial interne" },
+      { "@type": "WebPage", "url": "/blog/3", "name": "Scraping B2B pour trouver des clients" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "Scraping B2B" },
+      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+    ],
     content: `
       <p>Si vous cherchez à augmenter vos ventes, le <strong>Cold Emailing B2B</strong> reste l'un des canaux au ROI le plus élevé. Il est considérablement moins onéreux que la publicité LinkedIn Ads, tout en ciblant avec une précision chirurgicale.</p>
 
@@ -99,6 +113,13 @@ export const blogPosts = [
     date: "03 Mars 2026",
     readTime: "7 MIN",
     image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=800&auto=format&fit=crop",
+    structuredInternalLinks: [
+      { "@type": "WebPage", "url": "/blog/1", "name": "Agence de prospection B2B ou commercial interne" },
+      { "@type": "WebPage", "url": "/blog/2", "name": "Guide du Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "Scraping B2B" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/services", "name": "Services Nana Intelligence" },
+    ],
     content: `
       <p>Longtemps réservé aux techniciens, le <strong>Scraping de données</strong> est devenu l'arme massive de l'Outbound marketing B2B. Acheter des bases de données statiques est un modèle dépassé et coûteux.</p>
 
