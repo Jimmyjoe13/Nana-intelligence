@@ -124,6 +124,10 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
         />
+        <script type="text/javascript" src="https://cdn.seojuice.io/suggestions.v1.js" defer />
+        <noscript>
+          <img src="https://smart.seojuice.io/pixel" width="1" height="1" alt="" style={{ display: "none" }} />
+        </noscript>
       </head>
       <body className="font-sans antialiased bg-cream text-ink">
         <GoogleAnalytics GA_MEASUREMENT_ID="G-NRSE8H0WCE" />
