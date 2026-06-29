@@ -17,7 +17,7 @@ export const blogPosts = [
     content: `
       <p>La question du développement commercial est centrale pour toute entreprise ambitieuse. Face à la stagnation des ventes ou à la volonté d'accélérer, le dilemme se pose presque invariablement : faut-il embaucher des commerciaux en interne ou externaliser cette tâche complexe auprès d'une <a href="/agence-lead-generation">agence lead generation B2B</a> ?</p>
 
-      <p>Basée en région PACA, Nana Intelligence accompagne les dirigeants locaux comme une véritable <a href="/agence-lead-generation/marseille">agence de lead generation à Marseille</a> ou une <a href="/agence-lead-generation/aix-en-provence">agence de prospection à Aix-en-Provence</a>, avec une connaissance fine du tissu économique régional.</p>
+      <p>Basée en région PACA, Nana Intelligence accompagne les dirigeants locaux comme une véritable <a href="/agence-lead-generation/marseille">agence de lead generation à Marseille</a>, une <a href="/agence-lead-generation/aix-en-provence">agence de prospection à Aix-en-Provence</a> ou une <a href="/agence-lead-generation/nice">agence de lead generation à Nice</a>, avec une connaissance fine du tissu économique régional.</p>
 
       <p>Ce choix n'est pas anodin, car il implique des budgets, des stratégies et des méthodologies très différentes. Dans cet article, nous allons décortiquer les éléments clés à prendre en compte, depuis le temps de déploiement jusqu'au retour sur investissement final (ROI).</p>
 
@@ -103,7 +103,7 @@ export const blogPosts = [
 
       <p>Besoin d'aide pour configurer votre infrastructure ? <a href="/services/cold-emailing-b2b">Découvrez notre service de cold emailing B2B</a>, notre offre d'<a href="/services/automatisation-sales">automatisation sales</a> ou <a href="/contact">contactez Nana Intelligence</a> pour un audit gratuit.</p>
 
-      <p>Que vous soyez à la recherche d'une <a href="/agence-lead-generation/toulon">agence de cold emailing à Toulon</a> ou d'une <a href="/agence-lead-generation/marseille">agence de prospection B2B à Marseille</a>, nos équipes déploient des campagnes sur-mesure pour les dirigeants du sud de la France.</p>
+      <p>Que vous soyez à la recherche d'une <a href="/agence-lead-generation/toulon">agence de cold emailing à Toulon</a> ou d'une <a href="/agence-lead-generation/marseille">agence de prospection B2B à Marseille</a>, nos équipes déploient des campagnes sur-mesure pour les dirigeants de la <a href="/agence-lead-generation/nice">Côte d’Azur (Nice)</a> à Marseille, en Provence et dans tout le sud de la France.</p>
     `
   },
   {
@@ -133,7 +133,7 @@ export const blogPosts = [
       <h2>2. Quelles sources utiliser ?</h2>
       <ul>
           <li><strong>LinkedIn Sales Navigator</strong> : Incontournable pour identifier le poste précis d'un décideur (CEO, Head of Marketing) grâce aux filtres avancés.</li>
-          <li><strong>Google Maps</strong> : La mine d'or pour les entreprises physiques. Idéal pour cibler des secteurs locaux (boulangeries, agences immobilières, restaurants) — comme le démontre notre approche d'<a href="/agence-lead-generation/nice">agence de scraping B2B à Nice</a> pour les commerces de la Côte d'Azur.</li>
+          <li><strong>Google Maps</strong> : La mine d'or pour les entreprises physiques. Idéal pour cibler des secteurs locaux (boulangeries, agences immobilières, restaurants) — comme le démontre notre approche d'<a href="/agence-lead-generation/nice">agence de scraping à Nice</a>, de <a href="/agence-lead-generation/marseille">prospection à Marseille</a> et d'<a href="/agence-lead-generation/aix-en-provence">accompagnement à Aix-en-Provence</a> pour les commerces de la Côte d'Azur et de la région PACA.</li>
           <li><strong>Annuaires métiers</strong> : Pour récupérer des données administratives publiques et officielles.</li>
       </ul>
 
@@ -164,11 +164,11 @@ export const blogPosts = [
 
       <h2>1. Scraping intelligent : la donnée prospect en temps réel</h2>
       <p>Le point de départ de toute prospection qui convertit, c'est une cible précise. Les bases de données achetées en unpacked sont souvent obsolètes et peu qualifiées. Le <a href="/services/scraping-b2b">offre scraping B2B</a> piloté par IA change la donne.</p>
-      <p>En combinant des scripts d'extraction sur LinkedIn et Google Maps avec des modèles de langage capables de qualifier automatiquement les profils (poste, secteur, taille d'entreprise, stack technique), vous construisez une base de prospects fraîche, exploitable immédiatement et mise à jour en continu.</p>
+      <p>En combinant des scripts d'extraction sur LinkedIn et Google Maps avec des modèles de langage capables de qualifier automatiquement les profils (poste, secteur, taille d'entreprise, stack technique), vous construisez une base de prospects fraîche, exploitable immédiatement et mise à jour en continu. Nos clients <a href="/agence-lead-generation/marseille">à Marseille</a> bénéficient par exemple de bases ultra-filtrées sur leur bassin économique local.</p>
 
       <h2>2. Cold emailing augmenté par l'IA : personnaliser à grande échelle</h2>
       <p>La personnalisation a toujours été le nerf de la guerre du <a href="/services/cold-emailing-b2b">cold emailing B2B</a>. Un message générique ne convertit quasiment jamais. Mais personnaliser 200 emails par jour est chronophage.</p>
-      <p>L'IA résout cette équation. À partir d'un bon calibrage, elle génère des premières lignes ultra-personnalisées (référence à une offre récente, un content partagé, un événement) tout en respectant le ton et la proposition de valeur définis par vos soins. Résultat : vous envoyez plus, mieux ciblé, sans sacrifier la pertinence.</p>
+      <p>L'IA résout cette équation. À partir d'un bon calibrage, elle génère des premières lignes ultra-personnalisées (référence à une offre récente, un content partagé, un événement) tout en respectant le ton et la proposition de valeur définis par vos soins. Résultat : vous envoyez plus, mieux ciblé, sans sacrifier la pertinence. Les PME d’<a href="/agence-lead-generation/aix-en-provence">Aix-en-Provence</a> qui utilisent l’IA pour leur prospection constatent un bond de leur taux de réponse dès le premier mois.</p>
 
       <h2>3. Workflows automatisés : la prospection qui tourne seule</h2>
       <p>Une fois les séquences lancées, le vrai gain vient de l'automatisation. Des plateformes comme Make, n8n ou Zapier permettent de créer des workflows qui relancent automatiquement les prospects sans réponse, qualifient les leads chauds, mettent à jour votre CRM et notifient vos commerciaux au bon moment.</p>
@@ -181,11 +181,11 @@ export const blogPosts = [
         <li><strong>-30%</strong> de temps passé par les commerciaux sur des tâches administratives</li>
         <li><strong>Un pipeline prévisible</strong>, avec un coût par lead en baisse continue</li>
       </ul>
-      <p>Ces gains ne tombent pas du ciel : ils reposent sur une méthodologie rigoureuse et un calibrage fin des outils.</p>
+      <p>Ces gains ne tombent pas du ciel : ils reposent sur une méthodologie rigoureuse et un calibrage fin des outils. C’est ce que nous déployons au quotidien pour les entreprises de <a href="/agence-lead-generation/toulon">Toulon</a> jusqu’à la Côte d’Azur.</p>
 
       <h2>5. Comment démarrer sans se disperser</h2>
       <p>Le piège le plus courant est de vouloir tout automatiser en une semaine. La bonne approche : commencer par un seul canal (souvent le cold emailing), valider les résultats, puis étendre au scraping et aux workflows.</p>
-      <p>Notre <a href="/services/automatisation-sales">accompagnement en automatisation IA</a> permet de calibrer pas à pas ces workflows, avec un suivi terrain. Pour un premier regard sur votre situation, <a href="/contact">demandez un audit gratuit de 30 minutes</a>.</p>
+      <p>Notre <a href="/services/automatisation-sales">accompagnement en automatisation IA</a> permet de calibrer pas à pas ces workflows, avec un suivi terrain. Que vous soyez <a href="/agence-lead-generation/nice">à Nice</a>, Marseille, Aix ou Toulon, nous adaptons la stack à votre marché. Pour un premier regard sur votre situation, <a href="/contact">demandez un audit gratuit de 30 minutes</a>.</p>
     `
   },
 ];
