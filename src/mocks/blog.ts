@@ -168,6 +168,15 @@ export const blogPosts = [
     date: "28 Juin 2026",
     readTime: "9 MIN",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop",
+    structuredInternalLinks: [
+      { "@type": "WebPage", "url": "/blog/1", "name": "Agence de prospection B2B ou commercial interne" },
+      { "@type": "WebPage", "url": "/blog/2", "name": "Guide du Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/blog/3", "name": "Scraping B2B pour trouver des clients" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "Scraping de données B2B" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "Campagne Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "Automatisation Sales B2B" },
+      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+    ],
     content: `
       <p>En 2026, la prospection B2B a changé de dimension. L'intelligence artificielle ne se contente pas d'assister vos commerciaux : elle automatise l'ensemble de la chaîne d'acquisition, du ciblage à la relance. Et ce ne sont plus seulement les grands groupes qui en profitent.</p>
 

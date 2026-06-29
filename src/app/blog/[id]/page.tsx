@@ -58,7 +58,10 @@ function getArticleJsonLd(post: typeof blogPosts[number], id: number) {
     "articleSection": post.category,
     "keywords": post.category,
     "wordCount": wordCount,
-    "inLanguage": "fr-FR"
+    "inLanguage": "fr-FR",
+    ...(post.structuredInternalLinks && post.structuredInternalLinks.length > 0
+      ? { "relatedLink": post.structuredInternalLinks }
+      : {})
   };
 }
 
