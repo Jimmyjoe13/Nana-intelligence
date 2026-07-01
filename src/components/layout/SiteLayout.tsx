@@ -181,9 +181,17 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
           </div>
 
           <div className="pt-10 flex flex-col md:flex-row items-center justify-between gap-6">
-            <span className="font-mono text-[10px] text-cream/40 uppercase tracking-[0.2em]">
-              © 2026 NANA INTELLIGENCE — MARSEILLE, FRANCE
-            </span>
+            <div className="flex flex-col md:flex-row items-center gap-4">
+              <span className="font-mono text-[10px] text-cream/40 uppercase tracking-[0.2em]">
+                © 2026 NANA INTELLIGENCE — MARSEILLE, FRANCE
+              </span>
+              <span className="font-mono text-[10px] text-cream/40 uppercase tracking-[0.2em] flex items-center gap-2">
+                <span className="text-cream/20">|</span>
+                <a href="https://seojuice.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange transition-colors">SEOJuice</a>
+                <span className="text-cream/20">|</span>
+                <a href="https://seojuice.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange transition-colors">Powered by SEOJuice</a>
+              </span>
+            </div>
             <div className="flex items-center gap-2">
                <div className="h-1.5 w-1.5 rounded-full bg-orange animate-pulse" />
                <span className="font-mono text-[10px] text-cream/80 uppercase tracking-widest">System Operational</span>
