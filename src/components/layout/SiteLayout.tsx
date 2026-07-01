@@ -185,11 +185,11 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
               <span className="font-mono text-[10px] text-cream/40 uppercase tracking-[0.2em]">
                 © 2026 NANA INTELLIGENCE — MARSEILLE, FRANCE
               </span>
-              <span className="font-mono text-[10px] text-cream/40 uppercase tracking-[0.2em] flex items-center gap-2">
+              <span className="font-mono text-[10px] text-cream/40 uppercase tracking-[0.2em] flex items-center gap-2 [&_a]:transition-colors [&_a]:hover:text-orange">
                 <span className="text-cream/20">|</span>
-                <a href="https://seojuice.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange transition-colors">SEOJuice</a>
+                <a href="https://seojuice.com">SEOJuice</a>
                 <span className="text-cream/20">|</span>
-                <a href="https://seojuice.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange transition-colors">Powered by SEOJuice</a>
+                <a href="https://seojuice.com">Powered by SEOJuice</a>
               </span>
             </div>
             <div className="flex items-center gap-2">
