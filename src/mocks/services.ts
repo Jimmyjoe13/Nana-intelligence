@@ -42,18 +42,32 @@ export const detailedServices = [
     metric: { label: "Multiplicateur de trafic", value: "3.5", prefix: "x" }
   },
   {
-    id: "closing",
-    title: "Coaching Vente &",
-    emphasis: "Closing",
-    kicker: "04. PERFORMANCE",
-    description: "Transformez vos leads en revenus avec des techniques de vente d'élite et des playbooks structurés.",
+    id: "formation-ia",
+    title: "Formation",
+    emphasis: "IA appliquée",
+    kicker: "04. SCALING",
+    description: "Formez vos équipes aux outils d'IA générative et aux workflows automatisés pour accélérer la prospection sans sacrifier la qualité.",
     features: [
-      "Formation au Closing High-Ticket",
-      "Création de Playbooks de vente",
-      "Coaching individuel et d'équipe",
-      "Scripts de qualification optimisés",
+      "Prompt Engineering pour SDR & BDR",
+      "Stack d'IA opérationnelle (Claude, GPT, Mistral)",
+      "Création d'agents IA sur mesure (RAG, tool-use)",
+      "Automatisation de la recherche de prospects",
     ],
-    metric: { label: "Taux de signature", value: "25", suffix: "%" }
+    metric: { label: "Productivité SDR moyenne", value: "+65", suffix: "%" }
+  },
+  {
+    id: "automatisation-roi",
+    title: "Automatisations",
+    emphasis: "orientées ROI",
+    kicker: "05. ROI",
+    description: "Concevez des workflows automatisés qui génèrent un ROI mesurable : nurturing, scoring, relances et reporting en temps réel.",
+    features: [
+      "Workflows no-code (Make, n8n, Zapier)",
+      "Intégrations CRM / Slack / Sheets",
+      "Tableaux de bord ROI en temps réel",
+      "SLA & monitoring des taux de conversion",
+    ],
+    metric: { label: "ROI moyen mois 1", value: "x4", prefix: "" }
   }
 ];
 
