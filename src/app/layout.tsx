@@ -5,6 +5,7 @@ import "./globals.css";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import Script from "next/script";
 import GoogleAnalytics from "@/components/layout/GoogleAnalytics";
+import { ChatWidget } from "@/components/chat/ChatWidget";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -161,6 +162,7 @@ export default function RootLayout({
         <SiteLayout>
           {children}
         </SiteLayout>
+        <ChatWidget />
       </body>
     </html>
   );
