@@ -21,7 +21,10 @@ const SS_EXIT_SHOWN_KEY = "nana_chat_exit_shown";
 const SS_OPENED_KEY = "nana_chat_opened";
 
 const POLL_INTERVAL_MS = 2000;
-const POLL_TIMEOUT_MS = 40000;
+// Mesuré en prod : le modèle NIM de Charles répond typiquement en 60-90s (CLI Hermes
+// + inférence). Le timeout ct doit rester sous le plafond backend (agent.timeout=90s
+// + marge 30s = 120s), avec de la marge pour ne pas afficher un faux timeout.
+const POLL_TIMEOUT_MS = 100000;
 const HOOK_DELAY_MS = 5000;
 const INACTIVITY_DELAY_MS = 20000;
 
