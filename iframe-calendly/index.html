@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page réservée aux leads (accès par URL uniquement) : on interdit l'indexation -->
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+
+  <title>Réservez votre audit SEO offert — Nana Intelligence</title>
+  <meta name="description" content="Réservez un créneau de 30 min pour votre audit SEO offert avec Nana Intelligence." />
+  <link rel="canonical" href="https://nana-intelligence.fr/rdv-audit-seo" />
+  <link rel="icon" href="https://nana-intelligence.fr/img/logo-icon.png" />
+
+  <!-- Polices de la marque -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --cream:   #f4f1ea;
+      --cream-2: #ece8df;
+      --cream-3: #ddd6c8;
+      --ink:     #1a1a1a;
+      --ink-2:   #3a3733;
+      --ink-3:   #6b6660;
+      --ink-4:   #a39d92;
+      --orange:  #ff5b22;
+      --orange-soft: #ffe9df;
+      --border-w: 1.5px;
+
+      --font-display: "Fraunces", "Times New Roman", serif;
+      --font-sans:    "Inter", -apple-system, "Helvetica Neue", sans-serif;
+      --font-mono:    "JetBrains Mono", "SF Mono", "Menlo", monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body { height: 100%; }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--cream);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+    }
+
+    /* ---- Barre supérieure : logo + rappel ---- */
+    header.topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      border-bottom: var(--border-w) solid var(--ink);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .brand .dot {
+      width: 12px; height: 12px;
+      background: var(--orange);
+      border-radius: 50%;
+      flex: none;
+    }
+    .topbar .back {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: color .15s ease;
+    }
+    .topbar .back:hover { color: var(--orange); }
+
+    /* ---- Grille principale ---- */
+    .wrap {
+      display: grid;
+      grid-template-columns: minmax(320px, 440px) 1fr;
+      min-height: calc(100% - 63px);
+    }
+
+    /* ---- Colonne gauche : argumentaire ---- */
+    .pitch {
+      padding: 56px 48px;
+      border-right: var(--border-w) solid var(--ink);
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .kicker {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .kicker::before {
+      content: "";
+      width: 24px; height: var(--border-w);
+      background: var(--orange);
+    }
+    h1 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 44px;
+      line-height: 1.05;
+      letter-spacing: -0.025em;
+      text-wrap: balance;
+    }
+    h1 em {
+      font-style: italic;
+      color: var(--orange);
+    }
+    .lead {
+      font-size: 17px;
+      color: var(--ink-2);
+      max-width: 42ch;
+    }
+
+    ul.checks {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    ul.checks li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      font-size: 15px;
+      color: var(--ink-2);
+    }
+    ul.checks .mark {
+      flex: none;
+      width: 22px; height: 22px;
+      border: var(--border-w) solid var(--ink);
+      display: grid;
+      place-items: center;
+      color: var(--orange);
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 1px;
+    }
+
+    .meta-row {
+      margin-top: auto;
+      display: flex;
+      gap: 32px;
+      padding-top: 24px;
+      border-top: var(--border-w) solid var(--cream-3);
+    }
+    .meta-row .item .n {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1;
+    }
+    .meta-row .item .l {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      margin-top: 6px;
+    }
+
+    /* ---- Colonne droite : Calendly ---- */
+    .booking {
+      padding: 24px;
+      background: var(--cream);
+      display: flex;
+      flex-direction: column;
+    }
+    .calendly-inline-widget {
+      flex: 1;
+      min-width: 320px;
+      min-height: 680px;
+    }
+
+    footer.legal {
+      text-align: center;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      color: var(--ink-4);
+      padding: 16px 40px;
+      border-top: var(--border-w) solid var(--cream-3);
+    }
+    footer.legal a {
+      color: var(--ink-3);
+      text-decoration: none;
+    }
+    footer.legal a:hover { color: var(--orange); }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 900px) {
+      .wrap { grid-template-columns: 1fr; }
+      .pitch {
+        border-right: none;
+        border-bottom: var(--border-w) solid var(--ink);
+        padding: 40px 28px;
+      }
+      h1 { font-size: 34px; }
+      header.topbar { padding: 16px 24px; }
+      .meta-row { margin-top: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="https://nana-intelligence.fr/">
+      <span class="dot"></span>
+      Nana Intelligence
+    </a>
+    <a class="back" href="https://nana-intelligence.fr/">← Retour au site</a>
+  </header>
+
+  <main class="wrap">
+
+    <!-- Colonne argumentaire -->
+    <section class="pitch">
+      <span class="kicker">Réservation privée</span>
+
+      <h1>Réservez votre <em>audit SEO</em> offert de 30 minutes.</h1>
+
+      <p class="lead">
+        On analyse ensemble votre visibilité actuelle, vos concurrents et les
+        leviers concrets pour capter plus de trafic qualifié. Sans engagement,
+        sans blabla — repartez avec un plan d'action clair.
+      </p>
+
+      <ul class="checks">
+        <li><span class="mark">✓</span> Analyse de votre positionnement et de vos mots-clés stratégiques</li>
+        <li><span class="mark">✓</span> Repérage des freins techniques qui bloquent votre référencement</li>
+        <li><span class="mark">✓</span> Plan d'action priorisé, adapté à votre marché</li>
+      </ul>
+
+      <div class="meta-row">
+        <div class="item">
+          <div class="n">30 min</div>
+          <div class="l">Durée</div>
+        </div>
+        <div class="item">
+          <div class="n">0 €</div>
+          <div class="l">Sans engagement</div>
+        </div>
+        <div class="item">
+          <div class="n">Visio</div>
+          <div class="l">Google Meet</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Colonne réservation Calendly -->
+    <section class="booking">
+      <!-- Widget Calendly inline, teinté aux couleurs de la marque -->
+      <div
+        class="calendly-inline-widget"
+        data-url="https://calendly.com/jimmygay13180-w8si/audit-seo?hide_gdpr_banner=1&background_color=f4f1ea&text_color=1a1a1a&primary_color=ff5b22"
+        data-resize="true"
+      ></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </section>
+
+  </main>
+
+  <footer class="legal">
+    © Nana Intelligence — <a href="https://nana-intelligence.fr/">nana-intelligence.fr</a> · Page réservée à nos contacts
+  </footer>
+
+</body>
+</html>
