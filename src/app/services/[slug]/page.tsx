@@ -10,6 +10,14 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { ArrowRight, Sparkles, Check } from "lucide-react";
 import Link from "next/link";
 
+// Maillage interne : pages agences liées à ce service
+const agencyCityLinks = [
+  { href: "/agence-lead-generation/marseille", label: "Marseille" },
+  { href: "/agence-lead-generation/aix-en-provence", label: "Aix-en-Provence" },
+  { href: "/agence-lead-generation/toulon", label: "Toulon" },
+  { href: "/agence-lead-generation/nice", label: "Nice" },
+];
+
 interface Props {
   params: { slug: string };
 }
@@ -107,6 +115,14 @@ export default function ServiceDetailPage({ params }: Props) {
               <Link href="/services/scraping-b2b" className="text-orange hover:underline">Scraping B2B</Link> et{" "}
               <Link href="/services/automatisation-sales" className="text-orange hover:underline">Automatisation Sales</Link>.
             </p>
+            <p className="pt-2">
+              Ce service est disponible dans toutes nos agences PACA :{" "}
+              {agencyCityLinks.map((city, i) => (
+                <span key={city.href}>
+                  <Link href={city.href} className="text-orange hover:underline">{city.label}</Link>
+                  {i < agencyCityLinks.length - 1 ? ", " : "."}
+                </span>
+              ))}
           </div>
 
           <div className="lg:col-span-5">
