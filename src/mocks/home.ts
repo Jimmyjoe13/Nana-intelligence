@@ -24,6 +24,12 @@ export const homeServices = [
     kicker: "INFRASTRUCTURE",
     link: "/services/automatisation-sales"
   },
+  {
+    title: "Accompagnement SEO",
+    description: "Audit technique, optimisation on-page et stratégie de contenu pour générer un trafic Google qualifié et durable, sans budget pub.",
+    kicker: "VISIBILITÉ",
+    link: "/services/accompagnement-seo"
+  },
 ];
 
 export const homeTestimonials = [

@@ -183,7 +183,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             {homeServices.map((service, i) => (
               <Box key={i} className="flex flex-col gap-8 group hover:border-orange transition-all duration-300 bg-cream">
                 <div className="flex flex-col gap-2">

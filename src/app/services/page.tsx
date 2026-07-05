@@ -13,23 +13,27 @@ import Link from "next/link";
 const serviceLinks: Record<string, { href: string; label: string }> = {
   "cold-email": { href: "/services/cold-emailing-b2b", label: "Cold Emailing B2B" },
   "automation": { href: "/services/automatisation-sales", label: "Automatisation Sales" },
+  "accompagnement-seo": { href: "/services/accompagnement-seo", label: "Accompagnement SEO" },
 };
 
 const detailedServicePages = [
   { href: "/services/cold-emailing-b2b", label: "Cold Emailing B2B" },
   { href: "/services/scraping-b2b", label: "Scraping & Enrichissement B2B" },
   { href: "/services/automatisation-sales", label: "Automatisation Sales" },
+  { href: "/services/accompagnement-seo", label: "Accompagnement SEO" },
 ];
 
 export const metadata: Metadata = {
   title: "Services Prospection & Acquisition B2B | Nana Intelligence",
-  description: "Services de prospection B2B : Cold Emailing haute délivrabilité, Scraping LinkedIn & Google Maps, et Automatisation Sales. Demandez votre audit gratuit.",
+  description: "Services de prospection B2B : Cold Emailing haute délivrabilité, Scraping LinkedIn & Google Maps, Accompagnement SEO et Automatisation Sales. Audit gratuit.",
   keywords: [
     "service lead generation b2b",
     "cold emailing france",
     "scraping linkedin google maps",
     "automatisation sales crm",
     "agence prospection b2b marseille",
+    "accompagnement seo b2b",
+    "audit seo gratuit",
     "rdv qualifies"
   ],
 };
@@ -69,6 +73,14 @@ const jsonLd = {
           "@type": "Service",
           "name": "Automatisation Sales",
           "description": "Connexion CRM, workflows automatisés et reporting en temps réel pour libérer vos commerciaux des tâches répétitives."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Accompagnement SEO",
+          "description": "Audit technique, optimisation on-page, stratégie de contenu et suivi de positions pour générer un trafic Google qualifié et durable."
         }
       }
     ]

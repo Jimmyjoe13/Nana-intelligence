@@ -101,7 +101,7 @@ export default function AgencyCityPage({ params }: Props) {
                   <p key={i}>{paragraph}</p>
                 ))}
                 <p>
-                  Consultez nos <Link href="/blog" className="text-orange hover:underline">guides prospection B2B</Link> et nos services de <Link href="/services/cold-emailing-b2b" className="text-orange hover:underline">Cold Emailing B2B</Link>, <Link href="/services/scraping-b2b" className="text-orange hover:underline">Scraping B2B</Link> et <Link href="/services/automatisation-sales" className="text-orange hover:underline">Automatisation Sales</Link> pour optimiser votre machine de vente.
+                  Consultez nos <Link href="/blog" className="text-orange hover:underline">guides prospection B2B</Link> et nos services de <Link href="/services/cold-emailing-b2b" className="text-orange hover:underline">Cold Emailing B2B</Link>, <Link href="/services/scraping-b2b" className="text-orange hover:underline">Scraping B2B</Link>, <Link href="/services/automatisation-sales" className="text-orange hover:underline">Automatisation Sales</Link> et <Link href="/services/accompagnement-seo" className="text-orange hover:underline">Accompagnement SEO</Link> pour optimiser votre machine de vente.
                 </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">

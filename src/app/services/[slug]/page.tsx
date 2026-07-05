@@ -103,9 +103,15 @@ export default function ServiceDetailPage({ params }: Props) {
               <Link href="/agence-lead-generation" className="text-orange hover:underline">prospection commerciale B2B</Link>.
               Consultez aussi nos <Link href="/blog" className="text-orange hover:underline">guides prospection B2B</Link>.
               Découvrez aussi nos autres services :{" "}
-              <Link href="/services/cold-emailing-b2b" className="text-orange hover:underline">Cold Emailing B2B</Link>,{" "}
-              <Link href="/services/scraping-b2b" className="text-orange hover:underline">Scraping B2B</Link> et{" "}
-              <Link href="/services/automatisation-sales" className="text-orange hover:underline">Automatisation Sales</Link>.
+              {Object.values(serviceDetails)
+                .filter((s) => s.slug !== data.slug)
+                .map((s, i, arr) => (
+                  <React.Fragment key={s.slug}>
+                    <Link href={`/services/${s.slug}`} className="text-orange hover:underline">{s.name}</Link>
+                    {i < arr.length - 2 ? ", " : i === arr.length - 2 ? " et " : ""}
+                  </React.Fragment>
+                ))}
+              .
             </p>
           </div>
 
@@ -141,7 +147,7 @@ export default function ServiceDetailPage({ params }: Props) {
               Questions <span className="italic font-normal text-orange">fréquentes</span>.
             </h2>
             <p className="font-sans text-lg text-ink-2 leading-relaxed">
-              Tout ce que vous devez savoir sur notre service de {data.name.toLowerCase()}.
+              Tout ce que vous devez savoir sur notre service : {data.name}.
             </p>
           </div>
           <FAQSection items={data.faq} />

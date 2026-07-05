@@ -28,18 +28,18 @@ export const detailedServices = [
     metric: { label: "Efficacité équipe", value: "+200", suffix: "%" }
   },
   {
-    id: "growth",
-    title: "Growth Hacking &",
-    emphasis: "Audit SEO",
+    id: "accompagnement-seo",
+    title: "Accompagnement",
+    emphasis: "SEO",
     kicker: "03. VISIBILITÉ",
-    description: "Maximisez votre visibilité organique et accélérez votre croissance via des stratégies non-conventionnelles.",
+    description: "Générez du trafic Google qualifié et durable grâce à un accompagnement SEO complet : audit technique, optimisation on-page et stratégie de contenu.",
     features: [
-      "Audit SEO Technique complet",
-      "Stratégies d'acquisition data-driven",
-      "Optimisation du Taux de Conversion (CRO)",
-      "Analyse concurrentielle approfondie",
+      "Audit SEO technique complet (crawl, indexation, CWV)",
+      "Optimisation on-page et maillage interne",
+      "Stratégie de contenu ciblée sur vos requêtes",
+      "Suivi mensuel des positions et reporting",
     ],
-    metric: { label: "Multiplicateur de trafic", value: "3.5", prefix: "x" }
+    metric: { label: "Multiplicateur de trafic organique", value: "3.5", prefix: "x" }
   },
   {
     id: "formation-ia",

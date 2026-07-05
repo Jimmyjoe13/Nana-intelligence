@@ -32,7 +32,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
       "Avant le premier envoi, nous configurons toute l'infrastructure technique : authentification des domaines (SPF, DKIM, DMARC), utilisation de domaines d'envoi secondaires pour protéger votre domaine principal, et warm-up progressif des boîtes pour bâtir une réputation d'expéditeur saine. C'est cette rigueur technique qui fait la différence entre une campagne qui convertit et une campagne qui brûle votre domaine.",
       "Côté message, nous appliquons les principes du copywriting de conversion : accroche centrée sur le problème du prospect, proposition de valeur claire, et appel à l'action unique. Chaque séquence est testée en A/B sur l'objet, l'angle et le call-to-action pour identifier ce qui déclenche le plus de réponses dans votre marché.",
       "Le cold emailing B2B est parfaitement légal en France dans un cadre professionnel : la prospection sans opt-in préalable est autorisée dès lors que l'offre est en lien direct avec la fonction de l'interlocuteur, avec un lien de désinscription systématique. Nous opérons en conformité RGPD sur l'ensemble de nos campagnes.",
-      "Concrètement, vous recevez un flux de rendez-vous qualifiés directement dans votre agenda, sans avoir à gérer la technique, la rédaction ou les relances. Notre reporting vous donne une visibilité totale : nombre de prospects contactés, taux d'ouverture, taux de réponse et rendez-vous obtenus. Ce service s'articule naturellement avec notre offre de scraping et enrichissement B2B, qui alimente vos campagnes en données fraîches et vérifiées. Nous déployons ce service localement : découvrez notre agence de cold emailing à Marseille, à Aix-en-Provence, à Toulon ou à Nice.",
+      "Concrètement, vous recevez un flux de rendez-vous qualifiés directement dans votre agenda, sans avoir à gérer la technique, la rédaction ou les relances. Notre reporting vous donne une visibilité totale : nombre de prospects contactés, taux d'ouverture, taux de réponse et rendez-vous obtenus. Ce service s'articule naturellement avec notre offre de scraping et enrichissement B2B, qui alimente vos campagnes en données fraîches et vérifiées, et avec notre accompagnement SEO pour construire un flux de trafic organique en parallèle. Nous déployons ce service localement : découvrez notre agence de cold emailing à Marseille, à Aix-en-Provence, à Toulon ou à Nice.",
     ],
     relatedCities: [
       { slug: "marseille", label: "Marseille" },
@@ -78,7 +78,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
       "Nous extrayons les données là où se trouvent vos prospects : sur LinkedIn pour cibler par fonction, secteur et taille d'entreprise, et sur Google Maps pour les approches géolocalisées (commerces, agences, entreprises locales). Notre infrastructure de scraping est conçue pour collecter à grande échelle tout en respectant les bonnes pratiques techniques.",
       "L'extraction n'est que la première étape. Chaque contact est ensuite enrichi avec un email professionnel vérifié par validation SMTP, ce qui réduit drastiquement le taux de bounce de vos campagnes. Nous dédupliquons et nettoyons la base pour vous livrer une liste prête à l'emploi, segmentée selon vos critères (secteur, effectif, intitulé de poste, zone géographique).",
       "Le scraping B2B est encadré : nous ne collectons que des données professionnelles publiques et nous appuyons sur l'intérêt légitime de la prospection, dans le respect du RGPD. Cette approche protège votre entreprise tout en alimentant votre machine commerciale.",
-      "Cette donnée constitue le carburant de vos campagnes de cold emailing : un ciblage chirurgical permet des messages plus pertinents, donc des taux de réponse supérieurs. Pour les besoins récurrents, notre outil en ligne Spider permet de scraper et d'enrichir à la demande, en mode pay-as-you-go. Découvrez aussi notre guide complet sur le scraping B2B pour comprendre la méthode en détail. Nous couvrez le scraping de données ciblées sur les bassins de Marseille, Aix-en-Provence, Toulon et Nice.",
+      "Cette donnée constitue le carburant de vos campagnes de cold emailing : un ciblage chirurgical permet des messages plus pertinents, donc des taux de réponse supérieurs. Pour les besoins récurrents, notre outil en ligne Spider permet de scraper et d'enrichir à la demande, en mode pay-as-you-go. Découvrez aussi notre guide complet sur le scraping B2B pour comprendre la méthode en détail, ou notre accompagnement SEO pour générer du trafic qualifié en complément de l'outbound. Nous couvrez le scraping de données ciblées sur les bassins de Marseille, Aix-en-Provence, Toulon et Nice.",
     ],
     relatedCities: [
       { slug: "marseille", label: "Marseille" },
@@ -124,7 +124,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
       "Nous commençons par cartographier votre flux commercial actuel, de la génération du lead à la signature. Nous identifions ensuite les points de friction et les tâches automatisables : création automatique de fiches CRM, attribution des leads, déclenchement de relances selon le comportement du prospect, mise à jour des statuts. L'objectif est que vos commerciaux n'aient plus qu'à intervenir au moment décisif : l'échange humain qui conclut la vente.",
       "Concrètement, nous connectons vos outils (CRM type HubSpot, Salesforce ou Pipedrive) via des plateformes d'automatisation comme Zapier, Make ou n8n. Nous mettons en place des workflows de nurturing qui entretiennent automatiquement les leads non encore prêts à acheter, ainsi que des séquences de relance qui ne laissent plus aucune opportunité refroidir faute de suivi.",
       "Là où c'est pertinent, nous intégrons des agents IA pour qualifier les leads entrants, répondre aux premières questions ou enrichir les fiches en temps réel. Le tout est piloté par un reporting clair qui vous montre où en est chaque opportunité et où se situent les goulots d'étranglement de votre pipeline.",
-      "Cette automatisation est le prolongement naturel d'une stratégie d'acquisition : une fois que le cold emailing et le scraping remplissent le haut de votre pipeline, l'automatisation sales garantit qu'aucun lead ne se perd et que votre équipe travaille à plein régime sur ce qui compte vraiment — convertir. Nous automatisons les pipelines commerciaux des PME à Marseille, Aix-en-Provence, Toulon et Nice.",
+      "Cette automatisation est le prolongement naturel d'une stratégie d'acquisition : une fois que le cold emailing, le scraping et notre accompagnement SEO remplissent le haut de votre pipeline, l'automatisation sales garantit qu'aucun lead ne se perd et que votre équipe travaille à plein régime sur ce qui compte vraiment — convertir. Nous automatisons les pipelines commerciaux des PME à Marseille, Aix-en-Provence, Toulon et Nice.",
     ],
     relatedCities: [
       { slug: "marseille", label: "Marseille" },
@@ -148,6 +148,52 @@ export const serviceDetails: Record<string, ServiceDetail> = {
       {
         question: "Peut-on intégrer des agents IA dans le processus ?",
         answer: "Oui. Nous intégrons des agents IA pour la qualification des leads, les premières réponses ou l'enrichissement des fiches, lorsque cela apporte un gain réel sans dégrader l'expérience prospect.",
+      },
+    ],
+  },
+  "accompagnement-seo": {
+    slug: "accompagnement-seo",
+    name: "Accompagnement SEO",
+    kicker: "Visibilité Organique",
+    heroTitle: "Accompagnement SEO B2B",
+    heroSubtitle: "Notre accompagnement SEO combine audit technique, optimisation on-page et stratégie de contenu pour générer un trafic Google qualifié et durable — sans dépendre de la publicité payante.",
+    metaTitle: "Accompagnement SEO B2B : Audit Gratuit | Nana Intelligence",
+    metaDescription: "Accompagnement SEO complet : audit technique, optimisation on-page, contenu et maillage interne. Trafic Google qualifié et durable. Audit gratuit, dès 500€/mois.",
+    features: [
+      "Audit SEO technique complet (crawl, indexation, Core Web Vitals)",
+      "Optimisation on-page (title, meta, Hn, maillage interne)",
+      "Stratégie de contenu ciblée sur vos requêtes à forte intention",
+      "Suivi mensuel des positions Google et reporting transparent",
+    ],
+    detailedContent: [
+      "Contrairement au cold emailing, le SEO ne s'arrête pas quand vous arrêtez de payer : chaque page bien positionnée continue de générer du trafic qualifié mois après mois. C'est le canal d'acquisition le plus durable, mais aussi le plus souvent négligé faute de temps ou de méthode. Notre accompagnement SEO vous donne cette méthode, sans jargon inutile.",
+      "Tout commence par un audit technique complet : crawl du site, analyse de l'indexation, temps de chargement et Core Web Vitals, structure des balises Hn, maillage interne. Cet audit révèle les points de blocage qui empêchent Google de bien comprendre et classer votre site — souvent des correctifs à fort impact et à faible effort.",
+      "Nous optimisons ensuite chaque page prioritaire : balises title et meta description, structure Hn cohérente, maillage interne entre vos pages stratégiques, et ancres de liens pertinentes. En parallèle, nous construisons une stratégie de contenu ciblée sur les requêtes que tapent réellement vos clients potentiels, organisée en cocons sémantiques plutôt qu'en articles isolés.",
+      "Chaque mois, nous suivons l'évolution de vos positions sur Google Search Console et vous transmettons un reporting clair : ce qui progresse, ce qui bloque, et les prochaines actions. Nous ne promettons jamais un nombre de clients ou une position garantie — le SEO reste un travail de fond — mais nous nous engageons sur la méthode et la transparence. Nos accompagnements démarrent à partir de 500€/mois, ajustés selon l'ampleur du chantier, avec un engagement minimum de 2 mois.",
+      "Le SEO s'articule naturellement avec le reste de votre acquisition : pendant que vos campagnes de cold emailing génèrent des rendez-vous à court terme, le référencement construit un flux de trafic entrant qui ne dépend d'aucun budget publicitaire. Pour évaluer rapidement l'état de votre site, démarrez par notre audit SEO gratuit. Nous accompagnons des entreprises à Marseille, Aix-en-Provence, Toulon et Nice.",
+    ],
+    relatedCities: [
+      { slug: "marseille", label: "Marseille" },
+      { slug: "aix-en-provence", label: "Aix-en-provence" },
+      { slug: "toulon", label: "Toulon" },
+      { slug: "nice", label: "Nice" },
+    ],
+    faq: [
+      {
+        question: "Quel est le tarif de l'accompagnement SEO ?",
+        answer: "Nos accompagnements démarrent à partir de 500€/mois, ajustés selon l'ampleur du site et le niveau de concurrence, avec un engagement minimum de 2 mois. L'audit gratuit permet d'établir un devis précis pour votre situation.",
+      },
+      {
+        question: "En quoi consiste l'audit SEO gratuit ?",
+        answer: "Un échange de 30 minutes pendant lequel nous analysons la santé technique de votre site, identifions les points de blocage prioritaires et vous donnons des premières recommandations concrètes, sans engagement.",
+      },
+      {
+        question: "Au bout de combien de temps voit-on des résultats ?",
+        answer: "Le SEO est un travail de fond : les premiers effets techniques apparaissent en quelques semaines, mais une progression significative du trafic se construit généralement sur 3 à 6 mois selon la concurrence du secteur. Nous ne garantissons jamais un chiffre précis, mais nous suivons vos positions chaque mois.",
+      },
+      {
+        question: "Le SEO peut-il remplacer le cold emailing ?",
+        answer: "Les deux canaux sont complémentaires plutôt que substituables. Le cold emailing génère des rendez-vous rapidement ; le SEO construit un flux de trafic organique durable qui continue de travailler pour vous sans budget publicitaire récurrent.",
       },
     ],
   },
