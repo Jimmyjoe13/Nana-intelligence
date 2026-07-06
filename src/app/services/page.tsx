@@ -9,7 +9,7 @@ import { detailedServices, processSteps } from "@/mocks/services";
 import { ArrowRight, Check, Zap, Sparkles } from "lucide-react";
 import Link from "next/link";
 
-// Mappe les blocs du hub vers leurs landing pages dédiées (maillage interne / SEO)
+// Mappe les blocs du hub vers leurs landing pages d\u00e9di\u00e9es (maillage interne / SEO)
 const serviceLinks: Record<string, { href: string; label: string }> = {
   "cold-email": { href: "/services/cold-emailing-b2b", label: "Cold Emailing B2B" },
   "automation": { href: "/services/automatisation-sales", label: "Automatisation Sales" },
@@ -23,7 +23,7 @@ const detailedServicePages = [
 
 export const metadata: Metadata = {
   title: "Services Prospection & Acquisition B2B | Nana Intelligence",
-  description: "Services de prospection B2B : Cold Emailing haute délivrabilité, Scraping LinkedIn & Google Maps, et Automatisation Sales. Demandez votre audit gratuit.",
+  description: "Services de prospection B2B : Cold Emailing haute d\u00e9livrabilit\u00e9, Scraping LinkedIn & Google Maps, et Automatisation Sales. Demandez votre audit gratuit.",
   keywords: [
     "service lead generation b2b",
     "cold emailing france",
@@ -52,7 +52,7 @@ const jsonLd = {
         "itemOffered": {
           "@type": "Service",
           "name": "Cold Emailing B2B",
-          "description": "Séquences de cold email personnalisées avec setup technique complet (SPF, DKIM, warm-up) pour maximiser la délivrabilité."
+          "description": "S\u00e9quences de cold email personnalis\u00e9es avec setup technique complet (SPF, DKIM, warm-up) pour maximiser la d\u00e9livrabilit\u00e9."
         }
       },
       {
@@ -60,7 +60,7 @@ const jsonLd = {
         "itemOffered": {
           "@type": "Service",
           "name": "Scraping & Enrichissement B2B",
-          "description": "Extraction de données prospects sur LinkedIn et Google Maps, enrichissement avec emails professionnels vérifiés."
+          "description": "Extraction de donn\u00e9es prospects sur LinkedIn et Google Maps, enrichissement avec emails professionnels v\u00e9rifi\u00e9s."
         }
       },
       {
@@ -68,7 +68,7 @@ const jsonLd = {
         "itemOffered": {
           "@type": "Service",
           "name": "Automatisation Sales",
-          "description": "Connexion CRM, workflows automatisés et reporting en temps réel pour libérer vos commerciaux des tâches répétitives."
+          "description": "Connexion CRM, workflows automatis\u00e9s et reporting en temps r\u00e9el pour lib\u00e9rer vos commerciaux des t\u00e2ches r\u00e9p\u00e9titives."
         }
       }
     ]
@@ -90,13 +90,13 @@ export default function ServicesPage() {
             kicker="Nos expertises"
             title="Services de"
             emphasis="prospection B2B"
-            description="Générez des opportunités qualifiées sans effort grâce à nos services de Lead Generation spécialisés."
+            description="G\u00e9n\u00e9rez des opportunit\u00e9s qualifi\u00e9es sans effort gr\u00e2ce \u00e0 nos services de Lead Generation sp\u00e9cialis\u00e9s."
           />
           <div className="flex flex-wrap gap-3 pt-10">
             {detailedServicePages.map((s) => (
               <Link key={s.href} href={s.href}>
                 <Tag variant="outline" className="hover:border-orange hover:text-orange transition-colors cursor-pointer">
-                  {s.label} →
+                  {s.label} \u2192
                 </Tag>
               </Link>
             ))}
@@ -137,7 +137,7 @@ export default function ServicesPage() {
                 {serviceLinks[service.id] && (
                   <Link href={serviceLinks[service.id].href} className="pt-2 w-fit">
                     <span className="inline-flex items-center gap-2 font-mono text-[12px] font-bold uppercase tracking-wider text-orange hover:gap-3 transition-all">
-                      → {serviceLinks[service.id].label} : détail de l&apos;offre <ArrowRight size={14} />
+                      \u2192 {serviceLinks[service.id].label} : d\u00e9tail de l&apos;offre <ArrowRight size={14} />
                     </span>
                   </Link>
                 )}
@@ -158,10 +158,10 @@ export default function ServicesPage() {
                   <div className="h-[2px] w-12 bg-ink-4 hidden md:block" />
                   <div className="flex-1 flex flex-col gap-6">
                     <p className="text-sm italic text-ink-3">
-                      &quot;Notre machine d&apos;acquisition est maintenant 100% prévisible.&quot;
+                      "Notre machine d&apos;acquisition est maintenant 100% pr\u00e9visible."
                     </p>
                     <Link href="/contact">
-                      <Button variant="primary" icon={<ArrowRight size={16} />}>Démarrer mon projet</Button>
+                      <Button variant="primary" icon={<ArrowRight size={16} />}>D\u00e9marrer mon projet</Button>
                     </Link>
                   </div>
                 </Box>
@@ -175,7 +175,7 @@ export default function ServicesPage() {
       <section className="bg-cream py-32 border-b-[1.5px] border-ink">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex flex-col gap-20">
           <div className="flex flex-col items-center text-center gap-6">
-            <span className="font-mono text-[11px] text-orange uppercase tracking-[0.2em] font-bold">La Méthode</span>
+            <span className="font-mono text-[11px] text-orange uppercase tracking-[0.2em] font-bold">La M\u00e9thode</span>
             <h2 className="font-display text-[44px] md:text-[64px] leading-tight font-medium max-w-3xl">
               Comment on travaille <span className="italic font-normal">ensemble</span>.
             </h2>
@@ -200,6 +200,27 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Social Proof */}
+      <section className="bg-cream-2 py-32 border-b-[1.5px] border-ink">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10">
+          <h2 className="font-display text-[44px] md:text-[56px] text-center mb-12">Ce que disent nos clients</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Box variant="default" className="p-6">
+              <p className="italic">\u201cNana Intelligence a tripl\u00e9 nos RDV qualifi\u00e9s en 45 jours.\u201d</p>
+              <p className="mt-4 font-medium text-right">- PME marseillaise, 22 employ\u00e9s</p>
+            </Box>
+            <Box variant="default" className="p-6">
+              <p className="italic">\u201cLeur automatisation nous a lib\u00e9r\u00e9 20h/semaine.\u201d</p>
+              <p className="mt-4 font-medium text-right">- Startup SaaS</p>
+            </Box>
+            <Box variant="default" className="p-6">
+              <p className="italic">\u201cDes leads ultra\u2011qualifi\u00e9s, pr\u00eats \u00e0 acheter.\u201d</p>
+              <p className="mt-4 font-medium text-right">- Scale\u2011up B2B</p>
+            </Box>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="bg-ink py-40">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10">
@@ -211,7 +232,7 @@ export default function ServicesPage() {
                 </h2>
              </div>
              <p className="text-cream/60 max-w-xl text-lg leading-relaxed">
-               Discutons de vos besoins pour construire une solution adaptée à vos objectifs commerciaux.
+               Discutons de vos besoins pour construire une solution adapt\u00e9e \u00e0 vos objectifs commerciaux.
              </p>
              <Link href="/contact">
                <Button variant="primary" size="lg" icon={<Sparkles size={20} />}>
