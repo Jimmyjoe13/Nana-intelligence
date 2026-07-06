@@ -111,6 +111,7 @@ export default function ServicesPage() {
                   {s.label} →
                 </Tag>
               </Link>
+                <p className="text-cream/80 text-sm mt-2">Réponse sous 24 h, sans engagement.</p>
             ))}
           </div>
         </div>
@@ -152,6 +153,7 @@ export default function ServicesPage() {
                       → {serviceLinks[service.id].label} : détail de l&apos;offre <ArrowRight size={14} />
                     </span>
                   </Link>
+                <p className="text-cream/80 text-sm mt-2">Réponse sous 24 h, sans engagement.</p>
                 )}
               </div>
 
@@ -175,6 +177,7 @@ export default function ServicesPage() {
                     <Link href="/contact">
                       <Button variant="primary" icon={<ArrowRight size={16} />}>Démarrer mon projet</Button>
                     </Link>
+                <p className="text-cream/80 text-sm mt-2">Réponse sous 24 h, sans engagement.</p>
                   </div>
                 </Box>
               </div>
@@ -230,6 +233,7 @@ export default function ServicesPage() {
                  Demander un devis
                </Button>
              </Link>
+                <p className="text-cream/80 text-sm mt-2">Réponse sous 24 h, sans engagement.</p>
           </Box>
         </div>
       </section>
