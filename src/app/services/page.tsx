@@ -112,6 +112,7 @@ export default function ServicesPage() {
                 </Tag>
               </Link>
             ))}
+            <p className="text-cream/80 text-sm mt-2 w-full">Réponse sous 24 h, sans engagement.</p>
           </div>
         </div>
       </section>
@@ -147,11 +148,14 @@ export default function ServicesPage() {
                   ))}
                 </div>
                 {serviceLinks[service.id] && (
-                  <Link href={serviceLinks[service.id].href} className="pt-2 w-fit">
-                    <span className="inline-flex items-center gap-2 font-mono text-[12px] font-bold uppercase tracking-wider text-orange hover:gap-3 transition-all">
-                      → {serviceLinks[service.id].label} : détail de l&apos;offre <ArrowRight size={14} />
-                    </span>
-                  </Link>
+                  <>
+                    <Link href={serviceLinks[service.id].href} className="pt-2 w-fit">
+                      <span className="inline-flex items-center gap-2 font-mono text-[12px] font-bold uppercase tracking-wider text-orange hover:gap-3 transition-all">
+                        → {serviceLinks[service.id].label} : détail de l&apos;offre <ArrowRight size={14} />
+                      </span>
+                    </Link>
+                    <p className="text-cream/80 text-sm mt-2">Réponse sous 24 h, sans engagement.</p>
+                  </>
                 )}
               </div>
 
@@ -175,6 +179,7 @@ export default function ServicesPage() {
                     <Link href="/contact">
                       <Button variant="primary" icon={<ArrowRight size={16} />}>Démarrer mon projet</Button>
                     </Link>
+                <p className="text-cream/80 text-sm mt-2">Réponse sous 24 h, sans engagement.</p>
                   </div>
                 </Box>
               </div>
@@ -230,6 +235,7 @@ export default function ServicesPage() {
                  Demander un devis
                </Button>
              </Link>
+                <p className="text-cream/80 text-sm mt-2">Réponse sous 24 h, sans engagement.</p>
           </Box>
         </div>
       </section>

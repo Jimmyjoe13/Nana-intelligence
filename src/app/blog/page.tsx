@@ -87,6 +87,7 @@ export default function BlogPage() {
             <Link href="/services/automatisation-sales" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Automatisation Sales</Link>
             <Link href="/agence-lead-generation" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Agence Lead PACA</Link>
             <Link href="/contact" className="font-mono text-[11px] text-cream uppercase tracking-widest font-bold bg-ink border border-ink px-4 py-2 hover:border-orange hover:text-orange transition-colors">Audit gratuit</Link>
+                <p className="text-ink/80 text-sm mt-2">Réponse sous 24 h, sans engagement.</p>
           </div>
         </div>
       </section>
