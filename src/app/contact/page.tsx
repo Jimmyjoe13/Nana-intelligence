@@ -8,7 +8,7 @@ import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact & Audit Gratuit 30 min | Nana Intelligence",
-  description: "Contactez Nana Intelligence pour un audit gratuit de 30 minutes. Agence de Lead Generation B2B a Marseille, specialisee en Cold Emailing, Scraping et Automatisation Sales.",
+  description: "Contactez Nana Intelligence pour un audit gratuit de 30 minutes. Agence de Lead Generation B2B, experte en Cold Emailing, Scraping et Automatisation Sales.",
   keywords: [
     "contact agence lead generation",
     "audit gratuit prospection B2B",
