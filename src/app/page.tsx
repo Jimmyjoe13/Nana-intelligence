@@ -93,7 +93,7 @@ export default function Home() {
                     trackLabel="hero_audit_gratuit"
                     sectionId="hero"
                   >
-                   Réserver mon audit gratuit (30 min)
+                   Réserver mon audit gratuit (30 min) - Places limitées
                  </Button>
                </Link>
                <Link href="#methode">
