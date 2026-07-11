@@ -9,6 +9,7 @@ import { ArrowRight, MapPin, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/agence-lead-generation" },
   title: "Nos Agences de Prospection B2B | Nana Intelligence",
   description: "Agences de prospection commerciale B2B à Marseille, Aix, Toulon et Nice. Cold Emailing, Scraping LinkedIn et Automatisation Sales.",
   keywords: [

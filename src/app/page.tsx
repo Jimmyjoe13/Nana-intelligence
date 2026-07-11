@@ -45,6 +45,7 @@ const jsonLdBreadcrumb = {
 };
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/" },
   title: "Générez +250 RDV B2B par Mois | Nana Intelligence",
   description: "Agence de Lead Generation B2B à Marseille. Cold Emailing, Scraping et Automatisation Sales pour remplir votre agenda de RDV qualifiés. Audit gratuit 30 min.",
   keywords: [

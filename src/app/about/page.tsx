@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "À Propos de Nana Intelligence | Agence B2B Marseille",
   description: "Découvrez Nana Intelligence, agence de prospection commerciale B2B à Marseille. Fondée par Jimmy Khotsombat, expert en Cold Emailing & Automatisation.",
   keywords: [
