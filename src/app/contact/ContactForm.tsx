@@ -48,7 +48,7 @@ export default function ContactForm() {
   };
 
   return (
-    <Box className="bg-cream p-10 md:p-16 flex flex-col gap-10">
+    <Box id="contact-form" className="bg-cream p-10 md:p-16 flex flex-col gap-10">
       <div className="flex flex-col gap-2">
         <span className="font-mono text-[11px] text-orange uppercase tracking-[0.2em] font-bold">Audit de 30 minutes</span>
         <h3 className="font-display text-[32px] font-medium">Réservez votre créneau.</h3>
