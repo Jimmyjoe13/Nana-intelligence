@@ -94,7 +94,7 @@ export default function Home() {
                     trackLabel="hero_audit_gratuit"
                     sectionId="hero"
                   >
-                   Réserver mon audit gratuit (30 min)
+                   Réserver mon audit gratuit (30 min) - Places limitées
                  </Button>
                </Link>
                <Link href="#methode">
@@ -104,7 +104,7 @@ export default function Home() {
                     trackLabel="hero_decouvrir_methode"
                     sectionId="hero"
                   >
-                   Découvrir notre méthode
+                   Découvrir notre méthode éprouvée
                  </Button>
                </Link>
              </div>
@@ -179,7 +179,7 @@ export default function Home() {
                   trackLabel="voir_tous_services"
                   sectionId="solution"
                 >
-                  Voir tous les services
+                  Découvrir nos services de lead generation
                 </Button>
             </Link>
           </div>
@@ -297,7 +297,7 @@ export default function Home() {
                   trackLabel="final_cta_audit"
                   sectionId="final_cta"
                 >
-                 Réserver mon audit gratuit
+                 Réserver mon audit gratuit - Places limitées
                </Button>
              </Link>
           </Box>
