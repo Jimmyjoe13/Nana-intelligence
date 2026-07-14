@@ -65,7 +65,7 @@ export default function ContactForm() {
         </div>
         <div className="md:col-span-2 flex flex-col gap-4">
           <Button type="submit" variant="primary" size="lg" className="w-full" loading={status === "sending"} icon={<ArrowRight size={18} />} trackLabel="envoyer_demande_audit" sectionId="contact_form">
-            Envoyer ma demande d&apos;audit
+            Obtenir mon audit gratuit
           </Button>
           {status === "success" && (
             <p className="mt-6 text-[12px] font-mono uppercase text-center text-orange font-bold leading-relaxed">
