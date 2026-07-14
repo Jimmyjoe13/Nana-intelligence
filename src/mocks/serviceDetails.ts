@@ -6,6 +6,7 @@ export interface ServiceDetail {
   heroSubtitle: string;
   metaTitle: string;
   metaDescription: string;
+  keywords: string[];
   features: string[];
   detailedContent: string[];
   faq: { question: string; answer: string }[];
@@ -57,8 +58,8 @@ export const serviceDetails: Record<string, ServiceDetail> = {
         question: "Le cold emailing fonctionne-t-il pour mon secteur ?",
         answer: "Le cold emailing B2B est efficace dès que votre client cible est une entreprise avec des décideurs identifiables (Tech, services, industrie, immobilier d'entreprise…). Il est moins adapté au B2C ou aux paniers très faibles.",
       },
-    ],
-  },
+    ],,
+    keywords: ["cold emailing B2B", "prospection B2B", "email froid", "génération de leads", "outbound sales"]},
   "scraping-b2b": {
     slug: "scraping-b2b",
     name: "Scraping & Enrichissement B2B",
