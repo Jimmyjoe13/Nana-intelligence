@@ -13,7 +13,9 @@ const LEAD_WEBHOOK_URL =
 
 export default function ContactForm() {
   const [formStarted, setFormStarted] = useState(false);
-  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">(
+    "idle"
+  );
 
   const handleFormStart = () => {
     if (!formStarted) {
@@ -50,7 +52,9 @@ export default function ContactForm() {
   return (
     <Box id="contact-form" className="bg-cream p-10 md:p-16 flex flex-col gap-10">
       <div className="flex flex-col gap-2">
-        <span className="font-mono text-[11px] text-orange uppercase tracking-[0.2em] font-bold">Audit de 30 minutes</span>
+        <span className="font-mono text-[11px] text-orange uppercase tracking-[0.2em] font-bold">
+          Audit de 30 minutes
+        </span>
         <h3 className="font-display text-[32px] font-medium">Réservez votre créneau.</h3>
       </div>
 
@@ -61,12 +65,15 @@ export default function ContactForm() {
           <Field label="Email professionnel" name="email" type="email" placeholder="jean@entreprise.ai" required onFocus={handleFormStart} />
         </div>
         <div className="md:col-span-2">
-          <Field label="Entreprise" name="entreprise" placeholder="Nom de votre société" required onFocus={handleFormStart} />
+          <Field label="Entreprise (optionnel)" name="entreprise" placeholder="Nom de votre société" onFocus={handleFormStart} />
         </div>
         <div className="md:col-span-2 flex flex-col gap-4">
           <Button type="submit" variant="primary" size="lg" className="w-full" loading={status === "sending"} icon={<ArrowRight size={18} />} trackLabel="envoyer_demande_audit" sectionId="contact_form">
             Obtenir mon audit gratuit
           </Button>
+          <p className="mt-4 text-[12px] text-ink-3 font-sans text-center">
+            Vos informations sont sécurisées et jamais partagées.
+          </p>
           {status === "success" && (
             <p className="mt-6 text-[12px] font-mono uppercase text-center text-orange font-bold leading-relaxed">
               Demande envoyée ✓ On revient vers vous sous 24h.
