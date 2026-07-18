@@ -68,6 +68,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     heroSubtitle: "Notre service de scraping B2B extrait des prospects ciblés sur LinkedIn et Google Maps, puis enrichit chaque contact avec des emails professionnels vérifiés — la matière première d'une prospection qui convertit.",
     metaTitle: "Scraping B2B : LinkedIn, Google Maps & Enrichissement | Nana",
     metaDescription: "Service de scraping B2B : extraction ciblée sur LinkedIn et Google Maps, enrichissement d'emails professionnels vérifiés et conformité RGPD.",
+    keywords: ["scraping B2B", "prospection B2B", "enrichissement de données", "génération de leads", "extraction LinkedIn"],
     features: [
       "Extraction LinkedIn & Google Maps ciblée",
       "Enrichissement d'emails professionnels vérifiés (SMTP)",
@@ -114,6 +115,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     heroSubtitle: "Notre service d'automatisation sales connecte votre CRM, automatise vos relances et votre nurturing, et libère vos commerciaux des tâches répétitives pour qu'ils se concentrent sur la vente.",
     metaTitle: "Automatisation Sales B2B : CRM & Workflows | Nana Intelligence",
     metaDescription: "Service d'automatisation sales B2B : connexion CRM (HubSpot, Pipedrive), workflows automatisés (Make/n8n) et nurturing. Libérez vos commerciaux.",
+    keywords: ["automatisation des ventes", "sales automation", "automatisation prospection B2B", "agents IA commerciaux", "CRM automatisé"],
     features: [
       "Connexion CRM (HubSpot, Salesforce, Pipedrive)",
       "Workflows automatisés (Zapier, Make, n8n)",
@@ -160,6 +162,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     heroSubtitle: "Notre accompagnement SEO combine audit technique, optimisation on-page et stratégie de contenu pour générer un trafic Google qualifié et durable — sans dépendre de la publicité payante.",
     metaTitle: "Accompagnement SEO B2B : Audit Gratuit | Nana Intelligence",
     metaDescription: "Accompagnement SEO complet : audit technique, optimisation on-page, contenu et maillage interne. Trafic Google qualifié et durable. Audit gratuit, dès 500€/mois.",
+    keywords: ["accompagnement SEO", "référencement naturel B2B", "SEO B2B", "stratégie de contenu", "trafic organique"],
     features: [
       "Audit SEO technique complet (crawl, indexation, Core Web Vitals)",
       "Optimisation on-page (title, meta, Hn, maillage interne)",
