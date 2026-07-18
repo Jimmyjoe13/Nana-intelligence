@@ -69,7 +69,7 @@ export default function ContactForm() {
         </div>
         <div className="md:col-span-2 flex flex-col gap-4">
           <Button type="submit" variant="primary" size="lg" className="w-full" loading={status === "sending"} icon={<ArrowRight size={18} />} trackLabel="envoyer_demande_audit" sectionId="contact_form">
-            Obtenir mon audit gratuit
+            Obtenir mon audit gratuit 30 min
           </Button>
           <p className="mt-4 text-[12px] text-ink-3 font-sans text-center">
             Vos informations sont sécurisées et jamais partagées.
