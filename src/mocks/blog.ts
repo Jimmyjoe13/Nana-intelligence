@@ -202,114 +202,94 @@ export const blogPosts = [
   },
   {
     id: 5,
-    title: "Guide complet de l'automatisation sales pour les PME",
-    excerpt: "Découvrez comment automatiser votre processus de vente B2B pour multiplier vos rendez-vous tout en réduisant les coûts opérationnels.",
-    category: "IA / AUTOMATISATION",
-    date: "03 Juillet 2026",
-    readTime: "12 MIN",
-    image: "https://images.unsplash.com/photo-1605962099795-6b6d5e7b5c5b?q=80&w=800&auto=format&fit=crop",
+    title: "Automatisation sales PME : guide complet 2026",
+    excerpt: "Pourquoi les PME qui automatisent leur prospection signent 3× plus de contrats — et comment mettre le vôtre sur les rails sans y passer vos nuits.",
+    category: "STRATÉGIE",
+    date: "18 Juillet 2026",
+    readTime: "4 MIN",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "Automatisation Sales B2B" },
-      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "Cold Emailing B2B" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" }
+      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "automatisation sales B2B" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "cold emailing B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "scraping B2B" },
     ],
     content: `
-      <h1>Guide complet de l'automatisation sales pour les PME</h1>
-      <p>Dans un environnement commercial de plus en plus compétitif, les petites et moyennes entreprises (PME) doivent optimiser chaque étape de leur processus de vente pour rester rentables. L'automatisation des ventes (sales automation) permet de transformer la prospection, la qualification et le suivi des opportunités en un moteur de croissance prévisible et scalable.</p>
-      <h2>1. Pourquoi automatiser votre processus de vente ?</h2>
-      <p>Les équipes commerciales passent souvent jusqu'à 60 % de leur temps sur des tâches administratives : saisie de données, relances manuelles, mise à jour du CRM. En automatisant ces tâches répétitives, vous libérez des heures précieuses pour la vente réelle.</p>
-      <ul>
-        <li><strong>Gain de temps :</strong> les relances et les mises à jour se font en arrière‑plan.</li>
-        <li><strong>Réduction des erreurs :</strong> la saisie manuelle disparaît, les données sont toujours à jour.</li>
-        <li><strong>Scalabilité :</strong> un même processus peut gérer dix fois plus de leads sans augmenter l'effectif.</li>
-        <li><strong>Meilleure prédictibilité :</strong> les indicateurs (taux de conversion, durée du cycle) deviennent stables et prévisibles.</li>
-      </ul>
-      <h2>2. Les piliers d'une automatisation sales efficace</h2>
-      <h3>a. Capture et enrichissement des leads</h3>
-      <p>Le point de départ est une base de prospects à jour et enrichie. Utilisez le <a href="/services/scraping-b2b">scraping B2B sur-mesure</a> pour extraire des décideurs depuis LinkedIn ou Google Maps, puis enrichissez leurs profils avec des données technographiques (stack logicielle, taille d'entreprise, budget IT).</p>
-      <h3>b. Scoring et segmentation intelligents</h3>
-      <p>Appliquez un modèle de scoring basé sur l'adéquation du poste, le secteur d'activité, le niveau d'engagement (ouverture d'emails, visites de pages). Les leads chauds sont immédiatement acheminés vers les commerciaux, tandis que les leads froids entrent dans un nurturing automatisé.</p>
-      <h3>c. Séquences d'emailing personnalisées à l'échelle</h3>
-      <p>L'intelligence artificielle génère des premières lignes uniques en référence à une actualité récente du prospect, un contenu partagé ou un événement professionnel. Respectez la règle des 100 mots : objet court, personnalisation en introduction, appel à l'action doux (« Est‑ce que le sujet est d'actualité pour vous ? »)</p>
-      <p>Utilisez l'inbox rotation (distribution de l'envoi sur plusieurs adresses) pour rester sous les seuils des filtres anti‑spam.</p>
-      <h3>d. Workflow d'automatisation complète</h3>
-      <p>Orchestrez le tout avec une plateforme comme Make, n8n ou Zapier :</p>
-      <ol>
-        <li>Déclencheur hebdomadaire de scraping de nouveaux prospects.</li>
-        <li>Enrichissement des fiches avec données technographiques.</li>
-        <li>Attribution du score et segmentation.</li>
-        <li>Lancement d'une séquence d'emails personnalisés selon le score.</li>
-        <li>Mise à jour en temps réel du CRM (HubSpot, Pipedrive, Salesforce).</li>
-        <li>Notification Slack ou email au commercial lorsqu'un lead atteint le seuil de chaleur.</li>
-      </ol>
-      <h2>3. Outils recommandés pour les PME</h2>
-      <ul>
-        <li><strong>Scraping :</strong> PhantomBuster, Apify ou le service interne de Nana Intelligence.</li>
-        <li><strong>Enrichissement :</strong> Clearbit, Dropcontact ou les APIs LinkedIn.</li>
-        <li><strong>Scoring :</strong> MadKudu, HubSpot Predictive Lead Scoring ou un modèle personnalisé sur Make.</li>
-        <li><strong>Emailing :</strong> Lemlist, Mailshake ou SalesLoft avec fonction d'IA pour la personnalisation.</li>
-        <li><strong>Workflow :</strong> Make (scénario visuel), n8n (open‑source) ou Zapier (simplicité).</li>
-        <li><strong>CRM :</strong> HubSpot CRM (gratuit), Pipedrive ou Zoho CRM.</li>
-      </ul>
-      <h2>4. Mise en place étape par étape</h2>
-      <ol>
-        <li><strong>Audit gratuit :</strong> définissez vos objectifs (nombre de rendez‑vous, coût par lead) et votre profil client idéal.</li>
-        <li><strong>Choix des outils :</strong> sélectionnez une solution de scraping, un enrichisseur, un scorer et un séquencer d'email.</li>
-        <li><strong>Mise en place du scraping hebdomadaire :</strong> créez un job qui extrait 200 nouveaux décideurs chaque lundi.</li>
-        <li><strong>Enrichissement :</strong> ajoutez les emails vérifiés et les données technographiques.</li>
-        <li><strong>Scoring :</strong> attribuez un score de 0 à 100 selon vos critères (poste, secteur, taille d'entreprise, technographie).</li>
-        <li><strong>Séquençage :</strong> préparez 4‑5 emails avec variantes A/B testées.</li>
-        <li><strong>Automatisation :</strong> connectez tout cela dans un workflow qui déclenche la séquence dès qu'un lead atteint un score de 70+.</li>
-        <li><strong>Suivi :</strong> intégrez le CRM pour voir l'évolution du stade de chaque lead.</li>
-        <li><strong>Optimisation :</strong> chaque semaine, analysez les taux d'ouverture, de réponse et de conversion ; ajustez le scoring et le texte des emails.</li>
-      </ol>
-      <h2>5. Résultats attendus</h2>
-      <p>Les PME qui suivent cette méthodologie constatent généralement :</p>
-      <ul>
-        <li>+60 à +120 % de rendez‑vous qualifiés en trois mois.</li>
-        <li>Réduction de 30‑40 % du temps consacré à la prospection manuelle.</li>
-        <li>Coût par lead divisé par deux grâce à la précision du ciblage.</li>
-        <li>Prévisionnel de revenu plus stable grâce à un pipeline constamment alimenté.</li>
-      </ul>
-      <h2>6. Étude de cas : une agence web à Marseille</h2>
-      <p>Une agence spécialisée dans la création de sites pour les PME a mis en place ce dispositif en six semaines. Résultats après 90 jours :</p>
-      <ul>
-        <li>+85 % de rendez‑vous commerciaux.</li>
-        <li>‑35 % de temps passé sur la saisie des données.</li>
-        <li>Coût par acquisition client réduit de 45 %.</li>
-      </ul>
-      <p>Cet exemple montre que l'automatisation sales n'est pas réservée aux grandes entreprises ; elle est accessible et rentable pour toute PME prête à investir dans les bons outils et la bonne méthodologie.</p>
-      <h2>7. Prochaine étape avec Nana Intelligence</h2>
-      <p>Nous proposons un accompagnement clé en main : audit gratuit, sélection des outils, mise en place du workflow et formation de vos équipes commerciales.</p>
-      <p>Pour commencer, <a href="/contact">demandez un audit gratuit de 30 minutes</a> et découvrez comment transformer votre prospection en véritable machine à croissance.</p>
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Guide complet de l'automatisation sales pour les PME",
-        "description": "Découvrez comment automatiser votre processus de vente B2B pour multiplier vos rendez‑vous tout en réduisant les coûts opérationnels.",
-        "image": "https://images.unsplash.com/photo-1605962099795-6b6d5e7b5c5b?q=80&w=800&auto=format&fit=crop",
-        "author": {
-          "@type": "Organization",
-          "name": "Nana Intelligence"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Nana Intelligence",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://nana-intelligence.fr/logo.png"
-          }
-        },
-        "datePublished": "2026-07-03",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://nana-intelligence.fr/blog/automatisation-sales-pme-guide-complet"
-        }
-      }
-      </script>
+<h1>Automatisation sales PME : guide complet 2026</h1>
+
+<p>Vous passez vos soirées à scraper LinkedIn, à écrire des séquences de relance que personne n&#39;ouvre, et à mettre à jour un CRM que votre commercial n&#39;ouvre jamais. Bienvenue dans le club des dirigeants PME qui font de la prospection <em>à l&#39;ancienne</em> — et qui s&#39;étonnent de ne pas avoir assez de RDV qualifiés.</p>
+
+<p>Bonne nouvelle : les PME qui ont basculé sur l&#39;<strong>automatisation sales</strong> signent en moyenne 3 fois plus de contrats, avec un commercial qui rentre à 18h30. Pas de magie. Juste des process, de la data propre, et des séquences qui tournent pendant que vous dormez.</p>
+
+<h2>Pourquoi l&#39;automatisation sales n&#39;est plus une option pour les PME en 2026</h2>
+
+<p>Le calcul est simple. Un commercial passe <strong>60 % de son temps</strong> à prospecter (scraping, rédaction, relances, saisie CRM). Il ne vend que 40 % du temps. Automatiser la prospection, c&#39;est inverser le ratio : 80 % vente, 20 % pilotage.</p>
+
+<p>Les chiffres parlent :</p>
+<ul>
+  <li><strong>+300 % de RDV qualifiés</strong> en moyenne pour nos clients PME (5–50 salariés, B2B) après 3 mois d&#39;automatisation.</li>
+  <li><strong>–70 % de temps passé</strong> sur les tâches répétitives (scraping, enrichissement, relances, mise à jour CRM).</li>
+  <li><strong>Coût d&#39;acquisition client divisé par 2 à 3</strong> vs prospection manuelle ou agence classique au coût par lead.</li>
+</ul>
+
+<p>Et non, ça ne remplace pas votre commercial. Ça le <strong>libère</strong> pour ce qu&#39;il sait faire : closer.</p>
+
+<h2>Les 3 piliers d&#39;une automatisation sales qui tourne (vraiment)</h2>
+
+<h3>1. Data propre = carburant propre</h3>
+<p>Automatiser sur une base de données pourrie, c&#39;est mettre du super dans un moteur grippe. La première brique, c&#39;est le <strong>scraping B2B ciblé</strong> : identification de vos ICP (Ideal Customer Profiles), extraction des décideurs, enrichissement emails/téléphones vérifiés, déduplication. Pas de fichier Excel acheté sur LeBonCoin. De la data fraîche, segmentée, RGPD-compliant.</p>
+<p>→ C&#39;est exactement ce qu&#39;on livre via notre service <a href="/services/scraping-b2b"><strong>scraping B2B</strong></a> : des listes prêtes à pitcher, pas des fichiers à nettoyer.</p>
+
+<h3>2. Séquences cold email qui convertissent (pas qui spamment)</h3>
+<p>La différence entre un spam et un cold email qui obtient 40 % de taux d&#39;ouverture et 15 % de réponse ? La personnalisation <em>à l&#39;échelle</em>. Variables dynamiques (prénom, entreprise, pain point détecté via scraping), A/B test continu, délais de relance optimisés, gestion des désabonnements RGPD.</p>
+<p>On ne vous vend pas des templates. On déploie une <strong>infra d&#39;envoi propre</strong> (domaines dédiés, warm-up IP, rotation, tracking) + des séquences écrites <em>pour votre offre</em>. C&#39;est le cœur de notre service <a href="/services/cold-emailing-b2b"><strong>cold emailing B2B</strong></a>.</p>
+
+<h3>3. CRM qui se met à jour tout seul (et que votre commercial ouvre enfin)</h3>
+<p>Le commercial n&#39;a pas à saisir. L&#39;automatisation pousse le lead qualifié dans le CRM (Pipedrive, HubSpot, noCRM, Attio…), crée la tâche « Appel découverte », assigne le bon commercial selon la zone/secteur, notifie sur Slack/Teams. Le commercial ouvre son CRM le matin : ses RDV sont prêts, ses tâches sont claires. Il vend.</p>
+<p>C&#39;est le cœur de notre offre <a href="/services/automatisation-sales"><strong>automatisation sales B2B</strong></a> : on branche le scraping, l&#39;emailing, le CRM et les notifs dans un flux unique (n8n + IA) qui tourne 24/7.</p>
+
+<h2>Le piège à éviter : vouloir tout automatiser tout de suite</h2>
+
+<p>Erreur classique : vous achetez 5 outils (PhantomBuster, Lemlist, Clay, n8n, HubSpot), vous passez 3 mois à les brancher, et votre commercial continue de prospecter à la main parce que « ça marche mieux ».</p>
+
+<p>La méthode qui marche chez nos clients PME (5–50 salariés, B2B, PACA et national) :</p>
+<ol>
+  <li><strong>Audit 30 min</strong> : on cartographie votre process actuel, votre ICP, votre stack, vos KPIs actuels.</li>
+  <li><strong>MVP 2 semaines</strong> : on déploie UN flux (scraping → emailing → CRM) sur UN segment ICP. Objectif : 10 RDV qualifiés en 14 jours.</li>
+  <li><strong>Itération</strong> : on optimise les séquences, on élargit les segments, on branche l&#39;automatisation CRM, on forme votre commercial.</li>
+  <li><strong>Industrialisation</strong> : le process tourne en autonome. Vous pilotez aux KPIs (coût/RDV, taux de réponse, cycle de vente).</li>
+</ol>
+
+<p>Pas de big bang. De la valeur dès la semaine 2.</p>
+
+<h2>Combien ça coûte ? (Spoiler : moins qu&#39;un commercial junior)</h2>
+
+<p>Notre modèle : <strong>500 €/mois</strong> (engagement 2 mois minimum) pour le setup complet — scraping, infra emailing, séquences, automatisation CRM, reporting hebdo. Le coût par RDV qualifié tombe généralement entre <strong>30 et 80 €</strong>, contre 150–300 € en agence classique ou en interne (coût chargé commercial junior).</p>
+
+<p>Et si ça ne marche pas ? On s&#39;engage sur des KPIs minima (volume de leads entrants, taux d&#39;ouverture, RDV bookés). Si on ne les tient pas, on ne vous facture pas le mois suivant. C&#39;est aussi simple que ça.</p>
+
+<h2>Prêt à arrêter de prospecter le soir ?</h2>
+
+<p>Vous avez deux options : continuer à scraper LinkedIn devant Netflix, ou réserver un <strong>appel découverte 30 min</strong> (gratuit, sans engagement) pour qu&#39;on regarde votre process actuel et qu&#39;on vous dise exactement ce qu&#39;on peut automatiser chez vous — et en combien de temps.</p>
+
+<p style="text-align:center; margin:2rem 0;">
+  <a href="/contact" style="background:#1a1a2e;color:#fff;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;">
+    🎯 Réserver mon audit gratuit
+  </a>
+</p>
+
+<p><em>Ou envoyez un DM à <a href="https://instagram.com/jimmy_growth13" target="_blank" rel="noopener">@jimmy_growth13</a> — on répond vite, et sans bullshit corporate.</em></p>
+
+<hr style="margin:3rem 0;border:none;border-top:1px solid #e0e0e0;"/>
+
+<h2>Résumé pour les pressés</h2>
+<ul>
+  <li><strong>Automatisation sales PME</strong> = data propre + cold email qui convertit + CRM auto-maj = commercial qui vend 80 % du temps.</li>
+  <li>Résultats typiques : <strong>+300 % RDV qualifiés, –70 % temps prospection, CAC ÷ 2–3</strong>.</li>
+  <li>Approche MVP en 2 semaines, engagement 2 mois, 500 €/mois, KPIs garantis.</li>
+  <li>Prochaine étape : <a href="/contact"><strong>audit gratuit 30 min</strong></a> (ou DM Insta).</li>
+</ul>
     `
-  },
+  }
 ];
 
 export const blogCategories = ["TOUT", "STRATÉGIE", "COLD EMAIL", "DATA / SCRAPING", "IA / AUTOMATISATION"];
