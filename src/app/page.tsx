@@ -94,7 +94,7 @@ export default function Home() {
                     trackLabel="hero_audit_gratuit"
                     sectionId="hero"
                   >
-                   Obtenir mon audit gratuit de 30 minutes
+                   Demandez votre audit gratuit de 30 minutes
                  </Button>
                </Link>
                <Link href="#methode">
