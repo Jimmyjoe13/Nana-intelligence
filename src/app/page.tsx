@@ -94,7 +94,7 @@ export default function Home() {
                     trackLabel="hero_audit_gratuit"
                     sectionId="hero"
                   >
-                   Réserver mon audit gratuit (30 min)
+                   Obtenir mon audit gratuit 30 min
                  </Button>
                </Link>
                <Link href="#methode">
@@ -297,7 +297,7 @@ export default function Home() {
                   trackLabel="final_cta_audit"
                   sectionId="final_cta"
                 >
-                 Réserver mon audit gratuit
+                 Obtenir mon audit gratuit 30 min
                </Button>
              </Link>
           </Box>
