@@ -26,7 +26,7 @@ const detailedServicePages = [
 export const metadata: Metadata = {
   alternates: { canonical: "/services" },
   title: "Services Prospection & Acquisition B2B | Nana Intelligence",
-  description: "Services de prospection B2B : Cold Emailing haute délivrabilité, Scraping LinkedIn & Google Maps, Accompagnement SEO et Automatisation Sales. Audit gratuit.",
+  description: "Services de prospection B2B : Cold Emailing, Scraping, Automatisation Sales & SEO. Boostez vos rendez-vous commerciaux. Réservez votre audit offert.",
   keywords: [
     "service lead generation b2b",
     "cold emailing france",

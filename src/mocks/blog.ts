@@ -1,8 +1,8 @@
 export const blogPosts = [
   {
     id: 1,
-    title: "Agence de prospection B2B ou commercial interne : Que choisir ?",
-    excerpt: "Le comparatif complet des coûts et des avantages pour développer ses ventes B2B. Doit-on externaliser sa prospection commerciale ?",
+    title: "Agence de prospection B2B ou commercial interne ?",
+    excerpt: "Comparatif complet des coûts et avantages entre commercial interne et agence prospection B2B. Quel choix pour vos ventes ?",
     category: "STRATÉGIE",
     date: "03 Mars 2026",
     readTime: "6 MIN",
@@ -61,8 +61,8 @@ export const blogPosts = [
   },
   {
     id: 2,
-    title: "Guide du Cold Emailing B2B en 2026 (Sans finir en Spam)",
-    excerpt: "Setup technique, copywriting et délivrabilité : la méthode complète pour envoyer des cold emails qui génèrent des rendez-vous.",
+    title: "Guide Cold Emailing B2B 2026 (Sans finir en Spam)",
+    excerpt: "Setup technique (SPF/DKIM), copywriting et délivrabilité : la méthode pour envoyer des cold emails qui génèrent des RDV qualifiés.",
     category: "COLD EMAIL",
     date: "03 Mars 2026",
     readTime: "10 MIN",
@@ -110,8 +110,8 @@ export const blogPosts = [
   },
   {
     id: 3,
-    title: "Comment utiliser le Scraping B2B pour trouver des clients ?",
-    excerpt: "Apprenez à extraire des bases de données ultra-ciblées sur LinkedIn et Google Maps en toute légalité (RGPD).",
+    title: "Comment utiliser le Scraping B2B pour vos ventes ?",
+    excerpt: "Apprenez à extraire des bases de données ciblées sur LinkedIn et Google Maps en toute légalité RGPD. Guide pratique.",
     category: "DATA / SCRAPING",
     date: "03 Mars 2026",
     readTime: "7 MIN",
@@ -154,8 +154,8 @@ export const blogPosts = [
   },
   {
     id: 4,
-    title: "Comment l'IA peut automatiser votre prospection B2B (guide PME 2026)",
-    excerpt: "Scrapping intelligent, cold emails personnalisés à l'échelle, workflows autonomes : comment les PME utilisent l'IA pour générer des RDV sans exploser leur budget.",
+    title: "Automatiser sa prospection B2B avec l'IA (Guide 2026)",
+    excerpt: "Scraping intelligent, cold email personnalisé et workflows autonomes : générez des RDV qualifiés avec l'IA pour votre PME.",
     category: "IA / AUTOMATISATION",
     date: "28 Juin 2026",
     readTime: "9 MIN",

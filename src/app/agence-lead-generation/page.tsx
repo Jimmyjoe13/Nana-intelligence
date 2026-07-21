@@ -11,7 +11,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   alternates: { canonical: "/agence-lead-generation" },
   title: "Nos Agences de Prospection B2B | Nana Intelligence",
-  description: "Agences de prospection commerciale B2B à Marseille, Aix, Toulon et Nice. Cold Emailing, Scraping LinkedIn et Automatisation Sales.",
+  description: "Agences de prospection B2B à Marseille, Aix, Toulon & Nice. Générez un flux de RDV qualifiés en région PACA. Demandez votre audit de 30 min offert.",
   keywords: [
     "agence prospection commerciale b2b marseille",
     "agence prospection commerciale b2b aix en provence",
