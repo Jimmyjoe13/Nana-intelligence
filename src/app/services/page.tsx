@@ -105,6 +105,13 @@ export default function ServicesPage() {
             emphasis="prospection B2B"
             description="Générez des opportunités qualifiées sans effort grâce à nos services de Lead Generation spécialisés."
           />
+          <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
+            <Link href="/contact">
+              <Button variant="primary" size="lg" className="mt-4">
+                Demandez votre audit gratuit
+              </Button>
+            </Link>
+          </div>
           <div className="flex flex-wrap gap-3 pt-10">
             {detailedServicePages.map((s) => (
               <Link key={s.href} href={s.href}>
