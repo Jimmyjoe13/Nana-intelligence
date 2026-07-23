@@ -61,9 +61,9 @@ export default function ContactPage() {
           />
         </div>
           <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
-            <a href="#contact-form" className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-mono text-[12px] font-medium tracking-[0.08em] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-orange disabled:pointer-events-none disabled:opacity-50 border-[1.5px] rounded-none bg-orange text-ink border-ink hover:bg-ink hover:text-cream">Obtenir mon audit gratuit 30 min</a>
-          </div>
-      </section>
+            <Link href="#contact-form">
+              <Button variant="primary" size="lg">Obtenir mon audit gratuit 30 min</Button>
+            </Link>
 
       {/* Main Contact Content */}
       <section className="bg-cream-2 py-32 border-b-[1.5px] border-ink">

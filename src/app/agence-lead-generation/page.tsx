@@ -71,6 +71,13 @@ export default function AgencyPage() {
             emphasis="de proximité"
             description="Nana Intelligence rayonne sur toute la France avec un ancrage fort en région PACA. Trouvez l'expertise locale adaptée à votre marché."
           />
+          <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
+            <Link href="/contact">
+              <Button variant="primary" size="lg" className="mt-4">
+                Demandez votre audit gratuit
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 

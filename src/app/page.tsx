@@ -104,7 +104,7 @@ export default function Home() {
                     trackLabel="hero_decouvrir_methode"
                     sectionId="hero"
                   >
-                   Découvrir notre méthode
+                   Découvrir notre méthode éprouvée
                  </Button>
                </Link>
              </div>

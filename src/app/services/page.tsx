@@ -105,6 +105,13 @@ export default function ServicesPage() {
             emphasis="prospection B2B"
             description="Générez des opportunités qualifiées sans effort grâce à nos services de Lead Generation spécialisés."
           />
+          <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
+            <Link href="/contact">
+              <Button variant="primary" size="lg" className="mt-4">
+                Demandez votre audit gratuit
+              </Button>
+            </Link>
+          </div>
           <div className="flex flex-wrap gap-3 pt-10">
             {detailedServicePages.map((s) => (
               <Link key={s.href} href={s.href}>
@@ -150,7 +157,7 @@ export default function ServicesPage() {
                 {serviceLinks[service.id] && (
                   <Link href={serviceLinks[service.id].href} className="pt-2 w-fit">
                     <span className="inline-flex items-center gap-2 font-mono text-[12px] font-bold uppercase tracking-wider text-orange hover:gap-3 transition-all">
-                      → {serviceLinks[service.id].label} : détail de l&apos;offre <ArrowRight size={14} />
+                      → Voir le détail de {serviceLinks[service.id].label} <ArrowRight size={14} />
                     </span>
                   </Link>
                 )}
@@ -174,7 +181,7 @@ export default function ServicesPage() {
                       &quot;Notre machine d&apos;acquisition est maintenant 100% prévisible.&quot;
                     </p>
                     <Link href="/contact">
-                      <Button variant="primary" icon={<ArrowRight size={16} />}>Démarrer mon projet</Button>
+                      <Button variant="primary" icon={<ArrowRight size={16} />}>Obtenir mon audit gratuit</Button>
                     </Link>
                   </div>
                 </Box>
