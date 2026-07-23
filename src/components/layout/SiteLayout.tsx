@@ -135,23 +135,22 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
             {/* Links Section */}
             <div className="lg:col-span-4 grid grid-cols-2 gap-10">
               <div className="flex flex-col gap-6">
-                <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-cream/40">Navigation</span>
+                <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-cream/40">Services</span>
                 <nav className="flex flex-col gap-4">
-                  {navItems.map((item) => (
-                    <Link key={item.href} href={item.href} className="text-[14px] hover:text-orange transition-colors">
-                      {item.label}
-                    </Link>
-                  ))}
+                  <Link href="/services/cold-emailing-b2b" className="text-[14px] hover:text-orange transition-colors">Cold Emailing B2B</Link>
+                  <Link href="/services/scraping-b2b" className="text-[14px] hover:text-orange transition-colors">Scraping & Data B2B</Link>
+                  <Link href="/services/automatisation-sales" className="text-[14px] hover:text-orange transition-colors">Automatisation Sales</Link>
+                  <Link href="/services/accompagnement-seo" className="text-[14px] hover:text-orange transition-colors">Accompagnement SEO</Link>
                 </nav>
               </div>
               <div className="flex flex-col gap-6">
-                <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-cream/40">Ressources</span>
+                <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-cream/40">Agences PACA</span>
                 <nav className="flex flex-col gap-4">
-                  <Link href="/agence-lead-generation/marseille" className="text-[14px] hover:text-orange transition-colors">Prospection B2B Marseille</Link>
-                  <Link href="/agence-lead-generation/aix-en-provence" className="text-[14px] hover:text-orange transition-colors">Prospection B2B Aix-en-Provence</Link>
-                  <Link href="/agence-lead-generation/toulon" className="text-[14px] hover:text-orange transition-colors">Prospection B2B Toulon</Link>
-                  <Link href="/agence-lead-generation/nice" className="text-[14px] hover:text-orange transition-colors">Prospection B2B Nice</Link>
-                  <Link href="/blog" className="text-[14px] hover:text-orange transition-colors">Nos Guides</Link>
+                  <Link href="/agence-lead-generation/marseille" className="text-[14px] hover:text-orange transition-colors">Prospection Marseille</Link>
+                  <Link href="/agence-lead-generation/aix-en-provence" className="text-[14px] hover:text-orange transition-colors">Prospection Aix-en-Provence</Link>
+                  <Link href="/agence-lead-generation/toulon" className="text-[14px] hover:text-orange transition-colors">Prospection Toulon</Link>
+                  <Link href="/agence-lead-generation/nice" className="text-[14px] hover:text-orange transition-colors">Prospection Nice</Link>
+                  <Link href="/blog" className="text-[14px] hover:text-orange transition-colors">Nos Guides & Blog</Link>
                 </nav>
               </div>
             </div>
