@@ -59,7 +59,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
         answer: "Le cold emailing B2B est efficace dès que votre client cible est une entreprise avec des décideurs identifiables (Tech, services, industrie, immobilier d'entreprise…). Il est moins adapté au B2C ou aux paniers très faibles.",
       },
     ],
-    keywords: ["cold emailing B2B", "prospection B2B", "email froid", "génération de leads", "outbound sales"]},
+    keywords: ["cold emailing B2B", "prospection B2B", "email froid", "génération de leads", "outbound sales", "SEO B2B"]},
   "scraping-b2b": {
     slug: "scraping-b2b",
     name: "Scraping & Enrichissement B2B",
@@ -68,7 +68,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     heroSubtitle: "Notre service de scraping B2B extrait des prospects ciblés sur LinkedIn et Google Maps, puis enrichit chaque contact avec des emails professionnels vérifiés — la matière première d'une prospection qui convertit.",
     metaTitle: "Scraping B2B : LinkedIn, Google Maps & Enrichissement | Nana",
     metaDescription: "Service de scraping B2B : extraction ciblée sur LinkedIn et Google Maps, enrichissement d'emails professionnels vérifiés et conformité RGPD.",
-    keywords: ["scraping B2B", "prospection B2B", "enrichissement de données", "génération de leads", "extraction LinkedIn"],
+    keywords: ["scraping B2B", "prospection B2B", "enrichissement de données", "génération de leads", "extraction LinkedIn", "SEO B2B"],
     features: [
       "Extraction LinkedIn & Google Maps ciblée",
       "Enrichissement d'emails professionnels vérifiés (SMTP)",
@@ -116,7 +116,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     heroSubtitle: "Notre service d'automatisation sales connecte votre CRM, automatise vos relances et votre nurturing, et libère vos commerciaux des tâches répétitives pour qu'ils se concentrent sur la vente.",
     metaTitle: "Automatisation Sales B2B : CRM & Workflows | Nana Intelligence",
     metaDescription: "Service d'automatisation sales B2B : connexion CRM (HubSpot, Pipedrive), workflows automatisés (Make/n8n) et nurturing. Libérez vos commerciaux.",
-    keywords: ["automatisation des ventes", "sales automation", "automatisation prospection B2B", "agents IA commerciaux", "CRM automatisé"],
+    keywords: ["automatisation des ventes", "sales automation", "automatisation prospection B2B", "agents IA commerciaux", "CRM automatisé", "SEO B2B"],
     features: [
       "Connexion CRM (HubSpot, Salesforce, Pipedrive)",
       "Workflows automatisés (Zapier, Make, n8n)",

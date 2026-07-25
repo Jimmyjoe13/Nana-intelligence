@@ -1,3 +1,4 @@
+export const metaDescription = "Guide ultime de l'automatisation des ventes pour PME 2026 - Nana Intelligence";
 export const blogPosts = [
   {
     id: 1,
