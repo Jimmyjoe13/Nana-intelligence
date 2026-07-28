@@ -7,9 +7,9 @@ import { Mail, MessageSquare, Globe } from "lucide-react";
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/contact" },
-  title: "Contact & Audit Gratuit 30 min | Nana Intelligence",
-  description: "Demandez votre audit gratuit de 30 min avec nos experts B2B à Marseille. Discutons de votre stratégie Cold Emailing, Scraping & Sales.",
+  alternates: { canonical: "/contact/" },
+  title: "Audit Gratuit 30 min — Prospection B2B | Nana Intelligence",
+  description: "Réservez votre audit stratégique gratuit de 30 min. Nos experts analysent votre potentiel de prospection B2B et vous montrent comment générer des RDV qualifiés. Réponse sous 24h.",
   keywords: [
     "contact agence lead generation",
     "audit gratuit prospection B2B",

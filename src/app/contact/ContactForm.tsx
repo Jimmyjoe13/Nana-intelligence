@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { Box } from "@/components/ui/Box";
 import { Field } from "@/components/ui/Field";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Clock, ShieldCheck, Users } from "lucide-react";
 import { trackEvent } from "@/lib/utils";
 
 const LEAD_WEBHOOK_URL =
@@ -50,12 +50,41 @@ export default function ContactForm() {
   };
 
   return (
-    <Box id="contact-form" className="bg-cream p-10 md:p-16 flex flex-col gap-10">
+    <Box id="contact-form" className="bg-cream p-10 md:p-16 flex flex-col gap-8">
       <div className="flex flex-col gap-2">
         <span className="font-mono text-[11px] text-orange uppercase tracking-[0.2em] font-bold">
-          Audit de 30 minutes
+          Audit stratégique offert
         </span>
         <h3 className="font-display text-[32px] font-medium">Réservez votre créneau.</h3>
+      </div>
+
+      {/* Réassurance — indicateurs de confiance */}
+      <div className="grid grid-cols-3 gap-4 border-b border-ink/10 pb-6">
+        <div className="flex flex-col items-center gap-1 text-center">
+          <Clock size={18} className="text-orange" />
+          <span className="font-mono text-[11px] font-bold text-ink uppercase">30 sec</span>
+          <span className="font-mono text-[10px] text-ink-3">pour remplir</span>
+        </div>
+        <div className="flex flex-col items-center gap-1 text-center">
+          <Users size={18} className="text-orange" />
+          <span className="font-mono text-[11px] font-bold text-ink uppercase">+40 audits</span>
+          <span className="font-mono text-[10px] text-ink-3">réalisés en 2026</span>
+        </div>
+        <div className="flex flex-col items-center gap-1 text-center">
+          <ShieldCheck size={18} className="text-orange" />
+          <span className="font-mono text-[11px] font-bold text-ink uppercase">0 spam</span>
+          <span className="font-mono text-[10px] text-ink-3">données protégées</span>
+        </div>
+      </div>
+
+      {/* Micro-témoignage */}
+      <div className="bg-cream-2 border-[1.5px] border-ink/10 px-6 py-4 flex flex-col gap-2">
+        <p className="font-sans text-[13px] text-ink-2 italic leading-relaxed">
+          &quot;En 3 semaines, Nana Intelligence nous a généré 12 RDV qualifiés avec des décideurs C-Level. Le ROI a été immédiat.&quot;
+        </p>
+        <span className="font-mono text-[10px] text-ink-3 uppercase font-bold">
+          — Directeur Commercial, PME Tech Marseille
+        </span>
       </div>
 
       <form className="grid grid-cols-1 md:grid-cols-2 gap-8" onSubmit={handleSubmit}>
@@ -69,24 +98,21 @@ export default function ContactForm() {
         </div>
         <div className="md:col-span-2 flex flex-col gap-4">
           <Button type="submit" variant="primary" size="lg" className="w-full" loading={status === "sending"} icon={<ArrowRight size={18} />} trackLabel="envoyer_demande_audit" sectionId="contact_form">
-            Obtenir mon audit gratuit 30 min
+            Recevoir mon audit gratuit
           </Button>
-          <p className="mt-4 text-[12px] text-ink-3 font-sans text-center">
-            Vos informations sont sécurisées et jamais partagées.
+          <p className="text-[12px] text-ink-3 font-sans text-center">
+            Zéro engagement · Réponse sous 24h · Données jamais partagées
           </p>
           {status === "success" && (
-            <p className="mt-6 text-[12px] font-mono uppercase text-center text-orange font-bold leading-relaxed">
+            <p className="mt-4 text-[12px] font-mono uppercase text-center text-orange font-bold leading-relaxed">
               Demande envoyée ✓ On revient vers vous sous 24h.
             </p>
           )}
           {status === "error" && (
-            <p className="mt-6 text-[12px] font-mono uppercase text-center text-error font-bold leading-relaxed">
+            <p className="mt-4 text-[12px] font-mono uppercase text-center text-error font-bold leading-relaxed">
               Une erreur est survenue. Écrivez-nous à contact@nana-intelligence.fr
             </p>
           )}
-          <p className="mt-6 text-[11px] text-ink-4 font-mono uppercase text-center leading-relaxed">
-            Zéro engagement. Uniquement de la valeur ajoutée.
-          </p>
         </div>
       </form>
     </Box>
