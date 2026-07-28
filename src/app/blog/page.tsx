@@ -8,7 +8,7 @@ import { BlogList } from "@/components/blog/BlogList";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/blog" },
+  alternates: { canonical: "/blog/" },
   title: "Le Blog de l'Acquisition B2B | Nana Intelligence",
   description: "Découvrez nos guides sur le Cold Emailing, le scraping et l'automatisation sales pour générer des rendez-vous qualifiés B2B.",
   keywords: [

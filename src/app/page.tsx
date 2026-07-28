@@ -276,6 +276,52 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Agences PACA Section — Maillage interne vers les pages locales */}
+      <section className="bg-cream py-32 border-b-[1.5px] border-ink">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex flex-col gap-16">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-10">
+            <div className="flex flex-col gap-4">
+              <span className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold">Proximité</span>
+              <h2 className="font-display text-[44px] md:text-[56px] leading-[1] font-medium max-w-xl">
+                Nos agences en <span className="italic font-normal text-orange">PACA</span>.
+              </h2>
+            </div>
+            <Link href="/agence-lead-generation/">
+               <Button 
+                  variant="ink" 
+                  icon={<ArrowRight size={16} />}
+                  trackLabel="voir_toutes_agences"
+                  sectionId="agences_paca"
+                >
+                  Toutes nos agences
+                </Button>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { city: "Marseille", slug: "marseille", desc: "Siège social & hub principal. Prospection B2B pour les PME phocéennes et la French Tech." },
+              { city: "Aix-en-Provence", slug: "aix-en-provence", desc: "Ciblage C-Level pour le bassin aixois, Aix-les-Milles et la Duranne." },
+              { city: "Toulon", slug: "toulon", desc: "Prospection B2B dans le Var : industrie navale, défense, services et tech." },
+              { city: "Nice", slug: "nice", desc: "Leads qualifiés pour Sophia Antipolis, Côte d'Azur et startups Tech." },
+            ].map((agency) => (
+              <Link key={agency.slug} href={`/agence-lead-generation/${agency.slug}/`} className="group">
+                <Box className="flex flex-col gap-4 bg-cream h-full group-hover:border-orange transition-all">
+                  <span className="font-mono text-[10px] text-orange uppercase tracking-widest font-bold">{agency.city}</span>
+                  <h3 className="font-display text-[22px] font-medium group-hover:text-orange transition-colors">
+                    Prospection B2B {agency.city}
+                  </h3>
+                  <p className="text-ink-3 text-sm leading-relaxed">{agency.desc}</p>
+                  <span className="mt-auto font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold group-hover:underline">
+                    Découvrir →
+                  </span>
+                </Box>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA Section */}
       <section className="bg-ink py-40">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10">

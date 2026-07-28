@@ -6,3 +6,24 @@ Sitemap: https://nana-intelligence.fr/sitemap.xml
 
 # Bloquer les pages internes / sensibles
 Disallow: /api/
+Disallow: /design-system/
+Disallow: /_next/
+
+# Bloquer les bots SEO agressifs (trafic fantôme dans GA4)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
