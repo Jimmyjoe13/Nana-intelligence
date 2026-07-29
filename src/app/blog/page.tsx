@@ -1,8 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { Box } from "@/components/ui/Box";
-import { Button } from "@/components/ui/Button";
+import { NewsletterForm } from "@/components/newsletter/NewsletterForm";
 import { blogPosts, blogCategories } from "@/mocks/blog";
 import { BlogList } from "@/components/blog/BlogList";
 import Link from "next/link";
@@ -108,18 +107,7 @@ export default function BlogPage() {
                   </p>
                </div>
                <div className="lg:col-span-5">
-                  <Box className="p-10 flex flex-col gap-6 bg-cream border-ink">
-                    <div className="flex flex-col gap-2">
-                      <label className="font-mono text-[11px] font-bold uppercase text-ink">Email Professionnel</label>
-                      <input 
-                        type="email" 
-                        placeholder="VOTRE@ENTREPRISE.AI" 
-                        className="w-full bg-cream-2 border-[1.5px] border-ink px-4 py-4 font-mono text-[12px] focus:outline-none focus:border-orange transition-colors"
-                      />
-                    </div>
-                    <Button variant="primary" size="lg" className="w-full text-ink">M&apos;abonner à l&apos;ingénierie</Button>
-                    <p className="text-[10px] text-ink-4 font-mono uppercase text-center">ZÉRO SPAM. DÉSINSCRIPTION EN 1 CLIC.</p>
-                  </Box>
+                  <NewsletterForm />
                </div>
             </div>
          </div>
