@@ -652,6 +652,37 @@ export const blogPosts = [
   </a>
 </p>
     `
+  },
+  {
+    id: 10,
+    title: "Lead Generation Marseille B2B : Stratégie gagnante pour les PME de la région PACA",
+    excerpt: "Découvrez comment les entreprises marseillaises peuvent générer des leads B2B qualifiés grâce à une stratégie de prospection combinant cold email, scraping et automatisation, adaptée au marché local.",
+    category: "STRATÉGIE",
+    date: "30 Juillet 2026",
+    readTime: "3 MIN",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop",
+    structuredInternalLinks: [
+      { "@type": "WebPage", "url": "/agence-lead-generation/marseille", "name": "agence lead generation Marseille" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "cold emailing B2B" },
+    ],
+    content: `
+<h1>Lead Generation Marseille B2B : Stratégie gagnante pour les PME de la région PACA</h1>
+<p>La prospection B2B à Marseille présente des particularités : un tissu dense de PME industrielles, de services nautiques, de tourisme d’affaires et de technologies. Pour sortir du lot, il ne suffit pas d’envoyer des e‑mails génériques ; il faut une approche hyper‑ciblée, soutenue par des données précises et des scénarios d’automatisation qui résonnent avec la culture d’affaires du Sud.</p>
+<h2>1. Comprendre le tissu économique marseillais</h2>
+<p>Le premier pas consiste à cartographier les décideurs : dirigeants de PME de 5 à 50 salariés, responsables croissance dans les secteurs du shipping, de la logistique portuaire, de la tech médicale et du tourisme d’affaires. En utilisant le scraping de sources locales (Chambre de commerce, réseaux professionnels LinkedIn groupes « Business Provence‑Alpes‑Côte d’Azur », événements comme le MIPIM ou le Salon nautique), on récupère des listes de contacts à jour, incluant fonction, taille d’entreprise et récente activité.</p>
+<h2>2. Constituer une base de données qualifiée</h2>
+<p>Avec les données récoltées, on nettoie et enrichit chaque fiche : taille d’entreprise, chiffre d’affaires estimé, technologie utilisée (CRM, stack marketing). Ces critères permettent de segmenter les listes en micro‑segments (ex. « entreprises de logistique portuaire cherchant à optimiser leurs flux douaniers ») afin d’adapter le message.</p>
+<h2>3. Cold emailing hyper‑personnalisé</h2>
+<p>Le modèle d’e‑mail suit la formule ACCA (Accroche, Connaissance du problème, Solution, Appel à l’action) mais avec une touche locale : référence à un événement récent du port, une référence à un club d’affaires marseillais, ou une référence à la météo (« Malgré le mistral, votre activité décolle »). Chaque séquence comporte 3‑4 touches, espacées de 3‑4 jours, avec suivi des ouvertures et réponses via un outil de tracking.</p>
+<h2>4. Automatiser les suivis et le nurturing</h2>
+<p>Les réponses positives déclenchent un workflow d’automatisation : envoi d’un cas d’étude local, proposition d’un audit gratuit de leur processus de prospection, puis prise de rendez‑vous via Calendly intégré à votre CRM. Les non‑réponses sont ré‑engagées avec un autre angle (ex. étude de cas sur la réduction du coût d’acquisition client).</p>
+<h2>5. Mesurer et optimiser en continu</h2>
+<p>Les KPIs à suivre sont le taux d’ouverture, le taux de réponse, le taux de prise de rendez‑vous et le coût par lead qualifié. En analysant les variations selon les secteurs (shipping vs tech), on réalloue le budget vers les segments les plus rentables. Un tableau de bord hebdomadaire permet d’ajuster les objets, le timing et les offres.</p>
+<h2>6. Intégrer le scraping pour renouveler le pipeline</h2>
+<p>Le scraping n’est pas une opération ponctuelle. Chaque semaine, un script actualise la base avec les nouveaux dirigeants nommés, les récents financements levés ou les projets publics publiés sur la plateforme de la métropole. Cela garantit que votre équipe commerciale ne travaille jamais sur des données obsolètes.</p>
+<p>En combinant ces cinq leviers, une PME marseillaise peut passer de quelques leads qualifiés par mois à un pipeline régulier de 20‑30 opportunités, tout en réduisant le temps passé par les commerciaux sur la prospection manuelle.</p>
+<p>Prêt à tester cette approche sur votre marché ? <a href="/contact" name="Contactez Nana Intelligence">Contactez-nous</a> pour un audit gratuit de votre processus de prospection et découvrez comment nous pouvons remplir votre agenda de rendez‑vous qualifiés sans augmenter votre charge de travail.</p>
+    `
   }
 ];
 
