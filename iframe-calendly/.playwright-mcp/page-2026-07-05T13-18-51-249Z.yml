@@ -1,0 +1,42 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Nana Intelligence" [ref=e3] [cursor=pointer]:
+      - /url: https://nana-intelligence.fr/
+      - text: Nana Intelligence
+    - link "← Retour au site" [ref=e5] [cursor=pointer]:
+      - /url: https://nana-intelligence.fr/
+  - main [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: Réservation privée
+      - heading "Réservez votre audit SEO offert de 30 minutes." [level=1] [ref=e9]:
+        - text: Réservez votre
+        - emphasis [ref=e10]: audit SEO
+        - text: offert de 30 minutes.
+      - paragraph [ref=e11]: On analyse ensemble votre visibilité actuelle, vos concurrents et les leviers concrets pour capter plus de trafic qualifié. Sans engagement, sans blabla — repartez avec un plan d'action clair.
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - generic [ref=e14]: ✓
+          - text: Analyse de votre positionnement et de vos mots-clés stratégiques
+        - listitem [ref=e15]:
+          - generic [ref=e16]: ✓
+          - text: Repérage des freins techniques qui bloquent votre référencement
+        - listitem [ref=e17]:
+          - generic [ref=e18]: ✓
+          - text: Plan d'action priorisé, adapté à votre marché
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - generic [ref=e21]: 30 min
+          - generic [ref=e22]: Durée
+        - generic [ref=e23]:
+          - generic [ref=e24]: 0 €
+          - generic [ref=e25]: Sans engagement
+        - generic [ref=e26]:
+          - generic [ref=e27]: Visio
+          - generic [ref=e28]: Google Meet
+    - iframe [ref=e31]:
+      - img [ref=f1e7]
+  - contentinfo [ref=e32]:
+    - text: © Nana Intelligence —
+    - link "nana-intelligence.fr" [ref=e33] [cursor=pointer]:
+      - /url: https://nana-intelligence.fr/
+    - text: · Page réservée à nos contacts

@@ -1,0 +1,174 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Nana Intelligence
+    - generic [ref=e5]: Audit SEO · 30 min · Offert
+  - main [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: Réservation privée
+      - heading "Réservez votre audit SEO offert de 30 minutes." [level=1] [ref=e9]:
+        - text: Réservez votre
+        - emphasis [ref=e10]: audit SEO
+        - text: offert de 30 minutes.
+      - paragraph [ref=e11]: On analyse ensemble votre visibilité actuelle, vos concurrents et les leviers concrets pour capter plus de trafic qualifié. Sans engagement, sans blabla — repartez avec un plan d'action clair.
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - generic [ref=e14]: ✓
+          - text: Analyse de votre positionnement et de vos mots-clés stratégiques
+        - listitem [ref=e15]:
+          - generic [ref=e16]: ✓
+          - text: Repérage des freins techniques qui bloquent votre référencement
+        - listitem [ref=e17]:
+          - generic [ref=e18]: ✓
+          - text: Plan d'action priorisé, adapté à votre marché
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - generic [ref=e21]: 30 min
+          - generic [ref=e22]: Durée
+        - generic [ref=e23]:
+          - generic [ref=e24]: 0 €
+          - generic [ref=e25]: Sans engagement
+        - generic [ref=e26]:
+          - generic [ref=e27]: Visio
+          - generic [ref=e28]: Google Meet
+    - iframe [ref=e31]:
+      - generic [ref=f1e6]:
+        - link "powered by Calendly":
+          - /url: https://calendly.com/?utm_campaign=sign_up&utm_medium=badge&utm_source=invitee
+          - generic [ref=f1e7] [cursor=pointer]:
+            - generic [ref=f1e8]: powered by
+            - generic [ref=f1e9]: Calendly
+        - generic [ref=f1e18]:
+          - generic [ref=f1e19]:
+            - img "Company logo" [ref=f1e21]
+            - generic [ref=f1e22]: Jimmy Gay
+            - heading "Audit SEO" [level=1] [ref=f1e23]
+          - generic [ref=f1e25]:
+            - generic [ref=f1e26]:
+              - img [ref=f1e29]
+              - text: 30 min
+            - generic [ref=f1e32]:
+              - img [ref=f1e36]
+              - text: Web conferencing details provided upon confirmation.
+          - generic [ref=f1e39]:
+            - generic [ref=f1e40]:
+              - paragraph [ref=f1e41]: 🔍 Vous perdez du trafic sans savoir pourquoi ?
+              - paragraph [ref=f1e42]
+              - paragraph [ref=f1e43]: "En 30 minutes, on analyse ensemble votre site web et j'identifie les freins SEO qui vous coûtent des visiteurs et des clients : structure technique, mots-clés, contenu, maillage interne et autorité de domaine."
+              - paragraph [ref=f1e44]
+              - paragraph [ref=f1e45]: "À l'issue de cet audit, vous repartez avec :"
+              - paragraph [ref=f1e46]: ✅ Un diagnostic clair de vos points bloquants
+              - paragraph [ref=f1e47]: ✅ Les priorités d'action concrètes à mettre en place
+              - paragraph [ref=f1e48]: ✅ Une vision nette de votre potentiel de croissance organique
+              - paragraph [ref=f1e49]
+              - paragraph [ref=f1e50]: Aucun jargon inutile. Que du concret.
+            - generic [ref=f1e51]:
+              - img [ref=f1e52]
+              - button "Show more" [ref=f1e54] [cursor=pointer]
+        - generic [ref=f1e56]:
+          - heading "Select a Date & Time" [level=2] [ref=f1e59]
+          - generic [ref=f1e62]:
+            - generic [ref=f1e63]:
+              - generic [ref=f1e64]:
+                - generic [ref=f1e65]:
+                  - button "Go to previous month" [disabled]:
+                    - generic:
+                      - img
+                - generic [ref=f1e66]: July 2026
+                - generic [ref=f1e67]:
+                  - button "Go to next month" [disabled]:
+                    - generic:
+                      - img
+                - status [ref=f1e68]: July is now displayed
+              - generic [ref=f1e69]:
+                - table "Select a Day" [ref=f1e70]:
+                  - rowgroup [ref=f1e71]:
+                    - row "Mon Tue Wed Thu Fri Sat Sun" [ref=f1e72]:
+                      - columnheader "Mon" [ref=f1e73]
+                      - columnheader "Tue" [ref=f1e74]
+                      - columnheader "Wed" [ref=f1e75]
+                      - columnheader "Thu" [ref=f1e76]
+                      - columnheader "Fri" [ref=f1e77]
+                      - columnheader "Sat" [ref=f1e78]
+                      - columnheader "Sun" [ref=f1e79]
+                  - rowgroup [ref=f1e80]:
+                    - row "Wednesday, July 1 - No times available Thursday, July 2 - No times available Friday, July 3 - No times available Saturday, July 4 - No times available Sunday, July 5 - No times available" [ref=f1e81]:
+                      - gridcell [ref=f1e82]
+                      - gridcell [ref=f1e83]
+                      - gridcell "Wednesday, July 1 - No times available" [ref=f1e84]:
+                        - button "Wednesday, July 1 - No times available" [disabled]: "1"
+                      - gridcell "Thursday, July 2 - No times available" [ref=f1e85]:
+                        - button "Thursday, July 2 - No times available" [disabled]: "2"
+                      - gridcell "Friday, July 3 - No times available" [ref=f1e86]:
+                        - button "Friday, July 3 - No times available" [disabled]: "3"
+                      - gridcell "Saturday, July 4 - No times available" [ref=f1e87]:
+                        - button "Saturday, July 4 - No times available" [disabled]: "4"
+                      - gridcell "Sunday, July 5 - No times available" [ref=f1e88]:
+                        - button "Sunday, July 5 - No times available" [disabled]: "5"
+                    - row "Monday, July 6 - No times available Tuesday, July 7 - No times available Wednesday, July 8 - No times available Thursday, July 9 - No times available Friday, July 10 - No times available Saturday, July 11 - No times available Sunday, July 12 - No times available" [ref=f1e89]:
+                      - gridcell "Monday, July 6 - No times available" [ref=f1e90]:
+                        - button "Monday, July 6 - No times available" [disabled]: "6"
+                      - gridcell "Tuesday, July 7 - No times available" [ref=f1e91]:
+                        - button "Tuesday, July 7 - No times available" [disabled]: "7"
+                      - gridcell "Wednesday, July 8 - No times available" [ref=f1e92]:
+                        - button "Wednesday, July 8 - No times available" [disabled]: "8"
+                      - gridcell "Thursday, July 9 - No times available" [ref=f1e93]:
+                        - button "Thursday, July 9 - No times available" [disabled]: "9"
+                      - gridcell "Friday, July 10 - No times available" [ref=f1e94]:
+                        - button "Friday, July 10 - No times available" [disabled]: "10"
+                      - gridcell "Saturday, July 11 - No times available" [ref=f1e95]:
+                        - button "Saturday, July 11 - No times available" [disabled]: "11"
+                      - gridcell "Sunday, July 12 - No times available" [ref=f1e96]:
+                        - button "Sunday, July 12 - No times available" [disabled]: "12"
+                    - row "Monday, July 13 - No times available Tuesday, July 14 - No times available Wednesday, July 15 - No times available Thursday, July 16 - No times available Friday, July 17 - No times available Saturday, July 18 - No times available Sunday, July 19 - No times available" [ref=f1e97]:
+                      - gridcell "Monday, July 13 - No times available" [ref=f1e98]:
+                        - button "Monday, July 13 - No times available" [disabled]: "13"
+                      - gridcell "Tuesday, July 14 - No times available" [ref=f1e99]:
+                        - button "Tuesday, July 14 - No times available" [disabled]: "14"
+                      - gridcell "Wednesday, July 15 - No times available" [ref=f1e100]:
+                        - button "Wednesday, July 15 - No times available" [disabled]: "15"
+                      - gridcell "Thursday, July 16 - No times available" [ref=f1e101]:
+                        - button "Thursday, July 16 - No times available" [disabled]: "16"
+                      - gridcell "Friday, July 17 - No times available" [ref=f1e102]:
+                        - button "Friday, July 17 - No times available" [disabled]: "17"
+                      - gridcell "Saturday, July 18 - No times available" [ref=f1e103]:
+                        - button "Saturday, July 18 - No times available" [disabled]: "18"
+                      - gridcell "Sunday, July 19 - No times available" [ref=f1e104]:
+                        - button "Sunday, July 19 - No times available" [disabled]: "19"
+                    - row "Monday, July 20 - No times available Tuesday, July 21 - No times available Wednesday, July 22 - No times available Thursday, July 23 - No times available Friday, July 24 - No times available Saturday, July 25 - No times available Sunday, July 26 - No times available" [ref=f1e105]:
+                      - gridcell "Monday, July 20 - No times available" [ref=f1e106]:
+                        - button "Monday, July 20 - No times available" [disabled]: "20"
+                      - gridcell "Tuesday, July 21 - No times available" [ref=f1e107]:
+                        - button "Tuesday, July 21 - No times available" [disabled]: "21"
+                      - gridcell "Wednesday, July 22 - No times available" [ref=f1e108]:
+                        - button "Wednesday, July 22 - No times available" [disabled]: "22"
+                      - gridcell "Thursday, July 23 - No times available" [ref=f1e109]:
+                        - button "Thursday, July 23 - No times available" [disabled]: "23"
+                      - gridcell "Friday, July 24 - No times available" [ref=f1e110]:
+                        - button "Friday, July 24 - No times available" [disabled]: "24"
+                      - gridcell "Saturday, July 25 - No times available" [ref=f1e111]:
+                        - button "Saturday, July 25 - No times available" [disabled]: "25"
+                      - gridcell "Sunday, July 26 - No times available" [ref=f1e112]:
+                        - button "Sunday, July 26 - No times available" [disabled]: "26"
+                    - row "Monday, July 27 - No times available Tuesday, July 28 - No times available Wednesday, July 29 - No times available Thursday, July 30 - No times available Friday, July 31 - No times available" [ref=f1e113]:
+                      - gridcell "Monday, July 27 - No times available" [ref=f1e114]:
+                        - button "Monday, July 27 - No times available" [disabled]: "27"
+                      - gridcell "Tuesday, July 28 - No times available" [ref=f1e115]:
+                        - button "Tuesday, July 28 - No times available" [disabled]: "28"
+                      - gridcell "Wednesday, July 29 - No times available" [ref=f1e116]:
+                        - button "Wednesday, July 29 - No times available" [disabled]: "29"
+                      - gridcell "Thursday, July 30 - No times available" [ref=f1e117]:
+                        - button "Thursday, July 30 - No times available" [disabled]: "30"
+                      - gridcell "Friday, July 31 - No times available" [ref=f1e118]:
+                        - button "Friday, July 31 - No times available" [disabled]: "31"
+                      - gridcell [ref=f1e119]
+                      - gridcell [ref=f1e120]
+                - img [ref=f1e125]
+                - status [ref=f1e135]
+            - generic [ref=f1e137]:
+              - paragraph [ref=f1e138]: Time zone
+              - button "Time zone  Central European Time (15:11) " [ref=f1e140] [cursor=pointer]:
+                - generic [ref=f1e141]: 
+                - generic [ref=f1e142]: Central European Time
+                - generic [ref=f1e143]: (15:11)
+                - generic [ref=f1e144]: 
+  - contentinfo [ref=e32]: © Nana Intelligence — nana-intelligence.fr · Page réservée à nos contacts

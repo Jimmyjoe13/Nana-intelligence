@@ -153,13 +153,7 @@ export default function BlogPostPage({ params }: Props) {
             </div>
 
             <div 
-              className="prose prose-lg max-w-none 
-                prose-headings:font-display prose-headings:font-medium prose-headings:text-ink
-                prose-p:font-sans prose-p:text-ink-2 prose-p:leading-relaxed
-                prose-strong:text-ink prose-strong:font-bold
-                prose-h2:text-[32px] prose-h2:border-b-[1.5px] prose-h2:border-ink prose-h2:pb-4 prose-h2:mt-16
-                prose-h3:text-[24px]
-                prose-li:text-ink-2"
+              className="article-content max-w-none"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
 

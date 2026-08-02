@@ -1,0 +1,146 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Nana Intelligence - Expertise Lead Generation B2B Nana Intelligence" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "Nana Intelligence - Expertise Lead Generation B2B" [ref=e7]
+        - generic [ref=e8]: Nana Intelligence
+      - navigation [ref=e9]:
+        - link "Accueil" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - link "Agence" [ref=e11] [cursor=pointer]:
+          - /url: /agence-lead-generation
+        - link "Services" [ref=e12] [cursor=pointer]:
+          - /url: /services
+        - link "À propos" [ref=e13] [cursor=pointer]:
+          - /url: /about
+        - link "Blog" [ref=e14] [cursor=pointer]:
+          - /url: /blog
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /contact
+          - text: Contact
+      - link "Audit Gratuit" [ref=e18] [cursor=pointer]:
+        - /url: /contact
+        - button "Audit Gratuit" [ref=e19]:
+          - text: Audit Gratuit
+          - img [ref=e21]
+  - main [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e28]:
+        - generic [ref=e29]: Contact & Audit
+        - generic [ref=e31]:
+          - heading "Démarrer votre audit gratuit" [level=1] [ref=e32]
+          - paragraph [ref=e33]: Parlez-nous de vos objectifs de croissance. On analyse votre potentiel et on vous montre comment automatiser votre acquisition B2B.
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - heading "Une approche technique de la vente." [level=2] [ref=e40]
+            - paragraph [ref=e41]: Pas de bla-bla commercial. On discute infrastructure, data, copywriting et ROI. On répond généralement en moins de 24 heures.
+          - generic [ref=e42]:
+            - generic [ref=e43]:
+              - img [ref=e45]
+              - generic [ref=e48]:
+                - generic [ref=e49]: Email Direct
+                - generic [ref=e50]: contact@nana-intelligence.fr
+            - generic [ref=e51]:
+              - img [ref=e53]
+              - generic [ref=e56]:
+                - generic [ref=e57]: Localisation
+                - generic [ref=e58]: Marseille, France
+          - generic [ref=e59]:
+            - heading "Expertise Locale & Nationale" [level=4] [ref=e60]
+            - paragraph [ref=e61]: Basés à Marseille, nous accompagnons les entreprises en région PACA et dans toute la France pour dominer leur marché.
+            - generic [ref=e62]:
+              - generic [ref=e63]: Marseille
+              - generic [ref=e64]: Aix-en-Provence
+              - generic [ref=e65]: PACA
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - generic [ref=e69]: Audit de 30 minutes
+            - heading "Réservez votre créneau." [level=3] [ref=e70]
+          - generic [ref=e71]:
+            - generic [ref=e72]:
+              - generic [ref=e73]: Prénom
+              - textbox "Prénom" [ref=e74]:
+                - /placeholder: "ex: Jean"
+            - generic [ref=e75]:
+              - generic [ref=e76]: Nom
+              - textbox "Nom" [ref=e77]:
+                - /placeholder: "ex: Dupont"
+            - generic [ref=e79]:
+              - generic [ref=e80]: Email professionnel
+              - textbox "Email professionnel" [ref=e81]:
+                - /placeholder: jean@entreprise.ai
+            - generic [ref=e83]:
+              - generic [ref=e84]: Entreprise
+              - textbox "Entreprise" [ref=e85]:
+                - /placeholder: Nom de votre société
+            - generic [ref=e86]:
+              - generic [ref=e87]: Vos Besoins
+              - textbox "Quels sont vos défis actuels (Lead Gen, Automatisation, SEO...) ?" [ref=e88]
+            - generic [ref=e89]:
+              - button "Envoyer ma demande d'audit" [ref=e90] [cursor=pointer]:
+                - text: Envoyer ma demande d'audit
+                - img [ref=e92]
+              - paragraph [ref=e94]: Zéro engagement. Uniquement de la valeur ajoutée.
+      - generic [ref=e97]:
+        - img [ref=e98]
+        - paragraph [ref=e100]: "\"Le Cold Emailing B2B en France autorise la prospection sans opt-in préalable dès lors que l'offre est en lien direct avec la profession de l'interlocuteur.\""
+        - generic [ref=e101]: Nana Intelligence — RGPD Compliant
+  - contentinfo [ref=e102]:
+    - generic [ref=e103]:
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - generic [ref=e106]:
+            - generic [ref=e107]:
+              - img "Expertise Lead Generation B2B - Nana Intelligence" [ref=e109]
+              - generic [ref=e110]: Nana Intelligence
+            - generic [ref=e111]: Expert Lead Generation B2B
+          - paragraph [ref=e112]: Nous automatisons votre prospection commerciale B2B à Marseille et partout en France.
+          - generic [ref=e113]:
+            - link [ref=e114] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/nana-intelligence/
+              - img [ref=e115]
+            - link [ref=e119] [cursor=pointer]:
+              - /url: mailto:contact@nana-intelligence.fr
+              - img [ref=e120]
+        - generic [ref=e123]:
+          - generic [ref=e124]:
+            - generic [ref=e125]: Navigation
+            - navigation [ref=e126]:
+              - link "Accueil" [ref=e127] [cursor=pointer]:
+                - /url: /
+              - link "Agence" [ref=e128] [cursor=pointer]:
+                - /url: /agence-lead-generation
+              - link "Services" [ref=e129] [cursor=pointer]:
+                - /url: /services
+              - link "À propos" [ref=e130] [cursor=pointer]:
+                - /url: /about
+              - link "Blog" [ref=e131] [cursor=pointer]:
+                - /url: /blog
+              - link "Contact" [ref=e132] [cursor=pointer]:
+                - /url: /contact
+          - generic [ref=e133]:
+            - generic [ref=e134]: Ressources
+            - navigation [ref=e135]:
+              - link "Lead Gen Marseille" [ref=e136] [cursor=pointer]:
+                - /url: /agence-lead-generation/marseille
+              - link "Lead Gen Aix-en-Provence" [ref=e137] [cursor=pointer]:
+                - /url: /agence-lead-generation/aix
+              - link "Lead Gen Toulon" [ref=e138] [cursor=pointer]:
+                - /url: /agence-lead-generation/toulon
+              - link "Nos Guides" [ref=e139] [cursor=pointer]:
+                - /url: /blog
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - generic [ref=e142]: Newsletter
+            - heading "Recevez nos analyses lead gen." [level=4] [ref=e143]
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - textbox "Adresse email pour la newsletter" [ref=e146]:
+                - /placeholder: VOTRE@EMAIL.COM
+              - button "OK" [ref=e147] [cursor=pointer]
+            - paragraph [ref=e148]: Toutes les semaines, dans votre boîte mail.
+      - generic [ref=e149]:
+        - generic [ref=e150]: © 2026 NANA INTELLIGENCE — MARSEILLE, FRANCE
+        - generic [ref=e153]: System Operational
