@@ -200,6 +200,51 @@ export const blogPosts = [
       <p>Notre <a href="/services/automatisation-sales">accompagnement en automatisation IA</a> permet de calibrer pas à pas ces workflows, avec un suivi terrain. Que vous soyez <a href="/agence-lead-generation/nice">agence lead generation à Nice</a>, Marseille, Aix ou Toulon, nous adaptons la stack à votre marché. Pour un premier regard sur votre situation, <a href="/contact">demandez un audit gratuit de 30 minutes</a>.</p>
     `
   },
+  {
+    id: 5,
+    title: "Actualité IA : les tendances majeures de l’automatisation en 2026",
+    excerpt: "Découvrez les dernières tendances de l’intelligence artificielle et de l’automatisation qui transforment les PME en 2026, des agents IA autonomes à l’impact de l’IA Act.",
+    category: "IA / AUTOMATISATION",
+    date: "02 Août 2026",
+    readTime: "3 MIN",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop",
+    structuredInternalLinks: [
+      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "Automatisation sales B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "Scraping B2B" },
+      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+    ],
+    content: `
+<h1>Actualité IA : les tendances majeures de l’automatisation en 2026</h1>
+<p>Le paysage de l’intelligence artificielle et de l’automatisation connaît une mutation majeure : on passe de l’ère des simples assistants textuels et des expérimentations isolées (POC) à une phase de maturité opérationnelle et d’autonomie agentique.</p>
+<p>Voici les points clés de la veille technologique et stratégique du moment :</p>
+<h2>1. Tendances majeures : De l’automatisation à l’autonomie</h2>
+<ul>
+<li><strong>L’essor des Agents IA (Agentic AI)</strong> : L’IA ne se contente plus de répondre passivement à un prompt ; elle planifie, exécute et itère de manière autonome sur des processus complexes en arrière‑plan.</li>
+<li><strong>Intégration native</strong> : Selon les analyses du marché, l’automatisation intelligente n’est plus un « add‑on » que l’on greffe sur des logiciels tiers, elle s’intègre directement au cœur des plateformes d’entreprise et des infrastructures.</li>
+<li><strong>Recherche de ROI et de verticalisation</strong> : Les entreprises exigent des retours sur investissement mesurables. Des acteurs comme le français Mistral AI ciblent les opérations industrielles critiques avec des modèles ouverts et sécurisés pour répondre aux besoins de souveraineté.</li>
+</ul>
+<h2>2. Écosystème des outils d’automatisation</h2>
+<p>L’empilement technologique pour automatiser ses flux de travail repose sur l’association d’une IA décisionnelle et d’un orchestrateur :</p>
+<ul>
+<li><strong>Zapier</strong> : S’impose pour la simplicité et la richesse de son catalogue d’intégrations.</li>
+<li><strong>Make</strong> : Prisé pour sa flexibilité visuelle et sa popularité en Europe.</li>
+<li><strong>n8n</strong> : S’affirme comme l’option open‑source incontournable, notamment grâce à ses nœuds avancés dédiés aux agents IA.</li>
+</ul>
+<p>Pour les PME souhaitant aller plus loin, l’intégration d’un orchestrateur comme <a href="/services/automatisation-sales">automatisation sales B2B</a> permet de connecter l’IA à votre CRM et de déclencher des actions commerciales en temps réel.</p>
+<h2>3. Le tournant de la Réglementation (IA Act)</h2>
+<p>L’actualité réglementaire est marquée par la mise en application des exigences de transparence de l’IA Act en Europe, imposant aux organisations une traçabilité et une gouvernance strictes sous peine de sanctions financières importantes. La conformité est devenue un impératif pour tout projet d’automatisation impliquant de la donnée sensible ou une décision automatisée.</p>
+<p>Parallèlement, le <a href="/services/scraping-b2b">scraping B2B</a> enrichi par l’IA permet de constituer des bases de prospects à jour tout en respectant les nouvelles exigences de traçabilité des données.</p>
+<h2>4. Implications pour les PME B2B</h2>
+<p>Pour les dirigeants de PME B2B, ces évolutions signifient qu’il faut désormais :</p>
+<ul>
+<li>Adopter une vision « agent‑first » où l’IA déclenche des séquences d’actions sans intervention humaine constante.</li>
+<li>Choisir des outils qui offrent à la fois puissance d’automatisation et conformité réglementaire.</li>
+<li>Investir dans la formation interne afin que les équipes commerciales puissent superviser et optimiser les workflows agents.</li>
+</ul>
+<p>En somme, 2026 marque le passage de l’automatisation assistée à l’autonomie réelle. Les entreprises qui saisiront cette tendance dès maintenant gagneront un avantage compétitif durable, tout en restant en conformité avec le cadre européen émergent.</p>
+<p>Prêt à passer à l’étape suivante ? Profitez d’un <strong>audit gratuit</strong> ou d’un <strong>appel découverte</strong> pour voir comment Nana Intelligence peut vous accompagner dans cette transformation.</p>
+    `
+  }
 ];
 
 export const blogCategories = ["TOUT", "STRATÉGIE", "COLD EMAIL", "DATA / SCRAPING", "IA / AUTOMATISATION"];
