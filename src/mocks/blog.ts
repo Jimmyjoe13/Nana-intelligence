@@ -817,6 +817,74 @@ export const blogPosts = [
 <hr>
 <p><strong>Prêt à faire décoller votre prospection B2B à Marseille ?</strong> Demandez dès maintenant un <a href="/contact">audit gratuit de votre stratégie de lead generation</a> ou prenez rendez‑vous pour un appel découverte avec nos experts Nana Intelligence.</p>
     `
+  },
+  {
+    id: 13,
+    title: "Cold emailing B2B : les scripts qui convertissent en 2026",
+    excerpt: "Découvrez les scripts de cold email B2B éprouvés pour 2026, les principes clés d'un email qui convertit et comment éviter les filtres spam pour booster vos réponses.",
+    category: "COLD EMAIL",
+    date: "04 Août 2026",
+    readTime: "4 MIN",
+    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop",
+    structuredInternalLinks: [
+      { "@type": "WebPage", "url": "/services", "name": "Nos services de lead generation B2B" },
+      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+    ],
+    content: `
+<h1>Cold emailing B2B : les scripts qui convertissent en 2026</h1>
+<p>Le cold emailing B2B reste, en 2026, l’un des leviers les plus rentables pour générer des leads qualifiés, à condition de maîtriser l’art du message qui capte l’attention dès la première ligne. Dans cet article, nous dévoilons les <strong>scripts éprouvés</strong> qui permettent d’obtenir des taux de réponse supérieurs à 20 %, tout en restant éloigné des filtres anti‑spam.</p>
+
+<h2>Pourquoi le cold emailing B2B fonctionne encore aujourd’hui</h2>
+<p>Contrairement à la prospection téléphonique intrusive ou aux publicités payantes au coût d’acquisition élevé, le cold email offre un coût marginal proche de zéro et une capacité de ciblage granulaire grâce aux données B2B modernes (LinkedIn, outils de scraping, données firmographiques). Lorsqu’il est bien exécuté, il s’intègre parfaitement dans une stratégie d’<em>inbound</em> en nourrissant les ventes avec des prospects déjà sensibilisés à votre valeur.</p>
+
+<p>Cependant, la boîte de réception des décideurs est saturée. La différence entre un e‑mail qui finit à la corbeille et un e‑mail qui déclenche une réponse tient à trois éléments : la pertinence de l’accroche, la valeur perçue immédiate et la clarté de l’appel à l’action.</p>
+
+<h2>Les 5 principes d’un script gagnant</h2>
+<ol>
+  <li><strong>Personnalisation hyper‑ciblée</strong> : utilisez le prénom, le nom de l’entreprise, un récent fait d’actualité (levée de fonds, lancement de produit, recrutement) et un point de douleur spécifique. Exemple : « Félicitations pour votre récente levée de 5 M€, félicitations aussi pour l’expansion de votre équipe commerciale — comment gérez‑vous la montée en charge de vos prospects ? »</li>
+  <li><strong>Accroche en une phrase</strong> : la première ligne doit contenir une proposition de valeur mesurable (« Nous aidons les entreprises comme la vôtre à augmenter leurs rendez‑vous qualifiés de 30 % en 60 jours »).</li>
+  <li><strong>Preuve sociale concise</strong> : un chiffre clé ou un témoignage bref (« +45 % de taux de réponse pour une SaaS B2B similaire en 3 mois »).</li>
+  <li><strong>Appel à l’action faible friction</strong> : proposez un créneau de 15 minutes pour un appel découverte ou un lien vers un calendrier, évitez les demandes trop engageantes dès le premier contact.</li>
+  <li><strong>Signature humaine</strong> : incluez votre photo, votre fonction et un lien vers un contenu utile (étude de cas, livre blanc) plutôt qu’un simple numéro de téléphone.</li>
+</ol>
+
+<h2>Modèles de scripts prêts à l’emploi</h2>
+<ul>
+  <li><strong>Script A – L’approche « défi »</strong>
+    <p>Objet : « Une idée pour réduire votre CAC de 20 % »</p>
+    <p>Bonjour {{Prénom}},
+<br>Félicitations pour votre récente levée de fonds ! Chez {{Entreprise}}, nous aidons les entreprises qui viennent de lever à réduire leur coût d’acquisition client de 20 % grâce à un séquence de cold emailing ultra‑personnalisée. Lors d’un appel de 15 minutes, je pourrais vous montrer comment nous avons permis à {{Client similaire}} d’obtenir 12 rendez‑vous qualifiés en trois semaines.
+<br>Êtes‑vous disponible mardi ou jeudi prochain pour un échange rapide ?
+<br>Bien cordialement,
+<br>{{Votre Prénom}} {{Votre Nom}}
+<br><a href=\\"/services/cold-emailing-b2b\\">Notre service de cold emailing B2B</a></p>
+  </li>
+  <li><strong>Script B – L’approche « question ouverte »</strong>
+    <p>Objet : « Quick question sur votre prospection {{Mois}} »</p>
+    <p>Bonjour {{Prénom}},
+<br>Je remarque que votre équipe commerciale a récemment doublé ses effectifs. Dans ce contexte, comment gérez‑vous la qualité des leads tout en augmentant le volume ? Nous avons accompagné {{Entreprise similaire}} à maintenir un taux de conversion de 18 % malgré une hausse de 40 % du volume de prospection.
+<br>Serait‑il utile d’échanger 10 minutes cette semaine pour voir si notre approche pourrait vous apporter des résultats similaires ?
+<br>À bientôt,
+<br>{{Votre Prénom}} {{Votre Nom}}
+<br><a href=\\"/services/automatisation-sales\\">L’automatisation des ventes B2B</a></p>
+  </li>
+</ul>
+
+<h2>Éviter les pièges du spam</h2>
+<p>Même le meilleur script peut être filtré si vous ne respectez pas quelques bonnes pratiques :</p>
+<ul>
+  <li><strong>Authentifiez votre domaine</b> : SPF, DKIM, DMARC en place.</li>
+  <li><strong>Limitez les envois</b> : pas plus de 30‑40 e‑mails/jour par adresse d’envoi pour préserver votre réputation.</li>
+  <li><strong>Variez vos textes</b> : utilisez des spintax légers ou plusieurs variantes de sujet et de corps pour éviter les empreintes digitales trop similaires.</li>
+  <li><strong>Surveillez les métriques</b> : taux d’ouverture, de réponse et de plainte. Un taux de plainte supérieur à 0,1 % nécessite une révision immédiate de votre liste.</li>
+</ul>
+
+<h2>Appel à l’action</h2>
+<p>Vous voulez tester ces scripts sur votre propre prospect list ? Nous proposons un <strong>audit gratuit de votre stratégie de cold emailing B2B</b> incluant une analyse de votre livrabilité, un cadre de personnalisation et un plan de séquence de 4 e‑mails.</p>
+<p><a href=\\"/services/cold-emailing-b2b\\">Demandez votre audit gratuit</a> ou <a href=\\"/contact\\">contactez-nous directement</a> pour discuter de vos objectifs de prospection.</p>
+<hr>
+<p><em>Article rédigé par l’équipe SEO &amp; Contenu de Nana Intelligence – août 2025.</em></p>
+    `
   }
 ];
 
