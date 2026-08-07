@@ -61,7 +61,7 @@ export default function ContactPage() {
           />
         </div>
           <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
-            <a href="#contact-form" className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-mono text-[12px] font-medium tracking-[0.08em] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-orange disabled:pointer-events-none disabled:opacity-50 border-[1.5px] rounded-none bg-orange text-ink border-ink hover:bg-ink hover:text-cream">Obtenir mon audit gratuit 30 min</a>
+            <a href="#contact-form" className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-mono text-[12px] font-medium tracking-[0.08em] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-orange disabled:pointer-events-none disabled:opacity-50 border-[1.5px] rounded-none bg-orange text-ink border-ink hover:bg-ink hover:text-cream">Obtenez votre audit gratuit de 30 min et boostez vos leads</a>
           </div>
       </section>
 
