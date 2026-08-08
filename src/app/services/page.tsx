@@ -174,7 +174,7 @@ export default function ServicesPage() {
                       &quot;Notre machine d&apos;acquisition est maintenant 100% prévisible.&quot;
                     </p>
                     <Link href="/contact">
-                      <Button variant="primary" icon={<ArrowRight size={16} />}>Démarrer mon projet</Button>
+                      <Button variant="primary" icon={<ArrowRight size={16} />}>Commencer l'audit gratuit</Button>
                     </Link>
                   </div>
                 </Box>
@@ -228,7 +228,7 @@ export default function ServicesPage() {
              </p>
              <Link href="/contact">
                <Button variant="primary" size="lg" icon={<Sparkles size={20} />}>
-                 Demander un devis
+                 Audit gratuit / Appel découverte
                </Button>
              </Link>
           </Box>
