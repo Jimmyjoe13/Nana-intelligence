@@ -61,7 +61,7 @@ export default function ContactPage() {
           />
         </div>
           <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
-            <a href="#contact-form" className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-mono text-[12px] font-medium tracking-[0.08em] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-orange disabled:pointer-events-none disabled:opacity-50 border-[1.5px] rounded-none bg-orange text-ink border-ink hover:bg-ink hover:text-cream">Obtenir mon audit gratuit 30 min</a>
+            <a href="#contact-form" className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-mono text-[12px] font-medium tracking-[0.08em] uppercase transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-orange disabled:pointer-events-none disabled:opacity-50 border-[1.5px] rounded-none bg-orange text-ink border-ink hover:bg-ink hover:text-cream px-[22px] py-[14px]">Obtenir mon audit gratuit 30 min</a>
           </div>
       </section>
 
@@ -70,7 +70,7 @@ export default function ContactPage() {
         <div className="max-w-[1400px] mx-auto px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
             {/* Left Side: Editorial & Info */}
-            <div className="lg:col-span-5 flex flex-col gap-16">
+            <div className="lg:col-span-5 flex flex-col gap-16 order-last lg:order-none">
               <div className="flex flex-col gap-8">
                 <h2 className="font-display text-[36px] md:text-[44px] leading-tight font-medium text-ink">
                   Une approche <span className="italic text-orange font-normal">technique</span> de la vente.
@@ -116,7 +116,7 @@ export default function ContactPage() {
             </div>
 
             {/* Right Side: Form (Client Component) */}
-            <div className="lg:col-span-7">
+            <div className="lg:col-span-7 order-first lg:order-none">
               <ContactForm />
             </div>
           </div>
