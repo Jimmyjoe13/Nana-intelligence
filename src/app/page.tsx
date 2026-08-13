@@ -235,10 +235,10 @@ export default function Home() {
             <Link href="/contact" className="mt-4">
               <Button 
                 variant="ink"
-                trackLabel="faq_poser_question"
+                trackLabel="faq_audit_gratuit"
                 sectionId="faq"
               >
-                Poser une autre question
+                Réserver mon audit gratuit 30 min
               </Button>
             </Link>
           </div>
@@ -272,6 +272,22 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="flex flex-col items-center gap-4 pt-16">
+            <p className="font-sans text-lg text-ink-2 text-center max-w-xl">
+              Ces résultats sont reproductibles. Voyons ce que ça donnerait sur votre marché.
+            </p>
+            <Link href="/contact">
+              <Button
+                variant="primary"
+                size="lg"
+                icon={<ArrowRight size={20} />}
+                trackLabel="testimonials_audit_gratuit"
+                sectionId="testimonials"
+              >
+                Obtenir mon audit gratuit 30 min
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
