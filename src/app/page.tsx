@@ -108,6 +108,13 @@ export default function Home() {
                  </Button>
                </Link>
              </div>
+             <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 font-mono text-[11px] text-ink-3 uppercase tracking-[0.12em]">
+               <span>Zéro engagement</span>
+               <span className="hidden sm:block text-orange">·</span>
+               <span>Réponse sous 24h</span>
+               <span className="hidden sm:block text-orange">·</span>
+               <span>+40 audits réalisés en 2026</span>
+             </div>
           </div>
 
           {/* Metric Strip */}
