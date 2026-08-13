@@ -3,5 +3,5 @@ module.exports = {
   siteUrl: 'https://nana-intelligence.fr',
   generateRobotsTxt: true,
   outDir: 'out',
-  exclude: ['/design-system', '/icon.png', '/404', '/rdv-audit-seo'],
+  exclude: ['/design-system', '/icon.png', '/404', '/rdv-audit-seo', '/dummy'],
 }
