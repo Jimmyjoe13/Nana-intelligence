@@ -108,6 +108,9 @@ export default function Home() {
                  </Button>
                </Link>
              </div>
+             <p className="font-sans text-sm text-ink-3 uppercase tracking-[0.12em] font-mono">
+               Sans engagement · Réponse sous 24h · +40 audits réalisés en 2026
+             </p>
           </div>
 
           {/* Metric Strip */}
@@ -362,6 +365,9 @@ export default function Home() {
                  Obtenir mon audit gratuit 30 min
                </Button>
              </Link>
+             <p className="font-mono text-[11px] text-cream/40 uppercase tracking-[0.12em]">
+               Zéro engagement · Réponse sous 24h · Données jamais partagées
+             </p>
           </Box>
         </div>
       </section>
