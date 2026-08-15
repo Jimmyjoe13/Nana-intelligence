@@ -67,9 +67,9 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     kicker: "Data & Ciblage",
     heroTitle: "Scraping B2B & Enrichissement de Données",
     heroSubtitle: "Notre service de scraping B2B extrait des prospects ciblés sur LinkedIn et Google Maps, puis enrichit chaque contact avec des emails professionnels vérifiés — la matière première d'une prospection qui convertit.",
-    metaTitle: "Scraping B2B : LinkedIn, Google Maps & Enrichissement | Nana",
-    metaDescription: "Service de scraping B2B : extraction ciblée sur LinkedIn et Google Maps, enrichissement d'emails professionnels vérifiés et conformité RGPD.",
-    keywords: ["scraping B2B", "prospection B2B", "enrichissement de données", "génération de leads", "extraction LinkedIn"],
+    metaTitle: "Scraping B2B : Extraction de Leads LinkedIn & Google Maps",
+    metaDescription: "Scraping B2B : extraction de leads ciblée sur LinkedIn et Google Maps, emails vérifiés SMTP et données conformes RGPD, prêtes pour la prospection.",
+    keywords: ["scraping B2B", "scraping données B2B", "extraction leads B2B", "scraper prospects B2B", "enrichissement de données B2B"],
     features: [
       "Extraction LinkedIn & Google Maps ciblée",
       "Enrichissement d'emails professionnels vérifiés (SMTP)",
