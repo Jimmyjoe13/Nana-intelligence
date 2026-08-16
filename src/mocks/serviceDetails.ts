@@ -20,9 +20,9 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     kicker: "Acquisition Outbound",
     heroTitle: "Agence Cold Emailing B2B",
     heroSubtitle: "Notre service de cold emailing B2B génère des rendez-vous qualifiés grâce à des séquences personnalisées et une infrastructure de délivrabilité maîtrisée — vos messages arrivent en boîte de réception, pas en spam.",
-    metaTitle: "Agence Cold Emailing B2B : RDV Qualifiés | Nana Intelligence",
-    metaDescription: "Service de cold emailing B2B haute délivrabilité : setup technique (SPF/DKIM/DMARC), copywriting et relances automatisées. RDV qualifiés garantis.",
-    keywords: ["cold emailing B2B", "prospection B2B", "email froid", "génération de leads", "outbound sales"],
+    metaTitle: "Cold Emailing B2B : RDV Qualifiés en 15 Jours | Nana",
+    metaDescription: "Agence cold emailing B2B : SPF/DKIM/DMARC, copywriting et relances automatisées pour un flux de RDV qualifiés en 15 jours. Audit offert.",
+    keywords: ["cold emailing B2B", "agence cold emailing", "campagne cold emailing PME", "cold email B2B France", "délivrabilité email", "prospection B2B", "email froid", "génération de leads", "outbound sales"],
     features: [
       "Setup technique complet (SPF, DKIM, DMARC, warm-up)",
       "Copywriting de conversion et A/B testing",
