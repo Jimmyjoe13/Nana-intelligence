@@ -64,7 +64,7 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
           </nav>
 
           <div className="flex items-center gap-6">
-            <Link href="/contact" className="hidden sm:block">
+            <Link href="/contact" className="block">
               <Button 
                 variant="primary" 
                 size="sm" 
