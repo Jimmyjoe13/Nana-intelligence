@@ -10,6 +10,13 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { ArrowRight, Sparkles, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 
+// Maillage interne : services liés à cette ville
+const cityServiceLinks = [
+  { href: "/services/cold-emailing-b2b", label: "Cold Emailing B2B" },
+  { href: "/services/scraping-b2b", label: "Scraping & Enrichissement B2B" },
+  { href: "/services/automatisation-sales", label: "Automatisation Sales" },
+];
+
 interface Props {
   params: { slug: string };
 }
@@ -104,6 +111,16 @@ export default function AgencyCityPage({ params }: Props) {
                 <p>
                   Consultez nos <Link href="/blog" className="text-orange hover:underline">guides prospection B2B</Link> et nos services de <Link href="/services/cold-emailing-b2b" className="text-orange hover:underline">Cold Emailing B2B</Link>, <Link href="/services/scraping-b2b" className="text-orange hover:underline">Scraping B2B</Link>, <Link href="/services/automatisation-sales" className="text-orange hover:underline">Automatisation Sales</Link> et <Link href="/services/accompagnement-seo" className="text-orange hover:underline">Accompagnement SEO</Link> pour optimiser votre machine de vente.
                 </p>
+                <div className="flex flex-wrap gap-3 pt-2">
+                  <span className="text-sm font-mono uppercase tracking-wider text-ink-2">Nos services à {data.cityName} :</span>
+                  {cityServiceLinks.map((s) => (
+                    <Link key={s.href} href={s.href}>
+                      <Tag variant="outline" className="hover:border-orange hover:text-orange transition-colors cursor-pointer">
+                        {s.label} →
+                      </Tag>
+                    </Link>
+                  ))}
+                </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
                  <div className="flex items-start gap-3">
