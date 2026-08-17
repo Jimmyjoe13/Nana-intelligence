@@ -1,6 +1,8 @@
 import React from "react";
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/ui/PageHeader";
+import { Button } from "@/components/ui/Button";
+import Link from "next/link";
 import { Box } from "@/components/ui/Box";
 import { Tag } from "@/components/ui/Tag";
 import { Mail, MessageSquare, Globe } from "lucide-react";
@@ -61,7 +63,16 @@ export default function ContactPage() {
           />
         </div>
           <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
-            <a href="#contact-form" className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-mono text-[12px] font-medium tracking-[0.08em] uppercase transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-orange disabled:pointer-events-none disabled:opacity-50 border-[1.5px] rounded-none bg-orange text-ink border-ink hover:bg-ink hover:text-cream px-[22px] py-[14px]">Obtenir mon audit gratuit 30 min</a>
+            <Link href="#contact-form">
+              <Button
+                variant="primary"
+                size="lg"
+                trackLabel="contact_hero_audit"
+                sectionId="contact_hero"
+              >
+                Obtenir mon audit gratuit 30 min
+              </Button>
+            </Link>
           </div>
       </section>
 
