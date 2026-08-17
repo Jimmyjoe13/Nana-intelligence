@@ -130,6 +130,7 @@ export default function ServiceDetailPage({ params }: Props) {
                   {i < agencyCityLinks.length - 1 ? ", " : "."}
                 </span>
               ))}
+            </p>
           </div>
 
           <div className="lg:col-span-5">

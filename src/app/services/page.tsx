@@ -182,7 +182,7 @@ export default function ServicesPage() {
                   <div className="h-[2px] w-12 bg-ink-4 hidden md:block" />
                   <div className="flex-1 flex flex-col gap-6">
                     <p className="text-sm italic text-ink-3">
-                      "Notre machine d&apos;acquisition est maintenant 100% pr\u00e9visible."
+                      « Notre machine d&apos;acquisition est maintenant 100% prévisible. »
                     </p>
                     <Link href="/contact">
                       <Button variant="primary" icon={<ArrowRight size={16} />}>D\u00e9marrer mon projet</Button>
