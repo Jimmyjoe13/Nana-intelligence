@@ -25,7 +25,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
   "name": "Contact \u2014 Nana Intelligence",
-  "description": "Contactez Nana Intelligence pour un audit gratuit de 30 minutes. Agence de Lead Generation B2B a Marseille.",
+  "description": "Contactez Nana Intelligence pour un audit gratuit de 30 minutes. Agence de Lead Generation B2B à Marseille.",
   "mainEntity": {
     "@type": "Organization",
     "name": "Nana Intelligence",
@@ -57,7 +57,7 @@ export default function ContactPage() {
         <div className="max-w-[1400px] mx-auto px-6 md:px-10">
           <PageHeader
             kicker="Contact & Audit"
-            title="Demarrer votre"
+            title="Démarrer votre"
             emphasis="audit gratuit"
             description="Parlez-nous de vos objectifs de croissance. On analyse votre potentiel et on vous montre comment automatiser votre acquisition B2B."
           />
@@ -87,7 +87,7 @@ export default function ContactPage() {
                   Une approche <span className="italic text-orange font-normal">technique</span> de la vente.
                 </h2>
                 <p className="font-sans text-lg text-ink-2 leading-relaxed">
-                  Pas de bla-bla commercial. On discute infrastructure, data, copywriting et ROI. On repond generalement en moins de 24 heures.
+                  Pas de bla-bla commercial. On discute infrastructure, data, copywriting et ROI. On répond généralement en moins de 24 heures.
                 </p>
               </div>
 
@@ -140,9 +140,9 @@ export default function ContactPage() {
             <div className="flex flex-col items-center gap-10 max-w-3xl text-center">
                <MessageSquare size={40} className="text-orange opacity-20" />
                <p className="font-display text-[28px] md:text-[36px] italic font-medium leading-snug text-ink">
-                 &quot;Le Cold Emailing B2B en France autorise la prospection sans opt-in prealable des lors que l&apos;offre est en lien direct avec la profession de l&apos;interlocuteur.&quot;
+                 &quot;Le Cold Emailing B2B en France autorise la prospection sans opt-in préalable dès lors que l&apos;offre est en lien direct avec la profession de l&apos;interlocuteur.&quot;
                </p>
-               <span className="font-mono text-[12px] font-bold uppercase text-orange">Nana Intelligence \u2014 RGPD Compliant</span>
+               <span className="font-mono text-[12px] font-bold uppercase text-orange">Nana Intelligence — RGPD Compliant</span>
             </div>
          </div>
       </section>
