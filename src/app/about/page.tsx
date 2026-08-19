@@ -3,6 +3,8 @@ import { Metadata } from "next";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Box } from "@/components/ui/Box";
 import { Tag } from "@/components/ui/Tag";
+import { Button } from "@/components/ui/Button";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { teamMembers, values, history, techStack } from "@/mocks/about";
 import Image from "next/image";
 import Link from "next/link";
@@ -54,6 +56,13 @@ export default function AboutPage() {
             emphasis="au service de votre croissance"
             description="Nana Intelligence n'est pas une agence classique. Nous sommes des ingénieurs de la croissance qui automatisent votre acquisition B2B."
           />
+          <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
+            <Link href="/contact">
+              <Button variant="primary" size="lg" icon={<ArrowRight size={20} />}>
+                Obtenir mon audit gratuit 30 min
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -171,6 +180,16 @@ export default function AboutPage() {
               <Link href="/blog" className="text-cream hover:text-orange font-mono text-[11px] uppercase tracking-widest font-bold border border-cream/30 px-4 py-2 hover:border-orange transition-colors">Blog Prospection</Link>
               <Link href="/contact" className="text-cream hover:text-orange font-mono text-[11px] uppercase tracking-widest font-bold border border-orange px-4 py-2 transition-colors">Audit gratuit</Link>
             </div>
+          </div>
+          <div className="flex flex-col items-center gap-4 pt-10 border-t border-cream/10 mt-10">
+            <p className="text-cream/60 text-center max-w-xl">
+              Prêt à automatiser votre prospection B2B ? Réservez votre audit gratuit de 30 minutes.
+            </p>
+            <Link href="/contact">
+              <Button variant="primary" size="lg" icon={<Sparkles size={20} />}>
+                Obtenir mon audit gratuit 30 min
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

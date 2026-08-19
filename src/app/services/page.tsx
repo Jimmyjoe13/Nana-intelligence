@@ -261,7 +261,7 @@ export default function ServicesPage() {
              </p>
              <Link href="/contact">
                <Button variant="primary" size="lg" icon={<Sparkles size={20} />}>
-                 Demander un devis
+                 Obtenir mon audit gratuit 30 min
                </Button>
              </Link>
                 <p className="text-cream/80 text-sm mt-2">Réponse sous 24 h, sans engagement.</p>
