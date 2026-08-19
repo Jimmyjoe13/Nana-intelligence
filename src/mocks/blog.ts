@@ -1108,6 +1108,78 @@ export const blogPosts = [
 
 <p>Prêt à passer de l'agent unique à l'équipe d'agents ? Profitez d'un <strong>audit gratuit</strong> ou d'un <strong>appel découverte</strong> pour voir comment l'orchestration multi-agents peut remplir votre pipeline.</p>
     `
+  },
+  {
+    id: 17,
+    title: "Automatiser sa veille avec l’IA : le guide pratique pour ne plus rien rater en 2026",
+    excerpt: "Vous perdez des heures chaque semaine à fouiller des dizaines de sites pour rester informé ? Voici comment construire un système de veille automatisée par l’IA en 3 étapes concrètes.",
+    category: "IA / AUTOMATISATION",
+    date: "19 Août 2026",
+    readTime: "5 MIN",
+    image: "https://images.unsplash.com/photo-1543286386-2e659306cd6c?q=80&w=800&auto=format&fit=crop",
+    structuredInternalLinks: [
+      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "scraping B2B" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "automatisation de vos workflows commerciaux" },
+      { "@type": "WebPage", "url": "/contact", "name": "Contactez-nous pour un audit gratuit" },
+    ],
+    content: `
+<h2>Pourquoi votre veille manuelle vous fait perdre des opportunités</h2>
+<p>Vous passiez déjà deux heures par semaine à parcourir des newsletters, des articles et des réseaux sociaux pour rester à la page. En 2026, c’est littéralement du temps que vos concurrents utilisent pour closer des deals. La veille manuelle ne scale pas : plus vous grossissez, plus l’information.explose, et moins vous avez de chances de tout capter. Résultat ? Vous arrivez en réunion avec des informations déjà périmées, ou pire, vous découvrez une tendance quand elle est déjà mainstream.</p>
+<p>La bonne nouvelle : l’intelligence artificielle a rendu accessible un système de veille automatisée qui travaillait 24/7 pour vous. Nous avons mis en place cette architecture pour des dizaines de dirigeants de PME B2B, et le résultat est toujours le même : <strong>90% de temps gagné, zéro information manquée</strong>. Voici exactement comment reproduire ça.</p>
+
+<h2>L’architecture en 3 étapes d’une veille automatisée par l’IA</h2>
+<p>Un système de veille IA efficace repose sur trois briques modulaires que n’importe quel dirigeant peut assembler sans compétences techniques poussées. Chaque brique a un rôle précis, et c’est leur enchaînement automatique qui fait toute la différence.</p>
+
+<h2>Étape 1 — La collecte automatique de vos sources</h2>
+<p>Tout commence par la collecte de données brutes. L’objectif : capter automatiquement tout ce qui se publie autour de vos mots-clés stratégiques, vos concurrents et votre secteur. Concrètement, ça veut dire :</p>
+<ul>
+<li><strong>Flux RSS ciblés</strong> : configurez des flux sur les blogs de vos concurrents, les sites spécialisés de votre industrie et les rubriques presse pertinentes. Un seul outil comme Feedly ou Inoreader centralise tout.</li>
+<li><strong>Alertes de mots-clés</strong> : Google Alerts reste utile, mais pour aller plus loin, des plateformes comme Perplexity ou Phantombuster surveillent les réseaux sociaux et les forums en temps réel.</li>
+<li><strong>Scraping planifié</strong> : pour les sites sans flux RSS, un <a href="/services/scraping-b2b">scraping B2B</a> automatisé extrait les nouvelles pages selon un calendrier défini. C’est exactement ce qu’on déploie chez Nana Intelligence pour nos clients.</li>
+</ul>
+<p>L’astuce : ne collectez PAS tout. Définissez 5 à 10 mots-clés hyper-ciblés (nom de concurrent, technologie, réglementation) plutôt que 50 termes vagues. La précision bat toujours le volume en veille.</p>
+
+<h2>Étape 2 — L’analyse et la synthèse par l’IA</h2>
+<p>C’est ici que la magie opère. Les centaines d’articles et de posts collectés sont envoyés à un modèle de langage (Claude, Mistral AI ou GPT) qui effectue trois opérations :</p>
+<ul>
+<li><strong>Filtrage du bruit</strong> : suppression automatique des contenus hors-sujet, des doublons et des articles sans valeur ajoutée pour votre activité.</li>
+<li><strong>Catégorisation intelligente</strong> : chaque信息 pertinente est classée par thème (tendance produit, mouvement concurrentiel, évolutions réglementaires, opportunités marché).</li>
+<li><strong>Synthèse en 3 bullet points</strong> : pour chaque information clé, l’IA génère un résumé actionnable en une phrase. Pas de pavés de 500 mots à lire — juste l’essentiel.</li>
+</ul>
+<p>Le choix du modèle compte. Mistral AI excelle en français et en analyse de données structurées. Claude est plus performant sur les synthèses longues. Pour une veille B2B francophone, Mistral est souvent le meilleur rapport qualité/prix.</p>
+
+<h2>Étape 3 — La diffusion automatique vers vos canaux</h2>
+<p>Un rapport de veille qui reste dans un outil ne sert à rien. La dernière brique connecte votre analyse à vos canaux de diffusion :</p>
+<ul>
+<li><strong>Slack ou Microsoft Teams</strong> : création d’un canal #veille-ia où le résumé quotidien arrive automatiquement. Votre équipe commerciale lit ça en 2 minutes le matin.</li>
+<li><strong>E-mail digest</strong> : un résumé hebdomadaire envoyé aux décideurs qui n’ont pas le temps de suivre en temps réel.</li>
+<li><strong>WordPress ou CMS</strong> : publication automatique de bilans sectoriels sur votre blog, pour booster votre <a href="/services/automatisation-sales">automatisation de vos workflows commerciaux</a> et votre SEO simultanément.</li>
+</ul>
+<p>L’outil d’orchestration est le glue qui relie tout ça. Make.com offre 1000+ intégrations pour des workflows visuels. n8n, en open source, est idéal si vous voulez un contrôle total et un hébergement sur-mesure.</p>
+
+<h2>Comparatif rapide des outils pour votre veille IA</h2>
+<p>Voici les combinaisons qui fonctionnent le mieux en 2026 selon le profil de votre entreprise :</p>
+<ul>
+<li><strong>PME agile (5-20 salariés)</strong> : Make.com + Mistral AI + canal Slack. Budget : 30-50€/mois. Setup en 2 heures.</li>
+<li><strong>ETI structurée (20-100 salariés)</strong> : n8n auto-hébergé + Claude + digest e-mail. Budget : 100-200€/mois. Plus de flexibilité, données hébergées en France.</li>
+<li><strong>Agence / multi-clients</strong> : Gumloop ou n8n avec paramètres multiples + API Mistral. Un seul dashboard pour piloter la veille de 10+ marques.</li>
+</ul>
+<p>Le point commun : zéro compétence en développement requise. Ces outils sont pensés pour des dirigeants, pas pour des ingénieurs.</p>
+
+<h2>Les erreurs qui tuent votre veille automatisée</h2>
+<p>Au fil de nos deployments, on voit toujours les mêmes pièges :</p>
+<ul>
+<li><strong>Trop de sources</strong> : commencer avec 50 flux RSS produit un mur de texte, pas de l’intelligence. Commencez petit, affinez.</li>
+<li><strong>Pas de curation humaine</strong> : l’IA filtre à 95%, mais les 5% restants nécessitent votre regard expert pour décider quoi actionner.</li>
+<li><strong>Oublier le feedback loop</strong> : dites à l’IA ce qui était pertinent ou non. Après 2 semaines d’apprentissage, la qualité de synthèse explose.</li>
+<li><strong>Pas de cadence fixe</strong> : une veille quotidienne bat une veille hebdomadaire. L’information a une durée de vie de 48h en B2B.</li>
+</ul>
+
+<h2>Passez de la veille subie à la veille stratégique</h2>
+<p>Automatiser votre veille avec l’IA n’est pas un gadget technologique — c’est un avantage compétitif mesurable. Nos clients qui ont mis en place ce système rapportent une réduction de 90% du temps passé en veille et, surtout, des décisions commerciales plus rapides basées sur des données fraîches.</p>
+<p>Vous voulez qu’on construise ce système pour votre entreprise ? Chez Nana Intelligence, on conçoit des architectures de veille sur-mesure intégrées à votre <a href="/services/automatisation-sales">workflow commercial complet</a>.</p>
+<p><strong><a href="/contact">Contactez-nous pour un audit gratuit</a></strong> — on analyse vos sources actuelles et on vous propose un plan d’automatisation adapté à votre secteur en 30 minutes.</p>
+    `
   }
 ];
 
