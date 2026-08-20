@@ -105,7 +105,7 @@ export default function Home() {
                     trackLabel="hero_decouvrir_methode"
                     sectionId="hero"
                   >
-                   Découvrir notre méthode
+                   Découvrir comment on génère +250 RDV/mois
                  </Button>
                </Link>
              </div>
