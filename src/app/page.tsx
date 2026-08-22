@@ -238,7 +238,7 @@ export default function Home() {
             </div>
             <Link href="/contact" className="mt-4">
               <Button 
-                variant="ink"
+                variant="primary"
                 trackLabel="faq_audit_gratuit"
                 sectionId="faq"
               >
