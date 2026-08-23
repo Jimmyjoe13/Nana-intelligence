@@ -293,7 +293,7 @@ export const blogPosts = [
   {
     id: 6,
     title: "Lead Generation LinkedIn B2B 2026 : La méthode pour remplir votre agenda sans spammer",
-    excerpt: "Exit le spam LinkedIn. En 2026, la lead gen sur LinkedIn repose sur la data, l'IA et l'automatisation intelligente. La méthode complète pour générer des RDV qualifiés sans griller votre compte.",
+    excerpt: "Lead gen LinkedIn B2B en 2026 : data, IA et automatisation pour remplir votre agenda sans spammer. Méthode complète Nana Intelligence.",
     category: "IA / AUTOMATISATION",
     date: "23 Juillet 2026",
     readTime: "5 MIN",
@@ -392,7 +392,7 @@ export const blogPosts = [
   {
     id: 7,
     title: "ICP en B2B : la méthode pour définir votre client idéal (et arrêter de prospecter dans le vide)",
-    excerpt: "Prospecter tout le monde, c'est prospecter personne. La méthode en 4 étapes pour définir votre ICP (Ideal Customer Profile) et remplir votre pipe de leads qui signent vraiment.",
+    excerpt: "Définir votre ICP B2B en 4 étapes : cessez de prospecter dans le vide. Méthode pour remplir votre pipeline de leads qualifiés.",
     category: "STRATÉGIE",
     date: "24 Juillet 2026",
     readTime: "6 MIN",
@@ -567,7 +567,7 @@ export const blogPosts = [
   {
     id: 9,
     title: "Externaliser sa prospection commerciale B2B : le guide complet 2026",
-    excerpt: "Faut-il internaliser ou externaliser sa prospection B2B ? Découvrez les coûts réels, les critères de choix d'une agence et comment réussir l'externalisation de vos ventes en 2026.",
+    excerpt: "Externaliser votre prospection B2B : avantages, pièges à éviter et critères de choix pour scaler vos ventes sans alourdir vos charges.",
     category: "STRATÉGIE",
     date: "28 Juillet 2026",
     readTime: "9 MIN",
@@ -656,7 +656,7 @@ export const blogPosts = [
   {
     id: 10,
     title: "Lead Generation Marseille B2B : Stratégie gagnante pour les PME de la région PACA",
-    excerpt: "Découvrez comment les entreprises marseillaises peuvent générer des leads B2B qualifiés grâce à une stratégie de prospection combinant cold email, scraping et automatisation, adaptée au marché local.",
+    excerpt: "Lead generation Marseille : trouvez des clients B2B qualifiés en PACA. Méthodes, outils et conseils pour booster votre acquisition locale.",
     category: "STRATÉGIE",
     date: "30 Juillet 2026",
     readTime: "3 MIN",
@@ -687,7 +687,7 @@ export const blogPosts = [
   {
     id: 11,
     title: "Actualité IA : les tendances majeures de l’automatisation en 2026",
-    excerpt: "Découvrez les dernières tendances de l’intelligence artificielle et de l’automatisation qui transforment les PME en 2026, des agents IA autonomes à l’impact de l’IA Act.",
+    excerpt: "Actualités IA 2026 : agents autonomes, automatisation et tendances qui transforment les PME. Ce qu’il faut retenir pour votre business.",
     category: "IA / AUTOMATISATION",
     date: "02 Août 2026",
     readTime: "3 MIN",
@@ -732,7 +732,7 @@ export const blogPosts = [
   {
     id: 12,
     title: "Agence lead generation Marseille : comment choisir le partenaire qui booste vos ventes B2B",
-    excerpt: "Trouver une agence de lead generation à Marseille qui transforme vos prospects en clients fidèles n’est pas une tâche anodine. Découvrez les critères essentiels, les pièges à éviter et les leviers concrets pour multiplier vos rendez‑vous commerciaux.",
+    excerpt: "Comment choisir une agence lead generation à Marseille ? Critères de sélection, erreurs fréquentes et méthodes pour trouver le bon partenaire B2B.",
     category: "STRATÉGIE",
     date: "03 Août 2026",
     readTime: "4 MIN",
@@ -821,7 +821,7 @@ export const blogPosts = [
   {
     id: 13,
     title: "Cold emailing B2B : les scripts qui convertissent en 2026",
-    excerpt: "Découvrez les scripts de cold email B2B éprouvés pour 2026, les principes clés d'un email qui convertit et comment éviter les filtres spam pour booster vos réponses.",
+    excerpt: "Scripts cold email B2B 2026 : templates efficaces, principes clés d'un email qui convertit et astuces pour éviter les filtres spam.",
     category: "COLD EMAIL",
     date: "04 Août 2026",
     readTime: "4 MIN",
@@ -889,7 +889,7 @@ export const blogPosts = [
   {
     id: 14,
     title: "Lead Generation LinkedIn B2B 2026 : stratégies éprouvées pour multiplier vos rendez-vous qualifiés",
-    excerpt: "Découvrez comment transformer LinkedIn en machine à rendez-vous qualifiés en 2026 grâce à des tactiques de ciblage, de séquence et d’automatisation éprouvées par les experts Nana Intelligence.",
+    excerpt: "Transformer LinkedIn en machine à RDV qualifiés : tactiques de ciblage, séquences et automatisation éprouvées par Nana Intelligence.",
     category: "STRATÉGIE",
     date: "05 Août 2026",
     readTime: "4 MIN",
@@ -938,7 +938,7 @@ export const blogPosts = [
   {
     id: 15,
     title: "Génération leads B2B automatisée : le système qui remplit votre pipeline pendant que vous dormez",
-    excerpt: "Arrêter de prospecter à la main. Construire une machine qui scrape, enrichit, séquencé et push dans votre CRM — pendant que vous gérez l'entreprise. Voici l'architecture complète, les outils, les pièges à éviter et le coût réel.",
+    excerpt: "Génération leads B2B automatisée : construisez une machine qui scrape, enrichit et push dans votre CRM. Architecture, outils et coût réel.",
     category: "IA / AUTOMATISATION",
     date: "10 Août 2026",
     readTime: "6 MIN",
@@ -1112,7 +1112,7 @@ export const blogPosts = [
   {
     id: 17,
     title: "Automatiser sa veille avec l’IA : le guide pratique pour ne plus rien rater en 2026",
-    excerpt: "Vous perdez des heures chaque semaine à fouiller des dizaines de sites pour rester informé ? Voici comment construire un système de veille automatisée par l’IA en 3 étapes concrètes.",
+    excerpt: "Automatiser sa veille avec l’IA en 3 étapes : construisez un système qui surveille les sources et vous alerte sans temps perdu.",
     category: "IA / AUTOMATISATION",
     date: "19 Août 2026",
     readTime: "5 MIN",
