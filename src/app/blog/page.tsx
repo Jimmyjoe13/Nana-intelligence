@@ -1,6 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
 import { PageHeader } from "@/components/ui/PageHeader";
+import { Button } from "@/components/ui/Button";
 import { NewsletterForm } from "@/components/newsletter/NewsletterForm";
 import { blogPosts, blogCategories } from "@/mocks/blog";
 import { BlogList } from "@/components/blog/BlogList";
@@ -69,6 +70,13 @@ export default function BlogPage() {
             emphasis="l'ingénierie"
             description="Analyses, conseils et stratégies pour transformer votre prospection B2B en une machine de guerre prévisible."
           />
+          <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
+            <Link href="/contact">
+              <Button variant="primary" size="lg">
+                Obtenir mon audit gratuit 30 min
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 

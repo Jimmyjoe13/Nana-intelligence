@@ -108,7 +108,7 @@ export default function ServicesPage() {
           <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
             <Link href="/contact">
               <Button variant="primary" size="lg" className="mt-4">
-                Demandez votre audit gratuit
+                Obtenir mon audit gratuit 30 min
               </Button>
             </Link>
           </div>
