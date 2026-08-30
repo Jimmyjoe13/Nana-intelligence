@@ -53,9 +53,9 @@ export default function ContactForm() {
     <Box id="contact-form" className="bg-cream p-10 md:p-16 flex flex-col gap-8">
       <div className="flex flex-col gap-2">
         <span className="font-mono text-[11px] text-orange uppercase tracking-[0.2em] font-bold">
-          Audit stratégique offert
+          Audit stratégique gratuit — sans engagement
         </span>
-        <h3 className="font-display text-[32px] font-medium">Réservez votre créneau.</h3>
+        <h3 className="font-display text-[32px] font-medium">On analyse votre potentiel B2B en 30 min.</h3>
       </div>
 
       {/* Réassurance — indicateurs de confiance */}
@@ -78,7 +78,10 @@ export default function ContactForm() {
       </div>
 
       {/* Micro-témoignage */}
-      <div className="bg-cream-2 border-[1.5px] border-ink/10 px-6 py-4 flex flex-col gap-2">
+      <div className="bg-orange/10 border-[1.5px] border-orange/30 px-6 py-4 flex flex-col gap-2">
+          <p className="font-sans text-[13px] text-ink-2 font-medium leading-relaxed">
+            ⚡ Places limitées — On programme votre audit cette semaine.
+          </p>
         <p className="font-sans text-[13px] text-ink-2 italic leading-relaxed">
           &quot;En 3 semaines, Nana Intelligence nous a généré 12 RDV qualifiés avec des décideurs C-Level. Le ROI a été immédiat.&quot;
         </p>
@@ -89,7 +92,6 @@ export default function ContactForm() {
 
       <form className="grid grid-cols-1 md:grid-cols-2 gap-8" onSubmit={handleSubmit}>
         <Field label="Prénom" name="prenom" placeholder="ex: Jean" required onFocus={handleFormStart} />
-        <Field label="Nom (Optionnel)" name="nom" placeholder="ex: Dupont" onFocus={handleFormStart} />
         <div className="md:col-span-2">
           <Field label="Email professionnel" name="email" type="email" placeholder="jean@entreprise.ai" required onFocus={handleFormStart} />
         </div>
@@ -108,7 +110,7 @@ export default function ContactForm() {
           </p>
           {status === "success" && (
             <p className="mt-4 text-[12px] font-mono uppercase text-center text-orange font-bold leading-relaxed">
-              Demande envoyée ✓ On revient vers vous sous 24h.
+              Demande envoyée ✓ On vous envoie un email de confirmation dans les 5 minutes.
             </p>
           )}
           {status === "error" && (
@@ -116,6 +118,8 @@ export default function ContactForm() {
               Une erreur est survenue. Écrivez-nous à contact@nana-intelligence.fr
             </p>
           )}
+          <p className="text-[12px] text-ink-3 font-sans text-center mt-2">            ou écrivez-nous à <a href="mailto:contact@nana-intelligence.fr" className="underline hover:text-orange">contact@nana-intelligence.fr</a>
+          </p>
         </div>
       </form>
     </Box>

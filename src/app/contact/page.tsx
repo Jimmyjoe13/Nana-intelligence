@@ -63,16 +63,19 @@ export default function ContactPage() {
           />
         </div>
           <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
-            <Link href="#contact-form">
-              <Button
-                variant="primary"
-                size="lg"
-                trackLabel="contact_hero_audit"
-                sectionId="contact_hero"
-              >
-                Obtenir mon audit gratuit 30 min
-              </Button>
-            </Link>
+            <div className="flex flex-col items-center gap-3">
+              <Link href="#contact-form">
+                <Button
+                  variant="primary"
+                  size="lg"
+                  trackLabel="contact_hero_audit"
+                  sectionId="contact_hero"
+                >
+                  Obtenir mon audit gratuit 30 min
+                </Button>
+              </Link>
+              <span className="font-mono text-[11px] text-ink-3">⚡ Réponse sous 24h · Sans engagement</span>
+            </div>
           </div>
       </section>
 
@@ -131,6 +134,23 @@ export default function ContactPage() {
               <ContactForm />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Bottom CTA Section */}
+      <section className="bg-cream-2 py-20 border-b-[1.5px] border-ink">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex flex-col items-center gap-8 text-center">
+          <h2 className="font-display text-[32px] md:text-[40px] font-medium text-ink">
+            Prêt à automatiser votre acquisition B2B ?
+          </h2>
+          <p className="font-sans text-lg text-ink-2 max-w-2xl">
+            Rejoignez les +40 entreprises qui génèrent des RDV qualifiés grâce à nos audits stratégiques.
+          </p>
+          <Link href="#contact-form">
+            <Button variant="primary" size="lg" trackLabel="contact_bottom_cta">
+              Démarrer mon audit gratuit
+            </Button>
+          </Link>
         </div>
       </section>
 
