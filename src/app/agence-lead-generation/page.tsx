@@ -73,8 +73,8 @@ export default function AgencyPage() {
           />
           <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
             <Link href="/contact">
-              <Button variant="primary" size="lg" className="mt-4">
-                Demandez votre audit gratuit
+              <Button variant="primary" size="lg" icon={<ArrowRight size={20} />} trackLabel="agence_hero_audit" sectionId="agence_hero" className="mt-4">
+                Obtenir mon audit gratuit 30 min
               </Button>
             </Link>
           </div>
