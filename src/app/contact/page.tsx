@@ -134,7 +134,25 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Quote */}
+
+      {/* Internal linking — services & blog */}
+      <section className="bg-cream border-b-[1.5px] border-ink py-16">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-10">
+          <div className="flex flex-col gap-2">
+            <span className="font-mono text-[11px] text-orange uppercase tracking-[0.2em] font-bold">Découvrez nos services</span>
+            <p className="font-sans text-lg text-ink-2">Explorez notre expertise en prospection et acquisition B2B.</p>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/services/cold-emailing-b2b" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Cold Emailing B2B</Link>
+            <Link href="/services/scraping-b2b" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Scraping B2B</Link>
+            <Link href="/services/automatisation-sales" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Automatisation Sales</Link>
+            <Link href="/services/accompagnement-seo" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Accompagnement SEO</Link>
+            <Link href="/blog" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Blog</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Quote */
       <section className="bg-cream py-32">
          <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex flex-col items-center">
             <div className="flex flex-col items-center gap-10 max-w-3xl text-center">
