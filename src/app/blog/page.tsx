@@ -72,7 +72,7 @@ export default function BlogPage() {
           />
           <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
             <Link href="/contact">
-              <Button variant="primary" size="lg">
+              <Button variant="primary" size="lg" trackLabel="blog_hero_audit" sectionId="blog_hero">
                 Obtenir mon audit gratuit 30 min
               </Button>
             </Link>
