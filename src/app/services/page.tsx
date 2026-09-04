@@ -107,7 +107,7 @@ export default function ServicesPage() {
           />
           <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
             <Link href="/contact">
-              <Button variant="primary" size="lg" className="mt-4">
+              <Button variant="primary" size="lg" className="mt-4" trackLabel="services_hero_audit" sectionId="services_hero">
                 Obtenir mon audit gratuit 30 min
               </Button>
             </Link>
@@ -185,7 +185,7 @@ export default function ServicesPage() {
                       « Notre machine d&apos;acquisition est maintenant 100% prévisible. »
                     </p>
                     <Link href="/contact">
-                      <Button variant="primary" icon={<ArrowRight size={16} />}>D\u00e9marrer mon projet</Button>
+                      <Button variant="primary" icon={<ArrowRight size={16} />} trackLabel="services_demarrer_projet" sectionId="services_offer">D\u00e9marrer mon projet</Button>
                     </Link>
                 <p className="text-cream/80 text-sm mt-2">Réponse sous 24 h, sans engagement.</p>
                   </div>
@@ -260,7 +260,7 @@ export default function ServicesPage() {
                Discutons de vos besoins pour construire une solution adapt\u00e9e \u00e0 vos objectifs commerciaux.
              </p>
              <Link href="/contact">
-               <Button variant="primary" size="lg" icon={<Sparkles size={20} />}>
+               <Button variant="primary" size="lg" icon={<Sparkles size={20} />} trackLabel="services_final_audit" sectionId="services_final_cta">
                  Obtenir mon audit gratuit 30 min
                </Button>
              </Link>
