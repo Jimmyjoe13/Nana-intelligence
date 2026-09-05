@@ -235,6 +235,9 @@ export default function Home() {
               <Link href="/blog" className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold hover:underline">
                 → Blog lead generation B2B
               </Link>
+              <Link href="/about" className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold hover:underline">
+                → À propos de Nana Intelligence
+              </Link>
             </div>
             <Link href="/contact" className="mt-4">
               <Button 
