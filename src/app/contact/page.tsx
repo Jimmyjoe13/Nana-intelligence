@@ -152,7 +152,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Quote */
+      {/* Quote */}
       <section className="bg-cream py-32">
          <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex flex-col items-center">
             <div className="flex flex-col items-center gap-10 max-w-3xl text-center">
