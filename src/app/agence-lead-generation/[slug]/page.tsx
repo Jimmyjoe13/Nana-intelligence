@@ -185,7 +185,7 @@ export default function AgencyCityPage({ params }: Props) {
              </p>
              <Link href="/contact">
                <Button variant="primary" size="lg" icon={<Sparkles size={20} />}>
-                 Réserver mon audit gratuit
+                 Obtenir mon audit gratuit 30 min
                </Button>
              </Link>
           </Box>

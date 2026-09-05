@@ -242,7 +242,7 @@ export default function Home() {
                 trackLabel="faq_audit_gratuit"
                 sectionId="faq"
               >
-                Réserver mon audit gratuit 30 min
+                Obtenir mon audit gratuit 30 min
               </Button>
             </Link>
           </div>

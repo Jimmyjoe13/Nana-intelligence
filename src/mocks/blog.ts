@@ -273,7 +273,7 @@ export const blogPosts = [
 
 <p style="text-align:center; margin:2rem 0;">
   <a href="/contact" style="background:#1a1a2e;color:#fff;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;">
-    🎯 Réserver mon audit gratuit
+    🎯 Obtenir mon audit gratuit 30 min
   </a>
 </p>
 
@@ -370,7 +370,7 @@ export const blogPosts = [
 
 <p style="text-align:center; margin:2rem 0;">
   <a href="/contact" style="background:#1a1a2e;color:#fff;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;">
-    🎯 Réserver mon audit gratuit (30 min)
+    🎯 Obtenir mon audit gratuit 30 min
   </a>
 </p>
 
@@ -464,7 +464,7 @@ export const blogPosts = [
 
 <p style="text-align:center; margin:2rem 0;">
   <a href="/contact" style="background:#1a1a2e;color:#fff;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;">
-    🎯 Réserver mon audit gratuit
+    🎯 Obtenir mon audit gratuit 30 min
   </a>
 </p>
 
@@ -559,7 +559,7 @@ export const blogPosts = [
 
 <p style="text-align:center; margin:3rem 0;">
   <a href="/contact" style="background:#1a1a2e;color:#fff;padding:1.2rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;font-size:1.1rem;">
-    🎯 Discutons de votre croissance : Réserver un audit gratuit (30 min)
+    🎯 Discutons de votre croissance : Obtenir un audit gratuit 30 min
   </a>
 </p>
     `
@@ -648,7 +648,7 @@ export const blogPosts = [
 
 <p style="text-align:center; margin:3rem 0;">
   <a href="/contact" style="background:#1a1a2e;color:#fff;padding:1.2rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;font-size:1.1rem;">
-    🎯 Construisons votre machine à leads : Réserver un audit gratuit de 30 min
+    🎯 Construisons votre machine à leads : Obtenir un audit gratuit 30 min
   </a>
 </p>
     `
