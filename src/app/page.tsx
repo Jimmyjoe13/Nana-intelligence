@@ -46,16 +46,16 @@ const jsonLdBreadcrumb = {
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
-  title: "Agence de Prospection B2B | +250 RDV/mois | Nana Intelligence",
-  description: "Agence de prospection commerciale B2B à Marseille. Cold emailing, scraping et automatisation sales pour générer des RDV qualifiés. Audit gratuit 30 min.",
+  title: "Lead Generation B2B | +250 RDV/mois | Nana Intelligence",
+  description: "Agence lead generation B2B à Marseille : cold emailing, scraping et automatisation sales. Générez des RDV qualifiés en automatique. Audit gratuit 30 min.",
   keywords: [
-    "agence lead generation b2b",
+    "agence lead generation b2b marseille",
     "agence prospection commerciale b2b",
-    "prospection commerciale b2b france",
-    "cold emailing france",
+    "prospection b2b france",
+    "cold emailing b2b",
     "scraping linkedin b2b",
-    "automatisation sales",
-    "rdv qualifies b2b",
+    "automatisation sales pme",
+    "générer rdv qualifiés b2b",
     "nana intelligence"
   ],
 };

@@ -10,14 +10,15 @@ import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/contact/" },
-  title: "Audit Gratuit 30 min — Prospection B2B | Nana Intelligence",
-  description: "Réservez votre audit stratégique gratuit de 30 min. Nos experts analysent votre potentiel de prospection B2B et vous montrent comment générer des RDV qualifiés. Réponse sous 24h.",
+  title: "Audit Gratuit Prospection B2B | Contact Agence | Nana Intelligence",
+  description: "Réservez votre audit gratuit de 30 min : nos experts analysent votre prospection B2B et vous montrent comment générer des RDV qualifiés. Réponse sous 24h.",
   keywords: [
-    "contact agence lead generation",
-    "audit gratuit prospection B2B",
+    "contact agence lead generation b2b",
+    "audit gratuit prospection b2b marseille",
     "agence lead generation marseille contact",
-    "devis cold emailing B2B",
-    "consultant prospection commerciale PACA",
+    "devis cold emailing b2b",
+    "consultant prospection commerciale paca",
+    "prise de rendez-vous prospection b2b",
   ],
 };
 
