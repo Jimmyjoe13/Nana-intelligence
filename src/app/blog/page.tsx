@@ -9,15 +9,15 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/blog/" },
-  title: "Le Blog de l'Acquisition B2B | Nana Intelligence",
-  description: "Découvrez nos guides sur le Cold Emailing, le scraping et l'automatisation sales pour générer des rendez-vous qualifiés B2B.",
+  title: "Blog Lead Generation B2B | Guides Cold Emailing & Scraping | Nana Intelligence",
+  description: "Guides et analyses sur le cold emailing, le scraping B2B et l'automatisation sales. Stratégies éprouvées pour générer des RDV qualifiés. Audit gratuit.",
   keywords: [
     "blog lead generation b2b",
     "guide cold emailing",
     "scraping linkedin google maps",
     "automatisation sales",
     "conseils prospection b2b",
-    "rdv qualifies"
+    "générer rdv qualifiés b2b"
   ],
 };
 
