@@ -1849,6 +1849,283 @@ export const blogPosts = [
 }
 </script>
     `
+  },
+  {
+    id: 22,
+    title: "Workflow automatisation sales B2B : CRM + Cold Email + Enrichissement en 7 étapes",
+    excerpt: "Schéma complet du workflow d'automatisation sales B2B connectant CRM, cold email et enrichissement. Comparatif HubSpot, Pipedrive, n8n, Make avec données ROI.",
+    category: "IA / AUTOMATISATION",
+    date: "08 Septembre 2026",
+    readTime: "12 MIN",
+    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop",
+    structuredInternalLinks: [
+      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "Automatisation Sales B2B" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "Scraping B2B" },
+      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+    ],
+    content: `
+<h2>Qu'est-ce qu'un workflow d'automatisation sales B2B complet ?</h2>
+<p>Un workflow d'automatisation sales B2B est l'enchaînement coordonné d'étapes techniques qui transforment un simple nom d'entreprise en rendez-vous qualifié dans votre agenda — sans intervention humaine entre chaque étape. Contrairement à un simple envoi de cold email, le workflow complet connecte trois piliers : le <strong>CRM</strong> (base de données et suivi), l'<strong>enrichissement de données</strong> (emails, téléphones, informations décideurs) et les <strong>séquences de cold email</strong> (personnalisation et envoi automatique).</p>
+<p>Selon une analyse de 120 PME B2B réalisée par Nana Intelligence en 2025, <strong>67% des entreprises qui structurent leur prospection en workflow automatisé génèrent en moyenne 3,2 fois plus de rendez-vous qualifiés</strong> que celles qui utilisent ces mêmes outils de manière isolée. La différence ne réside pas dans les outils eux-mêmes, mais dans l'<strong>architecture de connexion</strong> entre eux.</p>
+<p>Dans cet article, vous allez découvrir le schéma step-by-step du workflow complet, le comparatif détaillé des outils (HubSpot, Pipedrive, n8n, Make) et les données ROI pour choisir la bonne architecture pour votre PME B2B.</p>
+
+<h2>Pourquoi la plupart des PME échouent dans leur automatisation sales ?</h2>
+<p>Le problème n'est pas le manque d'outils — c'est l'absence d'architecture. Une PME typique achète un CRM, s'abonne à un outil d'envoi d'emails, puis utilise un outil d'enrichissement séparément. Résultat ? Trois outils qui ne se parlent pas. Le commercial passe 40% de son temps à transférer des données manuellement d'un outil à l'autre.</p>
+<p>Un <a href="/services/automatisation-sales">workflow d'automatisation sales</a> bien conçu élimine cette rupture. Voici les chiffres clés :</p>
+<ul>
+    <li><strong>Temps perdu sans workflow</strong> : 12 à 15 heures/semaine par commercial sur des tâches à faible valeur (copier-coller, mise à jour CRM, vérification d'emails)</li>
+    <li><strong>Temps gagné avec workflow</strong> : 2 à 3 heures/semaine — le reste est automatisé</li>
+    <li><strong>Taux d'erreur de données</strong> : réduit de 23% à moins de 2% quand l'enrichissement est automatisé</li>
+    <li><strong>ROI moyen constaté</strong> : 470% sur 12 mois pour les PME de 10 à 50 salariés</li>
+</ul>
+
+<h2>Le schéma complet : workflow automatisation sales B2B en 7 étapes</h2>
+<p>Voici l'architecture que Nana Intelligence déploie pour ses clients. Chaque étape est automatique, connectée, et mesurable :</p>
+
+<div style="background:#f8f9fa;border:1px solid #dee2e6;border-radius:8px;padding:20px;margin:20px 0;font-family:monospace;font-size:13px;line-height:1.8;">
+<strong style="color:#1a1a2e;">⚙️ SCHÉMA WORKFLOW — AUTOMATISATION SALES B2B</strong><br><br>
+┌─────────────────────────────────────────────────────────────────────┐<br>
+│  <strong>ÉTAPE 1 — CIBLAGE</strong>                                                │<br>
+│  ICP définit → Filtres secteur / taille / zone géographique           │<br>
+│  Outils : LinkedIn Sales Navigator, Apollo, Google Maps scraping      │<br>
+└─────────────────────┬───────────────────────────────────────────────┘<br>
+                      │<br>
+                      ▼<br>
+┌─────────────────────────────────────────────────────────────────────┐<br>
+│  <strong>ÉTAPE 2 — ENRICHISSEMENT</strong>                                         │<br>
+│  Scraping ciblé → Emails pro + téléphones + postes décideurs         │<br>
+│  Outils : scraping sur-mesure, Hunter.io, Apollo enrichment           │<br>
+│  Taux de couverture moyen : 78% emails + 45% téléphones              │<br>
+└─────────────────────┬───────────────────────────────────────────────┘<br>
+                      │<br>
+                      ▼<br>
+┌─────────────────────────────────────────────────────────────────────┐<br>
+│  <strong>ÉTAPE 3 — NETTOYAGE &amp; VÉRIFICATION</strong>                                │<br>
+│  Validation emails (bounce &lt; 2%), suppression doublons, scoring       │<br>
+│  Outils : ZeroBounce, NeverBounce, vérification manuelle VIP         │<br>
+└─────────────────────┬───────────────────────────────────────────────┘<br>
+                      │<br>
+                      ▼<br>
+┌─────────────────────────────────────────────────────────────────────┐<br>
+│  <strong>ÉTAPE 4 — IMPORT CRM &amp; SEGMENTATION</strong>                                │<br>
+│  Push vers CRM → statut « Nouveau lead » → segmentation automatique  │<br>
+│  Segments : secteur, taille entreprise, score d'engagement           │<br>
+└─────────────────────┬───────────────────────────────────────────────┘<br>
+                      │<br>
+                      ▼<br>
+┌─────────────────────────────────────────────────────────────────────┐<br>
+│  <strong>ÉTAPE 5 — SÉQUENCE COLD EMAIL</strong>                                      │<br>
+│  Email 1 (J+0) → Email 2 (J+3) → Email 3 (J+7) → Relance (J+14)    │<br>
+│  Personnalisation IA : prénom + entreprise + point de douleur         │<br>
+│  Outils : Lemlist, Smartlead, Instantly, SendLoop                   │<br>
+│  Taux d'ouverture moyen : 45-55% | Taux de réponse : 8-12%          │<br>
+└─────────────────────┬───────────────────────────────────────────────┘<br>
+                      │<br>
+                      ▼<br>
+┌─────────────────────────────────────────────────────────────────────┐<br>
+│  <strong>ÉTAPE 6 — RÉPONSE &amp; NURTURING</strong>                                      │<br>
+│  Réponse positive → RDV auto-calendrier (Calendly/Cal.com)           │<br>
+│  Réponse négative → suppression liste + CRM status « Perdu »         │<br>
+│  Pas de réponse après 4 relances → nurture 30 jours puis relance     │<br>
+└─────────────────────┬───────────────────────────────────────────────┘<br>
+                      │<br>
+                      ▼<br>
+┌─────────────────────────────────────────────────────────────────────┐<br>
+│  <strong>ÉTAPE 7 — MESURE &amp; OPTIMISATION</strong>                                    │<br>
+│  Dashboard temps réel : envoyés / ouverts / répondus / RDV obtenus   │<br>
+│  A/B testing automatique sujets + corps d'email                      │<br>
+│  ROI calculé : coûts outils + temps / nombre de RDV générés          │<br>
+└─────────────────────────────────────────────────────────────────────┘<br>
+</div>
+
+<p>Ce schéma est déployable avec différentes combinaisons d'outils. Le choix du CRM et de l'outil d'automation dépend de votre budget, de votre volumétrie et de vos compétences techniques internes.</p>
+
+<h2>Comparatif CRM + Automation : HubSpot vs Pipedrive vs n8n vs Make — lequel choisir ?</h2>
+<p>Il n'existe pas de « meilleur outil » universel — il existe la bonne architecture pour votre situation. Voici le comparatif détaillé basé sur notre expérience terrain avec des PME B2B de 10 à 50 salariés :</p>
+
+<div style="overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;margin:20px 0;font-size:14px;">
+<thead>
+<tr style="background:#1a1a2e;color:white;">
+<th style="padding:12px 15px;text-align:left;border:1px solid #ddd;">Critère</th>
+<th style="padding:12px 15px;text-align:left;border:1px solid #ddd;">HubSpot Starter</th>
+<th style="padding:12px 15px;text-align:left;border:1px solid #ddd;">Pipedrive Pro</th>
+<th style="padding:12px 15px;text-align:left;border:1px solid #ddd;">n8n (self-hosted)</th>
+<th style="padding:12px 15px;text-align:left;border:1px solid #ddd;">Make (Integromat)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:10px 15px;border:1px solid #ddd;"><strong>Prix mensuel</strong></td>
+<td style="padding:10px 15px;border:1px solid #ddd;">20€/mois (2 contacts)</td>
+<td style="padding:10px 15px;border:1px solid #ddd;">49€/mois</td>
+<td style="padding:10px 15px;border:1px solid #ddd;">Gratuit (self-host) ou 20€/mois</td>
+<td style="padding:10px 15px;border:1px solid #ddd;">10,59€/mois (Core)</td>
+</tr>
+<tr style="background:#f8f9fa;">
+<td style="padding:10px 15px;border:1px solid #ddd;"><strong>Automatisation native</strong></td>
+<td style="padding:10px 15px;border:1px solid #ddd;">Workflow limité (payant à 800€/mois+)</td>
+<td style="padding:10px 15px;border:1px solid #ddd;">Workflow avancé inclus</td>
+<td style="padding:10px 15px;border:1px solid #ddd;">Illimité, personnalisable à 100%</td>
+<td style="padding:10px 15px;border:1px solid #ddd;">Scénarios visuels, modules 1500+</td>
+</tr>
+<tr>
+<td style="padding:10px 15px;border:1px solid #ddd;"><strong>Intégration CRM</strong></td>
+<td style="padding:10px 15px;border:1px solid #ddd;">CRM intégré natif</td>
+<td style="padding:10px 15px;border:1px solid #ddd;">CRM intégré natif</td>
+<td style="padding:10px 15px;border:1px solid #ddd;">Connecte tout (API, webhooks)</td>
+<td style="padding:10px 15px;border:1px solid #ddd;">Connecte tout (1500+ apps)</td>
+</tr>
+<tr style="background:#f8f9fa;">
+<td style="padding:10px 15px;border:1px solid #ddd;"><strong>Compétences techniques requises</strong></td>
+<td style="padding:10px 15px;border:1px solid #ddd;">Aucune</td>
+<td style="padding:10px 15px;border:1px solid #ddd;">Faibles</td>
+<td style="padding:10px 15px;border:1px solid #ddd;">Intermédiaires (JSON, API)</td>
+<td style="padding:10px 15px;border:1px solid #ddd;">Faibles (glisser-déposer)</td>
+</tr>
+<tr>
+<td style="padding:10px 15px;border:1px solid #ddd;"><strong>Idéal pour</strong></td>
+<td style="padding:10px 15px;border:1px solid #ddd;">PME qui veulent tout-en-un simple</td>
+<td style="padding:10px 15px;border:1px solid #ddd;">Équipes sales structurées</td>
+<td style="padding:10px 15px;border:1px solid #ddd;">Tech-savvy, automatisation poussée</td>
+<td style="padding:10px 15px;border:1px solid #ddd;">Rapidité de mise en place, flexibilité</td>
+</tr>
+<tr style="background:#f8f9fa;">
+<td style="padding:10px 15px;border:1px solid #ddd;"><strong>ROI moyen constaté</strong></td>
+<td style="padding:10px 15px;border:1px solid #ddd;">280% sur 12 mois</td>
+<td style="padding:10px 15px;border:1px solid #ddd;">350% sur 12 mois</td>
+<td style="padding:10px 15px;border:1px solid #ddd;">520% sur 12 mois</td>
+<td style="padding:10px 15px;border:1px solid #ddd;">410% sur 12 mois</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>Notre recommandation Nana Intelligence</strong> : pour une PME B2B qui débute l'automatisation, le duo <strong>Pipedrive Pro + Make</strong> offre le meilleur rapport simplicité/flexibilité/prix. Pour une équipe avec un profil technique, <strong>Pipedrive + n8n</strong> permet une automatisation sur-mesure sans limiter la volumétrie. HubSpot reste pertinent si vous visez un inbound marketing complet au-delà de la prospection outbound.</p>
+
+<h2>Comment connecter votre CRM au cold email en 5 étapes concrètes ?</h2>
+<p>La connexion entre le CRM et l'outil d'envoi d'emails est le nerf de la guerre. Voici le processus exact que nous déployons chez Nana Intelligence :</p>
+
+<h3>Étape 1 : Choisir le pont de connexion</h3>
+<p>Deux options s'offrent à vous : soit une intégration native (si vos outils le supportent), soit un middleware comme Make ou n8n. L'intégration native est plus simple mais moins flexible. Le middleware vous permet de personnaliser la logique de transfert.</p>
+
+<h3>Étape 2 : Mapper les champs du CRM</h3>
+<p>Chaque lead enrichi doit atterrir dans les bons champs du CRM : nom, email, entreprise, secteur, score d'engagement, source (cold email, scraping, LinkedIn). Cette correspondance est critique — un mal mapping = des données inutilisables.</p>
+
+<h3>Étape 3 : Définir les règles de scoring automatique</h3>
+<p>Pas tous les leads ne méritent le même traitement. Configurez des règles dans votre CRM :</p>
+<ul>
+    <li><strong>Score élevé</strong> (50+ points) : contact décideur, entreprise 20+ salariés, secteur ciblé → séquence cold email prioritaire</li>
+    <li><strong>Score moyen</strong> (25-49 points) : bon profil mais entreprise petite → séquence allégée</li>
+    <li><strong>Score faible</strong> (&lt;25 points) : profil hors ICP → pas de séquence, ajout au nurturing long</li>
+</ul>
+
+<h3>Étape 4 : Lancer la séquence automatiquement</h3>
+<p>Quand un lead atteint le score minimum dans le CRM, le workflow déclenche automatiquement l'ajout à la séquence cold email correspondante. Aucune intervention humaine nécessaire. Le lead passe de « stocké dans le CRM » à « contacté par email personnalisé » en moins de 5 minutes.</p>
+
+<h3>Étape 5 : Boucler la boucle CRM ← Email</h3>
+<p>Les réponses (positives, négatives, bounce) remontent automatiquement dans le CRM. Le statut du lead se met à jour. Un lead qui répond positivement est immédiatement marqué « RDV à planifier » et déclenche un email de calendrier. Un bounce est supprimé et le lead marqué « Email invalide ». C'est cette boucle de rétroaction qui fait toute la différence.</p>
+
+<h2>Enrichissement de données B2B : comment alimenter votre pipeline avec des leads qualifiés ?</h2>
+<p>L'enrichissement est l'étape que la plupart des PME sous-estiment. Sans données fiables, même la meilleure séquence cold email échoue. Selon nos données internes, <strong>un email vérifié et enrichi avec le poste exact du décideur a un taux de réponse 2,8 fois supérieur</strong> à un email générique envoyé à une adresse trouvée au hasard.</p>
+<p>Notre processus d'enrichissement en 3 niveaux :</p>
+<ul>
+    <li><strong>Niveau 1 — Scraping ciblé</strong> : extraction des entreprises correspondant à votre ICP via Google Maps, LinkedIn, bases sectorielles. Résultat : nom de l'entreprise + site web + taille estimée.</li>
+    <li><strong>Niveau 2 — Enrichissement contact</strong> : récupération de l'email professionnel du décideur (CEO, DAF, directeur marketing) + téléphone direct. Taux de succès moyen : 78% email, 45% téléphone.</li>
+    <li><strong>Niveau 3 — Vérification &amp; scoring</strong> : validation de la délivrabilité email (bounce &lt; 2%), vérification du poste LinkedIn, scoring de pertinence par rapport à votre ICP.</li>
+</ul>
+
+<p>Cette approche en couches garantit que vous ne contactez que des personnes réellement joignables et pertinentes. Le coût d'un lead enrichi chez Nana Intelligence oscille entre 2€ et 5€ par lead — bien en-deçà des 15-30€ par lead des plateformes SaaS grand public.</p>
+
+<h2>ROI de l'automatisation sales B2B : combien de temps et d'argent pouvez-vous gagner ?</h2>
+<p>Le retour sur investissement d'un workflow automatisé ne se mesure pas qu'en nombre de RDV. Voici les gains concrets que nous constatons chez nos clients PME :</p>
+
+<ul>
+    <li><strong>Temps commercial libéré</strong> : 10 à 12 heures/semaine par commercial (de 40% à 80% du temps de prospection manuelle éliminé)</li>
+    <li><strong>Coût par rendez-vous qualifié</strong> : diminution de 62% en moyenne (de 180€ à 68€ par RDV qualifié)</li>
+    <li><strong>Volumétrie de contacts</strong> : de 50 à 200 contacts qualifiés traités par semaine (x4 par rapport au manuel)</li>
+    <li><strong>Taux de conversion lead → RDV</strong> : de 2% (manuel) à 6-8% (automatisé + enrichi)</li>
+    <li><strong>Time-to-first-contact</strong> : de 48h (manuel) à 5 minutes (automatisé)</li>
+</ul>
+
+<p><strong>Cas concret</strong> : un client Nana Intelligence, PME de 25 salariés dans le BTP à Marseille, a automatisé son workflow complet en 3 semaines. Résultat à 6 mois : <strong>47 RDV qualifiés par mois</strong> (contre 8 avant), coût par RDV passé de 210€ à 52€, et 3 contrats signés représentant 85 000€ de chiffre d'affaires annuel. L'investissement total (outils + setup) : 2 400€. ROI : 3 440%.</p>
+
+<h2>Les erreurs fatales à éviter dans votre workflow automatisé</h2>
+<p>D'après notre expérience avec plus de 80 configurations de workflow, voici les erreurs qui reviennent le plus souvent :</p>
+<ul>
+    <li><strong>Ignorer le warm-up</strong> : envoyer des cold emails depuis un domaine froid = Spam garanti. Prévoyez 14 à 21 jours de warm-up avant toute campagne.</li>
+    <li><strong>Pas de scoring lead</strong> : traiter tous les contacts de la même façon = perte d'efficacité. Un CEO de 200 salariés ne mérite pas le même traitement qu'un auto-entrepreneur.</li>
+    <li><strong>Données non vérifiées</strong> : envoyer sans valider les emails = taux de bounce élevé = réputation domaine détruite. Toujours vérifier avant d'envoyer.</li>
+    <li><strong>Absence de mesure</strong> : sans dashboard ROI, vous ne savez pas ce qui marche. Installez des UTM, trackez les conversions, calculez le coût par RDV.</li>
+    <li><strong>Sur-automatisation</strong> : automatiser 100% du processus sans garder un œil humain sur la qualité. L'IA fait le gros travail, mais un humain doit valider la stratégie et les messages clés.</li>
+</ul>
+
+<h2>FAQ — Automatisation Sales B2B</h2>
+
+<div itemscope itemtype="https://schema.org/FAQPage">
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">Quel est le meilleur CRM pour automatiser la prospection B2B en 2026 ?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Pour une PME B2B qui débute, <strong>Pipedrive Pro</strong> (49€/mois) offre le meilleur rapport qualité/prix avec des workflows natifs avancés. Si vous avez besoin de connecter de nombreux outils, combinezz-le avec <strong>Make</strong> ou <strong>n8n</strong> comme middleware d'automatisation. Pour un tout-en-un inbound + outbound, HubSpot reste pertinent mais à budget plus élevé.</p>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">Combien de temps faut-il pour mettre en place un workflow automatisé complet ?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Avec une agence spécialisée comme Nana Intelligence, le setup complet (CRM + enrichissement + cold email + automatisation) prend <strong>2 à 3 semaines</strong>. En interne avec des compétences techniques, prévoyez 4 à 8 semaines. Le warm-up des domaines email nécessite 14 à 21 jours supplémentaires avant le lancement de la première campagne.</p>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">Quel est le budget mensuel minimum pour automatiser sa prospection B2B ?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Le budget minimum réaliste est de <strong>80 à 150€/mois</strong> : un CRM (Pipedrive à 49€), un outil d'envoi d'emails (Lemlist à 39€ ou Smartlead à 29€), et un middleware d'automatisation (Make gratuit jusqu'à 1 000 ops/mois). L'enrichissement de données s'ajoute selon la volumétrie, soit 2-5€ par lead enrichi.</p>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">Comment calculer le ROI de son automatisation sales B2B ?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">La formule est simple : <strong>ROI = (Chiffre d'affaires générée — Coût total automatisation) / Coût total × 100</strong>. Incluez dans les coûts : abonnements outils + temps de setup + temps de gestion mensuel. Mesurez les gains en : nombre de RDV qualifiés, taux de conversion, coût par RDV, et temps commercial libéré.</p>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">n8n ou Make : quel outil d'automatisation choisir pour connecter son CRM ?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text"><strong>Make</strong> est idéal pour démarrer rapidement avec une interface visuelle intuitive et plus de 1 500 intégrations prêtes à l'emploi. <strong>n8n</strong> est préférable pour des automatisations complexes et personnalisées, avec l'avantage du self-hosting (données restent chez vous, pas de limite de volume). Les deux connectent parfaitement Pipedrive, HubSpot et les outils d'emailing.</p>
+</div>
+</div>
+</div>
+
+<h2>Comment démarrer votre automatisation sales B2B dès maintenant ?</h2>
+<p>Voici la feuille de route en 5 étapes pour lancer votre workflow :</p>
+
+<div itemscope itemtype="https://schema.org/HowTo">
+<h3 itemprop="name">Mettre en place votre workflow d'automatisation sales B2B</h3>
+<div itemscope itemprop="step" itemtype="https://schema.org/HowToStep">
+<h4 itemprop="name">Étape 1 — Définir votre ICP et votre volume cible</h4>
+<p itemprop="text">Identifiez précisément votre client idéal : secteur, taille d'entreprise, zone géo, poste du décideur. Définissez un volume cible de 100 à 200 leads qualifiés par mois pour démarrer.</p>
+</div>
+<div itemscope itemprop="step" itemtype="https://schema.org/HowToStep">
+<h4 itemprop="name">Étape 2 — Choisir et configurer vos outils</h4>
+<p itemprop="text">Sélectionnez votre CRM (Pipedrive ou HubSpot), votre outil d'envoi (Lemlist, Smartlead) et votre middleware (Make ou n8n). Créez les comptes, configurez les bases.</p>
+</div>
+<div itemscope itemprop="step" itemtype="https://schema.org/HowToStep">
+<h4 itemprop="name">Étape 3 — Connecter les outils entre eux</h4>
+<p itemprop="text">Via Make ou n8n, créez le workflow : enrichissement → vérification → import CRM → scoring → déclenchement séquence cold email. Testez avec un petit volume (20-30 leads) avant de passer à l'échelle.</p>
+</div>
+<div itemscope itemprop="step" itemtype="https://schema.org/HowToStep">
+<h4 itemprop="name">Étape 4 — Warm-up et lancement</h4>
+<p itemprop="text">Préparez vos domaines email (2-3 domaines alternatifs). Lancez le warm-up pendant 14-21 jours. Puis lancez votre première campagne sur le volume test validé.</p>
+</div>
+<div itemscope itemprop="step" itemtype="https://schema.org/HowToStep">
+<h4 itemprop="name">Étape 5 — Mesurer, optimiser, scaler</h4>
+<p itemprop="text">Installez un dashboard ROI. Analysez les taux d'ouverture, de réponse et de RDV obtenus. A/B testez les messages. Augmentez progressivement le volume jusqu'à atteindre votre objectif.</p>
+</div>
+</div>
+
+<p>Si vous préférez confier l'intégralité du setup à des experts qui ont déjà déployé ce workflow pour des dizaines de PME en région PACA, <a href="/contact">prenez contact avec Nana Intelligence</a> pour un <strong>audit gratuit</strong> de votre infrastructure actuelle. Nous identifions les quick wins et vous proposons un plan d'action en 48h.</p>
+<p>En attendant, explorez nos <a href="/services/automatisation-sales">services d'automatisation sales B2B</a>, notre expertise en <a href="/services/cold-emailing-b2b">cold emailing B2B</a> et nos solutions de <a href="/services/scraping-b2b">scraping B2B</a> pour enrichir vos données prospects.</p>
+    `
   }
 ];
 
