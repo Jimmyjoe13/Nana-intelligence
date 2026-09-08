@@ -95,15 +95,11 @@ export default function ContactForm() {
         <div className="md:col-span-2">
           <Field label="Téléphone (optionnel)" name="telephone" type="tel" placeholder="ex: 06 12 34 56 78" onFocus={handleFormStart} />
         </div>
-        <div className="md:col-span-2">
-          <Field label="Entreprise (optionnel)" name="entreprise" placeholder="Nom de votre société" onFocus={handleFormStart} />
-        </div>
-        <div className="md:col-span-2 flex flex-col gap-4">
           <Button type="submit" variant="primary" size="lg" className="w-full" loading={status === "sending"} icon={<ArrowRight size={18} />} trackLabel="envoyer_demande_audit" sectionId="contact_form">
             Obtenir mon audit gratuit 30 min
           </Button>
           <p className="text-[12px] text-ink-3 font-sans text-center">
-            Zéro engagement · Réponse sous 24h · Données jamais partagées
+            Places limitées cette semaine · Réponse sous 24h · Données jamais partagées
           </p>
           {status === "success" && (
             <p className="mt-4 text-[12px] font-mono uppercase text-center text-orange font-bold leading-relaxed">
