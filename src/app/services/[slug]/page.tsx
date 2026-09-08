@@ -72,6 +72,31 @@ function getFaqJsonLd(data: typeof serviceDetails[string]) {
   };
 }
 
+function getHowToJsonLd(data: typeof serviceDetails[string]) {
+  const steps = data.features.map((feature, i) => ({
+    "@type": "HowToStep",
+    "position": i + 1,
+    "name": `Étape ${i + 1}`,
+    "text": feature
+  }));
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": `Comment fonctionne notre service ${data.name}`,
+    "description": data.heroSubtitle,
+    "totalTime": "P2W",
+    "step": steps,
+    "tool": [
+      { "@type": "HowToTool", "name": "LinkedIn Sales Navigator" },
+      { "@type": "HowToTool", "name": "CRM (HubSpot/Pipedrive)" }
+    ],
+    "supply": [
+      { "@type": "HowToSupply", "name": "Données de prospection B2B" }
+    ]
+  };
+}
+
 export default function ServiceDetailPage({ params }: Props) {
   const data = serviceDetails[params.slug];
   if (!data) notFound();
@@ -81,6 +106,7 @@ export default function ServiceDetailPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getJsonLd(data)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumb(data)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFaqJsonLd(data)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getHowToJsonLd(data)) }} />
 
       {/* Hero */}
       <section className="bg-cream pt-20 pb-32 border-b-[1.5px] border-ink">

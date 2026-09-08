@@ -66,6 +66,47 @@ function getArticleJsonLd(post: typeof blogPosts[number], id: number) {
   };
 }
 
+function getFAQJsonLd(post: typeof blogPosts[number]) {
+  const mainEntity: { "@type": string; "name": string; "acceptedAnswer": { "@type": string; "text": string } }[] = [];
+  const regex = /<h[23][^>]*>(.*?)<\/h[23]>\s*([\s\S]*?)(?=<h[23]|$)/gi;
+  let match: RegExpExecArray | null;
+
+  while ((match = regex.exec(post.content)) !== null && mainEntity.length < 5) {
+    const headingText = match[1].replace(/<[^>]*>/g, "").trim();
+    if (!headingText.includes("?")) continue;
+    const question = headingText.replace(/^\d+\.\s*/, "");
+    const answerHtml = match[2].trim();
+    const answer = answerHtml.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+    if (answer) {
+      mainEntity.push({
+        "@type": "Question",
+        "name": question,
+        "acceptedAnswer": { "@type": "Answer", "text": answer }
+      });
+    }
+  }
+
+  if (mainEntity.length === 0) return null;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": mainEntity
+  };
+}
+
+function getSpeakableJsonLd(post: typeof blogPosts[number]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": post.title,
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".font-display", ".article-content p:first-of-type"]
+    }
+  };
+}
+
 export default function BlogPostPage({ params }: Props) {
   const id = parseInt(params.id);
   const post = blogPosts.find((p) => p.id === id);
@@ -93,6 +134,16 @@ export default function BlogPostPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(getArticleJsonLd(post, id)) }}
+      />
+      {getFAQJsonLd(post) && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQJsonLd(post)) }}
+        />
+      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getSpeakableJsonLd(post)) }}
       />
       <script
         type="application/ld+json"

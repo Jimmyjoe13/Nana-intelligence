@@ -61,6 +61,18 @@ function getBreadcrumb(data: typeof agenciesData[string]) {
   };
 }
 
+function getFaqPageJsonLd(data: typeof agenciesData[string]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": data.faq.map((f) => ({
+      "@type": "Question",
+      "name": f.question,
+      "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+    }))
+  };
+}
+
 export default function AgencyCityPage({ params }: Props) {
   const data = agenciesData[params.slug];
 
@@ -77,6 +89,10 @@ export default function AgencyCityPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumb(data)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getFaqPageJsonLd(data)) }}
       />
       {/* Hero Section */}
       <section className="bg-cream pt-20 pb-32 border-b-[1.5px] border-ink">

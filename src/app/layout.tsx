@@ -55,9 +55,35 @@ const organizationJsonLd = {
   "@type": "Organization",
   "name": "Nana Intelligence",
   "url": "https://nana-intelligence.fr",
-  "logo": "https://nana-intelligence.fr/img/logo-icon.png",
+  "logo": "https://nana-intelligence.fr/icon.png",
+  "description": "Agence de lead generation B2B. Cold emailing, scraping et automatisation sales pour PME et startups.",
   "sameAs": [
-    "https://www.linkedin.com/company/nana-intelligence/"
+    "https://www.linkedin.com/company/nana-intelligence/",
+    "https://www.instagram.com/jimmy_growth13",
+    "https://www.facebook.com/nanaintelligence"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+33600000000",
+    "contactType": "sales",
+    "email": "contact@nana-intelligence.fr",
+    "areaServed": "FR"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Marseille",
+    "addressRegion": "Provence-Alpes-Côte d'Azur",
+    "addressCountry": "FR"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "France"
+  },
+  "serviceType": [
+    "Lead Generation B2B",
+    "Cold Emailing",
+    "Scraping B2B",
+    "Automatisation Sales"
   ]
 };
 
