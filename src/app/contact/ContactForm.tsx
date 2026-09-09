@@ -95,6 +95,7 @@ export default function ContactForm() {
         <div className="md:col-span-2">
           <Field label="Téléphone (optionnel)" name="telephone" type="tel" placeholder="ex: 06 12 34 56 78" onFocus={handleFormStart} />
         </div>
+        <div className="md:col-span-2 flex flex-col gap-4">
           <Button type="submit" variant="primary" size="lg" className="w-full" loading={status === "sending"} icon={<ArrowRight size={18} />} trackLabel="envoyer_demande_audit" sectionId="contact_form">
             Obtenir mon audit gratuit 30 min
           </Button>
