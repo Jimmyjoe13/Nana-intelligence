@@ -2133,6 +2133,9 @@ export const blogPosts = [
     excerpt: "Septembre 2026 marque un virage : les agents IA ne font plus des tâches, ils pilotent des départements entiers. Voici les 3 pivots à maîtriser.",
     category: "IA / AUTOMATISATION",
     date: "09 Septembre 2026",
+    metaTitle: "Actualité IA septembre 2026 : 3 pivots à maîtriser",
+    metaDescription: "Septembre 2026 : les agents IA pilotent des départements entiers. Découvrez les 3 pivots pour automatiser votre PME sans risque. Audit gratuit.",
+    keywords: ["actualité IA septembre 2026", "automatisation entreprise", "agents IA PME", "multi-agents IA", "automatisation sales"],
     readTime: "5 MIN",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
