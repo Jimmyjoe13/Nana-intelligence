@@ -103,9 +103,14 @@ export default function ContactForm() {
             Places limitées cette semaine · Réponse sous 24h · Données jamais partagées
           </p>
           {status === "success" && (
-            <p className="mt-4 text-[12px] font-mono uppercase text-center text-orange font-bold leading-relaxed">
-              Demande envoyée ✓ On revient vers vous sous 24h.
-            </p>
+            <div className="mt-4 bg-orange/10 border border-orange px-6 py-4 text-center">
+              <p className="text-[13px] font-mono uppercase text-orange font-bold leading-relaxed">
+                ✓ Demande envoyée avec succès
+              </p>
+              <p className="text-[12px] font-mono text-ink-3 mt-1">
+                On revient vers vous sous 24h avec votre audit personnalisé.
+              </p>
+            </div>
           )}
           {status === "error" && (
             <p className="mt-4 text-[12px] font-mono uppercase text-center text-error font-bold leading-relaxed">

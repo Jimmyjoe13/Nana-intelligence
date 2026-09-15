@@ -112,6 +112,13 @@ export default function Home() {
              <p className="font-sans text-sm text-ink-3 uppercase tracking-[0.12em] font-mono">
                Sans engagement · Réponse sous 24h · +40 audits réalisés en 2026
              </p>
+             <div className="flex items-center gap-3 bg-cream-2 border border-ink/10 px-5 py-3 mt-2 max-w-lg">
+               <span className="font-hand text-orange text-lg">"</span>
+               <p className="font-sans text-sm text-ink-2 italic leading-snug">
+                 En 3 semaines, 12 RDV qualifiés C-Level. Le ROI a été immédiat.
+               </p>
+               <span className="font-mono text-[10px] text-ink-3 uppercase font-bold whitespace-nowrap">— PME Tech</span>
+             </div>
           </div>
 
           {/* Metric Strip */}
@@ -357,6 +364,9 @@ export default function Home() {
              </div>
              <p className="text-cream/60 max-w-xl text-lg leading-relaxed">
                Réservez votre audit gratuit de 30 minutes. Nous analysons votre potentiel et construisons votre stratégie d&apos;acquisition personnalisée.
+             </p>
+             <p className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold">
+               Places limitées cette semaine
              </p>
              <Link href="/contact">
                <Button 
