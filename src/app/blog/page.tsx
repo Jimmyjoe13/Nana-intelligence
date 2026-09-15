@@ -114,6 +114,9 @@ export default function BlogPage() {
                   <p className="font-sans text-xl text-ink-2 max-w-xl">
                     Chaque semaine, nous envoyons une analyse technique sur les dernières tendances de la prospection B2B. Réservé à ceux qui veulent une machine performante.
                   </p>
+                  <p className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold">
+                    +200 abonnés · Zéro spam · Désinscription en 1 clic
+                  </p>
                </div>
                <div className="lg:col-span-5">
                   <NewsletterForm />

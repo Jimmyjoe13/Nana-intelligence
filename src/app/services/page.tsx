@@ -105,12 +105,19 @@ export default function ServicesPage() {
             emphasis="prospection B2B"
             description="G\u00e9n\u00e9rez des opportunit\u00e9s qualifi\u00e9es sans effort gr\u00e2ce \u00e0 nos services de Lead Generation sp\u00e9cialis\u00e9s."
           />
-          <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
+          <div className="mt-6 flex flex-col sm:flex-row sm:justify-center items-center gap-4">
             <Link href="/contact">
               <Button variant="primary" size="lg" className="mt-4" trackLabel="services_hero_audit" sectionId="services_hero">
                 Obtenir mon audit gratuit 30 min
               </Button>
             </Link>
+          </div>
+          <div className="flex items-center gap-3 bg-cream-2 border border-ink/10 px-5 py-3 mt-4 max-w-lg mx-auto sm:mx-0">
+            <span className="font-hand text-orange text-lg">"</span>
+            <p className="font-sans text-sm text-ink-2 italic leading-snug">
+              Leur machine d&apos;acquisition est maintenant 100% prévisible.
+            </p>
+            <span className="font-mono text-[10px] text-ink-3 uppercase font-bold whitespace-nowrap">— CEO Scale-up</span>
           </div>
           <div className="flex flex-wrap gap-3 pt-10">
             {detailedServicePages.map((s) => (
