@@ -162,9 +162,9 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     kicker: "Acquisition Inbound",
     heroTitle: "Accompagnement SEO B2B sur-mesure",
     heroSubtitle: "Notre accompagnement SEO B2B positionne votre entreprise sur les mots-clés stratégiques que tapent vos futurs clients — pour générer des leads qualifiés en continu sans dépendre de la publicité.",
-    metaTitle: "Accompagnement SEO B2B : Stratégie & Leads | Nana Intelligence",
-    metaDescription: "Accompagnement SEO B2B : stratégie de mots-clés, cocon sémantique, optimisation technique et netlinking. Générez des leads qualifiés en continu.",
-    keywords: ["SEO B2B", "accompagnement SEO", "référencement naturel B2B", "stratégie de contenu B2B", "génération de leads SEO"],
+    metaTitle: "Audit SEO Bimensuel & Accompagnement SEO B2B | Nana",
+    metaDescription: "Audit SEO bimensuel de votre référencement, cocon sémantique et netlinking : notre accompagnement SEO B2B génère des leads qualifiés en continu.",
+    keywords: ["audit SEO bimensuel", "accompagnement SEO", "SEO B2B", "audit référencement", "référencement naturel B2B", "stratégie de contenu B2B"],
     features: [
       "Audit technique & sémantique complet",
       "Stratégie de mots-clés & architecture de cocon",
