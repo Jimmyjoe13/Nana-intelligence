@@ -55,7 +55,7 @@ export default function ContactForm() {
         <span className="font-mono text-[11px] text-orange uppercase tracking-[0.2em] font-bold">
           Audit stratégique offert
         </span>
-        <h3 className="font-display text-[32px] font-medium">Réservez votre créneau.</h3>
+        <h3 className="font-display text-[32px] font-medium">Demandez votre audit gratuit.</h3>
       </div>
 
       {/* Réassurance — indicateurs de confiance */}
