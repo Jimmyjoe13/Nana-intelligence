@@ -113,7 +113,7 @@ export default function ServicesPage() {
             </Link>
           </div>
           <div className="flex items-center gap-3 bg-cream-2 border border-ink/10 px-5 py-3 mt-4 max-w-lg mx-auto sm:mx-0">
-            <span className="font-hand text-orange text-lg">"</span>
+            <span className="font-hand text-orange text-lg">&quot;</span>
             <p className="font-sans text-sm text-ink-2 italic leading-snug">
               Leur machine d&apos;acquisition est maintenant 100% prévisible.
             </p>

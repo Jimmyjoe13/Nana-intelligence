@@ -113,7 +113,7 @@ export default function Home() {
                Sans engagement · Réponse sous 24h · +40 audits réalisés en 2026
              </p>
              <div className="flex items-center gap-3 bg-cream-2 border border-ink/10 px-5 py-3 mt-2 max-w-lg">
-               <span className="font-hand text-orange text-lg">"</span>
+               <span className="font-hand text-orange text-lg">&quot;</span>
                <p className="font-sans text-sm text-ink-2 italic leading-snug">
                  En 3 semaines, 12 RDV qualifiés C-Level. Le ROI a été immédiat.
                </p>
