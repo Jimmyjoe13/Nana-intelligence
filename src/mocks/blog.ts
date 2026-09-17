@@ -1,3 +1,13 @@
+// Champs SEO optionnels portés par les articles (produits par la campagne
+// `optimize_meta` des agents). OPTIONNELS à dessein : la grande majorité des
+// articles n'en ont pas encore, donc tout accès doit rester sûr sans casser le
+// type-check du build (`next build` échoue sur une erreur TypeScript).
+export interface BlogPostSeo {
+  metaTitle?: string;
+  metaDescription?: string;
+  keywords?: string[];
+}
+
 export const blogPosts = [
   {
     id: 1,

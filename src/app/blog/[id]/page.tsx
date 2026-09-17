@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import { blogPosts } from "@/mocks/blog";
+import { blogPosts, type BlogPostSeo } from "@/mocks/blog";
 import { Tag } from "@/components/ui/Tag";
 import { Button } from "@/components/ui/Button";
 import { Box } from "@/components/ui/Box";
@@ -18,9 +18,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = blogPosts.find((p) => p.id === id);
   if (!post) return {};
 
+  // P1-bis (17/09/2026) : les champs SEO `metaTitle`/`metaDescription` étaient
+  // renseignés par la campagne `optimize_meta` (≈22 appels LLM par run, la tâche la
+  // plus coûteuse de l'équipe web) mais JAMAIS LUS ici — la page retombait
+  // systématiquement sur `post.title` (long) et `post.excerpt`. Tout le SEO produit
+  // sur les articles était donc inerte en production. On consomme désormais ces
+  // champs quand ils existent, avec repli sur le comportement historique.
+  const seo = post as typeof post & BlogPostSeo;
+
   return {
-    title: `${post.title} | Nana`,
-    description: post.excerpt,
+    title: seo.metaTitle ? `${seo.metaTitle} | Nana` : `${post.title} | Nana`,
+    description: seo.metaDescription || post.excerpt,
     alternates: { canonical: `/blog/${id}/` },
   };
 }
