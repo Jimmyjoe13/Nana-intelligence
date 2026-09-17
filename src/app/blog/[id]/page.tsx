@@ -4,7 +4,7 @@ import { blogPosts, type BlogPostSeo } from "@/mocks/blog";
 import { Tag } from "@/components/ui/Tag";
 import { Button } from "@/components/ui/Button";
 import { Box } from "@/components/ui/Box";
-import { ArrowLeft, Clock, Calendar, Share2, Sparkles } from "lucide-react";
+import { ArrowLeft, Clock, Calendar, Share2, Sparkles, ShieldCheck, Users } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { EmptyState } from "@/components/ui/EmptyState";
@@ -207,7 +207,7 @@ export default function BlogPostPage({ params }: Props) {
                 alt={post.title} 
                 fill 
                 className="object-cover"
-                unoptimized
+                priority
                />
             </div>
 
@@ -216,14 +216,52 @@ export default function BlogPostPage({ params }: Props) {
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
 
-            <div className="mt-20 pt-10 border-t border-cream-3 flex items-center justify-between">
+            <div className="mt-20 pt-10 border-t border-cream-3 flex flex-col gap-8">
+               <Box className="bg-cream p-10 flex flex-col gap-6 border-[1.5px] border-ink/10">
+                 <div className="flex flex-col gap-2">
+                   <span className="font-mono text-[11px] text-orange uppercase tracking-[0.2em] font-bold">
+                     Audit stratégique offert
+                   </span>
+                   <h3 className="font-display text-[28px] font-medium">
+                     Prêt à générer des RDV qualifiés ?
+                   </h3>
+                 </div>
+                 <p className="text-ink-2 leading-relaxed text-sm">
+                   Réservez votre audit gratuit de 30 minutes. Nous analysons votre potentiel et construisons votre stratégie d&apos;acquisition personnalisée.
+                 </p>
+                 <div className="grid grid-cols-3 gap-4 border-b border-ink/10 pb-6">
+                   <div className="flex flex-col items-center gap-1 text-center">
+                     <Clock size={18} className="text-orange" />
+                     <span className="font-mono text-[11px] font-bold text-ink uppercase">30 sec</span>
+                     <span className="font-mono text-[10px] text-ink-3">pour remplir</span>
+                   </div>
+                   <div className="flex flex-col items-center gap-1 text-center">
+                     <Users size={18} className="text-orange" />
+                     <span className="font-mono text-[11px] font-bold text-ink uppercase">+40 audits</span>
+                     <span className="font-mono text-[10px] text-ink-3">réalisés en 2026</span>
+                   </div>
+                   <div className="flex flex-col items-center gap-1 text-center">
+                     <ShieldCheck size={18} className="text-orange" />
+                     <span className="font-mono text-[11px] font-bold text-ink uppercase">0 spam</span>
+                     <span className="font-mono text-[10px] text-ink-3">données protégées</span>
+                   </div>
+                 </div>
+                 <p className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold">
+                   Places limitées cette semaine
+                 </p>
+                 <Link href="/contact">
+                   <Button variant="primary" icon={<Sparkles size={16} />} className="w-full">
+                     Obtenir mon audit gratuit 30 min
+                   </Button>
+                 </Link>
+                 <p className="font-mono text-[11px] text-ink-3 uppercase tracking-[0.12em] text-center">
+                   Zéro engagement · Réponse sous 24h · Données jamais partagées
+                 </p>
+               </Box>
                <div className="flex items-center gap-4">
                   <span className="font-mono text-[11px] text-ink-3 uppercase font-bold">Partager :</span>
                   <button className="h-10 w-10 border border-ink/20 flex items-center justify-center hover:border-orange hover:text-orange transition-colors"><Share2 size={16} /></button>
                </div>
-               <Link href="/contact">
-                  <Button variant="primary" icon={<Sparkles size={16} />}>Audit Gratuit</Button>
-               </Link>
             </div>
           </div>
 
