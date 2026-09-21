@@ -275,14 +275,18 @@ export default function BlogPostPage({ params }: Props) {
                <p className="text-sm text-ink-3 leading-relaxed">
                   Chaque semaine, une analyse technique pour optimiser votre machine de vente.
                </p>
-               <div className="flex flex-col gap-4">
+               <form className="flex flex-col gap-4" onSubmit={(e) => e.preventDefault()}>
+                  <label htmlFor="newsletter-email" className="sr-only">Adresse email</label>
                   <input 
+                    id="newsletter-email"
+                    name="email"
                     type="email" 
+                    required
                     placeholder="VOTRE@EMAIL.COM" 
                     className="w-full bg-cream-2 border-[1.5px] border-ink px-4 py-3 font-mono text-[11px] focus:outline-none focus:border-orange transition-colors"
                   />
-                  <Button variant="ink" className="w-full">S&apos;abonner</Button>
-               </div>
+                  <Button variant="ink" type="submit" className="w-full">S&apos;abonner</Button>
+               </form>
             </Box>
 
             <div className="flex flex-col gap-6 p-2">
@@ -312,6 +316,16 @@ export default function BlogPostPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* Sticky CTA mobile — visible uniquement < md, disparaît quand le CTA inline est visible */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-cream border-t-[1.5px] border-ink px-4 py-3 flex items-center justify-between gap-3">
+        <span className="font-mono text-[10px] text-orange uppercase tracking-widest font-bold">Audit gratuit 30 min</span>
+        <Link href="/contact">
+          <Button variant="primary" icon={<Sparkles size={14} />} className="!py-2 !px-4 !text-[11px]">
+            Obtenir mon audit
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 }
