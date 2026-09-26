@@ -87,7 +87,7 @@ export default function Home() {
                Nana Intelligence automatise votre prospection commerciale B2B. Nous construisons votre machine d&apos;acquisition sur-mesure pour remplir votre agenda en automatique.
              </p>
              <div className="flex flex-col sm:flex-row items-center gap-6">
-               <Link href="/contact">
+               <Link href="/contact/">
                  <Button 
                     variant="primary" 
                     size="lg" 
@@ -183,7 +183,7 @@ export default function Home() {
                 Ce que vous obtenez avec <span className="italic font-normal">Nana Intelligence</span>.
               </h2>
             </div>
-            <Link href="/services">
+            <Link href="/services/">
                <Button 
                   variant="ink" 
                   icon={<ArrowRight size={16} />}
@@ -233,20 +233,20 @@ export default function Home() {
               Tout ce que vous devez savoir sur notre approche technique de la prospection B2B.
             </p>
             <div className="flex flex-col gap-4 mt-4">
-              <Link href="/services" className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold hover:underline">
+              <Link href="/services/" className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold hover:underline">
                 → Services lead generation B2B
               </Link>
-              <Link href="/agence-lead-generation" className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold hover:underline">
+              <Link href="/agence-lead-generation/" className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold hover:underline">
                 → Agence lead generation PACA
               </Link>
-              <Link href="/blog" className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold hover:underline">
+              <Link href="/blog/" className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold hover:underline">
                 → Blog lead generation B2B
               </Link>
-              <Link href="/about" className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold hover:underline">
+              <Link href="/about/" className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold hover:underline">
                 → À propos de Nana Intelligence
               </Link>
             </div>
-            <Link href="/contact" className="mt-4">
+            <Link href="/contact/" className="mt-4">
               <Button 
                 variant="primary"
                 trackLabel="faq_audit_gratuit"
@@ -291,7 +291,7 @@ export default function Home() {
             <p className="font-sans text-lg text-ink-2 text-center max-w-xl">
               Ces résultats sont reproductibles. Voyons ce que ça donnerait sur votre marché.
             </p>
-            <Link href="/contact">
+            <Link href="/contact/">
               <Button
                 variant="primary"
                 size="lg"
@@ -368,7 +368,7 @@ export default function Home() {
              <p className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold">
                Places limitées cette semaine
              </p>
-             <Link href="/contact">
+             <Link href="/contact/">
                <Button 
                   variant="primary" 
                   size="lg" 

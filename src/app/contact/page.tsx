@@ -144,11 +144,11 @@ export default function ContactPage() {
             <p className="font-sans text-lg text-ink-2">Explorez notre expertise en prospection et acquisition B2B.</p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <Link href="/services/cold-emailing-b2b" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Cold Emailing B2B</Link>
-            <Link href="/services/scraping-b2b" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Scraping B2B</Link>
-            <Link href="/services/automatisation-sales" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Automatisation Sales</Link>
-            <Link href="/services/accompagnement-seo" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Accompagnement SEO</Link>
-            <Link href="/blog" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Blog</Link>
+            <Link href="/services/cold-emailing-b2b/" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Cold Emailing B2B</Link>
+            <Link href="/services/scraping-b2b/" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Scraping B2B</Link>
+            <Link href="/services/automatisation-sales/" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Automatisation Sales</Link>
+            <Link href="/services/accompagnement-seo/" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Accompagnement SEO</Link>
+            <Link href="/blog/" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Blog</Link>
           </div>
         </div>
       </section>

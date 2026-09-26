@@ -57,7 +57,7 @@ export default function AboutPage() {
             description="Nana Intelligence n'est pas une agence classique. Nous sommes des ingénieurs de la croissance qui automatisent votre acquisition B2B."
           />
           <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
-            <Link href="/contact">
+            <Link href="/contact/">
               <Button variant="primary" size="lg" icon={<ArrowRight size={20} />}>
                 Obtenir mon audit gratuit 30 min
               </Button>
@@ -172,20 +172,20 @@ export default function AboutPage() {
               </h2>
             </div>
             <div className="flex flex-wrap gap-4">
-              <Link href="/services/cold-emailing-b2b" className="text-cream hover:text-orange font-mono text-[11px] uppercase tracking-widest font-bold border border-cream/30 px-4 py-2 hover:border-orange transition-colors">Cold Emailing B2B</Link>
-              <Link href="/services/scraping-b2b" className="text-cream hover:text-orange font-mono text-[11px] uppercase tracking-widest font-bold border border-cream/30 px-4 py-2 hover:border-orange transition-colors">Scraping B2B</Link>
-              <Link href="/services/automatisation-sales" className="text-cream hover:text-orange font-mono text-[11px] uppercase tracking-widest font-bold border border-cream/30 px-4 py-2 hover:border-orange transition-colors">Automatisation Sales</Link>
-              <Link href="/services/accompagnement-seo" className="text-cream hover:text-orange font-mono text-[11px] uppercase tracking-widest font-bold border border-cream/30 px-4 py-2 hover:border-orange transition-colors">Accompagnement SEO</Link>
-              <Link href="/agence-lead-generation" className="text-cream hover:text-orange font-mono text-[11px] uppercase tracking-widest font-bold border border-cream/30 px-4 py-2 hover:border-orange transition-colors">Agence Lead PACA</Link>
-              <Link href="/blog" className="text-cream hover:text-orange font-mono text-[11px] uppercase tracking-widest font-bold border border-cream/30 px-4 py-2 hover:border-orange transition-colors">Blog Prospection</Link>
-              <Link href="/contact" className="text-cream hover:text-orange font-mono text-[11px] uppercase tracking-widest font-bold border border-orange px-4 py-2 transition-colors">Audit gratuit</Link>
+              <Link href="/services/cold-emailing-b2b/" className="text-cream hover:text-orange font-mono text-[11px] uppercase tracking-widest font-bold border border-cream/30 px-4 py-2 hover:border-orange transition-colors">Cold Emailing B2B</Link>
+              <Link href="/services/scraping-b2b/" className="text-cream hover:text-orange font-mono text-[11px] uppercase tracking-widest font-bold border border-cream/30 px-4 py-2 hover:border-orange transition-colors">Scraping B2B</Link>
+              <Link href="/services/automatisation-sales/" className="text-cream hover:text-orange font-mono text-[11px] uppercase tracking-widest font-bold border border-cream/30 px-4 py-2 hover:border-orange transition-colors">Automatisation Sales</Link>
+              <Link href="/services/accompagnement-seo/" className="text-cream hover:text-orange font-mono text-[11px] uppercase tracking-widest font-bold border border-cream/30 px-4 py-2 hover:border-orange transition-colors">Accompagnement SEO</Link>
+              <Link href="/agence-lead-generation/" className="text-cream hover:text-orange font-mono text-[11px] uppercase tracking-widest font-bold border border-cream/30 px-4 py-2 hover:border-orange transition-colors">Agence Lead PACA</Link>
+              <Link href="/blog/" className="text-cream hover:text-orange font-mono text-[11px] uppercase tracking-widest font-bold border border-cream/30 px-4 py-2 hover:border-orange transition-colors">Blog Prospection</Link>
+              <Link href="/contact/" className="text-cream hover:text-orange font-mono text-[11px] uppercase tracking-widest font-bold border border-orange px-4 py-2 transition-colors">Audit gratuit</Link>
             </div>
           </div>
           <div className="flex flex-col items-center gap-4 pt-10 border-t border-cream/10 mt-10">
             <p className="text-cream/60 text-center max-w-xl">
               Prêt à automatiser votre prospection B2B ? Réservez votre audit gratuit de 30 minutes.
             </p>
-            <Link href="/contact">
+            <Link href="/contact/">
               <Button variant="primary" size="lg" icon={<Sparkles size={20} />}>
                 Obtenir mon audit gratuit 30 min
               </Button>

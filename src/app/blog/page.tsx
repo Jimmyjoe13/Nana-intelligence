@@ -71,7 +71,7 @@ export default function BlogPage() {
             description="Analyses, conseils et stratégies pour transformer votre prospection B2B en une machine de guerre prévisible."
           />
           <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
-            <Link href="/contact">
+            <Link href="/contact/">
               <Button variant="primary" size="lg" trackLabel="blog_hero_audit" sectionId="blog_hero">
                 Obtenir mon audit gratuit 30 min
               </Button>
@@ -90,11 +90,11 @@ export default function BlogPage() {
             <p className="font-sans text-lg text-ink-2">Découvrez nos services et notre agence locale en PACA.</p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <Link href="/services/cold-emailing-b2b" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Cold Emailing B2B</Link>
-            <Link href="/services/scraping-b2b" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Scraping B2B</Link>
-            <Link href="/services/automatisation-sales" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Automatisation Sales</Link>
-            <Link href="/agence-lead-generation" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Agence Lead PACA</Link>
-            <Link href="/contact" className="font-mono text-[11px] text-cream uppercase tracking-widest font-bold bg-ink border border-ink px-4 py-2 hover:border-orange hover:text-orange transition-colors">Audit gratuit</Link>
+            <Link href="/services/cold-emailing-b2b/" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Cold Emailing B2B</Link>
+            <Link href="/services/scraping-b2b/" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Scraping B2B</Link>
+            <Link href="/services/automatisation-sales/" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Automatisation Sales</Link>
+            <Link href="/agence-lead-generation/" className="font-mono text-[11px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-4 py-2 hover:border-orange hover:text-orange transition-colors">Agence Lead PACA</Link>
+            <Link href="/contact/" className="font-mono text-[11px] text-cream uppercase tracking-widest font-bold bg-ink border border-ink px-4 py-2 hover:border-orange hover:text-orange transition-colors">Audit gratuit</Link>
           </div>
           <p className="text-ink/80 text-sm">Réponse sous 24 h, sans engagement.</p>
         </div>

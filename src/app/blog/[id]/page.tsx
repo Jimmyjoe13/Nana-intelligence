@@ -126,7 +126,7 @@ export default function BlogPostPage({ params }: Props) {
           title="Article introuvable"
           description="L'article que vous recherchez n'existe pas ou a été déplacé."
           action={
-            <Link href="/blog">
+            <Link href="/blog/">
               <Button variant="ink" icon={<ArrowLeft size={16} />}>
                 ← Blog prospection B2B
               </Button>
@@ -168,7 +168,7 @@ export default function BlogPostPage({ params }: Props) {
       <section className="bg-cream pt-20 pb-32 border-b-[1.5px] border-ink">
         <div className="max-w-[900px] mx-auto px-6 md:px-10 flex flex-col gap-10">
           <Link 
-            href="/blog" 
+            href="/blog/" 
             className="flex items-center gap-2 font-mono text-[11px] font-bold text-ink-3 hover:text-orange transition-colors uppercase tracking-widest"
           >
             <ArrowLeft size={14} /> Retour aux articles
@@ -249,7 +249,7 @@ export default function BlogPostPage({ params }: Props) {
                  <p className="font-mono text-[11px] text-orange uppercase tracking-[0.12em] font-bold">
                    Places limitées cette semaine
                  </p>
-                 <Link href="/contact">
+                 <Link href="/contact/">
                    <Button variant="primary" icon={<Sparkles size={16} />} className="w-full">
                      Obtenir mon audit gratuit 30 min
                    </Button>
@@ -304,10 +304,10 @@ export default function BlogPostPage({ params }: Props) {
           <div className="flex flex-col gap-6">
             <span className="font-mono text-[11px] text-orange uppercase tracking-[0.2em] font-bold">Services associés</span>
             <div className="flex flex-wrap gap-4">
-              <Link href="/services/cold-emailing-b2b" className="font-mono text-[12px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-5 py-3 hover:border-orange hover:text-orange transition-colors">Cold Emailing B2B →</Link>
-              <Link href="/services/scraping-b2b" className="font-mono text-[12px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-5 py-3 hover:border-orange hover:text-orange transition-colors">Scraping B2B →</Link>
-              <Link href="/services/automatisation-sales" className="font-mono text-[12px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-5 py-3 hover:border-orange hover:text-orange transition-colors">Automatisation Sales →</Link>
-              <Link href="/agence-lead-generation" className="font-mono text-[12px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-5 py-3 hover:border-orange hover:text-orange transition-colors">Agence Lead PACA →</Link>
+              <Link href="/services/cold-emailing-b2b/" className="font-mono text-[12px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-5 py-3 hover:border-orange hover:text-orange transition-colors">Cold Emailing B2B →</Link>
+              <Link href="/services/scraping-b2b/" className="font-mono text-[12px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-5 py-3 hover:border-orange hover:text-orange transition-colors">Scraping B2B →</Link>
+              <Link href="/services/automatisation-sales/" className="font-mono text-[12px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-5 py-3 hover:border-orange hover:text-orange transition-colors">Automatisation Sales →</Link>
+              <Link href="/agence-lead-generation/" className="font-mono text-[12px] text-ink uppercase tracking-widest font-bold border border-ink/20 px-5 py-3 hover:border-orange hover:text-orange transition-colors">Agence Lead PACA →</Link>
             </div>
           </div>
         </div>

@@ -11,16 +11,16 @@ import Link from "next/link";
 
 // Mappe les blocs du hub vers leurs landing pages d\u00e9di\u00e9es (maillage interne / SEO)
 const serviceLinks: Record<string, { href: string; label: string }> = {
-  "cold-email": { href: "/services/cold-emailing-b2b", label: "Cold Emailing B2B" },
-  "automation": { href: "/services/automatisation-sales", label: "Automatisation Sales" },
-  "accompagnement-seo": { href: "/services/accompagnement-seo", label: "Accompagnement SEO" },
+  "cold-email": { href: "/services/cold-emailing-b2b/", label: "Cold Emailing B2B" },
+  "automation": { href: "/services/automatisation-sales/", label: "Automatisation Sales" },
+  "accompagnement-seo": { href: "/services/accompagnement-seo/", label: "Accompagnement SEO" },
 };
 
 const detailedServicePages = [
-  { href: "/services/cold-emailing-b2b", label: "Cold Emailing B2B" },
-  { href: "/services/scraping-b2b", label: "Scraping & Enrichissement B2B" },
-  { href: "/services/automatisation-sales", label: "Automatisation Sales" },
-  { href: "/services/accompagnement-seo", label: "Accompagnement SEO" },
+  { href: "/services/cold-emailing-b2b/", label: "Cold Emailing B2B" },
+  { href: "/services/scraping-b2b/", label: "Scraping & Enrichissement B2B" },
+  { href: "/services/automatisation-sales/", label: "Automatisation Sales" },
+  { href: "/services/accompagnement-seo/", label: "Accompagnement SEO" },
 ];
 
 export const metadata: Metadata = {
@@ -106,7 +106,7 @@ export default function ServicesPage() {
             description="G\u00e9n\u00e9rez des opportunit\u00e9s qualifi\u00e9es sans effort gr\u00e2ce \u00e0 nos services de Lead Generation sp\u00e9cialis\u00e9s."
           />
           <div className="mt-6 flex flex-col sm:flex-row sm:justify-center items-center gap-4">
-            <Link href="/contact">
+            <Link href="/contact/">
               <Button variant="primary" size="lg" className="mt-4" trackLabel="services_hero_audit" sectionId="services_hero">
                 Obtenir mon audit gratuit 30 min
               </Button>
@@ -191,7 +191,7 @@ export default function ServicesPage() {
                     <p className="text-sm italic text-ink-3">
                       « Notre machine d&apos;acquisition est maintenant 100% prévisible. »
                     </p>
-                    <Link href="/contact">
+                    <Link href="/contact/">
                       <Button variant="primary" icon={<ArrowRight size={16} />} trackLabel="services_demarrer_projet" sectionId="services_offer">D\u00e9marrer mon projet</Button>
                     </Link>
                 <p className="text-cream/80 text-sm mt-2">Réponse sous 24 h, sans engagement.</p>
@@ -266,7 +266,7 @@ export default function ServicesPage() {
              <p className="text-cream/60 max-w-xl text-lg leading-relaxed">
                Discutons de vos besoins pour construire une solution adapt\u00e9e \u00e0 vos objectifs commerciaux.
              </p>
-             <Link href="/contact">
+             <Link href="/contact/">
                <Button variant="primary" size="lg" icon={<Sparkles size={20} />} trackLabel="services_final_audit" sectionId="services_final_cta">
                  Obtenir mon audit gratuit 30 min
                </Button>

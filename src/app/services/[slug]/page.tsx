@@ -12,10 +12,10 @@ import Link from "next/link";
 
 // Maillage interne : pages agences liées à ce service
 const agencyCityLinks = [
-  { href: "/agence-lead-generation/marseille", label: "Marseille" },
-  { href: "/agence-lead-generation/aix-en-provence", label: "Aix-en-Provence" },
-  { href: "/agence-lead-generation/toulon", label: "Toulon" },
-  { href: "/agence-lead-generation/nice", label: "Nice" },
+  { href: "/agence-lead-generation/marseille/", label: "Marseille" },
+  { href: "/agence-lead-generation/aix-en-provence/", label: "Aix-en-Provence" },
+  { href: "/agence-lead-generation/toulon/", label: "Toulon" },
+  { href: "/agence-lead-generation/nice/", label: "Nice" },
 ];
 
 interface Props {
@@ -116,7 +116,7 @@ export default function ServiceDetailPage({ params }: Props) {
             title={data.heroTitle}
             description={data.heroSubtitle}
             actions={[
-              <Link key="cta" href="/contact">
+              <Link key="cta" href="/contact/">
                 <Button variant="primary" size="lg" icon={<ArrowRight size={20} />}>
                   Audit gratuit
                 </Button>
@@ -135,8 +135,8 @@ export default function ServiceDetailPage({ params }: Props) {
             ))}
             <p className="pt-2">
               Ce service s&apos;intègre dans notre offre globale de{" "}
-              <Link href="/agence-lead-generation" className="text-orange hover:underline">prospection commerciale B2B</Link>.
-              Consultez aussi nos <Link href="/blog" className="text-orange hover:underline">guides prospection B2B</Link>.
+              <Link href="/agence-lead-generation/" className="text-orange hover:underline">prospection commerciale B2B</Link>.
+              Consultez aussi nos <Link href="/blog/" className="text-orange hover:underline">guides prospection B2B</Link>.
               Découvrez aussi nos autres services :{" "}
               {Object.values(serviceDetails)
                 .filter((s) => s.slug !== data.slug)
@@ -172,7 +172,7 @@ export default function ServiceDetailPage({ params }: Props) {
                   </div>
                 ))}
               </div>
-              <Link href="/contact" className="mt-2">
+              <Link href="/contact/" className="mt-2">
                 <Button variant="ink" className="w-full" icon={<ArrowRight size={16} />}>
                   Démarrer mon projet
                 </Button>
@@ -211,7 +211,7 @@ export default function ServiceDetailPage({ params }: Props) {
             <p className="text-cream/60 max-w-xl text-lg leading-relaxed">
               Obtenez une analyse gratuite de votre potentiel d&apos;acquisition.
             </p>
-            <Link href="/contact">
+            <Link href="/contact/">
               <Button variant="primary" size="lg" icon={<Sparkles size={20} />}>
                 Obtenir mon audit gratuit 30 min
               </Button>

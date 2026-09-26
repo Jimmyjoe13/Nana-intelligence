@@ -15,11 +15,11 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { label: "Accueil", href: "/" },
-  { label: "Agence", href: "/agence-lead-generation" },
-  { label: "Services", href: "/services" },
-  { label: "À propos", href: "/about" },
-  { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact" },
+  { label: "Agence", href: "/agence-lead-generation/" },
+  { label: "Services", href: "/services/" },
+  { label: "À propos", href: "/about/" },
+  { label: "Blog", href: "/blog/" },
+  { label: "Contact", href: "/contact/" },
 ];
 
 export function SiteLayout({ children }: { children: React.ReactNode }) {
@@ -64,7 +64,7 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
           </nav>
 
           <div className="flex items-center gap-6">
-            <Link href="/contact" className="block">
+            <Link href="/contact/" className="block">
               <Button 
                 variant="primary" 
                 size="sm" 
@@ -137,20 +137,20 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
               <div className="flex flex-col gap-6">
                 <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-cream/40">Services</span>
                 <nav className="flex flex-col gap-4">
-                  <Link href="/services/cold-emailing-b2b" className="text-[14px] hover:text-orange transition-colors">Cold Emailing B2B</Link>
-                  <Link href="/services/scraping-b2b" className="text-[14px] hover:text-orange transition-colors">Scraping & Data B2B</Link>
-                  <Link href="/services/automatisation-sales" className="text-[14px] hover:text-orange transition-colors">Automatisation Sales</Link>
-                  <Link href="/services/accompagnement-seo" className="text-[14px] hover:text-orange transition-colors">Accompagnement SEO</Link>
+                  <Link href="/services/cold-emailing-b2b/" className="text-[14px] hover:text-orange transition-colors">Cold Emailing B2B</Link>
+                  <Link href="/services/scraping-b2b/" className="text-[14px] hover:text-orange transition-colors">Scraping & Data B2B</Link>
+                  <Link href="/services/automatisation-sales/" className="text-[14px] hover:text-orange transition-colors">Automatisation Sales</Link>
+                  <Link href="/services/accompagnement-seo/" className="text-[14px] hover:text-orange transition-colors">Accompagnement SEO</Link>
                 </nav>
               </div>
               <div className="flex flex-col gap-6">
                 <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-cream/40">Agences PACA</span>
                 <nav className="flex flex-col gap-4">
-                  <Link href="/agence-lead-generation/marseille" className="text-[14px] hover:text-orange transition-colors">Prospection Marseille</Link>
-                  <Link href="/agence-lead-generation/aix-en-provence" className="text-[14px] hover:text-orange transition-colors">Prospection Aix-en-Provence</Link>
-                  <Link href="/agence-lead-generation/toulon" className="text-[14px] hover:text-orange transition-colors">Prospection Toulon</Link>
-                  <Link href="/agence-lead-generation/nice" className="text-[14px] hover:text-orange transition-colors">Prospection Nice</Link>
-                  <Link href="/blog" className="text-[14px] hover:text-orange transition-colors">Nos Guides & Blog</Link>
+                  <Link href="/agence-lead-generation/marseille/" className="text-[14px] hover:text-orange transition-colors">Prospection Marseille</Link>
+                  <Link href="/agence-lead-generation/aix-en-provence/" className="text-[14px] hover:text-orange transition-colors">Prospection Aix-en-Provence</Link>
+                  <Link href="/agence-lead-generation/toulon/" className="text-[14px] hover:text-orange transition-colors">Prospection Toulon</Link>
+                  <Link href="/agence-lead-generation/nice/" className="text-[14px] hover:text-orange transition-colors">Prospection Nice</Link>
+                  <Link href="/blog/" className="text-[14px] hover:text-orange transition-colors">Nos Guides & Blog</Link>
                 </nav>
               </div>
             </div>

@@ -10,25 +10,25 @@ export const homeServices = [
     title: "Cold Emailing",
     description: "Copywriting de conversion testé et optimisé. Séquences multi-touch personnalisées qui obtiennent des réponses (8-15% de taux de réponse).",
     kicker: "CONVERSION",
-    link: "/services/cold-emailing-b2b"
+    link: "/services/cold-emailing-b2b/"
   },
   {
     title: "Scraping B2B",
     description: "Scraping sur-mesure de vos cibles idéales. Données enrichies et vérifiées : emails, téléphones, infos entreprise. RGPD compliant.",
     kicker: "DATA",
-    link: "/services/scraping-b2b"
+    link: "/services/scraping-b2b/"
   },
   {
     title: "Automatisation Sales",
     description: "Connexion CRM, workflows automatisés, reporting en temps réel. Libérez vos commerciaux des tâches répétitives.",
     kicker: "INFRASTRUCTURE",
-    link: "/services/automatisation-sales"
+    link: "/services/automatisation-sales/"
   },
   {
     title: "Accompagnement SEO",
     description: "Audit technique, optimisation on-page et stratégie de contenu pour générer un trafic Google qualifié et durable, sans budget pub.",
     kicker: "VISIBILITÉ",
-    link: "/services/accompagnement-seo"
+    link: "/services/accompagnement-seo/"
   },
 ];
 

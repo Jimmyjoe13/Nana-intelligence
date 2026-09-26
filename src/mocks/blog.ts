@@ -18,17 +18,17 @@ export const blogPosts = [
     readTime: "6 MIN",
     image: "https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/blog/2", "name": "Guide du Cold Emailing B2B" },
-      { "@type": "WebPage", "url": "/blog/3", "name": "Scraping B2B pour trouver des clients" },
-      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "Cold Emailing B2B" },
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "Scraping B2B" },
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "Automatisation Sales B2B" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/blog/2/", "name": "Guide du Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/blog/3/", "name": "Scraping B2B pour trouver des clients" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "Scraping B2B" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation Sales B2B" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
-      <p>La question du développement commercial est centrale pour toute entreprise ambitieuse. Face à la stagnation des ventes ou à la volonté d'accélérer, le dilemme se pose presque invariablement : faut-il embaucher des commerciaux en interne ou externaliser cette tâche complexe auprès d'une <a href="/agence-lead-generation">agence lead generation B2B</a> ?</p>
+      <p>La question du développement commercial est centrale pour toute entreprise ambitieuse. Face à la stagnation des ventes ou à la volonté d'accélérer, le dilemme se pose presque invariablement : faut-il embaucher des commerciaux en interne ou externaliser cette tâche complexe auprès d'une <a href="/agence-lead-generation/">agence lead generation B2B</a> ?</p>
 
-      <p>Basée en région PACA, Nana Intelligence accompagne les dirigeants locaux comme une véritable <a href="/agence-lead-generation/marseille">agence de lead generation à Marseille</a>, une <a href="/agence-lead-generation/aix-en-provence">agence de prospection à Aix-en-Provence</a> ou une <a href="/agence-lead-generation/nice">agence de lead generation à Nice</a>, avec une connaissance fine du tissu économique régional.</p>
+      <p>Basée en région PACA, Nana Intelligence accompagne les dirigeants locaux comme une véritable <a href="/agence-lead-generation/marseille/">agence de lead generation à Marseille</a>, une <a href="/agence-lead-generation/aix-en-provence/">agence de prospection à Aix-en-Provence</a> ou une <a href="/agence-lead-generation/nice/">agence de lead generation à Nice</a>, avec une connaissance fine du tissu économique régional.</p>
 
       <p>Ce choix n'est pas anodin, car il implique des budgets, des stratégies et des méthodologies très différentes. Dans cet article, nous allons décortiquer les éléments clés à prendre en compte, depuis le temps de déploiement jusqu'au retour sur investissement final (ROI).</p>
 
@@ -52,11 +52,11 @@ export const blogPosts = [
       <h2>2. L'Agence de Prospection B2B : Rapidité, Data et Scalabilité</h2>
       <p>L'externalisation de la génération de leads s'est transformée. Finie l'époque des centres d'appels rudimentaires ; aujourd'hui, une <strong>agence prospection B2B</strong> opère comme un véritable hub technologique.</p>
 
-      <p>Elle déploie pour vous des ingénieries complexes allant du <a href="/services/scraping-b2b">scraping de données B2B</a> à l'automatisation de séquences de <a href="/services/cold-emailing-b2b">campagne de cold emailing B2B</a> hyper-personnalisées.</p>
+      <p>Elle déploie pour vous des ingénieries complexes allant du <a href="/services/scraping-b2b/">scraping de données B2B</a> à l'automatisation de séquences de <a href="/services/cold-emailing-b2b/">campagne de cold emailing B2B</a> hyper-personnalisées.</p>
 
       <h3>Les avantages d'une agence Lead Generation :</h3>
       <ul>
-          <li><strong>Déploiement immédiat</strong> : Une agence possède déjà les outils, les bases de données et les compétences. Une campagne peut être lancée en moins de 15 jours, comme le fait Nana Intelligence pour ses clients en <a href="/agence-lead-generation/toulon">prospection B2B à Toulon</a>.</li>
+          <li><strong>Déploiement immédiat</strong> : Une agence possède déjà les outils, les bases de données et les compétences. Une campagne peut être lancée en moins de 15 jours, comme le fait Nana Intelligence pour ses clients en <a href="/agence-lead-generation/toulon/">prospection B2B à Toulon</a>.</li>
           <li><strong>Expertise Tech</strong> : Setup technique des domaines (SPF, DKIM), nettoyage de la donnée, contournement des filtres antispam...</li>
           <li><strong>Coûts maîtrisés</strong> : Vous ne payez pas de charges sociales. Les modèles sont souvent basés sur un abonnement fixe ou à la performance.</li>
       </ul>
@@ -66,7 +66,7 @@ export const blogPosts = [
       <p><strong>Si vous avez déjà une équipe Sales :</strong> L'agence agit comme un département de "Growth Marketing" externe pour alimenter vos closers avec 10 à 30 leads qualifiés par mois.</p>
 
       <p>Chez <strong>Nana Intelligence</strong>, nous nous positionnons comme l'extension naturelle de votre force de vente. Prêt à transformer votre acquisition ?</p>
-      <p>Découvrez nos <a href="/services">services de lead generation B2B</a> : <a href="/services/cold-emailing-b2b">campagne de cold emailing B2B</a>, <a href="/services/scraping-b2b">service scraping de données B2B</a> et <a href="/services/automatisation-sales">automatisation sales B2B</a>.</p>
+      <p>Découvrez nos <a href="/services/">services de lead generation B2B</a> : <a href="/services/cold-emailing-b2b/">campagne de cold emailing B2B</a>, <a href="/services/scraping-b2b/">service scraping de données B2B</a> et <a href="/services/automatisation-sales/">automatisation sales B2B</a>.</p>
     `
   },
   {
@@ -78,12 +78,12 @@ export const blogPosts = [
     readTime: "10 MIN",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/blog/1", "name": "Agence de prospection B2B ou commercial interne" },
-      { "@type": "WebPage", "url": "/blog/3", "name": "Scraping B2B pour trouver des clients" },
-      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "Cold Emailing B2B" },
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "Scraping B2B" },
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "Automatisation Sales B2B" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/blog/1/", "name": "Agence de prospection B2B ou commercial interne" },
+      { "@type": "WebPage", "url": "/blog/3/", "name": "Scraping B2B pour trouver des clients" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "Scraping B2B" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation Sales B2B" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
       <p>Si vous cherchez à augmenter vos ventes, le <strong>Cold Emailing B2B</strong> reste l'un des canaux au ROI le plus élevé. Il est considérablement moins onéreux que la publicité LinkedIn Ads, tout en ciblant avec une précision chirurgicale.</p>
@@ -99,7 +99,7 @@ export const blogPosts = [
       </ul>
 
       <h2>2. La Data (Scraping) : Le carburant de la campagne</h2>
-      <p>Le meilleur email envoyé à la mauvaise personne fera 0% de taux de réponse. Vous devez investir dans la qualité de votre base, souvent via le <a href="/services/scraping-b2b">scraping B2B sur-mesure</a>. Nos clients d'<a href="/agence-lead-generation/aix-en-provence">agence lead generation à Aix-en-Provence</a> bénéficient ainsi de bases ultra-ciblées sur leur marché local.</p>
+      <p>Le meilleur email envoyé à la mauvaise personne fera 0% de taux de réponse. Vous devez investir dans la qualité de votre base, souvent via le <a href="/services/scraping-b2b/">scraping B2B sur-mesure</a>. Nos clients d'<a href="/agence-lead-generation/aix-en-provence/">agence lead generation à Aix-en-Provence</a> bénéficient ainsi de bases ultra-ciblées sur leur marché local.</p>
       <p>Assurez-vous que les emails soient vérifiés via des logiciels de "Catch-all Checkers" avant tout envoi, afin d'abaisser votre taux de rebond (Bounce Rate) en dessous de 3%.</p>
 
       <h2>3. Le Copywriting : Court, direct, curieux</h2>
@@ -113,9 +113,9 @@ export const blogPosts = [
       <h2>4. Comment scaler sans risques ?</h2>
       <p>Pour envoyer plus de 100 emails par jour, utilisez l'<strong>inbox rotation</strong> : distribuez la charge sur plusieurs adresses différentes pour rester sous les radars des filtres antispam.</p>
 
-      <p>Besoin d'aide pour configurer votre infrastructure ? <a href="/services/cold-emailing-b2b">Découvrez notre service de cold emailing B2B</a>, notre offre d'<a href="/services/automatisation-sales">automatisation sales B2B</a> ou <a href="/contact">contactez Nana Intelligence</a> pour un audit gratuit.</p>
+      <p>Besoin d'aide pour configurer votre infrastructure ? <a href="/services/cold-emailing-b2b/">Découvrez notre service de cold emailing B2B</a>, notre offre d'<a href="/services/automatisation-sales/">automatisation sales B2B</a> ou <a href="/contact/">contactez Nana Intelligence</a> pour un audit gratuit.</p>
 
-      <p>Que vous soyez à la recherche d'une <a href="/agence-lead-generation/toulon">agence de cold emailing à Toulon</a> ou d'une <a href="/agence-lead-generation/marseille">agence de prospection B2B à Marseille</a>, nos équipes déploient des campagnes sur-mesure pour les dirigeants de la <a href="/agence-lead-generation/nice">agence lead generation à Nice</a> à Marseille, en Provence et dans tout le sud de la France.</p>
+      <p>Que vous soyez à la recherche d'une <a href="/agence-lead-generation/toulon/">agence de cold emailing à Toulon</a> ou d'une <a href="/agence-lead-generation/marseille/">agence de prospection B2B à Marseille</a>, nos équipes déploient des campagnes sur-mesure pour les dirigeants de la <a href="/agence-lead-generation/nice/">agence lead generation à Nice</a> à Marseille, en Provence et dans tout le sud de la France.</p>
     `
   },
   {
@@ -127,12 +127,12 @@ export const blogPosts = [
     readTime: "7 MIN",
     image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/blog/1", "name": "Agence de prospection B2B ou commercial interne" },
-      { "@type": "WebPage", "url": "/blog/2", "name": "Guide du Cold Emailing B2B" },
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "Scraping B2B" },
-      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "Cold Emailing B2B" },
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "Automatisation Sales B2B" },
-      { "@type": "WebPage", "url": "/services", "name": "Services Nana Intelligence" },
+      { "@type": "WebPage", "url": "/blog/1/", "name": "Agence de prospection B2B ou commercial interne" },
+      { "@type": "WebPage", "url": "/blog/2/", "name": "Guide du Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "Scraping B2B" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation Sales B2B" },
+      { "@type": "WebPage", "url": "/services/", "name": "Services Nana Intelligence" },
     ],
     content: `
       <p>Longtemps réservé aux techniciens, le <strong>Scraping de données</strong> est devenu l'arme massive de l'Outbound marketing B2B. Acheter des bases de données statiques est un modèle dépassé et coûteux.</p>
@@ -146,7 +146,7 @@ export const blogPosts = [
       <h2>2. Quelles sources utiliser ?</h2>
       <ul>
           <li><strong>LinkedIn Sales Navigator</strong> : Incontournable pour identifier le poste précis d'un décideur (CEO, Head of Marketing) grâce aux filtres avancés.</li>
-          <li><strong>Google Maps</strong> : La mine d'or pour les entreprises physiques. Idéal pour cibler des secteurs locaux (boulangeries, agences immobilières, restaurants) — comme le démontre notre approche d'<a href="/agence-lead-generation/nice">agence de scraping à Nice</a>, de <a href="/agence-lead-generation/marseille">prospection à Marseille</a> et d'<a href="/agence-lead-generation/aix-en-provence">accompagnement à Aix-en-Provence</a> pour les commerces de la Côte d'Azur et de la région PACA.</li>
+          <li><strong>Google Maps</strong> : La mine d'or pour les entreprises physiques. Idéal pour cibler des secteurs locaux (boulangeries, agences immobilières, restaurants) — comme le démontre notre approche d'<a href="/agence-lead-generation/nice/">agence de scraping à Nice</a>, de <a href="/agence-lead-generation/marseille/">prospection à Marseille</a> et d'<a href="/agence-lead-generation/aix-en-provence/">accompagnement à Aix-en-Provence</a> pour les commerces de la Côte d'Azur et de la région PACA.</li>
           <li><strong>Annuaires métiers</strong> : Pour récupérer des données administratives publiques et officielles.</li>
       </ul>
 
@@ -158,8 +158,8 @@ export const blogPosts = [
           <li><strong>Intérêt légitime :</strong> Votre offre doit être liée à la fonction du prospect, et vous devez inclure un lien de désinscription (Opt-out).</li>
       </ol>
 
-      <p>Gérer ces listes est chronophage. En confiant votre stratégie à une <a href="/agence-lead-generation">agence lead generation PACA</a>, vous concentrez vos équipes sur la vente.</p>
-      <p>Pour aller plus loin, explorez aussi nos services de <a href="/services/cold-emailing-b2b">cold emailing B2B</a> et d'<a href="/services/automatisation-sales">automatisation sales B2B</a>.</p>
+      <p>Gérer ces listes est chronophage. En confiant votre stratégie à une <a href="/agence-lead-generation/">agence lead generation PACA</a>, vous concentrez vos équipes sur la vente.</p>
+      <p>Pour aller plus loin, explorez aussi nos services de <a href="/services/cold-emailing-b2b/">cold emailing B2B</a> et d'<a href="/services/automatisation-sales/">automatisation sales B2B</a>.</p>
     `
   },
   {
@@ -171,13 +171,13 @@ export const blogPosts = [
     readTime: "9 MIN",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/blog/1", "name": "Agence de prospection B2B ou commercial interne" },
-      { "@type": "WebPage", "url": "/blog/2", "name": "Guide du Cold Emailing B2B" },
-      { "@type": "WebPage", "url": "/blog/3", "name": "Scraping B2B pour trouver des clients" },
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "Scraping de données B2B" },
-      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "Campagne Cold Emailing B2B" },
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "Automatisation Sales B2B" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/blog/1/", "name": "Agence de prospection B2B ou commercial interne" },
+      { "@type": "WebPage", "url": "/blog/2/", "name": "Guide du Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/blog/3/", "name": "Scraping B2B pour trouver des clients" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "Scraping de données B2B" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "Campagne Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation Sales B2B" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
       <p>En 2026, la prospection B2B a changé de dimension. L'intelligence artificielle ne se contente pas d'assister vos commerciaux : elle automatise l'ensemble de la chaîne d'acquisition, du ciblage à la relance. Et ce ne sont plus seulement les grands groupes qui en profitent.</p>
@@ -185,12 +185,12 @@ export const blogPosts = [
       <p>Les PME qui ont sauté le constatent rapidement : des rendez-vous plus nombreux, moins d'efforts répétifs dans l'équipe, et un pipeline enfin prévisible. Voici comment l'IA transforme concrètement votre prospection, étape par étape.</p>
 
       <h2>1. Scraping intelligent : la donnée prospect en temps réel</h2>
-      <p>Le point de départ de toute prospection qui convertit, c'est une cible précise. Les bases de données achetées en unpacked sont souvent obsolètes et peu qualifiées. Le <a href="/services/scraping-b2b">service scraping de données B2B</a> piloté par IA change la donne.</p>
-      <p>En combinant des scripts d'extraction sur LinkedIn et Google Maps avec des modèles de langage capables de qualifier automatiquement les profils (poste, secteur, taille d'entreprise, stack technique), vous construisez une base de prospects fraîche, exploitable immédiatement et mise à jour en continu. Nos clients <a href="/agence-lead-generation/marseille">agence lead generation à Marseille</a> bénéficient par exemple de bases ultra-filtrées sur leur bassin économique local.</p>
+      <p>Le point de départ de toute prospection qui convertit, c'est une cible précise. Les bases de données achetées en unpacked sont souvent obsolètes et peu qualifiées. Le <a href="/services/scraping-b2b/">service scraping de données B2B</a> piloté par IA change la donne.</p>
+      <p>En combinant des scripts d'extraction sur LinkedIn et Google Maps avec des modèles de langage capables de qualifier automatiquement les profils (poste, secteur, taille d'entreprise, stack technique), vous construisez une base de prospects fraîche, exploitable immédiatement et mise à jour en continu. Nos clients <a href="/agence-lead-generation/marseille/">agence lead generation à Marseille</a> bénéficient par exemple de bases ultra-filtrées sur leur bassin économique local.</p>
 
       <h2>2. Cold emailing augmenté par l'IA : personnaliser à grande échelle</h2>
-      <p>La personnalisation a toujours été le nerf de la guerre du <a href="/services/cold-emailing-b2b">cold emailing B2B</a>. Un message générique ne convertit quasiment jamais. Mais personnaliser 200 emails par jour est chronophage.</p>
-      <p>L'IA résout cette équation. À partir d'un bon calibrage, elle génère des premières lignes ultra-personnalisées (référence à une offre récente, un content partagé, un événement) tout en respectant le ton et la proposition de valeur définis par vos soins. Résultat : vous envoyez plus, mieux ciblé, sans sacrifier la pertinence. Les PME d’<a href="/agence-lead-generation/aix-en-provence">agence lead generation à Aix-en-Provence</a> qui utilisent l’IA pour leur prospection constatent un bond de leur taux de réponse dès le premier mois.</p>
+      <p>La personnalisation a toujours été le nerf de la guerre du <a href="/services/cold-emailing-b2b/">cold emailing B2B</a>. Un message générique ne convertit quasiment jamais. Mais personnaliser 200 emails par jour est chronophage.</p>
+      <p>L'IA résout cette équation. À partir d'un bon calibrage, elle génère des premières lignes ultra-personnalisées (référence à une offre récente, un content partagé, un événement) tout en respectant le ton et la proposition de valeur définis par vos soins. Résultat : vous envoyez plus, mieux ciblé, sans sacrifier la pertinence. Les PME d’<a href="/agence-lead-generation/aix-en-provence/">agence lead generation à Aix-en-Provence</a> qui utilisent l’IA pour leur prospection constatent un bond de leur taux de réponse dès le premier mois.</p>
 
       <h2>3. Workflows automatisés : la prospection qui tourne seule</h2>
       <p>Une fois les séquences lancées, le vrai gain vient de l'automatisation. Des plateformes comme Make, n8n ou Zapier permettent de créer des workflows qui relancent automatiquement les prospects sans réponse, qualifient les leads chauds, mettent à jour votre CRM et notifient vos commerciaux au bon moment.</p>
@@ -203,11 +203,11 @@ export const blogPosts = [
         <li><strong>-30%</strong> de temps passé par les commerciaux sur des tâches administratives</li>
         <li><strong>Un pipeline prévisible</strong>, avec un coût par lead en baisse continue</li>
       </ul>
-      <p>Ces gains ne tombent pas du ciel : ils reposent sur une méthodologie rigoureuse et un calibrage fin des outils. C’est ce que nous déployons au quotidien pour les entreprises de <a href="/agence-lead-generation/toulon">agence lead generation à Toulon</a> jusqu’à la Côte d’Azur.</p>
+      <p>Ces gains ne tombent pas du ciel : ils reposent sur une méthodologie rigoureuse et un calibrage fin des outils. C’est ce que nous déployons au quotidien pour les entreprises de <a href="/agence-lead-generation/toulon/">agence lead generation à Toulon</a> jusqu’à la Côte d’Azur.</p>
 
       <h2>5. Comment démarrer sans se disperser</h2>
       <p>Le piège le plus courant est de vouloir tout automatiser en une semaine. La bonne approche : commencer par un seul canal (souvent le cold emailing), valider les résultats, puis étendre au scraping et aux workflows.</p>
-      <p>Notre <a href="/services/automatisation-sales">accompagnement en automatisation IA</a> permet de calibrer pas à pas ces workflows, avec un suivi terrain. Que vous soyez <a href="/agence-lead-generation/nice">agence lead generation à Nice</a>, Marseille, Aix ou Toulon, nous adaptons la stack à votre marché. Pour un premier regard sur votre situation, <a href="/contact">demandez un audit gratuit de 30 minutes</a>.</p>
+      <p>Notre <a href="/services/automatisation-sales/">accompagnement en automatisation IA</a> permet de calibrer pas à pas ces workflows, avec un suivi terrain. Que vous soyez <a href="/agence-lead-generation/nice/">agence lead generation à Nice</a>, Marseille, Aix ou Toulon, nous adaptons la stack à votre marché. Pour un premier regard sur votre situation, <a href="/contact/">demandez un audit gratuit de 30 minutes</a>.</p>
     `
   },
   {
@@ -219,13 +219,11 @@ export const blogPosts = [
     readTime: "4 MIN",
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "automatisation sales B2B" },
-      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "cold emailing B2B" },
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "scraping B2B" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "automatisation sales B2B" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "cold emailing B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "scraping B2B" },
     ],
     content: `
-<h1>Automatisation sales PME : guide complet 2026</h1>
-
 <p>Vous passez vos soirées à scraper LinkedIn, à écrire des séquences de relance que personne n&#39;ouvre, et à mettre à jour un CRM que votre commercial n&#39;ouvre jamais. Bienvenue dans le club des dirigeants PME qui font de la prospection <em>à l&#39;ancienne</em> — et qui s&#39;étonnent de ne pas avoir assez de RDV qualifiés.</p>
 
 <p>Bonne nouvelle : les PME qui ont basculé sur l&#39;<strong>automatisation sales</strong> signent en moyenne 3 fois plus de contrats, avec un commercial qui rentre à 18h30. Pas de magie. Juste des process, de la data propre, et des séquences qui tournent pendant que vous dormez.</p>
@@ -247,15 +245,15 @@ export const blogPosts = [
 
 <h3>1. Data propre = carburant propre</h3>
 <p>Automatiser sur une base de données pourrie, c&#39;est mettre du super dans un moteur grippe. La première brique, c&#39;est le <strong>scraping B2B ciblé</strong> : identification de vos ICP (Ideal Customer Profiles), extraction des décideurs, enrichissement emails/téléphones vérifiés, déduplication. Pas de fichier Excel acheté sur LeBonCoin. De la data fraîche, segmentée, RGPD-compliant.</p>
-<p>→ C&#39;est exactement ce qu&#39;on livre via notre service <a href="/services/scraping-b2b"><strong>scraping B2B</strong></a> : des listes prêtes à pitcher, pas des fichiers à nettoyer.</p>
+<p>→ C&#39;est exactement ce qu&#39;on livre via notre service <a href="/services/scraping-b2b/"><strong>scraping B2B</strong></a> : des listes prêtes à pitcher, pas des fichiers à nettoyer.</p>
 
 <h3>2. Séquences cold email qui convertissent (pas qui spamment)</h3>
 <p>La différence entre un spam et un cold email qui obtient 40 % de taux d&#39;ouverture et 15 % de réponse ? La personnalisation <em>à l&#39;échelle</em>. Variables dynamiques (prénom, entreprise, pain point détecté via scraping), A/B test continu, délais de relance optimisés, gestion des désabonnements RGPD.</p>
-<p>On ne vous vend pas des templates. On déploie une <strong>infra d&#39;envoi propre</strong> (domaines dédiés, warm-up IP, rotation, tracking) + des séquences écrites <em>pour votre offre</em>. C&#39;est le cœur de notre service <a href="/services/cold-emailing-b2b"><strong>cold emailing B2B</strong></a>.</p>
+<p>On ne vous vend pas des templates. On déploie une <strong>infra d&#39;envoi propre</strong> (domaines dédiés, warm-up IP, rotation, tracking) + des séquences écrites <em>pour votre offre</em>. C&#39;est le cœur de notre service <a href="/services/cold-emailing-b2b/"><strong>cold emailing B2B</strong></a>.</p>
 
 <h3>3. CRM qui se met à jour tout seul (et que votre commercial ouvre enfin)</h3>
 <p>Le commercial n&#39;a pas à saisir. L&#39;automatisation pousse le lead qualifié dans le CRM (Pipedrive, HubSpot, noCRM, Attio…), crée la tâche « Appel découverte », assigne le bon commercial selon la zone/secteur, notifie sur Slack/Teams. Le commercial ouvre son CRM le matin : ses RDV sont prêts, ses tâches sont claires. Il vend.</p>
-<p>C&#39;est le cœur de notre offre <a href="/services/automatisation-sales"><strong>automatisation sales B2B</strong></a> : on branche le scraping, l&#39;emailing, le CRM et les notifs dans un flux unique (n8n + IA) qui tourne 24/7.</p>
+<p>C&#39;est le cœur de notre offre <a href="/services/automatisation-sales/"><strong>automatisation sales B2B</strong></a> : on branche le scraping, l&#39;emailing, le CRM et les notifs dans un flux unique (n8n + IA) qui tourne 24/7.</p>
 
 <h2>Le piège à éviter : vouloir tout automatiser tout de suite</h2>
 
@@ -282,7 +280,7 @@ export const blogPosts = [
 <p>Vous avez deux options : continuer à scraper LinkedIn devant Netflix, ou réserver un <strong>appel découverte 30 min</strong> (gratuit, sans engagement) pour qu&#39;on regarde votre process actuel et qu&#39;on vous dise exactement ce qu&#39;on peut automatiser chez vous — et en combien de temps.</p>
 
 <p style="text-align:center; margin:2rem 0;">
-  <a href="/contact" style="background:#1a1a2e;color:#fff;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;">
+  <a href="/contact/" style="background:#1a1a2e;color:#fff;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;">
     🎯 Obtenir mon audit gratuit 30 min
   </a>
 </p>
@@ -296,7 +294,7 @@ export const blogPosts = [
   <li><strong>Automatisation sales PME</strong> = data propre + cold email qui convertit + CRM auto-maj = commercial qui vend 80 % du temps.</li>
   <li>Résultats typiques : <strong>+300 % RDV qualifiés, –70 % temps prospection, CAC ÷ 2–3</strong>.</li>
   <li>Approche MVP en 2 semaines, engagement 2 mois, 500 €/mois, KPIs garantis.</li>
-  <li>Prochaine étape : <a href="/contact"><strong>audit gratuit 30 min</strong></a> (ou DM Insta).</li>
+  <li>Prochaine étape : <a href="/contact/"><strong>audit gratuit 30 min</strong></a> (ou DM Insta).</li>
 </ul>
     `
   },
@@ -309,18 +307,18 @@ export const blogPosts = [
     readTime: "5 MIN",
     image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "Automatisation Sales B2B" },
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "Scraping B2B" },
-      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "Cold Emailing B2B" },
-      { "@type": "WebPage", "url": "/agence-lead-generation/marseille", "name": "Agence lead generation Marseille" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation Sales B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "Scraping B2B" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/agence-lead-generation/marseille/", "name": "Agence lead generation Marseille" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
 <p>LinkedIn reste <strong>le</strong> terrain de chasse numéro 1 pour la prospection B2B en 2026. Mais la donne a changé : les invitations génériques "Bonjour, je souhaite ajouter votre profil à mon réseau" finissent à la corbeille, et les comptes qui spamment se font bannir en 48 h.</p>
 
 <p>Les dirigeants PME qui remplissent leur agenda aujourd'ont compris une chose : la lead generation LinkedIn B2B, ce n'est plus de la prospection manuelle. C'est de la <strong>data engineering</strong> appliquée au réseau professionnel n°1 mondial. Scraping ciblé, enrichment IA, séquences hyper-personnalisées, CRM auto-maj : la chaîne complète tourne pendant que vous fermez des deals.</p>
 
-<p>Chez <strong>Nana Intelligence</strong>, on déploie cette stack pour nos clients <a href="/agence-lead-generation/marseille">agence lead generation à Marseille</a>, <a href="/agence-lead-generation/aix-en-provence">agence lead generation à Aix-en-Provence</a>, <a href="/agence-lead-generation/toulon">agence lead generation à Toulon</a> et <a href="/agence-lead-generation/nice">agence lead generation à Nice</a>. Résultat : des agendas pleins, des commerciaux qui vendent, et zéro risque de bannissement LinkedIn.</p>
+<p>Chez <strong>Nana Intelligence</strong>, on déploie cette stack pour nos clients <a href="/agence-lead-generation/marseille/">agence lead generation à Marseille</a>, <a href="/agence-lead-generation/aix-en-provence/">agence lead generation à Aix-en-Provence</a>, <a href="/agence-lead-generation/toulon/">agence lead generation à Toulon</a> et <a href="/agence-lead-generation/nice/">agence lead generation à Nice</a>. Résultat : des agendas pleins, des commerciaux qui vendent, et zéro risque de bannissement LinkedIn.</p>
 
 <h2>1. Pourquoi l'approche manuelle est morte (et dangereuse)</h2>
 <p>Envoyer 100 invitations par jour à la main, c'est le meilleur moyen de :</p>
@@ -335,7 +333,7 @@ export const blogPosts = [
 
 <h3>Étape 1 : Ciblage chirurgical via Scraping LinkedIn (Sales Nav + API)</h3>
 <p>On ne scrappe plus "tout le monde". On définit vos <strong>ICP (Ideal Customer Profiles)</strong> : poste précis, secteur, taille d'entreprise, localisation, techno utilisée, signaux d'achat (levée de fonds, recrutement, nouveau poste).</p>
-<p>Notre <a href="/services/scraping-b2b"><strong>service scraping B2B</strong></a> extrait ces profils via Sales Navigator + API tierces, enrichit avec emails pro vérifiés (taux de validité > 95 %), et déduplique. Résultat : une liste de 500 à 2 000 décideurs <em>prêts à être contactés</em>, pas un fichier Excel à nettoyer.</p>
+<p>Notre <a href="/services/scraping-b2b/"><strong>service scraping B2B</strong></a> extrait ces profils via Sales Navigator + API tierces, enrichit avec emails pro vérifiés (taux de validité > 95 %), et déduplique. Résultat : une liste de 500 à 2 000 décideurs <em>prêts à être contactés</em>, pas un fichier Excel à nettoyer.</p>
 
 <h3>Étape 2 : Enrichissement IA — Connaître le prospect avant de lui parler</h3>
 <p>L'IA analyse le profil LinkedIn, les posts récents, l'actualité de l'entreprise, le site web, les avis Glassdoor, les offres d'emploi. Elle extrait :</p>
@@ -355,7 +353,7 @@ export const blogPosts = [
   <li><strong>J+7 :</strong> Relance LinkedIn + Email (angle différent : angle "valeur" — ressource, étude de cas, benchmark)</li>
   <li><strong>J+14 :</strong> Dernière relance "break-up email" — désinscription propre</li>
 </ol>
-<p>Tout ça tourne sur <a href="/services/automatisation-sales"><strong>n8n + IA</strong></a> : pas de clic manuel, CRM (Pipedrive, HubSpot, Attio, noCRM) mis à jour en temps réel, notifications Slack/Teams pour vos commerciaux quand un lead répond "Intéressé".</p>
+<p>Tout ça tourne sur <a href="/services/automatisation-sales/"><strong>n8n + IA</strong></a> : pas de clic manuel, CRM (Pipedrive, HubSpot, Attio, noCRM) mis à jour en temps réel, notifications Slack/Teams pour vos commerciaux quand un lead répond "Intéressé".</p>
 
 <h2>3. Les garde-fous : Protéger votre domaine et votre compte LinkedIn</h2>
 <ul>
@@ -364,7 +362,7 @@ export const blogPosts = [
   <li><strong>Limites dures :</strong> max 20 invitations/jour, 50 messages/semaine par compte</li>
   <li><strong>Opt-out RGPD</strong> automatique dans chaque email + lien désinscription LinkedIn</li>
 </ul>
-<p>C'est l'infra qu'on déploie via notre <a href="/services/cold-emailing-b2b"><strong>service cold emailing B2B</strong></a> : délivrabilité > 95 %, taux d'ouverture 40-55 %, taux de réponse 10-20 % sur des cibles froides qualifiées.</p>
+<p>C'est l'infra qu'on déploie via notre <a href="/services/cold-emailing-b2b/"><strong>service cold emailing B2B</strong></a> : délivrabilité > 95 %, taux d'ouverture 40-55 %, taux de réponse 10-20 % sur des cibles froides qualifiées.</p>
 
 <h2>4. Résultats types observés chez nos clients PME (5-50 salariés, B2B)</h2>
 <ul>
@@ -376,10 +374,10 @@ export const blogPosts = [
 
 <h2>5. Pourquoi passer par Nana Intelligence plutôt que de bricoler vous-même ?</h2>
 <p>Vous <em>pouvez</em> acheter PhantomBuster, LaGrowthMachine, Waalaxy, configurer n8n, acheter des domaines, faire du warm-up, écrire des prompts IA, brancher le CRM... et passer 3 mois à débugger.</p>
-<p>Ou vous nous confiez la stack. On la connaît par cœur : on l'a bâtie, on la fait tourner pour des PME de <a href="/agence-lead-generation/marseille">Marseille</a>, <a href="/agence-lead-generation/aix-en-provence">Aix</a>, <a href="/agence-lead-generation/toulon">Toulon</a>, <a href="/agence-lead-generation/nice">Nice</a> et partout en France. Setup en 2 semaines, premiers RDV en semaine 3, engagement 2 mois minimum, <strong>500 €/mois</strong> tout compris, KPIs garantis (sinon mois suivant offert).</p>
+<p>Ou vous nous confiez la stack. On la connaît par cœur : on l'a bâtie, on la fait tourner pour des PME de <a href="/agence-lead-generation/marseille/">Marseille</a>, <a href="/agence-lead-generation/aix-en-provence/">Aix</a>, <a href="/agence-lead-generation/toulon/">Toulon</a>, <a href="/agence-lead-generation/nice/">Nice</a> et partout en France. Setup en 2 semaines, premiers RDV en semaine 3, engagement 2 mois minimum, <strong>500 €/mois</strong> tout compris, KPIs garantis (sinon mois suivant offert).</p>
 
 <p style="text-align:center; margin:2rem 0;">
-  <a href="/contact" style="background:#1a1a2e;color:#fff;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;">
+  <a href="/contact/" style="background:#1a1a2e;color:#fff;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;">
     🎯 Obtenir mon audit gratuit 30 min
   </a>
 </p>
@@ -396,7 +394,7 @@ export const blogPosts = [
   <li><strong>Sécurité :</strong> Limites respectées, domaines protégés, RGPD clean = 0 risque, 100 % focus résultats</li>
 </ul>
 
-<p>Prêt à automatiser votre lead gen LinkedIn ? <a href="/contact"><strong>On en parle 30 min (gratuit).</strong></a></p>
+<p>Prêt à automatiser votre lead gen LinkedIn ? <a href="/contact/"><strong>On en parle 30 min (gratuit).</strong></a></p>
     `
   },
   {
@@ -408,15 +406,13 @@ export const blogPosts = [
     readTime: "6 MIN",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "scraping B2B ciblé" },
-      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "cold emailing B2B" },
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "automatisation sales B2B" },
-      { "@type": "WebPage", "url": "/blog/3", "name": "Scraping B2B pour vos ventes" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "scraping B2B ciblé" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "cold emailing B2B" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "automatisation sales B2B" },
+      { "@type": "WebPage", "url": "/blog/3/", "name": "Scraping B2B pour vos ventes" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
-<h1>ICP en B2B : la méthode pour définir votre client idéal (et arrêter de prospecter dans le vide)</h1>
-
 <p>Vous envoyez 500 cold emails par mois, vous scrapez LinkedIn à s'en user les yeux, et vous récoltez... trois RDV sans suite avec des prospects qui n'avaient ni le budget, ni le besoin, ni le pouvoir de décision. Le problème n'est presque jamais votre séquence. C'est votre <strong>ciblage</strong>.</p>
 
 <p>Prospecter tout le monde, c'est prospecter personne. Avant d'automatiser quoi que ce soit, il faut savoir <em>qui</em> vous voulez au bout du fil. C'est le rôle de l'ICP — l'<strong>Ideal Customer Profile</strong>. Et non, ce n'est pas un buzzword de consultant : c'est la brique qui décide si vos 90 prochains jours de prospection rapportent des clients ou du vent.</p>
@@ -460,9 +456,9 @@ export const blogPosts = [
 
 <h2>De l'ICP à la liste de prospects</h2>
 
-<p>Un ICP écrit dans un coin de Notion ne sert à rien. Sa valeur, c'est qu'il devient un <strong>filtre de scraping</strong>. Une fois vos critères posés, on extrait via LinkedIn Sales Navigator, Google Maps et les bases publiques une liste de décideurs qui collent <em>exactement</em> au profil — puis on enrichit avec des emails vérifiés. C'est tout l'objet de notre <a href="/services/scraping-b2b">service de scraping B2B ciblé</a> : pas un fichier à nettoyer, une liste prête à pitcher. (Pour creuser la partie technique, voyez notre <a href="/blog/3">guide du scraping B2B</a>.)</p>
+<p>Un ICP écrit dans un coin de Notion ne sert à rien. Sa valeur, c'est qu'il devient un <strong>filtre de scraping</strong>. Une fois vos critères posés, on extrait via LinkedIn Sales Navigator, Google Maps et les bases publiques une liste de décideurs qui collent <em>exactement</em> au profil — puis on enrichit avec des emails vérifiés. C'est tout l'objet de notre <a href="/services/scraping-b2b/">service de scraping B2B ciblé</a> : pas un fichier à nettoyer, une liste prête à pitcher. (Pour creuser la partie technique, voyez notre <a href="/blog/3/">guide du scraping B2B</a>.)</p>
 
-<p>Ensuite seulement vient la séquence : un <a href="/services/cold-emailing-b2b">cold emailing B2B</a> calibré sur la douleur de l'ICP, puis l'<a href="/services/automatisation-sales">automatisation sales</a> qui pousse les leads chauds dans votre CRM. L'ordre compte : cibler, puis contacter, puis automatiser. Jamais l'inverse.</p>
+<p>Ensuite seulement vient la séquence : un <a href="/services/cold-emailing-b2b/">cold emailing B2B</a> calibré sur la douleur de l'ICP, puis l'<a href="/services/automatisation-sales/">automatisation sales</a> qui pousse les leads chauds dans votre CRM. L'ordre compte : cibler, puis contacter, puis automatiser. Jamais l'inverse.</p>
 
 <h2>L'erreur classique : l'ICP « trop gentil »</h2>
 
@@ -473,7 +469,7 @@ export const blogPosts = [
 <p>On peut regarder ça ensemble : en 30 minutes, on cartographie vos meilleurs clients, on formalise votre ICP, et on estime combien de prospects qui y correspondent dorment encore sur LinkedIn et Google Maps.</p>
 
 <p style="text-align:center; margin:2rem 0;">
-  <a href="/contact" style="background:#1a1a2e;color:#fff;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;">
+  <a href="/contact/" style="background:#1a1a2e;color:#fff;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;">
     🎯 Obtenir mon audit gratuit 30 min
   </a>
 </p>
@@ -487,8 +483,8 @@ export const blogPosts = [
   <li><strong>ICP</strong> = le profil d'entreprise qui devient un bon client (≠ persona, qui décrit une personne).</li>
   <li>Méthode : partez de vos <strong>meilleurs clients actuels</strong>, isolez leurs critères firmographiques, identifiez le décideur + sa douleur, ajoutez les <strong>signaux d'achat</strong>.</li>
   <li>Un ICP serré fait grimper le taux de réponse, raccourcit le cycle de vente et économise votre data.</li>
-  <li>L'ordre gagnant : <strong>cibler → contacter → automatiser</strong> — via <a href="/services/scraping-b2b">scraping ciblé</a>, <a href="/services/cold-emailing-b2b">cold email</a> et <a href="/services/automatisation-sales">automatisation</a>.</li>
-  <li>Prochaine étape : <a href="/contact"><strong>audit gratuit 30 min</strong></a> (ou DM Insta).</li>
+  <li>L'ordre gagnant : <strong>cibler → contacter → automatiser</strong> — via <a href="/services/scraping-b2b/">scraping ciblé</a>, <a href="/services/cold-emailing-b2b/">cold email</a> et <a href="/services/automatisation-sales/">automatisation</a>.</li>
+  <li>Prochaine étape : <a href="/contact/"><strong>audit gratuit 30 min</strong></a> (ou DM Insta).</li>
 </ul>
     `
   },
@@ -501,23 +497,21 @@ export const blogPosts = [
     readTime: "8 MIN",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "Cold Emailing B2B" },
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "Scraping B2B" },
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "Automatisation Sales B2B" },
-      { "@type": "WebPage", "url": "/services/accompagnement-seo", "name": "Accompagnement SEO" },
-      { "@type": "WebPage", "url": "/agence-lead-generation/marseille", "name": "Agence lead generation Marseille" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" }
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "Scraping B2B" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation Sales B2B" },
+      { "@type": "WebPage", "url": "/services/accompagnement-seo/", "name": "Accompagnement SEO" },
+      { "@type": "WebPage", "url": "/agence-lead-generation/marseille/", "name": "Agence lead generation Marseille" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" }
     ],
     content: `
-<h1>Comment trouver des clients B2B en 2026 : 5 méthodes qui marchent vraiment</h1>
-
 <p>Vous vous demandez <strong>comment trouver des clients B2B</strong> dans un marché de plus en plus concurrentiel ? La <strong>prospection commerciale B2B, comment faire</strong> en 2026 pour obtenir des résultats tangibles sans s'épuiser en appels à froid inefficaces ni dilapider son budget en publicités non ciblées ? L'acquisition client a profondément muté. L'époque du spam généralisé, des appels dans le vide et des bases de données achetées "au kilo" est révolue. Aujourd'hui, la réussite d'une stratégie de génération de leads repose sur la précision de la donnée, la personnalisation à grande échelle et une automatisation intelligente de vos processus de vente.</p>
 
 <p>Que vous soyez une TPE ambitieuse, une PME en pleine phase de structuration ou une startup cherchant à hyper-croître, la question n'est plus de savoir s'il faut prospecter, mais <em>comment</em> le faire de manière chirurgicale. Les acheteurs B2B sont sur-sollicités. Pour capter leur attention, vous devez arriver au bon moment, avec le bon message, et sur le bon canal. Dans ce guide complet, nous allons explorer 5 méthodes concrètes, orientées data (data-driven) et sans fioritures (sans bullshit) pour générer des leads ultra-qualifiés, raccourcir vos cycles de vente et, in fine, remplir votre pipeline commercial avec des prospects qui signent vraiment.</p>
 
 <h2>1. Le Cold Emailing : La personnalisation à l'échelle pour toucher les décideurs</h2>
 
-<p>On entend souvent dire que l'email est mort. C'est faux. Le <a href="/services/cold-emailing-b2b">cold emailing B2B</a> reste, en 2026, l'un des canaux d'acquisition offrant le retour sur investissement (ROI) le plus élevé, à condition d'être exécuté avec une rigueur technique absolue. L'objectif n'est plus d'envoyer 10 000 emails en espérant 10 réponses. C'est d'envoyer 100 emails ultra-personnalisés pour générer 15 rendez-vous qualifiés.</p>
+<p>On entend souvent dire que l'email est mort. C'est faux. Le <a href="/services/cold-emailing-b2b/">cold emailing B2B</a> reste, en 2026, l'un des canaux d'acquisition offrant le retour sur investissement (ROI) le plus élevé, à condition d'être exécuté avec une rigueur technique absolue. L'objectif n'est plus d'envoyer 10 000 emails en espérant 10 réponses. C'est d'envoyer 100 emails ultra-personnalisés pour générer 15 rendez-vous qualifiés.</p>
 
 <p>Cependant, attention au piège de l'amateurisme : envoyer des campagnes massives depuis votre nom de domaine principal est le chemin le plus court pour finir dans le dossier spam de tous vos prospects et ruiner la réputation numérique de votre entreprise. La méthode moderne s'articule autour de trois piliers fondamentaux :</p>
 
@@ -531,9 +525,9 @@ export const blogPosts = [
 
 <p>LinkedIn n'est pas seulement un réseau social professionnel ; c'est la base de données B2B la plus exhaustive, la plus qualifiée et la plus à jour au monde. Pour trouver des clients de manière prédictive, vous devez extraire cette donnée intelligemment. Les recherches manuelles prennent un temps infini et découragent rapidement les équipes de vente les plus motivées.</p>
 
-<p>C'est ici qu'intervient notre service de <a href="/services/scraping-b2b">scraping B2B</a>. Grâce à des scripts avancés couplés à LinkedIn Sales Navigator, nous identifions vos prospects idéaux (votre ICP - Ideal Customer Profile) en utilisant des dizaines de filtres croisés : fonction exacte, ancienneté dans le poste, secteur d'activité de niche, croissance des effectifs, technologies utilisées par l'entreprise, etc.</p>
+<p>C'est ici qu'intervient notre service de <a href="/services/scraping-b2b/">scraping B2B</a>. Grâce à des scripts avancés couplés à LinkedIn Sales Navigator, nous identifions vos prospects idéaux (votre ICP - Ideal Customer Profile) en utilisant des dizaines de filtres croisés : fonction exacte, ancienneté dans le poste, secteur d'activité de niche, croissance des effectifs, technologies utilisées par l'entreprise, etc.</p>
 
-<p>Mais le véritable secret d'une campagne de scraping réussie, c'est la détection des <strong>signaux d'achat</strong>. Cibler un "Directeur Marketing" est bien. Cibler un "Directeur Marketing qui a pris son poste il y a moins de 3 mois dans une entreprise qui vient de lever 2 millions d'euros" est exceptionnel, car ce prospect a un mandat pour changer les choses et un budget à allouer. Nous accompagnons de nombreuses entreprises locales, notamment via notre pôle d'<a href="/agence-lead-generation/aix-en-provence">agence lead generation à Aix-en-Provence</a>, pour cibler les décideurs clés de la région PACA avec ce niveau de précision chirurgicale, garantissant des taux de réponse largement supérieurs aux moyennes du marché.</p>
+<p>Mais le véritable secret d'une campagne de scraping réussie, c'est la détection des <strong>signaux d'achat</strong>. Cibler un "Directeur Marketing" est bien. Cibler un "Directeur Marketing qui a pris son poste il y a moins de 3 mois dans une entreprise qui vient de lever 2 millions d'euros" est exceptionnel, car ce prospect a un mandat pour changer les choses et un budget à allouer. Nous accompagnons de nombreuses entreprises locales, notamment via notre pôle d'<a href="/agence-lead-generation/aix-en-provence/">agence lead generation à Aix-en-Provence</a>, pour cibler les décideurs clés de la région PACA avec ce niveau de précision chirurgicale, garantissant des taux de réponse largement supérieurs aux moyennes du marché.</p>
 
 <h2>3. Le Scraping Google Maps : La mine d'or pour capter les acteurs locaux</h2>
 
@@ -541,15 +535,15 @@ export const blogPosts = [
 
 <p>L'extraction de données depuis Google Maps permet de constituer des bases de prospection locales d'une richesse inouïe. Vous pouvez récupérer la liste exhaustive des "plombiers à Marseille", avec leurs numéros de téléphone, les adresses de leurs sites web, et même leurs notes moyennes et le nombre d'avis qu'ils ont récoltés (un excellent angle d'approche si vous vendez des services de e-réputation, par exemple).</p>
 
-<p>Si votre objectif est de conquérir un marché régional, comme le font avec succès nos clients accompagnés par notre <a href="/agence-lead-generation/nice">agence lead generation à Nice</a> ou notre <a href="/agence-lead-generation/toulon">agence lead generation à Toulon</a>, le scraping de Google Maps couplé à une phase d'enrichissement de données (pour trouver les emails des gérants derrière ces fiches) vous permet de construire un fichier de prospection redoutable, exclusif et parfaitement qualifié sur votre zone de chalandise.</p>
+<p>Si votre objectif est de conquérir un marché régional, comme le font avec succès nos clients accompagnés par notre <a href="/agence-lead-generation/nice/">agence lead generation à Nice</a> ou notre <a href="/agence-lead-generation/toulon/">agence lead generation à Toulon</a>, le scraping de Google Maps couplé à une phase d'enrichissement de données (pour trouver les emails des gérants derrière ces fiches) vous permet de construire un fichier de prospection redoutable, exclusif et parfaitement qualifié sur votre zone de chalandise.</p>
 
 <h2>4. L'Automatisation Sales : Créer une véritable machine de guerre commerciale</h2>
 
 <p>Trouver des clients est le nerf de la guerre. Mais si votre équipe commerciale passe 70% de son temps à faire du copier-coller, à chercher des adresses email à la main, à qualifier des leads froids et à mettre à jour un CRM fastidieux, votre modèle n'est pas scalable (extensible). La clé de la rentabilité en 2026 réside dans l'automatisation des tâches chronophages à faible valeur ajoutée.</p>
 
-<p>L'<a href="/services/automatisation-sales">automatisation sales B2B</a> consiste à interconnecter intelligemment tous vos outils de vente. Imaginez le flux suivant : votre outil de scraping identifie automatiquement un nouveau décideur correspondant à votre cible, une IA analyse son profil et enrichit ses coordonnées (email, téléphone), un outil de cold emailing l'insère dans une séquence personnalisée, et s'il répond positivement, l'automatisation crée instantanément une opportunité dans votre CRM (HubSpot, Pipedrive, etc.) et envoie une notification sur Slack à votre commercial attitré.</p>
+<p>L'<a href="/services/automatisation-sales/">automatisation sales B2B</a> consiste à interconnecter intelligemment tous vos outils de vente. Imaginez le flux suivant : votre outil de scraping identifie automatiquement un nouveau décideur correspondant à votre cible, une IA analyse son profil et enrichit ses coordonnées (email, téléphone), un outil de cold emailing l'insère dans une séquence personnalisée, et s'il répond positivement, l'automatisation crée instantanément une opportunité dans votre CRM (HubSpot, Pipedrive, etc.) et envoie une notification sur Slack à votre commercial attitré.</p>
 
-<p>Le résultat ? Vos commerciaux ne perdent plus une minute en saisie de données. Ils ouvrent leur ordinateur le matin avec un pipeline rempli de rendez-vous qualifiés et peuvent se concentrer à 100% sur ce qu'ils font de mieux : vendre, négocier et closer. C'est exactement cette infrastructure que nous déployons en tant qu'<a href="/agence-lead-generation/marseille">agence lead generation à Marseille</a> pour aider les PME à multiplier leur efficacité commerciale par trois sans recruter un seul commercial supplémentaire.</p>
+<p>Le résultat ? Vos commerciaux ne perdent plus une minute en saisie de données. Ils ouvrent leur ordinateur le matin avec un pipeline rempli de rendez-vous qualifiés et peuvent se concentrer à 100% sur ce qu'ils font de mieux : vendre, négocier et closer. C'est exactement cette infrastructure que nous déployons en tant qu'<a href="/agence-lead-generation/marseille/">agence lead generation à Marseille</a> pour aider les PME à multiplier leur efficacité commerciale par trois sans recruter un seul commercial supplémentaire.</p>
 
 <h2>5. L'Accompagnement SEO : Attirer les clients à soi durablement</h2>
 
@@ -557,7 +551,7 @@ export const blogPosts = [
 
 <p>C'est là qu'intervient l'optimisation pour les moteurs de recherche (SEO). Pendant que vos campagnes de cold email remplissent votre pipeline à court terme, le SEO travaille en arrière-plan pour positionner votre site web sur les requêtes exactes que vos clients potentiels tapent sur Google lorsqu'ils expriment un besoin urgent.</p>
 
-<p>Un <a href="/services/accompagnement-seo">accompagnement SEO</a> expert, axé sur le B2B, repose sur une stratégie de contenu pointue, une architecture technique sans faille et l'acquisition d'autorité (netlinking). En publiant des articles de blog, des études de cas, et des pages piliers qui répondent aux problématiques de vos cibles, vous construisez une machine à leads passive. Un prospect qui trouve votre site par lui-même en cherchant une solution à son problème est un prospect à moitié convaincu, avec un cycle de vente généralement beaucoup plus court qu'un prospect contacté à froid.</p>
+<p>Un <a href="/services/accompagnement-seo/">accompagnement SEO</a> expert, axé sur le B2B, repose sur une stratégie de contenu pointue, une architecture technique sans faille et l'acquisition d'autorité (netlinking). En publiant des articles de blog, des études de cas, et des pages piliers qui répondent aux problématiques de vos cibles, vous construisez une machine à leads passive. Un prospect qui trouve votre site par lui-même en cherchant une solution à son problème est un prospect à moitié convaincu, avec un cycle de vente généralement beaucoup plus court qu'un prospect contacté à froid.</p>
 
 <hr style="margin:4rem 0;border:none;border-top:1px solid #e0e0e0;"/>
 
@@ -568,7 +562,7 @@ export const blogPosts = [
 <p>Chez Nana Intelligence, nous concevons et déployons ces machines de guerre commerciales pour nos clients. Que vous ayez besoin d'un flux régulier de leads via le cold emailing, d'une infrastructure d'automatisation sur-mesure, ou de données B2B d'une qualité inégalée, nous avons les outils et l'expertise pour transformer votre acquisition.</p>
 
 <p style="text-align:center; margin:3rem 0;">
-  <a href="/contact" style="background:#1a1a2e;color:#fff;padding:1.2rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;font-size:1.1rem;">
+  <a href="/contact/" style="background:#1a1a2e;color:#fff;padding:1.2rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;font-size:1.1rem;">
     🎯 Discutons de votre croissance : Obtenir un audit gratuit 30 min
   </a>
 </p>
@@ -583,17 +577,15 @@ export const blogPosts = [
     readTime: "9 MIN",
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "Cold Emailing B2B" },
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "Scraping B2B" },
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "Automatisation Sales B2B" },
-      { "@type": "WebPage", "url": "/agence-lead-generation/marseille", "name": "Agence lead generation Marseille" },
-      { "@type": "WebPage", "url": "/agence-lead-generation/nice", "name": "Agence lead generation Nice" },
-      { "@type": "WebPage", "url": "/blog/1", "name": "Agence de prospection B2B ou commercial interne" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" }
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "Scraping B2B" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation Sales B2B" },
+      { "@type": "WebPage", "url": "/agence-lead-generation/marseille/", "name": "Agence lead generation Marseille" },
+      { "@type": "WebPage", "url": "/agence-lead-generation/nice/", "name": "Agence lead generation Nice" },
+      { "@type": "WebPage", "url": "/blog/1/", "name": "Agence de prospection B2B ou commercial interne" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" }
     ],
     content: `
-<h1>Externaliser sa prospection commerciale B2B : le guide complet 2026</h1>
-
 <p>La question se pose tôt ou tard pour tout dirigeant de PME ou directeur commercial cherchant à accélérer la croissance de son entreprise : faut-il continuer à <strong>externaliser sa prospection commerciale</strong> ou bâtir une équipe interne ? Faire appel à une <strong>agence de prospection commerciale B2B</strong> est devenu, en 2026, un choix stratégique majeur, tant les compétences techniques requises pour générer des leads qualifiés se sont complexifiées (data engineering, cold emailing avancé, intelligence artificielle, automatisation des workflows).</p>
 
 <p>Pourtant, de nombreux dirigeants hésitent. La peur de perdre le contrôle sur leur image de marque, le doute quant à la qualité des rendez-vous générés, ou tout simplement l'incompréhension des modèles tarifaires des agences freinent la décision. Dans ce guide complet, nous décortiquons de A à Z les enjeux de l'externalisation commerciale : quand franchir le cap, comment comparer objectivement les coûts avec l'internalisation, et surtout, quels sont les critères implacables pour bien choisir son agence de génération de leads B2B.</p>
@@ -602,7 +594,7 @@ export const blogPosts = [
 
 <p>Il y a dix ans, prospecter consistait à confier un fichier Excel acheté à un prestataire, un téléphone, et à demander à un commercial junior de passer 80 appels par jour. Ce modèle est aujourd'hui obsolète et extrêmement coûteux. En 2026, la prospection efficace est omnicanale, ultra-personnalisée, et repose sur un socle technique dense.</p>
 
-<p>Pour mener une campagne de <a href="/services/cold-emailing-b2b">cold emailing B2B</a> qui ne termine pas en spam, il faut maîtriser l'échauffement des adresses IP, la configuration des serveurs DNS (SPF, DKIM, DMARC), et l'inbox rotation. Pour cibler les bons décideurs, il faut savoir exploiter des outils de <a href="/services/scraping-b2b">scraping B2B</a> puissants, interroger des API, et enrichir la donnée pour contourner les protections des grands réseaux professionnels. Tout ceci requiert des compétences en "Growth Engineering" qu'un commercial classique, dont le métier est de vendre, ne possède généralement pas (et ne devrait pas avoir à posséder).</p>
+<p>Pour mener une campagne de <a href="/services/cold-emailing-b2b/">cold emailing B2B</a> qui ne termine pas en spam, il faut maîtriser l'échauffement des adresses IP, la configuration des serveurs DNS (SPF, DKIM, DMARC), et l'inbox rotation. Pour cibler les bons décideurs, il faut savoir exploiter des outils de <a href="/services/scraping-b2b/">scraping B2B</a> puissants, interroger des API, et enrichir la donnée pour contourner les protections des grands réseaux professionnels. Tout ceci requiert des compétences en "Growth Engineering" qu'un commercial classique, dont le métier est de vendre, ne possède généralement pas (et ne devrait pas avoir à posséder).</p>
 
 <h2>Quand est-il pertinent d'externaliser sa prospection ?</h2>
 
@@ -611,8 +603,8 @@ export const blogPosts = [
 <ul>
   <li><strong>Vous avez un déficit de leads urgents :</strong> Le recrutement, l'onboarding (intégration) et la formation d'un commercial sédentaire (SDR) prennent en moyenne 3 à 6 mois avant d'atteindre le point de rentabilité. Une agence spécialisée déploie ses campagnes et commence à livrer ses premiers rendez-vous qualifiés en 15 à 20 jours.</li>
   <li><strong>Vos commerciaux seniors (Account Executives) perdent leur temps :</strong> Rien n'est plus destructeur de valeur que de demander à un vendeur expérimenté de chercher des emails sur internet ou de faire du phoning à froid toute la journée. Externaliser le haut du tunnel de vente permet à vos "closers" de se concentrer sur ce qui génère du chiffre d'affaires : la négociation et la signature.</li>
-  <li><strong>Vous voulez tester un nouveau marché sans risque :</strong> Vous souhaitez lancer une nouvelle offre ou attaquer une nouvelle zone géographique (par exemple, vous êtes à Paris et vous souhaitez tester le potentiel via une approche ciblée avec une <a href="/agence-lead-generation/marseille">agence lead generation à Marseille</a> ou une <a href="/agence-lead-generation/nice">agence lead generation à Nice</a>) ? L'agence permet de tester la traction (le Product-Market Fit) avec une infrastructure déjà en place, sans avoir à s'engager sur des contrats de travail à durée indéterminée.</li>
-  <li><strong>Vous manquez de compétences techniques en interne :</strong> L'<a href="/services/automatisation-sales">automatisation sales B2B</a>, la mise en place de flux n8n ou Zapier, le scraping complexe et le nettoyage de données demandent une expertise technique dédiée, souvent trop chère à embaucher à temps plein pour une PME classique.</li>
+  <li><strong>Vous voulez tester un nouveau marché sans risque :</strong> Vous souhaitez lancer une nouvelle offre ou attaquer une nouvelle zone géographique (par exemple, vous êtes à Paris et vous souhaitez tester le potentiel via une approche ciblée avec une <a href="/agence-lead-generation/marseille/">agence lead generation à Marseille</a> ou une <a href="/agence-lead-generation/nice/">agence lead generation à Nice</a>) ? L'agence permet de tester la traction (le Product-Market Fit) avec une infrastructure déjà en place, sans avoir à s'engager sur des contrats de travail à durée indéterminée.</li>
+  <li><strong>Vous manquez de compétences techniques en interne :</strong> L'<a href="/services/automatisation-sales/">automatisation sales B2B</a>, la mise en place de flux n8n ou Zapier, le scraping complexe et le nettoyage de données demandent une expertise technique dédiée, souvent trop chère à embaucher à temps plein pour une PME classique.</li>
 </ul>
 
 <h2>Comparatif des coûts : Agence vs Commercial Interne</h2>
@@ -630,18 +622,18 @@ export const blogPosts = [
 
 <h3>Le coût d'une agence de prospection B2B :</h3>
 <p>Le modèle tarifaire d'une agence sérieuse se situe souvent autour d'un abonnement fixe mensuel garantissant une infrastructure, un volume d'actions ou un certain niveau de service, parfois couplé à une prime au rendez-vous qualifié. En moyenne, l'investissement annuel pour une PME auprès d'une agence experte oscille entre 15 000 € et 30 000 €, selon la complexité et le volume.</p>
-<p>La conclusion comptable est sans appel : pour la phase pure de génération de leads, l'agence coûte 2 à 3 fois moins cher, pour une exécution technique souvent bien supérieure. (Pour approfondir ce débat, vous pouvez consulter notre article dédié : <a href="/blog/1">Agence de prospection B2B ou commercial interne ?</a>).</p>
+<p>La conclusion comptable est sans appel : pour la phase pure de génération de leads, l'agence coûte 2 à 3 fois moins cher, pour une exécution technique souvent bien supérieure. (Pour approfondir ce débat, vous pouvez consulter notre article dédié : <a href="/blog/1/">Agence de prospection B2B ou commercial interne ?</a>).</p>
 
 <h2>Les 5 critères pour bien choisir son agence de génération de leads</h2>
 
 <p>Le marché regorge d'acteurs promettant des "dizaines de leads chauds par jour". Pour éviter les déceptions, voici les critères pour auditer votre future agence avant de signer :</p>
 
 <ol>
-  <li><strong>La transparence sur la data :</strong> L'agence doit être capable de vous expliquer d'où proviennent les données (LinkedIn, Google Maps, bases légales) et comment elle vérifie les emails. Une bonne agence de <a href="/services/scraping-b2b">scraping B2B</a> ne vous cache pas ses méthodes de ciblage.</li>
+  <li><strong>La transparence sur la data :</strong> L'agence doit être capable de vous expliquer d'où proviennent les données (LinkedIn, Google Maps, bases légales) et comment elle vérifie les emails. Une bonne agence de <a href="/services/scraping-b2b/">scraping B2B</a> ne vous cache pas ses méthodes de ciblage.</li>
   <li><strong>Le focus sur la délivrabilité technique :</strong> Demandez à l'agence comment elle protège votre nom de domaine principal. Si elle propose d'envoyer des campagnes directement depuis votre adresse "prenom@votre-entreprise.com" sans mettre en place de domaines miroirs, fuyez immédiatement.</li>
   <li><strong>L'hyper-personnalisation plutôt que le volume :</strong> L'agence doit privilégier des séquences ciblées sur des problématiques métier (Pain Points) plutôt que des blastes génériques de 5000 emails. Demandez à voir des exemples de copywriting récents (modèles d'emails).</li>
   <li><strong>La définition commune du "Lead Qualifié" :</strong> Un lead qui accepte un rendez-vous pour "se tenir informé" n'a aucune valeur. Définissez ensemble ce qu'est un SQL (Sales Qualified Lead) : taille d'entreprise, pouvoir de décision de l'interlocuteur, et expression claire d'un intérêt pour votre solution.</li>
-  <li><strong>L'intégration avec vos outils (CRM) :</strong> L'agence ne doit pas se contenter de vous envoyer des listes Excel. Elle doit être capable de brancher ses systèmes à votre outil via l'<a href="/services/automatisation-sales">automatisation sales</a>, pour que les leads atterrissent directement et proprement dans votre pipeline (Pipedrive, HubSpot, Salesforce).</li>
+  <li><strong>L'intégration avec vos outils (CRM) :</strong> L'agence ne doit pas se contenter de vous envoyer des listes Excel. Elle doit être capable de brancher ses systèmes à votre outil via l'<a href="/services/automatisation-sales/">automatisation sales</a>, pour que les leads atterrissent directement et proprement dans votre pipeline (Pipedrive, HubSpot, Salesforce).</li>
 </ol>
 
 <h2>Comment garantir le succès de la collaboration ?</h2>
@@ -657,7 +649,7 @@ export const blogPosts = [
 <p>Chez Nana Intelligence, nous nous positionnons comme l'extension naturelle, technique et stratégique de votre département commercial. Avec une approche résolument moderne, sans engagement long terme abusif et focalisée sur le retour sur investissement.</p>
 
 <p style="text-align:center; margin:3rem 0;">
-  <a href="/contact" style="background:#1a1a2e;color:#fff;padding:1.2rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;font-size:1.1rem;">
+  <a href="/contact/" style="background:#1a1a2e;color:#fff;padding:1.2rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;font-size:1.1rem;">
     🎯 Construisons votre machine à leads : Obtenir un audit gratuit 30 min
   </a>
 </p>
@@ -672,11 +664,10 @@ export const blogPosts = [
     readTime: "3 MIN",
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/agence-lead-generation/marseille", "name": "agence lead generation Marseille" },
-      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "cold emailing B2B" },
+      { "@type": "WebPage", "url": "/agence-lead-generation/marseille/", "name": "agence lead generation Marseille" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "cold emailing B2B" },
     ],
     content: `
-<h1>Lead Generation Marseille B2B : Stratégie gagnante pour les PME de la région PACA</h1>
 <p>La prospection B2B à Marseille présente des particularités : un tissu dense de PME industrielles, de services nautiques, de tourisme d’affaires et de technologies. Pour sortir du lot, il ne suffit pas d’envoyer des e‑mails génériques ; il faut une approche hyper‑ciblée, soutenue par des données précises et des scénarios d’automatisation qui résonnent avec la culture d’affaires du Sud.</p>
 <h2>1. Comprendre le tissu économique marseillais</h2>
 <p>Le premier pas consiste à cartographier les décideurs : dirigeants de PME de 5 à 50 salariés, responsables croissance dans les secteurs du shipping, de la logistique portuaire, de la tech médicale et du tourisme d’affaires. En utilisant le scraping de sources locales (Chambre de commerce, réseaux professionnels LinkedIn groupes « Business Provence‑Alpes‑Côte d’Azur », événements comme le MIPIM ou le Salon nautique), on récupère des listes de contacts à jour, incluant fonction, taille d’entreprise et récente activité.</p>
@@ -691,7 +682,7 @@ export const blogPosts = [
 <h2>6. Intégrer le scraping pour renouveler le pipeline</h2>
 <p>Le scraping n’est pas une opération ponctuelle. Chaque semaine, un script actualise la base avec les nouveaux dirigeants nommés, les récents financements levés ou les projets publics publiés sur la plateforme de la métropole. Cela garantit que votre équipe commerciale ne travaille jamais sur des données obsolètes.</p>
 <p>En combinant ces cinq leviers, une PME marseillaise peut passer de quelques leads qualifiés par mois à un pipeline régulier de 20‑30 opportunités, tout en réduisant le temps passé par les commerciaux sur la prospection manuelle.</p>
-<p>Prêt à tester cette approche sur votre marché ? <a href="/contact" name="Contactez Nana Intelligence">Contactez-nous</a> pour un audit gratuit de votre processus de prospection et découvrez comment nous pouvons remplir votre agenda de rendez‑vous qualifiés sans augmenter votre charge de travail.</p>
+<p>Prêt à tester cette approche sur votre marché ? <a href="/contact/" name="Contactez Nana Intelligence">Contactez-nous</a> pour un audit gratuit de votre processus de prospection et découvrez comment nous pouvons remplir votre agenda de rendez‑vous qualifiés sans augmenter votre charge de travail.</p>
     `
   },
   {
@@ -703,12 +694,11 @@ export const blogPosts = [
     readTime: "3 MIN",
     image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "Automatisation sales B2B" },
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "Scraping B2B" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation sales B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "Scraping B2B" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
-<h1>Actualité IA : les tendances majeures de l’automatisation en 2026</h1>
 <p>Le paysage de l’intelligence artificielle et de l’automatisation connaît une mutation majeure : on passe de l’ère des simples assistants textuels et des expérimentations isolées (POC) à une phase de maturité opérationnelle et d’autonomie agentique.</p>
 <p>Voici les points clés de la veille technologique et stratégique du moment :</p>
 <h2>1. Tendances majeures : De l’automatisation à l’autonomie</h2>
@@ -724,10 +714,10 @@ export const blogPosts = [
 <li><strong>Make</strong> : Prisé pour sa flexibilité visuelle et sa popularité en Europe.</li>
 <li><strong>n8n</strong> : S’affirme comme l’option open‑source incontournable, notamment grâce à ses nœuds avancés dédiés aux agents IA.</li>
 </ul>
-<p>Pour les PME souhaitant aller plus loin, l’intégration d’un orchestrateur comme <a href="/services/automatisation-sales">automatisation sales B2B</a> permet de connecter l’IA à votre CRM et de déclencher des actions commerciales en temps réel.</p>
+<p>Pour les PME souhaitant aller plus loin, l’intégration d’un orchestrateur comme <a href="/services/automatisation-sales/">automatisation sales B2B</a> permet de connecter l’IA à votre CRM et de déclencher des actions commerciales en temps réel.</p>
 <h2>3. Le tournant de la Réglementation (IA Act)</h2>
 <p>L’actualité réglementaire est marquée par la mise en application des exigences de transparence de l’IA Act en Europe, imposant aux organisations une traçabilité et une gouvernance strictes sous peine de sanctions financières importantes. La conformité est devenue un impératif pour tout projet d’automatisation impliquant de la donnée sensible ou une décision automatisée.</p>
-<p>Parallèlement, le <a href="/services/scraping-b2b">scraping B2B</a> enrichi par l’IA permet de constituer des bases de prospects à jour tout en respectant les nouvelles exigences de traçabilité des données.</p>
+<p>Parallèlement, le <a href="/services/scraping-b2b/">scraping B2B</a> enrichi par l’IA permet de constituer des bases de prospects à jour tout en respectant les nouvelles exigences de traçabilité des données.</p>
 <h2>4. Implications pour les PME B2B</h2>
 <p>Pour les dirigeants de PME B2B, ces évolutions signifient qu’il faut désormais :</p>
 <ul>
@@ -748,12 +738,10 @@ export const blogPosts = [
     readTime: "4 MIN",
     image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/agence-lead-generation/marseille", "name": "Agence lead generation Marseille" },
-      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "Cold emailing B2B" },
+      { "@type": "WebPage", "url": "/agence-lead-generation/marseille/", "name": "Agence lead generation Marseille" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "Cold emailing B2B" },
     ],
     content: `
-<h1>Agence lead generation Marseille : comment choisir le partenaire qui booste vos ventes B2B</h1>
-
 <p>Vous dirigez une PME située dans la région Provence‑Alpes‑Côte d’Azur et vous peinez à remplir votre agenda de rendez‑vous qualifiés ? Vous avez déjà testé le cold emailing, le LinkedIn outreach ou même quelques campagnes publicitaires, mais les résultats restent en deçà de vos ambitions ? Dans ce contexte, faire appel à une <strong>agence lead generation Marseille</strong> peut devenir le levier décisif pour transformer votre prospection en une machine à rendez‑vous.</p>
 
 <p>Mais attention : toutes les agences ne se valent pas. Certaines promettent des volumes de leads impressionnants, puis livrent des contacts non qualifiés, voire obsolètes. D’autres appliquent des méthodes trop agressives qui nuisent à votre image de marque. Pour éviter ces écueils, il faut savoir <em>quels critères examiner</em> avant de signer un contrat.</p>
@@ -825,7 +813,7 @@ export const blogPosts = [
 <p>En suivant ces sept étapes, vous maximisez vos chances de dénicher une <em>agence lead generation Marseille</em> qui ne se contente pas de gonfler vos listes de contacts, mais qui alimente véritablement votre pipeline de ventes avec des prospects prêts à discuter. Le résultat ? Plus de rendez‑vous qualifiés, un cycle de vente raccourci et, finalement, une croissance de votre chiffre d’affaires.</p>
 
 <hr>
-<p><strong>Prêt à faire décoller votre prospection B2B à Marseille ?</strong> Demandez dès maintenant un <a href="/contact">audit gratuit de votre stratégie de lead generation</a> ou prenez rendez‑vous pour un appel découverte avec nos experts Nana Intelligence.</p>
+<p><strong>Prêt à faire décoller votre prospection B2B à Marseille ?</strong> Demandez dès maintenant un <a href="/contact/">audit gratuit de votre stratégie de lead generation</a> ou prenez rendez‑vous pour un appel découverte avec nos experts Nana Intelligence.</p>
     `
   },
   {
@@ -837,11 +825,10 @@ export const blogPosts = [
     readTime: "4 MIN",
     image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services", "name": "Nos services de lead generation B2B" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/services/", "name": "Nos services de lead generation B2B" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
-<h1>Cold emailing B2B : les scripts qui convertissent en 2026</h1>
 <p>Le cold emailing B2B reste, en 2026, l’un des leviers les plus rentables pour générer des leads qualifiés, à condition de maîtriser l’art du message qui capte l’attention dès la première ligne. Dans cet article, nous dévoilons les <strong>scripts éprouvés</strong> qui permettent d’obtenir des taux de réponse supérieurs à 20 %, tout en restant éloigné des filtres anti‑spam.</p>
 
 <h2>Pourquoi le cold emailing B2B fonctionne encore aujourd’hui</h2>
@@ -867,7 +854,7 @@ export const blogPosts = [
 <br>Êtes‑vous disponible mardi ou jeudi prochain pour un échange rapide ?
 <br>Bien cordialement,
 <br>{{Votre Prénom}} {{Votre Nom}}
-<br><a href=\\"/services/cold-emailing-b2b\\">Notre service de cold emailing B2B</a></p>
+<br><a href="/services/cold-emailing-b2b/">Notre service de cold emailing B2B</a></p>
   </li>
   <li><strong>Script B – L’approche « question ouverte »</strong>
     <p>Objet : « Quick question sur votre prospection {{Mois}} »</p>
@@ -876,22 +863,22 @@ export const blogPosts = [
 <br>Serait‑il utile d’échanger 10 minutes cette semaine pour voir si notre approche pourrait vous apporter des résultats similaires ?
 <br>À bientôt,
 <br>{{Votre Prénom}} {{Votre Nom}}
-<br><a href=\\"/services/automatisation-sales\\">L’automatisation des ventes B2B</a></p>
+<br><a href="/services/automatisation-sales/">L’automatisation des ventes B2B</a></p>
   </li>
 </ul>
 
 <h2>Éviter les pièges du spam</h2>
 <p>Même le meilleur script peut être filtré si vous ne respectez pas quelques bonnes pratiques :</p>
 <ul>
-  <li><strong>Authentifiez votre domaine</b> : SPF, DKIM, DMARC en place.</li>
-  <li><strong>Limitez les envois</b> : pas plus de 30‑40 e‑mails/jour par adresse d’envoi pour préserver votre réputation.</li>
-  <li><strong>Variez vos textes</b> : utilisez des spintax légers ou plusieurs variantes de sujet et de corps pour éviter les empreintes digitales trop similaires.</li>
-  <li><strong>Surveillez les métriques</b> : taux d’ouverture, de réponse et de plainte. Un taux de plainte supérieur à 0,1 % nécessite une révision immédiate de votre liste.</li>
+  <li><strong>Authentifiez votre domaine</strong> : SPF, DKIM, DMARC en place.</li>
+  <li><strong>Limitez les envois</strong> : pas plus de 30‑40 e‑mails/jour par adresse d’envoi pour préserver votre réputation.</li>
+  <li><strong>Variez vos textes</strong> : utilisez des spintax légers ou plusieurs variantes de sujet et de corps pour éviter les empreintes digitales trop similaires.</li>
+  <li><strong>Surveillez les métriques</strong> : taux d’ouverture, de réponse et de plainte. Un taux de plainte supérieur à 0,1 % nécessite une révision immédiate de votre liste.</li>
 </ul>
 
 <h2>Appel à l’action</h2>
-<p>Vous voulez tester ces scripts sur votre propre prospect list ? Nous proposons un <strong>audit gratuit de votre stratégie de cold emailing B2B</b> incluant une analyse de votre livrabilité, un cadre de personnalisation et un plan de séquence de 4 e‑mails.</p>
-<p><a href=\\"/services/cold-emailing-b2b\\">Demandez votre audit gratuit</a> ou <a href=\\"/contact\\">contactez-nous directement</a> pour discuter de vos objectifs de prospection.</p>
+<p>Vous voulez tester ces scripts sur votre propre prospect list ? Nous proposons un <strong>audit gratuit de votre stratégie de cold emailing B2B</strong> incluant une analyse de votre livrabilité, un cadre de personnalisation et un plan de séquence de 4 e‑mails.</p>
+<p><a href="/services/cold-emailing-b2b/">Demandez votre audit gratuit</a> ou <a href="/contact/">contactez-nous directement</a> pour discuter de vos objectifs de prospection.</p>
 <hr>
 <p><em>Article rédigé par l’équipe SEO &amp; Contenu de Nana Intelligence – août 2025.</em></p>
     `
@@ -905,17 +892,16 @@ export const blogPosts = [
     readTime: "4 MIN",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services", "name": "Nos services de lead generation B2B" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/services/", "name": "Nos services de lead generation B2B" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
-<h1>Lead Generation LinkedIn B2B 2026 : stratégies éprouvées pour multiplier vos rendez-vous qualifiés</h1>
 <p>En 2026, LinkedIn reste le terrain de jeu privilégié des dirigeants de PME B2B qui cherchent à remplir leur calendrier de rendez-vous qualifiés sans y passer leurs journées. Pourtant, beaucoup peinent à transformer leurs connexions en opportunités concrètes. Dans cet article, nous dévoilons le cadre opérationnel qui a permis à nos clients d’augmenter leurs taux de conversion de 30 % en moins de trois mois, en combinant ciblage granulaire, séquences de messages personnalisés et automatisation intelligente.</p>
 <h2>1. Comprendre le nouveau algorithme de LinkedIn</h2>
 <p>L’algorithme de LinkedIn a évolué : il privilégie désormais les interactions authentiques et les contenus qui génèrent des échanges réels plutôt que les simples j’aime. Pour tirer parti de ce changement, il faut privilégier la qualité du réseau au détriment du volume. Commencez par nettoyer vos contacts : supprimez les profils inactifs ou hors cible, puis segmentez votre audience par secteur, taille d’entreprise et fonction (dirigeant, responsable croissance, décideur IT).</p>
 <p>Une fois votre base nettoyée, utilisez le filtre « Pages vues récemment » pour identifier les prospects qui ont consulté votre profil ou votre page entreprise au cours des 30 derniers jours. Ces signaux d’intérêt sont des opportunités en or pour lancer une approche personnalisée.</p>
 <h2>2. Construire une liste de prospects hyper‑ciblée</h2>
-<p>La prospection efficace commence par une liste impeccable. Utilisez le <strong>scraping B2B</strong> (ou notre service de <a href="/services/scraping-b2b">scraping B2B sur mesure</a>) pour extraire les données clés : nom, fonction, entreprise, taille, localisation, technologie utilisée et derniers posts partagés. Enrichissez ces données avec des informations financières (chiffre d’affaires, levées de fonds) afin de prioriser les comptes à fort potentiel.</p>
+<p>La prospection efficace commence par une liste impeccable. Utilisez le <strong>scraping B2B</strong> (ou notre service de <a href="/services/scraping-b2b/">scraping B2B sur mesure</a>) pour extraire les données clés : nom, fonction, entreprise, taille, localisation, technologie utilisée et derniers posts partagés. Enrichissez ces données avec des informations financières (chiffre d’affaires, levées de fonds) afin de prioriser les comptes à fort potentiel.</p>
 <p>Segmentez ensuite votre liste en trois niveaux : <em>chaud</i> (interaction récente), <em>tiède</i> (profil correspondant mais pas d’activité récente) et <em>froid</i> (prospects purs). Cette segmentation permettra d’adapter le ton et la profondeur de vos séquences.</p>
 <h2>3. Rédiger des séquences de messages qui convertissent</h2>
 <p>Une séquence réussie sur LinkedIn comporte généralement trois à quatre touchpoints :</p>
@@ -927,7 +913,7 @@ export const blogPosts = [
 </ol>
 <p>Chaque message doit rester sous 300 caractères pour garantir une lecture rapide sur mobile. Utilisez des variantes de texte pour éviter la lassitude et tester ce qui résonne le mieux.</p>
 <h2>4. Automatiser sans perdre l’humain</h2>
-<p>L’automatisation ne signifie pas envoyer du spam. Elle sert à assurer la régularité des suivis et à libérer du temps pour la personnalisation initiale. Nos workflows d’<a href="/services/automatisation-sales">automatisation des ventes</a> (basés sur n8n et des déclencheurs LinkedIn) permettent :</p>
+<p>L’automatisation ne signifie pas envoyer du spam. Elle sert à assurer la régularité des suivis et à libérer du temps pour la personnalisation initiale. Nos workflows d’<a href="/services/automatisation-sales/">automatisation des ventes</a> (basés sur n8n et des déclencheurs LinkedIn) permettent :</p>
 <ul>
 <li>Déclencher une séquence dès qu’un profil accepte votre demande de connexion.</li>
 <li>Programmer des relances à J+3, J+7 et J+14 avec des variantes de message testées.</li>
@@ -938,7 +924,7 @@ export const blogPosts = [
 <p>Suivez les indicateurs clés : taux d’acceptation des demandes de connexion, taux de réponse aux messages, taux de conversion en rendez-vous et coût par rendez-vous fixé. Utilisez le tableau de bord LinkedIn Sales Navigator ou exportez les données vers votre CRM pour un suivi granulaire.</p>
 <p>Analysez les variantes d’objet, d’accroche et d’offre de valeur grâce au A/B testing. Itérez toutes les deux semaines en conservant ce qui fonctionne et en éliminant les points de friction.</p>
 <h2>6. Intégrer LinkedIn à votre écosystème de prospection</h2>
-<p>LinkedIn ne doit pas être un canal isolé. Reliez-le à vos campagnes de <a href="/services/cold-emailing-b2b">cold emailing B2B</a> pour créer un effet de levier : un premier contact sur LinkedIn suivi d’un email personnalisé augmente significativement les chances de réponse.</p>
+<p>LinkedIn ne doit pas être un canal isolé. Reliez-le à vos campagnes de <a href="/services/cold-emailing-b2b/">cold emailing B2B</a> pour créer un effet de levier : un premier contact sur LinkedIn suivi d’un email personnalisé augmente significativement les chances de réponse.</p>
 <p>De même, les données récoltées sur LinkedIn alimentent vos scénarios de <strong>scraping B2B</strong> et vos workflows d’<strong>automatisation sales</strong>, créant un cercle vertueux où chaque point de contact enrichit le suivant.</p>
 <h2>Conclusion : passez à l’action dès aujourd’hui</h2>
 <p>La génération de leads LinkedIn en 2026 n’est plus une question de volume, mais de pertinence et de timing. En combinant un ciblage précis, des séquences de messages éprouvées et une automatisation intelligente, vous transformez chaque connexion en une opportunité de rendez-vous qualifié.</p>
@@ -954,12 +940,12 @@ export const blogPosts = [
     readTime: "6 MIN",
     image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "service scraping B2B" },
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "automatisation sales" },
-      { "@type": "WebPage", "url": "/blog/icp-b2b-methode-client-ideal", "name": "ICP en B2B : la méthode pour définir votre client idéal" },
-      { "@type": "WebPage", "url": "/blog/guide-cold-emailing-b2b-2026", "name": "guide cold emailing 2026" },
-      { "@type": "WebPage", "url": "/blog/lead-generation-linkedin-b2b-2026-methode-agenda-sans-spammer", "name": "Lead Generation LinkedIn B2B 2026" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "service scraping B2B" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "automatisation sales" },
+      { "@type": "WebPage", "url": "/blog/7/", "name": "ICP en B2B : la méthode pour définir votre client idéal" },
+      { "@type": "WebPage", "url": "/blog/2/", "name": "guide cold emailing 2026" },
+      { "@type": "WebPage", "url": "/blog/6/", "name": "Lead Generation LinkedIn B2B 2026" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
 <h2>Pourquoi la plupart des PME n'ont pas de « génération de leads automatisée » — juste de l'automatisation de tâches</h2>
@@ -975,7 +961,7 @@ export const blogPosts = [
   <li>Les visiteurs de votre site identifiés par reverse IP</li>
   <li>Les abonnés à la newsletter de vos concurrents (via LinkedIn Sales Nav + PhantomBuster)</li>
 </ul>
-<p>Notre service <a href="/services/scraping-b2b">scraping B2B</a> livre des listes enrichies (email pro vérifié, téléphone direct, taille boîte, stack tech) — prêtes à entrer dans la machine. Pas de nettoyage manuel. Pas de rebond à 40 %.</p>
+<p>Notre service <a href="/services/scraping-b2b/">scraping B2B</a> livre des listes enrichies (email pro vérifié, téléphone direct, taille boîte, stack tech) — prêtes à entrer dans la machine. Pas de nettoyage manuel. Pas de rebond à 40 %.</p>
 
 <h3>2. L'enrichissement en cascade : ne pas deviner, savoir</h3>
 <p>Un email pro, c'est bien. L'email + le téléphone direct + le poste exact + la dernière actualité de la boîte + le technographic (Salesforce ? HubSpot ? Pipedrive ?), c'est ce qui permet une personnalisation qui ne sent pas le template. On enchaîne : Dropcontact → Kaspr → SocieteInfo → Clearbit (pour le technographic). Coût marginal par lead enrichi : ~0,15 €. Retour : +35 % de taux de réponse sur le premier touch.</p>
@@ -993,17 +979,17 @@ export const blogPosts = [
   <li>Jour 8 : Appel « surprise » — pas de script, une question ouverte</li>
   <li>Jour 12 : Email 3 — Break-up email (dernier tour de piste, CTA doux)</li>
 </ol>
-<p>Tout ça géré par <a href="/services/automatisation-sales">automatisation sales</a> via n8n + HubSpot/Pipedrive. Pas de copier-coller. Pas d'oubli. Le commercial ne reçoit que les réponses positives.</p>
+<p>Tout ça géré par <a href="/services/automatisation-sales/">automatisation sales</a> via n8n + HubSpot/Pipedrive. Pas de copier-coller. Pas d'oubli. Le commercial ne reçoit que les réponses positives.</p>
 
 <h3>5. La synchronisation CRM temps réel : la donnée propre, tout de suite</h3>
 <p>Le commercial ouvre sa fiche contact : tout y est. Source du lead, score, historique d'engagement (emails ouverts, liens cliqués, posts likés), prochaines actions suggérées par l'IA. Plus de « tiens, je sais plus d'où vient ce lead ». Plus de doublons. Le pipeline est fiable, le forecasting devient crédible.</p>
 
 <h2>Les 4 pièges qui tuent votre ROI (et comment les éviter)</h2>
 <h3>Piège 1 : « Je mets 10 000 contacts dans la machine et j'attends »</h3>
-<p>Volume ≠ qualité. 10 000 contacts mal ciblés = 10 000 spam complaints, domaine brûlé, deliverability au tapis. Solution : commencer par 200 comptes ultra-qualifiés (ICP validé), tester, mesurer, scaler. Notre guide <a href="/blog/icp-b2b-methode-client-ideal">ICP en B2B : la méthode pour définir votre client idéal</a> pose les bases.</p>
+<p>Volume ≠ qualité. 10 000 contacts mal ciblés = 10 000 spam complaints, domaine brûlé, deliverability au tapis. Solution : commencer par 200 comptes ultra-qualifiés (ICP validé), tester, mesurer, scaler. Notre guide <a href="/blog/7/">ICP en B2B : la méthode pour définir votre client idéal</a> pose les bases.</p>
 
 <h3>Piège 2 : Négliger la deliverability technique</h3>
-<p>SPF, DKIM, DMARC, warm-up progressif, rotation d'IP, domaines secondaires (marque.fr → marque-outreach.fr). Sans ça, vos séquences finissent en spam avant même d'être ouvertes. On a vu des domaines principaux blacklistés en 3 semaines parce qu'on a « oublié » le warm-up. Lisez <a href="/blog/guide-cold-emailing-b2b-2026">notre guide cold emailing 2026</a> pour le checklist complet.</p>
+<p>SPF, DKIM, DMARC, warm-up progressif, rotation d'IP, domaines secondaires (marque.fr → marque-outreach.fr). Sans ça, vos séquences finissent en spam avant même d'être ouvertes. On a vu des domaines principaux blacklistés en 3 semaines parce qu'on a « oublié » le warm-up. Lisez <a href="/blog/2/">notre guide cold emailing 2026</a> pour le checklist complet.</p>
 
 <h3>Piège 3 : Personnalisation « {{prenom }} » = zéro personnalisation</h3>
 <p>Vraie personnalisation = « J'ai vu que vous veniez de recruter 3 SDR — ça veut dire que vous structurez l'outbound. La plupart de nos clients à ce stade galèrent sur la data quality. Voici comment on a aidé [Client similaire] à diviser par 3 leur coût par RDV. » Ça demande de la data (recrutement, actualité, technographic). C'est pour ça que l'enrichissement en cascade (étape 2) est non-négociable.</p>
@@ -1024,7 +1010,7 @@ export const blogPosts = [
     <tr style="background:#f8f9fa;">
       <td style="padding:0.75rem;border:1px solid #ddd;">Scraping + enrichissement (200 leads/mois)</td>
       <td style="padding:0.75rem;border:1px solid #ddd;">300-500 €</td>
-      <td style="padding:0.75rem;border:1px solid #ddd;">Interne ou <a href="/services/scraping-b2b">externalisé</a></td>
+      <td style="padding:0.75rem;border:1px solid #ddd;">Interne ou <a href="/services/scraping-b2b/">externalisé</a></td>
     </tr>
     <tr>
       <td style="padding:0.75rem;border:1px solid #ddd;">Outils séquencing (Lemlist/Smartlead/Instantly)</td>
@@ -1064,8 +1050,8 @@ export const blogPosts = [
 
 <h2>Prêt à arrêter de prospecter à la main ?</h2>
 <p>La génération de leads B2B automatisée n'est pas de la magie. C'est de l'ingénierie : data propre, process rodés, outils connectés, deliverability blindée. Ça se construit. Ça se mesure. Ça s'optimise.</p>
-<p>Vous voulez voir à quoi ressemble votre machine sur mesure ? <strong><a href="/contact">On en parle 30 min (audit gratuit, sans engagement)</a></strong>. Vous repartez avec un plan d'action clair — et la certitude que votre prochain RDV qualifié ne dépendra plus de votre capacité à envoyer des emails à 22h le dimanche.</p>
-<p><em>P.S. : Si vous préférez tester l'approche LinkedIn d'abord, notre article <a href="/blog/lead-generation-linkedin-b2b-2026-methode-agenda-sans-spammer">Lead Generation LinkedIn B2B 2026</a> détaille la méthode étape par étape.</em></p>
+<p>Vous voulez voir à quoi ressemble votre machine sur mesure ? <strong><a href="/contact/">On en parle 30 min (audit gratuit, sans engagement)</a></strong>. Vous repartez avec un plan d'action clair — et la certitude que votre prochain RDV qualifié ne dépendra plus de votre capacité à envoyer des emails à 22h le dimanche.</p>
+<p><em>P.S. : Si vous préférez tester l'approche LinkedIn d'abord, notre article <a href="/blog/6/">Lead Generation LinkedIn B2B 2026</a> détaille la méthode étape par étape.</em></p>
     `
   },
   {
@@ -1077,9 +1063,9 @@ export const blogPosts = [
     readTime: "4 MIN",
     image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "Automatisation sales B2B" },
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "Scraping B2B" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation sales B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "Scraping B2B" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
 <p>Il y a encore deux ans, « utiliser l'IA » signifiait ouvrir un chatbot et lui taper un prompt. En 2026, le paysage a basculé : l'intelligence artificielle n'est plus un outil que l'on consulte, c'est une équipe que l'on orchestre. On parle désormais d'<strong>orchestration multi-agents</strong> : des agents IA spécialisés qui communiquent entre eux, se répartissent les tâches et exécutent des workflows complets sur plusieurs jours, sans que vous ayez à tout piloter à la main.</p>
@@ -1094,7 +1080,7 @@ export const blogPosts = [
 <h2>2. Comment fonctionne l'orchestration multi-agents</h2>
 <p>Concrètement, un orchestrateur décompose un objectif complexe en plusieurs tâches, les assigne aux bons agents, puis vérifie les résultats intermédiaires avant de lancer l'étape suivante. L'agent de recherche collecte les données, l'agent de rédaction transforme ces données en message personnalisé, l'agent de conformité valide que tout est conforme, et l'agent de qualification décide qui mérite une relance ou un appel.</p>
 
-<p>Cette chaîne est le cœur de la prospection moderne. Elle s'appuie sur les mêmes briques que celles que nous déployons chez Nana Intelligence : un socle de <a href="/services/automatisation-sales">automatisation sales B2B</a> qui connecte l'IA à votre CRM, et une alimentation en données propres grâce au <a href="/services/scraping-b2b">scraping B2B</a>. Sans données vérifiées en amont, aucun agent ne peut bien travailler.</p>
+<p>Cette chaîne est le cœur de la prospection moderne. Elle s'appuie sur les mêmes briques que celles que nous déployons chez Nana Intelligence : un socle de <a href="/services/automatisation-sales/">automatisation sales B2B</a> qui connecte l'IA à votre CRM, et une alimentation en données propres grâce au <a href="/services/scraping-b2b/">scraping B2B</a>. Sans données vérifiées en amont, aucun agent ne peut bien travailler.</p>
 
 <h2>3. Les frameworks à connaître (sans jargon inutile)</h2>
 <p>Le marché des frameworks d'agents s'est structuré très vite. Côté open source et flexibilité, <strong>LangGraph</strong> et <strong>CrewAI</strong> dominent les débats : ils permettent de définir des équipes d'agents, leurs rôles et leurs dépendances, avec un contrôle fin sur chaque étape. Côté entreprise, les plateformes historiques de RPA comme <strong>UiPath</strong> et <strong>Blue Prism</strong> marient désormais l'automatisation classique des processus avec des agents intelligents — un choix rassurant quand l'infrastructure existante est déjà lourde.</p>
@@ -1128,9 +1114,9 @@ export const blogPosts = [
     readTime: "5 MIN",
     image: "https://images.unsplash.com/photo-1543286386-2e659306cd6c?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "scraping B2B" },
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "automatisation de vos workflows commerciaux" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez-nous pour un audit gratuit" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "scraping B2B" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "automatisation de vos workflows commerciaux" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez-nous pour un audit gratuit" },
     ],
     content: `
 <h2>Pourquoi votre veille manuelle vous fait perdre des opportunités</h2>
@@ -1145,7 +1131,7 @@ export const blogPosts = [
 <ul>
 <li><strong>Flux RSS ciblés</strong> : configurez des flux sur les blogs de vos concurrents, les sites spécialisés de votre industrie et les rubriques presse pertinentes. Un seul outil comme Feedly ou Inoreader centralise tout.</li>
 <li><strong>Alertes de mots-clés</strong> : Google Alerts reste utile, mais pour aller plus loin, des plateformes comme Perplexity ou Phantombuster surveillent les réseaux sociaux et les forums en temps réel.</li>
-<li><strong>Scraping planifié</strong> : pour les sites sans flux RSS, un <a href="/services/scraping-b2b">scraping B2B</a> automatisé extrait les nouvelles pages selon un calendrier défini. C’est exactement ce qu’on déploie chez Nana Intelligence pour nos clients.</li>
+<li><strong>Scraping planifié</strong> : pour les sites sans flux RSS, un <a href="/services/scraping-b2b/">scraping B2B</a> automatisé extrait les nouvelles pages selon un calendrier défini. C’est exactement ce qu’on déploie chez Nana Intelligence pour nos clients.</li>
 </ul>
 <p>L’astuce : ne collectez PAS tout. Définissez 5 à 10 mots-clés hyper-ciblés (nom de concurrent, technologie, réglementation) plutôt que 50 termes vagues. La précision bat toujours le volume en veille.</p>
 
@@ -1163,7 +1149,7 @@ export const blogPosts = [
 <ul>
 <li><strong>Slack ou Microsoft Teams</strong> : création d’un canal #veille-ia où le résumé quotidien arrive automatiquement. Votre équipe commerciale lit ça en 2 minutes le matin.</li>
 <li><strong>E-mail digest</strong> : un résumé hebdomadaire envoyé aux décideurs qui n’ont pas le temps de suivre en temps réel.</li>
-<li><strong>WordPress ou CMS</strong> : publication automatique de bilans sectoriels sur votre blog, pour booster votre <a href="/services/automatisation-sales">automatisation de vos workflows commerciaux</a> et votre SEO simultanément.</li>
+<li><strong>WordPress ou CMS</strong> : publication automatique de bilans sectoriels sur votre blog, pour booster votre <a href="/services/automatisation-sales/">automatisation de vos workflows commerciaux</a> et votre SEO simultanément.</li>
 </ul>
 <p>L’outil d’orchestration est le glue qui relie tout ça. Make.com offre 1000+ intégrations pour des workflows visuels. n8n, en open source, est idéal si vous voulez un contrôle total et un hébergement sur-mesure.</p>
 
@@ -1187,8 +1173,8 @@ export const blogPosts = [
 
 <h2>Passez de la veille subie à la veille stratégique</h2>
 <p>Automatiser votre veille avec l’IA n’est pas un gadget technologique — c’est un avantage compétitif mesurable. Nos clients qui ont mis en place ce système rapportent une réduction de 90% du temps passé en veille et, surtout, des décisions commerciales plus rapides basées sur des données fraîches.</p>
-<p>Vous voulez qu’on construise ce système pour votre entreprise ? Chez Nana Intelligence, on conçoit des architectures de veille sur-mesure intégrées à votre <a href="/services/automatisation-sales">workflow commercial complet</a>.</p>
-<p><strong><a href="/contact">Contactez-nous pour un audit gratuit</a></strong> — on analyse vos sources actuelles et on vous propose un plan d’automatisation adapté à votre secteur en 30 minutes.</p>
+<p>Vous voulez qu’on construise ce système pour votre entreprise ? Chez Nana Intelligence, on conçoit des architectures de veille sur-mesure intégrées à votre <a href="/services/automatisation-sales/">workflow commercial complet</a>.</p>
+<p><strong><a href="/contact/">Contactez-nous pour un audit gratuit</a></strong> — on analyse vos sources actuelles et on vous propose un plan d’automatisation adapté à votre secteur en 30 minutes.</p>
     `
   },
   {
@@ -1200,13 +1186,11 @@ export const blogPosts = [
     readTime: "7 MIN",
     image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "Automatisation sales B2B" },
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "Scraping B2B" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation sales B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "Scraping B2B" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
-<h1>Agents IA autonomes en B2B : la gouvernance et l'hygiène des données, les 2 piliers oubliés de l'automatisation</h1>
-
 <p>Vous avez lu les tendances. Vous savez que les agents IA autonomes révolutionnent la prospection B2B en 2026. Vous avez peut-être déjà lancé un premier workflow — un agent qui enrichit des leads, rédige des séquences de cold email, ou orchestre plusieurs outils en arrière-plan. Tout semble fonctionner… jusqu'au jour où un agent envoie un email au mauvais contact, expose des données clients, ou génère une action non désirée que personne n'a validée.</p>
 
 <p>La réalité, c'est que <strong>90 % des projets d'automatisation IA en PME échouent non pas à cause de la technologie, mais à cause du manque de gouvernance et de la mauvaise qualité des données en amont</strong>. L'actualité IA de 2026 ne parle pas assez de ça — et c'est pourtant le vrai sujet si vous voulez passer du prototype au système fiable.</p>
@@ -1305,7 +1289,7 @@ export const blogPosts = [
 
 <p>Un agent bien gouverné, alimenté par des données propres, vous donnera un ROI supérieur en 3 mois que 10 agents mal configurés en 1 an. C'est la différence entre une automatisation qui fonctionne et une automatisation qui vous cause plus de problèmes qu'elle n'en résout.</p>
 
-<p>Vous voulez savoir si votre stack d'automatisation IA est prêt pour la scalabilité ? <a href="/contact">Demandez un audit gratuit de votre processus d'automatisation</a> — on identifie les risques et les gains possibles en 30 minutes.</p>
+<p>Vous voulez savoir si votre stack d'automatisation IA est prêt pour la scalabilité ? <a href="/contact/">Demandez un audit gratuit de votre processus d'automatisation</a> — on identifie les risques et les gains possibles en 30 minutes.</p>
     `
   },
   {
@@ -1317,10 +1301,10 @@ export const blogPosts = [
     readTime: "8 MIN",
     image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "notre offre cold emailing B2B" },
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "guide du scraping B2B" },
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "automatisation des ventes" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "notre offre cold emailing B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "guide du scraping B2B" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "automatisation des ventes" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
 <h2>Quel taux d'ouverture viser en cold email B2B selon votre secteur ?</h2>
@@ -1355,7 +1339,7 @@ export const blogPosts = [
 <li><strong>Le cycle de décision :</strong> en SaaS, le décideur est souvent unique et accessible. En immobilier, la chaîne de décision implique plusieurs parties prenantes.</li>
 </ul>
 
-<p>Pour aller plus loin sur le ciblage de vos prospects, consultez notre <a href="/services/scraping-b2b">guide du scraping B2B</a> qui vous montre comment collecter les bonnes données avant d'envoyer le moindre email.</p>
+<p>Pour aller plus loin sur le ciblage de vos prospects, consultez notre <a href="/services/scraping-b2b/">guide du scraping B2B</a> qui vous montre comment collecter les bonnes données avant d'envoyer le moindre email.</p>
 
 <h2>Pourquoi votre taux d'ouverture cold email est inférieur à la moyenne de votre secteur ?</h2>
 
@@ -1363,13 +1347,13 @@ export const blogPosts = [
 
 <p><strong>1. Un objet d'email non personnalisé.</strong> C'est le numéro un. Un objet générique comme « Opportauté de collaboration » obtient un taux d'ouverture de 22% en moyenne. Un objet personnalisé avec le nom du prospect et son secteur grimpe à 48%. L'écart est de <strong>26 points</strong> — et ça ne coûte rien de plus que 30 secondes de recherche.</p>
 
-<p><strong>2. Un ciblage trop large (ICP mal défini).</strong> Si vous envoyez le même email à un dirigeant de startup SaaS et à un chef d'entreprise dans le BTP, vos résultats seront médiocres des deux côtés. La <a href="/blog">définition de votre ICP</a> est la fondation de tout. Sans elle, vous brûlez votre domaine d'envoi pour rien.</p>
+<p><strong>2. Un ciblage trop large (ICP mal défini).</strong> Si vous envoyez le même email à un dirigeant de startup SaaS et à un chef d'entreprise dans le BTP, vos résultats seront médiocres des deux côtés. La <a href="/blog/">définition de votre ICP</a> est la fondation de tout. Sans elle, vous brûlez votre domaine d'envoi pour rien.</p>
 
 <p><strong>3. Une infrastructure email mal configurée.</strong> Vos emails atterrissent en spam parce que votre domaine n'a pas été warm-up, que vous n'avez pas configuré SPF, DKIM et DMARC, ou que vous envoyez depuis un domaine neuf. Résultat : 30 à 50% de vos emails ne sont jamais vus. C'est de l'argent jeté par les fenêtres.</p>
 
 <p><strong>4. Une fréquence d'envoi trop élevée.</strong> Envoyer 200 emails par jour depuis une seule boîte, c'est le meilleur moyen d'être marqué comme spammeur. La zone optimale en B2B est de <strong>30 à 50 emails par jour par adresse</strong>, avec un warm-up progressif sur 2 semaines. Au-delà, vous risquez votre réputation d'expéditeur.</p>
 
-<p><strong>5. L'absence de séquence multi-touch.</strong> Un seul email n'a que 15% de chances d'obtenir une réponse. Une séquence de 4 à 5 emails espacés sur 2 semaines porte ce taux à 27%. La relance n'est pas du harcèlement — c'est de la persévérance professionnelle. Nos <a href="/services/cold-emailing-b2b">campagnes cold emailing</a> intègrent systématiquement des séquences multi-touch pour maximiser chaque contact.</p>
+<p><strong>5. L'absence de séquence multi-touch.</strong> Un seul email n'a que 15% de chances d'obtenir une réponse. Une séquence de 4 à 5 emails espacés sur 2 semaines porte ce taux à 27%. La relance n'est pas du harcèlement — c'est de la persévérance professionnelle. Nos <a href="/services/cold-emailing-b2b/">campagnes cold emailing</a> intègrent systématiquement des séquences multi-touch pour maximiser chaque contact.</p>
 
 <h2>Comment améliorer votre taux d'ouverture cold email en 5 étapes concrètes ?</h2>
 
@@ -1377,7 +1361,7 @@ export const blogPosts = [
 
 <p><strong>Étape 1 : Audit de votre deliverabilité.</strong> Avant d'envoyer quoi que ce soit, vérifiez l'état de votre domaine. Utilisez un outil comme Mailreach ou GlockApps pour tester où atterrissent vos emails (inbox, spam, block). Si plus de 15% finissent en spam, corrigez ça avant toute campagne. Configurez SPF, DKIM et DMARC. Activez le warm-up pendant 14 jours minimum.</p>
 
-<p><strong>Étape 2 : Définir ou affiner votre ICP.</strong> Reprenez vos 20 meilleurs clients actuels. Qu'ont-ils en commun ? Secteur, taille, nombre d'employees, outils utilisés, localisation géographique. C'est votre ICP. Ne prospectez personne en dehors de ce périmètre. L'<a href="/services/scraping-b2b">extraction de données ciblées</a> commence par un ICP millimétré.</p>
+<p><strong>Étape 2 : Définir ou affiner votre ICP.</strong> Reprenez vos 20 meilleurs clients actuels. Qu'ont-ils en commun ? Secteur, taille, nombre d'employees, outils utilisés, localisation géographique. C'est votre ICP. Ne prospectez personne en dehors de ce périmètre. L'<a href="/services/scraping-b2b/">extraction de données ciblées</a> commence par un ICP millimétré.</p>
 
 <p><strong>Étape 3 : Personnalisation en profondeur.</strong> Chaque email doit contenir au moins 3 éléments de personnalisation : le prénom du prospect, une référence à son entreprise ou son secteur, et un élément contextuel (actualité récente, post LinkedIn, changement d'outil). Ce n'est pas du temps perdu — c'est ce qui sépare un taux de 25% d'un taux de 55%.</p>
 
@@ -1390,7 +1374,7 @@ export const blogPosts = [
 <li><strong>Jour 14 :</strong> Email de clôture — « Je vous laisse mes coordonnées si vous changez d'avis »</li>
 </ul>
 
-<p><strong>Étape 5 : Mesurer, itérer, scaler.</strong> Ne jamais lancer une campagne à grande échelle sans avoir testé sur un échantillon de 100-200 emails. Mesurez le taux d'ouverture, le taux de clics et le taux de réponse. Identifiez ce qui fonctionne. Puis seuls les emails qui marchent passent en volume. C'est le principe de l'approche <a href="/services/automatisation-sales">automatisation des ventes</a> que nous recommandons à chaque PME.</p>
+<p><strong>Étape 5 : Mesurer, itérer, scaler.</strong> Ne jamais lancer une campagne à grande échelle sans avoir testé sur un échantillon de 100-200 emails. Mesurez le taux d'ouverture, le taux de clics et le taux de réponse. Identifiez ce qui fonctionne. Puis seuls les emails qui marchent passent en volume. C'est le principe de l'approche <a href="/services/automatisation-sales/">automatisation des ventes</a> que nous recommandons à chaque PME.</p>
 
 <h2>Cold email B2B en 2026 : est-il encore rentable par rapport à LinkedIn et autres canaux ?</h2>
 
@@ -1432,7 +1416,7 @@ export const blogPosts = [
 
 <p>Vous voulez savoir où vous en êtes par rapport aux benchmarks de votre secteur ? Demandez un <strong>audit gratuit</strong> de votre prospection — on analyse votre deliverabilité, votre ciblage et vos résultats actuels pour vous dire exactement quoi améliorer.</p>
 
-<p><a href="/contact">Contactez Nana Intelligence</a> pour un audit gratuit de votre prospection cold email.</p>
+<p><a href="/contact/">Contactez Nana Intelligence</a> pour un audit gratuit de votre prospection cold email.</p>
     `
   },
   {
@@ -1444,10 +1428,10 @@ export const blogPosts = [
     readTime: "12 MIN",
     image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "scraping B2B sur-mesure" },
-      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "cold emailing B2B" },
-      { "@type": "WebPage", "url": "/agence-lead-generation/marseille", "name": "agence lead generation Marseille" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "scraping B2B sur-mesure" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "cold emailing B2B" },
+      { "@type": "WebPage", "url": "/agence-lead-generation/marseille/", "name": "agence lead generation Marseille" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
 <h2>Qu'est-ce que le scraping LinkedIn legale en B2B (et pourquoi 90 % des gens se trompent) ?</h2>
@@ -1490,7 +1474,7 @@ export const blogPosts = [
 </table>
 
 <h3>Phantombuster : la boite a outils des automatiseurs</h3>
-<p>Phantombuster propose des « phantoms » (mini-robots) qui parcourent LinkedIn et exportent les resultats en CSV. C'est puissant et flexible, mais c'est un couteau suisse : la conformite RGPD n'est pas packagee, elle depend de votre usage. Limitez la cadence, ne moissonnez pas des millions de profils, et conservez une trace de votre base legale. Pour une approche sur-mesure, notre service de <a href="/services/scraping-b2b">scraping B2B</a> integre ces garde-fous des la collecte.</p>
+<p>Phantombuster propose des « phantoms » (mini-robots) qui parcourent LinkedIn et exportent les resultats en CSV. C'est puissant et flexible, mais c'est un couteau suisse : la conformite RGPD n'est pas packagee, elle depend de votre usage. Limitez la cadence, ne moissonnez pas des millions de profils, et conservez une trace de votre base legale. Pour une approche sur-mesure, notre service de <a href="/services/scraping-b2b/">scraping B2B</a> integre ces garde-fous des la collecte.</p>
 
 <h3>Evaboot : le specialiste Sales Navigator</h3>
 <p>Evaboot se branche directement sur Sales Navigator et nettoie les donnees (verification d'emails, dedoublonnage) a la sortie. C'est l'option la plus « propre » pour qui travaille deja dans l'ecosysteme LinkedIn Sales Navigator. L'export est structure, ce qui facilite la mise en conformite. Inconvenient : vous restez dependant d'un compte Sales Nav payant.</p>
@@ -1511,7 +1495,7 @@ export const blogPosts = [
   <li><strong>Limiter volume et cadence.</strong> Ne moissonnez pas 10 000 profils en une nuit. Une cadence douce (quelques centaines par jour) reduit les risques de bannissement et correspond a une logique de prospection reelle, pas de moissonnage industriel.</li>
   <li><strong>Nettoyer et documenter.</strong> Dedoublonnez, verifiez les emails, et conservez une date de collecte + la source. Cette traçabilite est votre preuve de conformite RGPD.</li>
   <li><strong>Informer et offrir un droit d'opposition.</strong> Dans votre premier contact, indiquez la source et ajoutez un lien de desinscription. Cela transforme une « collecte discrete » en prospection transparente.</li>
-  <li><strong>Exploiter via le cold emailing, pas le spam.</strong> Une fois la base propre, lancez des sequences personnalisees. Decouvrez notre approche <a href="/services/cold-emailing-b2b">cold emailing B2B</a> pour convertir ces contacts en rendez-vous sans finir en spam.</li>
+  <li><strong>Exploiter via le cold emailing, pas le spam.</strong> Une fois la base propre, lancez des sequences personnalisees. Decouvrez notre approche <a href="/services/cold-emailing-b2b/">cold emailing B2B</a> pour convertir ces contacts en rendez-vous sans finir en spam.</li>
 </ol>
 
 <h2>Quelles sont les alternatives au scraping LinkedIn pour generer des leads B2B en 2026 ?</h2>
@@ -1524,7 +1508,7 @@ export const blogPosts = [
 <p>Le cold emailing reste le canal au meilleur ratio effort/rendement en B2B. Une base de 300 contacts ultra-ciblees, contactes avec un message personnalise, genere souvent plus de rendez-vous qu'un scraping massif mal exploite. C'est la methode que nous deployons pour nos clients PME.</p>
 
 <h3>Confier la prospection a une agence</h3>
-<p>Une agence comme Nana Intelligence prend en charge la collecte, la verification et l'activation. Vous recuperez des rendez-vous qualifies sans gerer la conformite vous-meme. Pour les PME de la region, voir notre <a href="/agence-lead-generation/marseille">agence lead generation Marseille</a>.</p>
+<p>Une agence comme Nana Intelligence prend en charge la collecte, la verification et l'activation. Vous recuperez des rendez-vous qualifies sans gerer la conformite vous-meme. Pour les PME de la region, voir notre <a href="/agence-lead-generation/marseille/">agence lead generation Marseille</a>.</p>
 
 <h2>Quels risques (bannissement de compte, amendes RGPD) et comment s'en proteger ?</h2>
 <p>Les deux risques reels sont le <strong>bannissement du compte LinkedIn</strong> (si vous depassez les limites ou utilisez des bots agressifs) et les <strong>amendes RGPD</strong> (jusqu'a 4 % du chiffre d'affaires pour un traitement non conforme). La protection combine cadence moderee, outils conformes et documentation systematique.</p>
@@ -1553,7 +1537,7 @@ export const blogPosts = [
 <p>Le scraping ne genere pas de rendez-vous : il produit une liste. C'est l'exploitation (emails, relances, qualification) qui convertit. Une agence combine les deux et prend en charge la conformite, ce qu'un outil seul ne fait pas.</p>
 
 <h2>Conclusion</h2>
-<p>Le scraping LinkedIn legale en B2B en 2026 n'est ni un mythe ni un terrain sans risque : c'est une discipline. Bien outille (Evaboot, Apollo, Manuela, Phantombuster), bien cadree RGPD, et bien exploitee via le cold emailing, il devient une machine a rendez-vous qualifies. Chez Nana Intelligence, nous batissons ces bases documentees pour les PME de PACA. <a href="/contact">Contactez Nana Intelligence</a> pour un audit gratuit de votre prospection et repartez avec une strategie legale et rentable.</p>
+<p>Le scraping LinkedIn legale en B2B en 2026 n'est ni un mythe ni un terrain sans risque : c'est une discipline. Bien outille (Evaboot, Apollo, Manuela, Phantombuster), bien cadree RGPD, et bien exploitee via le cold emailing, il devient une machine a rendez-vous qualifies. Chez Nana Intelligence, nous batissons ces bases documentees pour les PME de PACA. <a href="/contact/">Contactez Nana Intelligence</a> pour un audit gratuit de votre prospection et repartez avec une strategie legale et rentable.</p>
 
 <script type="application/ld+json">
 {
@@ -1623,12 +1607,10 @@ export const blogPosts = [
     readTime: "11 MIN",
     image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "Automatisation des ventes B2B" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation des ventes B2B" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
-<h1>Audit prospection commerciale PME : comment identifier les fuites de votre pipeline et doubler vos RDV qualifiés</h1>
-
 <p><strong>Vous prospectez sans résultats ?</strong> Avant de changer de stratégie, faites un audit de votre prospection commerciale. Chez les PME B2B, 67% des équipes commerciales perdent plus de 40% de leur potentiel à cause de problèmes détectables en 2h d'analyse. Voici la méthode exacte que nous utilisons chez Nana Intelligence pour auditer la prospection de nos clients PME en PACA.</p>
 
 <h2>Pourquoi un audit de prospection est indispensable pour les PME en 2026 ?</h2>
@@ -1768,9 +1750,9 @@ export const blogPosts = [
 
 <p>Chez Nana Intelligence, nous avons audité plus de 80 PME B2B en PACA. Notre constat unanime : <strong>dans 9 cas sur 10, les entreprises ne manquent pas de leads — elles manquent de bonnes pratiques de conversion</strong>.</p>
 
-<p><a href="/contact"><strong>Prenez rendez-vous pour un audit gratuit de 30 minutes</strong></a> — nous identifierons vos 3 quick wins prioritaires sans engagement. Ou si vous préférez une vision complète, <a href="/services/automatisation-sales"><strong>découvrez notre service d'automatisation des ventes</strong></a> qui intègre un audit initial approfondi.</p>
+<p><a href="/contact/"><strong>Prenez rendez-vous pour un audit gratuit de 30 minutes</strong></a> — nous identifierons vos 3 quick wins prioritaires sans engagement. Ou si vous préférez une vision complète, <a href="/services/automatisation-sales/"><strong>découvrez notre service d'automatisation des ventes</strong></a> qui intègre un audit initial approfondi.</p>
 
-<p><strong>🎯 Audit gratuit : </strong><a href="/contact">Contactez-nous dès maintenant</a> et recevez votre diagnostic personnalisé sous 48h.</p>
+<p><strong>🎯 Audit gratuit : </strong><a href="/contact/">Contactez-nous dès maintenant</a> et recevez votre diagnostic personnalisé sous 48h.</p>
 
 <script type="application/ld+json">
 {
@@ -1869,10 +1851,10 @@ export const blogPosts = [
     readTime: "12 MIN",
     image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "Automatisation Sales B2B" },
-      { "@type": "WebPage", "url": "/services/cold-emailing-b2b", "name": "Cold Emailing B2B" },
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "Scraping B2B" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation Sales B2B" },
+      { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "Scraping B2B" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
 <h2>Qu'est-ce qu'un workflow d'automatisation sales B2B complet ?</h2>
@@ -1882,7 +1864,7 @@ export const blogPosts = [
 
 <h2>Pourquoi la plupart des PME échouent dans leur automatisation sales ?</h2>
 <p>Le problème n'est pas le manque d'outils — c'est l'absence d'architecture. Une PME typique achète un CRM, s'abonne à un outil d'envoi d'emails, puis utilise un outil d'enrichissement séparément. Résultat ? Trois outils qui ne se parlent pas. Le commercial passe 40% de son temps à transférer des données manuellement d'un outil à l'autre.</p>
-<p>Un <a href="/services/automatisation-sales">workflow d'automatisation sales</a> bien conçu élimine cette rupture. Voici les chiffres clés :</p>
+<p>Un <a href="/services/automatisation-sales/">workflow d'automatisation sales</a> bien conçu élimine cette rupture. Voici les chiffres clés :</p>
 <ul>
     <li><strong>Temps perdu sans workflow</strong> : 12 à 15 heures/semaine par commercial sur des tâches à faible valeur (copier-coller, mise à jour CRM, vérification d'emails)</li>
     <li><strong>Temps gagné avec workflow</strong> : 2 à 3 heures/semaine — le reste est automatisé</li>
@@ -2133,8 +2115,8 @@ export const blogPosts = [
 </div>
 </div>
 
-<p>Si vous préférez confier l'intégralité du setup à des experts qui ont déjà déployé ce workflow pour des dizaines de PME en région PACA, <a href="/contact">prenez contact avec Nana Intelligence</a> pour un <strong>audit gratuit</strong> de votre infrastructure actuelle. Nous identifions les quick wins et vous proposons un plan d'action en 48h.</p>
-<p>En attendant, explorez nos <a href="/services/automatisation-sales">services d'automatisation sales B2B</a>, notre expertise en <a href="/services/cold-emailing-b2b">cold emailing B2B</a> et nos solutions de <a href="/services/scraping-b2b">scraping B2B</a> pour enrichir vos données prospects.</p>
+<p>Si vous préférez confier l'intégralité du setup à des experts qui ont déjà déployé ce workflow pour des dizaines de PME en région PACA, <a href="/contact/">prenez contact avec Nana Intelligence</a> pour un <strong>audit gratuit</strong> de votre infrastructure actuelle. Nous identifions les quick wins et vous proposons un plan d'action en 48h.</p>
+<p>En attendant, explorez nos <a href="/services/automatisation-sales/">services d'automatisation sales B2B</a>, notre expertise en <a href="/services/cold-emailing-b2b/">cold emailing B2B</a> et nos solutions de <a href="/services/scraping-b2b/">scraping B2B</a> pour enrichir vos données prospects.</p>
     `
   },
   {
@@ -2149,9 +2131,9 @@ export const blogPosts = [
     readTime: "5 MIN",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "nos workflows d'automatisation sales" },
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "nos extractions de données B2B" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "nos workflows d'automatisation sales" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "nos extractions de données B2B" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
 <h2>Pourquoi septembre 2026 est un tournant décisif pour l'automatisation IA en entreprise ?</h2>
@@ -2160,7 +2142,7 @@ export const blogPosts = [
 
 <h2>Qu'est-ce que les départements virtuels d'agents IA et pourquoi ça change tout ?</h2>
 <p>Les <strong>multi-agents IA</strong> ne sont plus un concept théorique. En septembre 2026, des entreprises testent des flottes de 30 à 40 agents capables de gérer de bout en bout un processus métiers complet : prospection, qualification, envoi de cold emails, suivi CRM, reporting. L'agent A identifie les cibles, l'agent B enrichit les données, l'agent C rédige les sequences, l'agent D suit les réponses.</p>
-<p>Ce qui est nouveau, c'est la <strong>collaboration inter-agents</strong>. Ces agents communiquent entre eux sans supervision humaine à chaque étape. Selon nos observations sur les flux de nos clients automatisés via <a href="/services/automatisation-sales">nos workflows d'automatisation sales</a>, une flotte bien orchestrée peut réduire le temps de gestion opérationnelle de prospection de 70% à 90% — le dirigeant ne valide plus que les décisions stratégiques.</p>
+<p>Ce qui est nouveau, c'est la <strong>collaboration inter-agents</strong>. Ces agents communiquent entre eux sans supervision humaine à chaque étape. Selon nos observations sur les flux de nos clients automatisés via <a href="/services/automatisation-sales/">nos workflows d'automatisation sales</a>, une flotte bien orchestrée peut réduire le temps de gestion opérationnelle de prospection de 70% à 90% — le dirigeant ne valide plus que les décisions stratégiques.</p>
 
 <h3>Données clés : l'ampleur du mouvement</h3>
 <ul>
@@ -2179,7 +2161,7 @@ export const blogPosts = [
 <li><strong>Supervision humaine à points clés</strong> : validation avant tout envoi externe, modification de données sensibles ou action financière</li>
 <li><strong>Logs et audit trail</strong> : traçabilité complète de chaque décision de l'agent pour audit et conformité RGPD</li>
 </ul>
-<p>Chez Nana Intelligence, nous appliquons ces principes sur l'ensemble de nos automatisations — notamment pour <a href="/services/scraping-b2b">nos extractions de données B2B</a>, où la conformité RGPD et la propreté des protocoles de requête sont non-négociables.</p>
+<p>Chez Nana Intelligence, nous appliquons ces principes sur l'ensemble de nos automatisations — notamment pour <a href="/services/scraping-b2b/">nos extractions de données B2B</a>, où la conformité RGPD et la propreté des protocoles de requête sont non-négociables.</p>
 
 <h2>Comment intégrer l'IA dans une PME sans amplifier le désordre existant ?</h2>
 <p>Le troisième pivot est peut-être le plus important : <strong>le processus avant l'outil</strong>. Le consensus unanime en septembre 2026 est qu'ajouter de l'IA à un processus non documenté ne fait qu'amplifier le désordre. Les entreprises qui échouent à automatiser partent souvent du mauvais pied.</p>
@@ -2210,7 +2192,7 @@ export const blogPosts = [
 <p>Il faut imposer des protocoles de requête propres à chaque agent : requêtes ciblées plutôt que scraping en série, mise en cache des résultats, et limitation du débit. Les entreprises qui négligent cet aspect font face à des surcoûts d'infrastructure significatifs.</p>
 
 <p><strong>Les 3 pivots de septembre 2026 ne sont pas une option — c'est la nouvelle réalité de la prospection B2B automatisée.</strong> Si vous voulez savoir où en est votre entreprise par rapport à ces transformations, notre audit gratuit identifie en 30 minutes les quick wins prioritaires pour votre pipeline.</p>
-<p><a href="/contact">Réservez votre audit gratuit →</a></p>
+<p><a href="/contact/">Réservez votre audit gratuit →</a></p>
     `
   },
   {
@@ -2224,12 +2206,12 @@ export const blogPosts = [
     readTime: "3 MIN",
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "Automatisation sales B2B" },
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "Scraping B2B" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation sales B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "Scraping B2B" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
-<h2>Qu'est-ce que la workforce agentique et pourquoi bouleverse-t-elle l'automatisation en 2026 ?</h2><p>Réponse directe : la <strong>workforce agentique</strong> désigne des agents IA autonomes capables de planifier une tâche, d'appeler des outils, de s'auto-corriger et de travailler en continu sur plusieurs heures, sans scénario pré-programmé. Contrairement aux automatisations rigides type Zapier ou Make, l'agent décide lui-même de la suite — ce qui transforme la veille et la prospection en processus qui tournent sans intervention humaine.</p><h2>L'ère des agents IA : de l'automatisation rigide à l'agentique</h2><p>Pendant dix ans, l'automatisation B2B a consisté à enchaîner des déclencheurs : « si email ouvert, alors envoyer relance ». Efficace, mais fragile. Dès qu'une exception apparaît, le scénario casse. En 2026, le mouvement observé chez les entreprises matures (voir l'entretien de Véronique Mesguich dans <em>Veille Magazine</em> sur la veille stratégique agentique) est différent : on délègue à un agent le but, pas la recette.</p><p>Concrètement, un agent agentique peut :</p><ul><li><strong>Planifier</strong> : décomposer un objectif en sous-tâches.</li><li><strong>Utiliser des outils</strong> : navigateur, API, base de données, CRM, LLM.</li><li><strong>S'auto-corriger</strong> : si une source ne répond pas, il tente une autre voie.</li><li><strong>Exécuter sur la durée</strong> : une boucle qui tourne plusieurs heures sans supervision.</li></ul><p>C'est ce saut qui intéresse directement la <a href='/services/automatisation-sales'>automatisation sales B2B</a> : au lieu de séquences figées, vous confiez à l'agent le soin de qualifier, d'enrichir et de relancer selon le contexte réel.</p><h2>La veille augmentée par l'IA : finir le bruit</h2><p>Deuxième mouvement majeur de cette actualité IA : la <strong>veille augmentée</strong>. Les agrégateurs traditionnels (flux RSS, newsletters) noient les équipes sous le volume. Les assistants comme Feedly Leo AI filtrent, synthétisent et génèrent des digests automatiques ciblés. Résultat : vous lisez dix lignes utiles au lieu de mille inutiles.</p><p>Ce point rejoint notre approche sur <a href='/services/scraping-b2b'>le scraping B2B</a> : la matière première de la veille, ce sont des données propres et à jour. L'IA ne remplace pas la collecte, elle la surcouche d'intelligence.</p><h2>Gouvernance et sécurité : le pilier que personne ne voit</h2><p>Troisième sujet, et non le moindre : la <strong>gouvernance</strong>. Dès qu'un agent lit vos emails, vos CRM et vos documents, la surface d'attaque explose. Microsoft, dans ses 7 tendances IA 2026, insiste sur le contrôle des accès et la sécurité opérationnelle. Les entreprises qui déploient des agents sans cadre de gouvernance prennent un risque informationnel majeur.</p><p>La règle d'or : permissions minimales, logs d'action, validation humaine sur les étapes sensibles. C'est le prix de l'autonomie.</p><h2>Votre stack d'outils pour une veille augmentée en 2026</h2><p>Si vous voulez monter votre propre système sans attendre, voici la stack que nous recommandons, issue de notre benchmark des outils de veille 2026 :</p><table><thead><tr><th>Outil</th><th>Rôle</th><th>Force</th></tr></thead><tbody><tr><td>Feedly (Leo AI)</td><td>Agrégation et priorisation des flux</td><td>Filtrage intelligent du bruit</td></tr><tr><td>Make / n8n / Zapier</td><td>Orchestration des déclencheurs</td><td>Connecte sources, LLM et messagerie (Slack, Teams)</td></tr><tr><td>Perplexity / NotebookLM</td><td>Synthèse de dossiers thématiques</td><td>Résumé multi-sources en quelques minutes</td></tr></tbody></table><p>Le schéma type : Feedly capte, n8n orchestre, Perplexity synthétise, et un agent pousse le digest dans votre canal d'équipe. C'est une <a href='/services/automatisation-sales'>automatisation sales</a> qui s'alimente toute seule.</p><h2>FAQ — Actualité IA et agentique en 2026</h2><p><strong>Quelle différence entre un agent IA et un workflow Zapier ?</strong><br/>Un workflow exécute une recette figée ; un agent poursuit un but et choisit ses propres actions, y compris en cas d'imprévu.</p><p><strong>L'IA peut-elle vraiment remplacer ma veille manuelle ?</strong><br/>Non, mais elle enlève la majeure partie du tri. Le discernement humain reste nécessaire sur la décision finale, comme le rappelle Veille Magazine.</p><p><strong>Quel est le premier risque des agents autonomes ?</strong><br/>La fuite de données par accès trop larges. La gouvernance (permissions, logs, validation) n'est pas optionnelle.</p><p><strong>Par où commencer concrètement ?</strong><br/>Centralisez vos flux dans Feedly, orchestrez avec n8n, synthétisez avec Perplexity, et gardez un humain sur la validation.</p><p><strong>Prêt à passer de l'automatisation rigide à l'agentique sur votre prospection ?</strong> <a href='/contact'>Contactez Nana Intelligence</a> pour un audit gratuit : nous cartographions vos sources, votre stack et vos risques en 30 minutes.</p>
+<h2>Qu'est-ce que la workforce agentique et pourquoi bouleverse-t-elle l'automatisation en 2026 ?</h2><p>Réponse directe : la <strong>workforce agentique</strong> désigne des agents IA autonomes capables de planifier une tâche, d'appeler des outils, de s'auto-corriger et de travailler en continu sur plusieurs heures, sans scénario pré-programmé. Contrairement aux automatisations rigides type Zapier ou Make, l'agent décide lui-même de la suite — ce qui transforme la veille et la prospection en processus qui tournent sans intervention humaine.</p><h2>L'ère des agents IA : de l'automatisation rigide à l'agentique</h2><p>Pendant dix ans, l'automatisation B2B a consisté à enchaîner des déclencheurs : « si email ouvert, alors envoyer relance ». Efficace, mais fragile. Dès qu'une exception apparaît, le scénario casse. En 2026, le mouvement observé chez les entreprises matures (voir l'entretien de Véronique Mesguich dans <em>Veille Magazine</em> sur la veille stratégique agentique) est différent : on délègue à un agent le but, pas la recette.</p><p>Concrètement, un agent agentique peut :</p><ul><li><strong>Planifier</strong> : décomposer un objectif en sous-tâches.</li><li><strong>Utiliser des outils</strong> : navigateur, API, base de données, CRM, LLM.</li><li><strong>S'auto-corriger</strong> : si une source ne répond pas, il tente une autre voie.</li><li><strong>Exécuter sur la durée</strong> : une boucle qui tourne plusieurs heures sans supervision.</li></ul><p>C'est ce saut qui intéresse directement la <a href='/services/automatisation-sales/'>automatisation sales B2B</a> : au lieu de séquences figées, vous confiez à l'agent le soin de qualifier, d'enrichir et de relancer selon le contexte réel.</p><h2>La veille augmentée par l'IA : finir le bruit</h2><p>Deuxième mouvement majeur de cette actualité IA : la <strong>veille augmentée</strong>. Les agrégateurs traditionnels (flux RSS, newsletters) noient les équipes sous le volume. Les assistants comme Feedly Leo AI filtrent, synthétisent et génèrent des digests automatiques ciblés. Résultat : vous lisez dix lignes utiles au lieu de mille inutiles.</p><p>Ce point rejoint notre approche sur <a href='/services/scraping-b2b/'>le scraping B2B</a> : la matière première de la veille, ce sont des données propres et à jour. L'IA ne remplace pas la collecte, elle la surcouche d'intelligence.</p><h2>Gouvernance et sécurité : le pilier que personne ne voit</h2><p>Troisième sujet, et non le moindre : la <strong>gouvernance</strong>. Dès qu'un agent lit vos emails, vos CRM et vos documents, la surface d'attaque explose. Microsoft, dans ses 7 tendances IA 2026, insiste sur le contrôle des accès et la sécurité opérationnelle. Les entreprises qui déploient des agents sans cadre de gouvernance prennent un risque informationnel majeur.</p><p>La règle d'or : permissions minimales, logs d'action, validation humaine sur les étapes sensibles. C'est le prix de l'autonomie.</p><h2>Votre stack d'outils pour une veille augmentée en 2026</h2><p>Si vous voulez monter votre propre système sans attendre, voici la stack que nous recommandons, issue de notre benchmark des outils de veille 2026 :</p><table><thead><tr><th>Outil</th><th>Rôle</th><th>Force</th></tr></thead><tbody><tr><td>Feedly (Leo AI)</td><td>Agrégation et priorisation des flux</td><td>Filtrage intelligent du bruit</td></tr><tr><td>Make / n8n / Zapier</td><td>Orchestration des déclencheurs</td><td>Connecte sources, LLM et messagerie (Slack, Teams)</td></tr><tr><td>Perplexity / NotebookLM</td><td>Synthèse de dossiers thématiques</td><td>Résumé multi-sources en quelques minutes</td></tr></tbody></table><p>Le schéma type : Feedly capte, n8n orchestre, Perplexity synthétise, et un agent pousse le digest dans votre canal d'équipe. C'est une <a href='/services/automatisation-sales/'>automatisation sales</a> qui s'alimente toute seule.</p><h2>FAQ — Actualité IA et agentique en 2026</h2><p><strong>Quelle différence entre un agent IA et un workflow Zapier ?</strong><br/>Un workflow exécute une recette figée ; un agent poursuit un but et choisit ses propres actions, y compris en cas d'imprévu.</p><p><strong>L'IA peut-elle vraiment remplacer ma veille manuelle ?</strong><br/>Non, mais elle enlève la majeure partie du tri. Le discernement humain reste nécessaire sur la décision finale, comme le rappelle Veille Magazine.</p><p><strong>Quel est le premier risque des agents autonomes ?</strong><br/>La fuite de données par accès trop larges. La gouvernance (permissions, logs, validation) n'est pas optionnelle.</p><p><strong>Par où commencer concrètement ?</strong><br/>Centralisez vos flux dans Feedly, orchestrez avec n8n, synthétisez avec Perplexity, et gardez un humain sur la validation.</p><p><strong>Prêt à passer de l'automatisation rigide à l'agentique sur votre prospection ?</strong> <a href='/contact/'>Contactez Nana Intelligence</a> pour un audit gratuit : nous cartographions vos sources, votre stack et vos risques en 30 minutes.</p>
     `
   }
 ];

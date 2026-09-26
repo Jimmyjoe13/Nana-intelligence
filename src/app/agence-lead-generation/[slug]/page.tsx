@@ -12,9 +12,9 @@ import Link from "next/link";
 
 // Maillage interne : services liés à cette ville
 const cityServiceLinks = [
-  { href: "/services/cold-emailing-b2b", label: "Cold Emailing B2B" },
-  { href: "/services/scraping-b2b", label: "Scraping & Enrichissement B2B" },
-  { href: "/services/automatisation-sales", label: "Automatisation Sales" },
+  { href: "/services/cold-emailing-b2b/", label: "Cold Emailing B2B" },
+  { href: "/services/scraping-b2b/", label: "Scraping & Enrichissement B2B" },
+  { href: "/services/automatisation-sales/", label: "Automatisation Sales" },
 ];
 
 interface Props {
@@ -102,7 +102,7 @@ export default function AgencyCityPage({ params }: Props) {
             title={data.heroTitle}
             description={data.heroSubtitle}
             actions={[
-              <Link key="cta" href="/contact">
+              <Link key="cta" href="/contact/">
                 <Button variant="primary" size="lg" icon={<ArrowRight size={20} />}>
                   Audit Gratuit {data.cityName}
                 </Button>
@@ -125,7 +125,7 @@ export default function AgencyCityPage({ params }: Props) {
                   <p key={i}>{paragraph}</p>
                 ))}
                 <p>
-                  Consultez nos <Link href="/blog" className="text-orange hover:underline">guides prospection B2B</Link> et nos services de <Link href="/services/cold-emailing-b2b" className="text-orange hover:underline">Cold Emailing B2B</Link>, <Link href="/services/scraping-b2b" className="text-orange hover:underline">Scraping B2B</Link>, <Link href="/services/automatisation-sales" className="text-orange hover:underline">Automatisation Sales</Link> et <Link href="/services/accompagnement-seo" className="text-orange hover:underline">Accompagnement SEO</Link> pour optimiser votre machine de vente.
+                  Consultez nos <Link href="/blog/" className="text-orange hover:underline">guides prospection B2B</Link> et nos services de <Link href="/services/cold-emailing-b2b/" className="text-orange hover:underline">Cold Emailing B2B</Link>, <Link href="/services/scraping-b2b/" className="text-orange hover:underline">Scraping B2B</Link>, <Link href="/services/automatisation-sales/" className="text-orange hover:underline">Automatisation Sales</Link> et <Link href="/services/accompagnement-seo/" className="text-orange hover:underline">Accompagnement SEO</Link> pour optimiser votre machine de vente.
                 </p>
                 <div className="flex flex-wrap gap-3 pt-2">
                   <span className="text-sm font-mono uppercase tracking-wider text-ink-2">Nos services à {data.cityName} :</span>
@@ -199,7 +199,7 @@ export default function AgencyCityPage({ params }: Props) {
              <p className="text-cream/60 max-w-xl text-lg leading-relaxed">
                Obtenez une analyse gratuite de votre potentiel de génération de leads.
              </p>
-             <Link href="/contact">
+             <Link href="/contact/">
                <Button variant="primary" size="lg" icon={<Sparkles size={20} />}>
                  Obtenir mon audit gratuit 30 min
                </Button>
