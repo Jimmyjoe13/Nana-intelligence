@@ -33,7 +33,7 @@ function getBlogJsonLd() {
       "@type": "ListItem",
       "position": idx + 1,
       "name": post.title,
-      "url": `https://nana-intelligence.fr/blog/${post.id}`,
+      "url": `https://nana-intelligence.fr/blog/${post.slug || post.id}/`,
       "datePublished": post.date
     }))
   };
@@ -45,7 +45,7 @@ function getBlogBreadcrumb() {
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://nana-intelligence.fr" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nana-intelligence.fr/blog" }
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nana-intelligence.fr/blog/" }
     ]
   };
 }

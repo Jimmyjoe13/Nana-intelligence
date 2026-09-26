@@ -11,6 +11,7 @@ import { cn } from "@/lib/utils";
 
 interface BlogPost {
   id: number;
+  slug?: string;
   title: string;
   excerpt: string;
   category: string;
@@ -40,7 +41,7 @@ export function BlogList({ posts, categories }: BlogListProps) {
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex flex-col gap-16">
           <div className="flex items-center justify-between border-b border-ink-4 pb-4">
             <span className="font-mono text-[11px] text-ink-3 uppercase tracking-widest font-bold">À LA UNE</span>
-            <Link href={`/blog/${featuredPost.id}`} className="text-orange hover:text-ink transition-colors">
+            <Link href={`/blog/${featuredPost.slug || featuredPost.id}/`} className="text-orange hover:text-ink transition-colors">
                <ArrowUpRight size={20} />
             </Link>
           </div>
@@ -70,7 +71,7 @@ export function BlogList({ posts, categories }: BlogListProps) {
                    <span className="font-mono text-[11px] text-ink-3 uppercase font-bold">{featuredPost.date}</span>
                    <span className="font-mono text-[10px] text-ink-4 uppercase">Temps de lecture : {featuredPost.readTime}</span>
                  </div>
-                 <Link href={`/blog/${featuredPost.id}`}>
+                 <Link href={`/blog/${featuredPost.slug || featuredPost.id}/`}>
                    <Button variant="primary" icon={<ArrowRight size={16} />}>Lire l&apos;article</Button>
                  </Link>
                </div>
@@ -132,7 +133,7 @@ export function BlogList({ posts, categories }: BlogListProps) {
                    <p className="text-sm text-ink-3 leading-relaxed line-clamp-3">
                      {post.excerpt}
                    </p>
-                   <Link href={`/blog/${post.id}`} className="mt-auto pt-6 flex items-center gap-2 font-mono text-[11px] font-bold uppercase text-ink group-hover:text-orange transition-colors">
+                   <Link href={`/blog/${post.slug || post.id}/`} className="mt-auto pt-6 flex items-center gap-2 font-mono text-[11px] font-bold uppercase text-ink group-hover:text-orange transition-colors">
                      Lire : {post.title} <ArrowRight size={14} />
                    </Link>
                 </div>

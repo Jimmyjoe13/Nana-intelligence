@@ -10,32 +10,29 @@ import Image from "next/image";
 import { EmptyState } from "@/components/ui/EmptyState";
 
 interface Props {
-  params: { id: string };
+  params: { slug: string };
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const id = parseInt(params.id);
-  const post = blogPosts.find((p) => p.id === id);
+  const post = blogPosts.find((p) => p.slug === params.slug || p.id.toString() === params.slug);
   if (!post) return {};
 
-  // P1-bis (17/09/2026) : les champs SEO `metaTitle`/`metaDescription` étaient
-  // renseignés par la campagne `optimize_meta` (≈22 appels LLM par run, la tâche la
-  // plus coûteuse de l'équipe web) mais JAMAIS LUS ici — la page retombait
-  // systématiquement sur `post.title` (long) et `post.excerpt`. Tout le SEO produit
-  // sur les articles était donc inerte en production. On consomme désormais ces
-  // champs quand ils existent, avec repli sur le comportement historique.
+  const targetSlug = post.slug || post.id.toString();
+  const canonicalUrl = `/blog/${targetSlug}/`;
+
   const seo = post as typeof post & BlogPostSeo;
 
   return {
     title: seo.metaTitle ? `${seo.metaTitle} | Nana` : `${post.title} | Nana`,
     description: seo.metaDescription || post.excerpt,
-    alternates: { canonical: `/blog/${id}/` },
+    alternates: { canonical: canonicalUrl },
   };
 }
 
-function getArticleJsonLd(post: typeof blogPosts[number], id: number) {
+function getArticleJsonLd(post: typeof blogPosts[number], canonicalSlug: string) {
   const plainText = post.content.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
   const wordCount = plainText.split(/\s+/).length;
+  const canonicalUrl = `https://nana-intelligence.fr/blog/${canonicalSlug}/`;
 
   return {
     "@context": "https://schema.org",
@@ -59,10 +56,10 @@ function getArticleJsonLd(post: typeof blogPosts[number], id: number) {
     "datePublished": post.date,
     "dateModified": post.date,
     "image": post.image,
-    "url": `https://nana-intelligence.fr/blog/${id}`,
+    "url": canonicalUrl,
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://nana-intelligence.fr/blog/${id}`
+      "@id": canonicalUrl
     },
     "articleSection": post.category,
     "keywords": post.category,
@@ -116,8 +113,7 @@ function getSpeakableJsonLd(post: typeof blogPosts[number]) {
 }
 
 export default function BlogPostPage({ params }: Props) {
-  const id = parseInt(params.id);
-  const post = blogPosts.find((p) => p.id === id);
+  const post = blogPosts.find((p) => p.slug === params.slug || p.id.toString() === params.slug);
 
   if (!post) {
     return (
@@ -137,11 +133,36 @@ export default function BlogPostPage({ params }: Props) {
     );
   }
 
+  const canonicalSlug = post.slug || post.id.toString();
+  const isLegacyId = params.slug === post.id.toString() && Boolean(post.slug);
+
+  // Si accédé par l'ancien ID numérique, page de redirection instantanée
+  if (isLegacyId) {
+    const targetUrl = `/blog/${post.slug}/`;
+    return (
+      <div className="max-w-[800px] mx-auto px-6 py-32 text-center flex flex-col items-center gap-6">
+        <meta httpEquiv="refresh" content={`0;url=${targetUrl}`} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.location.replace("${targetUrl}");`,
+          }}
+        />
+        <h1 className="font-display text-2xl font-medium">Redirection vers l&apos;article...</h1>
+        <p className="text-ink-3">
+          Cet article a été déplacé vers une nouvelle adresse optimisée :
+        </p>
+        <Link href={targetUrl}>
+          <Button variant="primary">Accéder à l&apos;article →</Button>
+        </Link>
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-col">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(getArticleJsonLd(post, id)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getArticleJsonLd(post, canonicalSlug)) }}
       />
       {getFAQJsonLd(post) && (
         <script
@@ -159,8 +180,8 @@ export default function BlogPostPage({ params }: Props) {
           "@context": "https://schema.org", "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://nana-intelligence.fr" },
-            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nana-intelligence.fr/blog" },
-            { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://nana-intelligence.fr/blog/${id}` }
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://nana-intelligence.fr/blog/" },
+            { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://nana-intelligence.fr/blog/${canonicalSlug}/` }
           ]
         }) }}
       />
@@ -287,8 +308,8 @@ export default function BlogPostPage({ params }: Props) {
 
             <div className="flex flex-col gap-6 p-2">
                <span className="font-mono text-[11px] text-ink-3 uppercase font-bold border-b border-cream-3 pb-2">Articles récents</span>
-               {blogPosts.filter(p => p.id !== id).map(p => (
-                 <Link key={p.id} href={`/blog/${p.id}`} className="flex flex-col gap-1 group">
+               {blogPosts.filter(p => p.id !== post.id).map(p => (
+                 <Link key={p.id} href={`/blog/${p.slug || p.id}/`} className="flex flex-col gap-1 group">
                     <span className="font-display text-[17px] group-hover:text-orange transition-colors leading-tight">{p.title}</span>
                     <span className="font-mono text-[10px] text-ink-4 uppercase">{p.date}</span>
                  </Link>
@@ -317,7 +338,13 @@ export default function BlogPostPage({ params }: Props) {
 }
 
 export async function generateStaticParams() {
-  return blogPosts.map((post) => ({
-    id: post.id.toString(),
-  }));
+  const params: { slug: string }[] = [];
+  for (const post of blogPosts) {
+    if (post.slug) {
+      params.push({ slug: post.slug });
+    }
+    // Rétrocompatibilité avec les 24 anciens identifiants indexés
+    params.push({ slug: post.id.toString() });
+  }
+  return params;
 }

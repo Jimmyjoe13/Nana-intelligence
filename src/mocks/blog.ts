@@ -11,6 +11,7 @@ export interface BlogPostSeo {
 export const blogPosts = [
   {
     id: 1,
+    slug: "agence-prospection-b2b-ou-commercial-interne",
     title: "Agence de prospection B2B ou commercial interne ?",
     excerpt: "Comparatif complet des coûts et avantages entre commercial interne et agence prospection B2B. Quel choix pour vos ventes ?",
     category: "STRATÉGIE",
@@ -18,8 +19,8 @@ export const blogPosts = [
     readTime: "6 MIN",
     image: "https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/blog/2/", "name": "Guide du Cold Emailing B2B" },
-      { "@type": "WebPage", "url": "/blog/3/", "name": "Scraping B2B pour trouver des clients" },
+      { "@type": "WebPage", "url": "/blog/guide-cold-emailing-b2b-sans-spam-2026/", "name": "Guide du Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/blog/scraping-b2b-accelerer-ventes/", "name": "Scraping B2B pour trouver des clients" },
       { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "Cold Emailing B2B" },
       { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "Scraping B2B" },
       { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation Sales B2B" },
@@ -71,6 +72,7 @@ export const blogPosts = [
   },
   {
     id: 2,
+    slug: "guide-cold-emailing-b2b-sans-spam-2026",
     title: "Guide Cold Emailing B2B 2026 (Sans finir en Spam)",
     excerpt: "Setup technique (SPF/DKIM), copywriting et délivrabilité : la méthode pour envoyer des cold emails qui génèrent des RDV qualifiés.",
     category: "COLD EMAIL",
@@ -78,8 +80,8 @@ export const blogPosts = [
     readTime: "10 MIN",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/blog/1/", "name": "Agence de prospection B2B ou commercial interne" },
-      { "@type": "WebPage", "url": "/blog/3/", "name": "Scraping B2B pour trouver des clients" },
+      { "@type": "WebPage", "url": "/blog/agence-prospection-b2b-ou-commercial-interne/", "name": "Agence de prospection B2B ou commercial interne" },
+      { "@type": "WebPage", "url": "/blog/scraping-b2b-accelerer-ventes/", "name": "Scraping B2B pour trouver des clients" },
       { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "Cold Emailing B2B" },
       { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "Scraping B2B" },
       { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation Sales B2B" },
@@ -120,6 +122,7 @@ export const blogPosts = [
   },
   {
     id: 3,
+    slug: "scraping-b2b-accelerer-ventes",
     title: "Comment utiliser le Scraping B2B pour vos ventes ?",
     excerpt: "Apprenez à extraire des bases de données ciblées sur LinkedIn et Google Maps en toute légalité RGPD. Guide pratique.",
     category: "DATA / SCRAPING",
@@ -127,8 +130,8 @@ export const blogPosts = [
     readTime: "7 MIN",
     image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/blog/1/", "name": "Agence de prospection B2B ou commercial interne" },
-      { "@type": "WebPage", "url": "/blog/2/", "name": "Guide du Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/blog/agence-prospection-b2b-ou-commercial-interne/", "name": "Agence de prospection B2B ou commercial interne" },
+      { "@type": "WebPage", "url": "/blog/guide-cold-emailing-b2b-sans-spam-2026/", "name": "Guide du Cold Emailing B2B" },
       { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "Scraping B2B" },
       { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "Cold Emailing B2B" },
       { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation Sales B2B" },
@@ -164,6 +167,7 @@ export const blogPosts = [
   },
   {
     id: 4,
+    slug: "automatiser-prospection-b2b-ia",
     title: "Automatiser sa prospection B2B avec l'IA (Guide 2026)",
     excerpt: "Scraping intelligent, cold email personnalisé et workflows autonomes : générez des RDV qualifiés avec l'IA pour votre PME.",
     category: "IA / AUTOMATISATION",
@@ -171,9 +175,9 @@ export const blogPosts = [
     readTime: "9 MIN",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/blog/1/", "name": "Agence de prospection B2B ou commercial interne" },
-      { "@type": "WebPage", "url": "/blog/2/", "name": "Guide du Cold Emailing B2B" },
-      { "@type": "WebPage", "url": "/blog/3/", "name": "Scraping B2B pour trouver des clients" },
+      { "@type": "WebPage", "url": "/blog/agence-prospection-b2b-ou-commercial-interne/", "name": "Agence de prospection B2B ou commercial interne" },
+      { "@type": "WebPage", "url": "/blog/guide-cold-emailing-b2b-sans-spam-2026/", "name": "Guide du Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/blog/scraping-b2b-accelerer-ventes/", "name": "Scraping B2B pour trouver des clients" },
       { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "Scraping de données B2B" },
       { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "Campagne Cold Emailing B2B" },
       { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation Sales B2B" },
@@ -212,6 +216,7 @@ export const blogPosts = [
   },
   {
     id: 5,
+    slug: "automatisation-sales-pme-guide-2026",
     title: "Automatisation sales PME : guide complet 2026",
     excerpt: "Pourquoi les PME qui automatisent leur prospection signent 3× plus de contrats — et comment mettre le vôtre sur les rails sans y passer vos nuits.",
     category: "STRATÉGIE",
@@ -300,6 +305,7 @@ export const blogPosts = [
   },
   {
     id: 6,
+    slug: "lead-generation-linkedin-b2b-remplir-agenda",
     title: "Lead Generation LinkedIn B2B 2026 : La méthode pour remplir votre agenda sans spammer",
     excerpt: "Lead gen LinkedIn B2B en 2026 : data, IA et automatisation pour remplir votre agenda sans spammer. Méthode complète Nana Intelligence.",
     category: "IA / AUTOMATISATION",
@@ -399,6 +405,7 @@ export const blogPosts = [
   },
   {
     id: 7,
+    slug: "icp-b2b-methode-client-ideal",
     title: "ICP en B2B : la méthode pour définir votre client idéal (et arrêter de prospecter dans le vide)",
     excerpt: "Définir votre ICP B2B en 4 étapes : cessez de prospecter dans le vide. Méthode pour remplir votre pipeline de leads qualifiés.",
     category: "STRATÉGIE",
@@ -409,7 +416,7 @@ export const blogPosts = [
       { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "scraping B2B ciblé" },
       { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "cold emailing B2B" },
       { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "automatisation sales B2B" },
-      { "@type": "WebPage", "url": "/blog/3/", "name": "Scraping B2B pour vos ventes" },
+      { "@type": "WebPage", "url": "/blog/scraping-b2b-accelerer-ventes/", "name": "Scraping B2B pour vos ventes" },
       { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
@@ -456,7 +463,7 @@ export const blogPosts = [
 
 <h2>De l'ICP à la liste de prospects</h2>
 
-<p>Un ICP écrit dans un coin de Notion ne sert à rien. Sa valeur, c'est qu'il devient un <strong>filtre de scraping</strong>. Une fois vos critères posés, on extrait via LinkedIn Sales Navigator, Google Maps et les bases publiques une liste de décideurs qui collent <em>exactement</em> au profil — puis on enrichit avec des emails vérifiés. C'est tout l'objet de notre <a href="/services/scraping-b2b/">service de scraping B2B ciblé</a> : pas un fichier à nettoyer, une liste prête à pitcher. (Pour creuser la partie technique, voyez notre <a href="/blog/3/">guide du scraping B2B</a>.)</p>
+<p>Un ICP écrit dans un coin de Notion ne sert à rien. Sa valeur, c'est qu'il devient un <strong>filtre de scraping</strong>. Une fois vos critères posés, on extrait via LinkedIn Sales Navigator, Google Maps et les bases publiques une liste de décideurs qui collent <em>exactement</em> au profil — puis on enrichit avec des emails vérifiés. C'est tout l'objet de notre <a href="/services/scraping-b2b/">service de scraping B2B ciblé</a> : pas un fichier à nettoyer, une liste prête à pitcher. (Pour creuser la partie technique, voyez notre <a href="/blog/scraping-b2b-accelerer-ventes/">guide du scraping B2B</a>.)</p>
 
 <p>Ensuite seulement vient la séquence : un <a href="/services/cold-emailing-b2b/">cold emailing B2B</a> calibré sur la douleur de l'ICP, puis l'<a href="/services/automatisation-sales/">automatisation sales</a> qui pousse les leads chauds dans votre CRM. L'ordre compte : cibler, puis contacter, puis automatiser. Jamais l'inverse.</p>
 
@@ -490,6 +497,7 @@ export const blogPosts = [
   },
   {
     id: 8,
+    slug: "trouver-des-clients-b2b-5-methodes",
     title: "Comment trouver des clients B2B en 2026 : 5 méthodes qui marchent vraiment",
     excerpt: "Découvrez les 5 méthodes data-driven pour générer des leads qualifiés en 2026 : Cold Emailing, Scraping LinkedIn, Google Maps, Automatisation et SEO.",
     category: "STRATÉGIE",
@@ -570,6 +578,7 @@ export const blogPosts = [
   },
   {
     id: 9,
+    slug: "externaliser-prospection-commerciale-b2b",
     title: "Externaliser sa prospection commerciale B2B : le guide complet 2026",
     excerpt: "Externaliser votre prospection B2B : avantages, pièges à éviter et critères de choix pour scaler vos ventes sans alourdir vos charges.",
     category: "STRATÉGIE",
@@ -582,7 +591,7 @@ export const blogPosts = [
       { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation Sales B2B" },
       { "@type": "WebPage", "url": "/agence-lead-generation/marseille/", "name": "Agence lead generation Marseille" },
       { "@type": "WebPage", "url": "/agence-lead-generation/nice/", "name": "Agence lead generation Nice" },
-      { "@type": "WebPage", "url": "/blog/1/", "name": "Agence de prospection B2B ou commercial interne" },
+      { "@type": "WebPage", "url": "/blog/agence-prospection-b2b-ou-commercial-interne/", "name": "Agence de prospection B2B ou commercial interne" },
       { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" }
     ],
     content: `
@@ -622,7 +631,7 @@ export const blogPosts = [
 
 <h3>Le coût d'une agence de prospection B2B :</h3>
 <p>Le modèle tarifaire d'une agence sérieuse se situe souvent autour d'un abonnement fixe mensuel garantissant une infrastructure, un volume d'actions ou un certain niveau de service, parfois couplé à une prime au rendez-vous qualifié. En moyenne, l'investissement annuel pour une PME auprès d'une agence experte oscille entre 15 000 € et 30 000 €, selon la complexité et le volume.</p>
-<p>La conclusion comptable est sans appel : pour la phase pure de génération de leads, l'agence coûte 2 à 3 fois moins cher, pour une exécution technique souvent bien supérieure. (Pour approfondir ce débat, vous pouvez consulter notre article dédié : <a href="/blog/1/">Agence de prospection B2B ou commercial interne ?</a>).</p>
+<p>La conclusion comptable est sans appel : pour la phase pure de génération de leads, l'agence coûte 2 à 3 fois moins cher, pour une exécution technique souvent bien supérieure. (Pour approfondir ce débat, vous pouvez consulter notre article dédié : <a href="/blog/agence-prospection-b2b-ou-commercial-interne/">Agence de prospection B2B ou commercial interne ?</a>).</p>
 
 <h2>Les 5 critères pour bien choisir son agence de génération de leads</h2>
 
@@ -657,7 +666,10 @@ export const blogPosts = [
   },
   {
     id: 10,
-    title: "Lead Generation Marseille B2B : Stratégie gagnante pour les PME de la région PACA",
+    slug: "strategie-lead-generation-pme-paca",
+    title: "Lead Generation en Région PACA : Stratégie B2B gagnante pour les PME régionales",
+    metaTitle: "Lead Generation PME PACA : Stratégie B2B Gagnante en Provence",
+    metaDescription: "Stratégies d'acquisition et de prospection commerciale B2B dédiées aux PME de la région PACA. Développez votre réseau et vos opportunités commerciales.",
     excerpt: "Lead generation Marseille : trouvez des clients B2B qualifiés en PACA. Méthodes, outils et conseils pour booster votre acquisition locale.",
     category: "STRATÉGIE",
     date: "30 Juillet 2026",
@@ -687,6 +699,7 @@ export const blogPosts = [
   },
   {
     id: 11,
+    slug: "tendances-automatisation-ia-2026",
     title: "Actualité IA : les tendances majeures de l’automatisation en 2026",
     excerpt: "Actualités IA 2026 : agents autonomes, automatisation et tendances qui transforment les PME. Ce qu’il faut retenir pour votre business.",
     category: "IA / AUTOMATISATION",
@@ -731,7 +744,10 @@ export const blogPosts = [
   },
   {
     id: 12,
-    title: "Agence lead generation Marseille : comment choisir le partenaire qui booste vos ventes B2B",
+    slug: "choisir-agence-prospection-commerciale-b2b",
+    title: "Comment choisir son agence de lead generation B2B ? Les 7 critères décisifs",
+    metaTitle: "Comment Choisir son Agence de Prospection B2B ? 7 Critères Clés",
+    metaDescription: "Guide comparatif pour choisir le bon partenaire en lead generation et prospection commerciale B2B : méthodologie, stack tech et modèles de rémunération.",
     excerpt: "Comment choisir une agence lead generation à Marseille ? Critères de sélection, erreurs fréquentes et méthodes pour trouver le bon partenaire B2B.",
     category: "STRATÉGIE",
     date: "03 Août 2026",
@@ -818,6 +834,7 @@ export const blogPosts = [
   },
   {
     id: 13,
+    slug: "scripts-cold-emailing-b2b-qui-convertissent",
     title: "Cold emailing B2B : les scripts qui convertissent en 2026",
     excerpt: "Scripts cold email B2B 2026 : templates efficaces, principes clés d'un email qui convertit et astuces pour éviter les filtres spam.",
     category: "COLD EMAIL",
@@ -885,6 +902,7 @@ export const blogPosts = [
   },
   {
     id: 14,
+    slug: "multiplier-rendez-vous-qualifies-linkedin-b2b",
     title: "Lead Generation LinkedIn B2B 2026 : stratégies éprouvées pour multiplier vos rendez-vous qualifiés",
     excerpt: "Transformer LinkedIn en machine à RDV qualifiés : tactiques de ciblage, séquences et automatisation éprouvées par Nana Intelligence.",
     category: "STRATÉGIE",
@@ -933,6 +951,7 @@ export const blogPosts = [
   },
   {
     id: 15,
+    slug: "generation-leads-b2b-automatisee-pipeline",
     title: "Génération leads B2B automatisée : le système qui remplit votre pipeline pendant que vous dormez",
     excerpt: "Génération leads B2B automatisée : construisez une machine qui scrape, enrichit et push dans votre CRM. Architecture, outils et coût réel.",
     category: "IA / AUTOMATISATION",
@@ -942,9 +961,9 @@ export const blogPosts = [
     structuredInternalLinks: [
       { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "service scraping B2B" },
       { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "automatisation sales" },
-      { "@type": "WebPage", "url": "/blog/7/", "name": "ICP en B2B : la méthode pour définir votre client idéal" },
-      { "@type": "WebPage", "url": "/blog/2/", "name": "guide cold emailing 2026" },
-      { "@type": "WebPage", "url": "/blog/6/", "name": "Lead Generation LinkedIn B2B 2026" },
+      { "@type": "WebPage", "url": "/blog/icp-b2b-methode-client-ideal/", "name": "ICP en B2B : la méthode pour définir votre client idéal" },
+      { "@type": "WebPage", "url": "/blog/guide-cold-emailing-b2b-sans-spam-2026/", "name": "guide cold emailing 2026" },
+      { "@type": "WebPage", "url": "/blog/lead-generation-linkedin-b2b-remplir-agenda/", "name": "Lead Generation LinkedIn B2B 2026" },
       { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
@@ -986,10 +1005,10 @@ export const blogPosts = [
 
 <h2>Les 4 pièges qui tuent votre ROI (et comment les éviter)</h2>
 <h3>Piège 1 : « Je mets 10 000 contacts dans la machine et j'attends »</h3>
-<p>Volume ≠ qualité. 10 000 contacts mal ciblés = 10 000 spam complaints, domaine brûlé, deliverability au tapis. Solution : commencer par 200 comptes ultra-qualifiés (ICP validé), tester, mesurer, scaler. Notre guide <a href="/blog/7/">ICP en B2B : la méthode pour définir votre client idéal</a> pose les bases.</p>
+<p>Volume ≠ qualité. 10 000 contacts mal ciblés = 10 000 spam complaints, domaine brûlé, deliverability au tapis. Solution : commencer par 200 comptes ultra-qualifiés (ICP validé), tester, mesurer, scaler. Notre guide <a href="/blog/icp-b2b-methode-client-ideal/">ICP en B2B : la méthode pour définir votre client idéal</a> pose les bases.</p>
 
 <h3>Piège 2 : Négliger la deliverability technique</h3>
-<p>SPF, DKIM, DMARC, warm-up progressif, rotation d'IP, domaines secondaires (marque.fr → marque-outreach.fr). Sans ça, vos séquences finissent en spam avant même d'être ouvertes. On a vu des domaines principaux blacklistés en 3 semaines parce qu'on a « oublié » le warm-up. Lisez <a href="/blog/2/">notre guide cold emailing 2026</a> pour le checklist complet.</p>
+<p>SPF, DKIM, DMARC, warm-up progressif, rotation d'IP, domaines secondaires (marque.fr → marque-outreach.fr). Sans ça, vos séquences finissent en spam avant même d'être ouvertes. On a vu des domaines principaux blacklistés en 3 semaines parce qu'on a « oublié » le warm-up. Lisez <a href="/blog/guide-cold-emailing-b2b-sans-spam-2026/">notre guide cold emailing 2026</a> pour le checklist complet.</p>
 
 <h3>Piège 3 : Personnalisation « {{prenom }} » = zéro personnalisation</h3>
 <p>Vraie personnalisation = « J'ai vu que vous veniez de recruter 3 SDR — ça veut dire que vous structurez l'outbound. La plupart de nos clients à ce stade galèrent sur la data quality. Voici comment on a aidé [Client similaire] à diviser par 3 leur coût par RDV. » Ça demande de la data (recrutement, actualité, technographic). C'est pour ça que l'enrichissement en cascade (étape 2) est non-négociable.</p>
@@ -1051,11 +1070,12 @@ export const blogPosts = [
 <h2>Prêt à arrêter de prospecter à la main ?</h2>
 <p>La génération de leads B2B automatisée n'est pas de la magie. C'est de l'ingénierie : data propre, process rodés, outils connectés, deliverability blindée. Ça se construit. Ça se mesure. Ça s'optimise.</p>
 <p>Vous voulez voir à quoi ressemble votre machine sur mesure ? <strong><a href="/contact/">On en parle 30 min (audit gratuit, sans engagement)</a></strong>. Vous repartez avec un plan d'action clair — et la certitude que votre prochain RDV qualifié ne dépendra plus de votre capacité à envoyer des emails à 22h le dimanche.</p>
-<p><em>P.S. : Si vous préférez tester l'approche LinkedIn d'abord, notre article <a href="/blog/6/">Lead Generation LinkedIn B2B 2026</a> détaille la méthode étape par étape.</em></p>
+<p><em>P.S. : Si vous préférez tester l'approche LinkedIn d'abord, notre article <a href="/blog/lead-generation-linkedin-b2b-remplir-agenda/">Lead Generation LinkedIn B2B 2026</a> détaille la méthode étape par étape.</em></p>
     `
   },
   {
     id: 16,
+    slug: "orchestration-multi-agents-prospection-b2b",
     title: "Orchestration multi-agents : des équipes d'agents IA au service de votre prospection B2B",
     excerpt: "LangGraph, CrewAI, Human-in-the-Loop : comment l'orchestration multi-agents transforme la prospection B2B en 2026. Le guide des dirigeants de PME.",
     category: "IA / AUTOMATISATION",
@@ -1107,6 +1127,7 @@ export const blogPosts = [
   },
   {
     id: 17,
+    slug: "automatiser-veille-strategique-ia-2026",
     title: "Automatiser sa veille avec l’IA : le guide pratique pour ne plus rien rater en 2026",
     excerpt: "Automatiser sa veille avec l’IA en 3 étapes : construisez un système qui surveille les sources et vous alerte sans temps perdu.",
     category: "IA / AUTOMATISATION",
@@ -1179,6 +1200,7 @@ export const blogPosts = [
   },
   {
     id: 18,
+    slug: "agents-ia-autonomes-b2b-gouvernance-donnees",
     title: "Agents IA autonomes en B2B : la gouvernance et l'hygiène des données, les 2 piliers oubliés de l'automatisation",
     excerpt: "Vous déployez des agents IA autonomes pour votre prospection B2B ? Sans gouvernance solide et hygiène des données, votre automation devient un risque. Voici comment sécuriser votre stack.",
     category: "IA / AUTOMATISATION",
@@ -1294,6 +1316,7 @@ export const blogPosts = [
   },
   {
     id: 19,
+    slug: "benchmarks-taux-ouverture-cold-email-2026",
     title: "Taux d'ouverture cold email : les benchmarks B2B par secteur en 2026",
     excerpt: "Quel taux d'ouverture viser en cold email B2B ? Benchmarks réels par secteur SaaS, Immo, Services, Tech avec données comparatives 2026.",
     category: "COLD EMAIL",
@@ -1421,6 +1444,7 @@ export const blogPosts = [
   },
   {
     id: 20,
+    slug: "scraping-linkedin-legal-rgpd-b2b",
     title: "Scraping LinkedIn legale B2B 2026 : methodes, outils et cadre RGPD",
     excerpt: "Comment extraire des leads LinkedIn en toute legalite RGPD en 2026 : methodes, comparatif Phantombuster/Evaboot/Apollo/Manuela et alternatives lead gen.",
     category: "DATA / SCRAPING",
@@ -1600,6 +1624,7 @@ export const blogPosts = [
   },
   {
     id: 21,
+    slug: "audit-prospection-commerciale-pme-fuites-pipeline",
     title: "Audit prospection commerciale PME : comment identifier les fuites de votre pipeline et doubler vos RDV qualifiés",
     excerpt: "Guide complet pour auditer votre prospection commerciale PME en 2026. Méthode en 4 étapes pour identifier les fuites de pipeline et doubler vos RDV qualifiés.",
     category: "STRATÉGIE",
@@ -1844,6 +1869,7 @@ export const blogPosts = [
   },
   {
     id: 22,
+    slug: "workflow-automatisation-sales-b2b-crm-enrichissement",
     title: "Workflow automatisation sales B2B : CRM + Cold Email + Enrichissement en 7 étapes",
     excerpt: "Schéma complet du workflow d'automatisation sales B2B connectant CRM, cold email et enrichissement. Comparatif HubSpot, Pipedrive, n8n, Make avec données ROI.",
     category: "IA / AUTOMATISATION",
@@ -2121,6 +2147,7 @@ export const blogPosts = [
   },
   {
     id: 23,
+    slug: "actualite-ia-septembre-2026-pivots-prospection",
     title: "Actualité IA septembre 2026 : les 3 pivots qui restructurent l'automatisation en entreprise",
     excerpt: "Septembre 2026 marque un virage : les agents IA ne font plus des tâches, ils pilotent des départements entiers. Voici les 3 pivots à maîtriser.",
     category: "IA / AUTOMATISATION",
@@ -2197,6 +2224,7 @@ export const blogPosts = [
   },
   {
     id: 24,
+    slug: "agents-autonomes-veille-augmentee-automatisation-2026",
     title: "Actualité IA : agents autonomes et veille augmentée, la nouvelle donne de l'automatisation en 2026",
     excerpt: "En 2026, l'automatisation bascule vers la workforce agentique et la veille augmentée par l'IA. Découvrez les outils et la gouvernance à mettre en place.",
     metaTitle: "Agents autonomes & veille augmentée : guide automatisation IA 2026",
