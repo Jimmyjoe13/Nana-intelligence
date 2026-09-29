@@ -24,3 +24,9 @@ Ce registre répertorie les agents virtuels spécialisés créés et mobilisés 
 - **Compétences :** Développement frontend Next.js, intégration de balises tierces, gestion du DOM et optimisation du rendu.
 - **Dernière activité :** Mobilisé le 2026-06-28 pour l'intégration du script SEOJuice.
 
+### 5. Léa (agent SEO externe - flotte Richard / VPS)
+- **Rôle :** Agent SEO de la flotte de Richard hébergée sur le VPS. Doit aligner ses interventions SEO sur la direction commune définie dans `docs/SEO-CHANGELOG.md`.
+- **Compétences :** Analyse SEO, rédaction et optimisation de contenus, coordination avec les autres agents du site Nana Intelligence.
+- **Protocole :** Lire `docs/SEO-CHANGELOG.md` avant toute action, consigner toute modification dans ce journal avec la date, et signaler toute divergence de stratégie pour validation utilisateur.
+- **Dernière activité :** Registre créé le 2026-09-29 dans le cadre de la coordination de flotte.
+
