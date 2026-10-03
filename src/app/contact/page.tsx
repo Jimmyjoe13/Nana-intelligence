@@ -99,7 +99,12 @@ export default function ContactPage() {
                   </div>
                   <div className="flex flex-col gap-1">
                     <span className="font-mono text-[11px] text-ink-3 uppercase font-bold">Email Direct</span>
-                    <span className="font-display text-[20px]">contact@nana-intelligence.fr</span>
+                    <a
+                      href="mailto:contact@nana-intelligence.fr?subject=Demande%20d%27audit%20gratuit%2030%20min"
+                      className="font-display text-[20px] underline decoration-ink/20 underline-offset-4 hover:text-orange hover:decoration-orange transition-colors"
+                    >
+                      contact@nana-intelligence.fr
+                    </a>
                   </div>
                 </div>
 
