@@ -78,6 +78,9 @@ export default function AgencyPage() {
               </Button>
             </Link>
           </div>
+          <p className="mt-5 text-center font-mono text-[11px] uppercase tracking-[0.12em] text-ink-3">
+            Réponse sous 24 h · Données jamais partagées · Sans engagement
+          </p>
         </div>
       </section>
 
@@ -100,7 +103,7 @@ export default function AgencyPage() {
                   {agency.heroSubtitle}
                 </p>
                 <Link href={`/agence-lead-generation/${agency.slug}`} className="mt-auto">
-                  <Button variant="ink" className="w-full" icon={<ArrowRight size={16} />}>Découvrir : {agency.cityName}</Button>
+                  <Button variant="ink" className="w-full" icon={<ArrowRight size={16} />} trackLabel={`agence_card_${agency.slug}`} sectionId="agence_cities">Découvrir : {agency.cityName}</Button>
                 </Link>
               </Box>
             ))}
@@ -136,7 +139,7 @@ export default function AgencyPage() {
            <p className="text-cream/60 max-w-xl text-lg">Nous accompagnons les entreprises sur toute la France. Discutons de votre projet dès maintenant.</p>
            <div className="flex flex-wrap gap-4 justify-center">
              <Link href="/contact/">
-               <Button variant="primary" size="lg" icon={<Sparkles size={20} />}>Obtenir mon audit gratuit 30 min</Button>
+               <Button variant="primary" size="lg" icon={<Sparkles size={20} />} trackLabel="agence_footer_audit" sectionId="agence_footer">Obtenir mon audit gratuit 30 min</Button>
              </Link>
              <Link href="/blog/" className="font-mono text-[11px] text-orange uppercase tracking-widest font-bold self-center hover:underline">Blog prospection B2B</Link>
            </div>
