@@ -10,8 +10,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/agence-lead-generation/" },
-  title: "Agences Prospection B2B en PACA — Marseille, Nice, Aix, Toulon | Audit Gratuit",
-  description: "Réseau d'agences de prospection commerciale B2B en région PACA. Cold Emailing, Scraping & Automatisation Sales pour générer vos RDV qualifiés. Résultats en 15 jours — Audit stratégique 30 min offert.",
+  title: "Agence Lead Generation B2B — Prospection PACA & France",
+  description: "Agence de prospection B2B en PACA : cold emailing, scraping & automatisation sales. RDV qualifiés en 15 jours. Audit stratégique 30 min offert.",
   keywords: [
     "agence prospection commerciale b2b marseille",
     "agence prospection commerciale b2b aix en provence",
@@ -78,6 +78,9 @@ export default function AgencyPage() {
               </Button>
             </Link>
           </div>
+          <p className="mt-5 text-center font-mono text-[11px] uppercase tracking-[0.12em] text-ink-3">
+            Réponse sous 24 h · Données jamais partagées · Sans engagement
+          </p>
         </div>
       </section>
 
@@ -100,7 +103,7 @@ export default function AgencyPage() {
                   {agency.heroSubtitle}
                 </p>
                 <Link href={`/agence-lead-generation/${agency.slug}`} className="mt-auto">
-                  <Button variant="ink" className="w-full" icon={<ArrowRight size={16} />}>Découvrir : {agency.cityName}</Button>
+                  <Button variant="ink" className="w-full" icon={<ArrowRight size={16} />} trackLabel={`agence_card_${agency.slug}`} sectionId="agence_cities">Découvrir : {agency.cityName}</Button>
                 </Link>
               </Box>
             ))}
@@ -136,7 +139,7 @@ export default function AgencyPage() {
            <p className="text-cream/60 max-w-xl text-lg">Nous accompagnons les entreprises sur toute la France. Discutons de votre projet dès maintenant.</p>
            <div className="flex flex-wrap gap-4 justify-center">
              <Link href="/contact/">
-               <Button variant="primary" size="lg" icon={<Sparkles size={20} />}>Obtenir mon audit gratuit 30 min</Button>
+               <Button variant="primary" size="lg" icon={<Sparkles size={20} />} trackLabel="agence_footer_audit" sectionId="agence_footer">Obtenir mon audit gratuit 30 min</Button>
              </Link>
              <Link href="/blog/" className="font-mono text-[11px] text-orange uppercase tracking-widest font-bold self-center hover:underline">Blog prospection B2B</Link>
            </div>
