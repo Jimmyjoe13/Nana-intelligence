@@ -10,8 +10,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/agence-lead-generation/" },
-  title: "Agences Prospection B2B en PACA — Marseille, Nice, Aix, Toulon | Audit Gratuit",
-  description: "Réseau d'agences de prospection commerciale B2B en région PACA. Cold Emailing, Scraping & Automatisation Sales pour générer vos RDV qualifiés. Résultats en 15 jours — Audit stratégique 30 min offert.",
+  title: "Agence Lead Generation B2B — Prospection PACA & France",
+  description: "Agence de prospection B2B en PACA : cold emailing, scraping & automatisation sales. RDV qualifiés en 15 jours. Audit stratégique 30 min offert.",
   keywords: [
     "agence prospection commerciale b2b marseille",
     "agence prospection commerciale b2b aix en provence",
