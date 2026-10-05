@@ -67,9 +67,9 @@ export default function AgencyPage() {
         <div className="max-w-[1400px] mx-auto px-6 md:px-10">
           <PageHeader
             kicker="Réseau National"
-            title="Nos Agences"
+            title="Agence Lead Generation B2B"
             emphasis="de proximité"
-            description="Nana Intelligence rayonne sur toute la France avec un ancrage fort en région PACA. Trouvez l'expertise locale adaptée à votre marché."
+            description="Cold emailing, scraping et automatisation sales : des rendez-vous qualifiés en 15 jours partout en France, avec un ancrage fort en région PACA. Audit stratégique 30 min offert."
           />
           <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
             <Link href="/contact/">
@@ -103,7 +103,7 @@ export default function AgencyPage() {
                   {agency.heroSubtitle}
                 </p>
                 <Link href={`/agence-lead-generation/${agency.slug}`} className="mt-auto">
-                  <Button variant="ink" className="w-full" icon={<ArrowRight size={16} />} trackLabel={`agence_card_${agency.slug}`} sectionId="agence_cities">Découvrir : {agency.cityName}</Button>
+                  <Button variant="ink" className="w-full" icon={<ArrowRight size={16} />} trackLabel={`agence_card_${agency.slug}`} sectionId="agence_cities">Générer des leads à {agency.cityName}</Button>
                 </Link>
               </Box>
             ))}
