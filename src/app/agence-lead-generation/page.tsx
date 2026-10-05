@@ -10,8 +10,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/agence-lead-generation/" },
-  title: "Agence Lead Generation B2B — Prospection PACA & France",
-  description: "Agence de prospection B2B en PACA : cold emailing, scraping & automatisation sales. RDV qualifiés en 15 jours. Audit stratégique 30 min offert.",
+  title: "Agence Lead Generation B2B France — RDV qualifiés en 15 jours",
+  description: "Agence de lead generation B2B en PACA : cold emailing, scraping & automatisation. Premiers RDV qualifiés en 15 jours. Audit stratégique 30 min offert.",
   keywords: [
     "agence prospection commerciale b2b marseille",
     "agence prospection commerciale b2b aix en provence",
