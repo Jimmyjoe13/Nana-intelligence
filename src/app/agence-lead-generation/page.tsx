@@ -71,8 +71,16 @@ export default function AgencyPage() {
             emphasis="de proximité"
             description="Cold emailing, scraping et automatisation sales : des rendez-vous qualifiés en 15 jours partout en France, avec un ancrage fort en région PACA. Audit stratégique 30 min offert."
           />
+          {/* Preuve sociale — bandeau placé AVANT le CTA principal */}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+            <span className="font-mono text-[12px] font-bold uppercase tracking-[0.12em] text-ink">+250 RDV qualifiés / mois</span>
+            <span aria-hidden="true" className="hidden sm:block h-3 w-px bg-ink/20" />
+            <span className="font-mono text-[12px] font-bold uppercase tracking-[0.12em] text-ink">Premiers RDV en 15 jours</span>
+            <span aria-hidden="true" className="hidden sm:block h-3 w-px bg-ink/20" />
+            <span className="font-mono text-[12px] font-bold uppercase tracking-[0.12em] text-ink">40+ audits offerts en 2026</span>
+          </div>
           <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
-            <Link href="/contact/">
+            <Link href="/contact/#contact-form">
               <Button variant="primary" size="lg" icon={<ArrowRight size={20} />} trackLabel="agence_hero_audit" sectionId="agence_hero" className="mt-4">
                 Obtenir mon audit gratuit 30 min
               </Button>
@@ -126,8 +134,10 @@ export default function AgencyPage() {
                  <Tag variant="outline">Remote</Tag>
               </div>
            </div>
-           <div className="aspect-[16/9] border-[1.5px] border-ink bg-cream-2 flex items-center justify-center font-mono text-ink-4 text-[11px]">
-              [CARTE_INTERACTIVE_PLACEHOLDER]
+           <div className="aspect-[16/9] border-[1.5px] border-ink bg-cream-2 flex flex-col items-center justify-center gap-3 font-mono text-[11px] uppercase tracking-[0.12em] text-ink-4 text-center px-6">
+              <MapPin size={22} className="text-orange" />
+              <span className="text-ink font-bold">Marseille · Aix-en-Provence · Toulon · Nice</span>
+              <span>Campagnes déployées partout en France et en Europe</span>
            </div>
         </div>
       </section>
@@ -138,11 +148,11 @@ export default function AgencyPage() {
            <h2 className="font-display text-[44px] md:text-[64px] text-cream leading-none font-medium">Vous ne trouvez pas votre ville ?</h2>
            <p className="text-cream/60 max-w-xl text-lg">Nous accompagnons les entreprises sur toute la France. Discutons de votre projet dès maintenant.</p>
            <div className="flex flex-wrap gap-4 justify-center">
-             <Link href="/contact/">
+             <Link href="/contact/#contact-form">
                <Button variant="primary" size="lg" icon={<Sparkles size={20} />} trackLabel="agence_footer_audit" sectionId="agence_footer">Obtenir mon audit gratuit 30 min</Button>
              </Link>
-             <Link href="/blog/" className="font-mono text-[11px] text-orange uppercase tracking-widest font-bold self-center hover:underline">Blog prospection B2B</Link>
            </div>
+           <p className="font-mono text-[11px] text-cream/50 uppercase tracking-[0.12em]">Réponse sous 24 h · Sans engagement · Données jamais partagées</p>
         </div>
       </section>
     </div>
