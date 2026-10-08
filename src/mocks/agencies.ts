@@ -18,14 +18,15 @@ export const agenciesData: Record<string, AgencyData> = {
     badge: "Agence Acquisition Marseille",
     heroTitle: "Agence de Prospection Commerciale B2B à Marseille",
     heroSubtitle: "Notre agence de prospection commerciale B2B à Marseille aide les PME et startups phocéennes à remplir leur agenda de RDV qualifiés grâce au Cold Emailing, au Scraping LinkedIn et à l'automatisation sales.",
-    metaTitle: "Agence Lead Generation Marseille — RDV Qualifiés | Audit Offert",
-    metaDescription: "Agence lead generation B2B à Marseille. Cold emailing, scraping et automatisation : agenda de décideurs qualifiés en 15 jours. Audit offert.",
+    metaTitle: "Agence de Prospection Commerciale B2B à Marseille — RDV Qualifiés",
+    metaDescription: "Agence de prospection commerciale B2B à Marseille. Cold emailing, scraping et automatisation : agenda de décideurs qualifiés en 15 jours. Audit offert.",
     detailedContent: [
       "Marseille est un hub économique dynamique, mais la concurrence y est féroce. Pour émerger dans la cité phocéenne, une simple présence digitale ne suffit plus. En tant qu'agence de prospection commerciale B2B à Marseille, nous déployons des stratégies d'acquisition sortante (Outbound) qui court-circuitent les cycles de vente traditionnels et placent vos commerciaux face à des décideurs réellement intéressés.",
       "Nous maîtrisons les spécificités du marché local, des zones industrielles de l'Est marseillais aux startups de la French Tech Méditerranée, en passant par le port et la logistique du quartier d'affaires d'Euroméditerranée. Notre approche repose sur trois piliers : la qualité de la donnée extraite (Scraping), la pertinence du message (Copywriting) et la maîtrise technique de l'infrastructure d'envoi qui garantit une délivrabilité maximale.",
       "Concrètement, notre prospection B2B à Marseille se déroule en quatre temps : nous définissons votre client idéal (ICP) avec vous, nous extrayons et enrichissons une base de prospects qualifiés sur Marseille et les Bouches-du-Rhône, nous rédigeons des séquences de Cold Emailing personnalisées, puis nous pilotons les campagnes jusqu'à la prise de rendez-vous. Vous ne récupérez que les leads chauds, prêts à échanger.",
       "Ce modèle convient particulièrement aux entreprises marseillaises des secteurs Tech, SaaS, services aux entreprises, immobilier d'entreprise et logistique, dont le panier moyen justifie une approche directe des décideurs plutôt qu'une publicité de masse coûteuse et peu ciblée.",
-      "En travaillant avec Nana Intelligence à Marseille, vous bénéficiez d'un partenaire de proximité capable de scaler votre prospection au niveau national tout en gardant une agilité propre aux structures expertes. Notre rémunération s'appuie largement sur la performance : notre intérêt est aligné sur le vôtre, générer des rendez-vous qui se transforment en clients. Nos trois piliers sur Marseille : le Cold Emailing B2B pour la prise de contact, le Scraping B2B pour le ciblage, et l'Automatisation Sales pour ne laisser aucune opportunité se perdre."
+      "En travaillant avec Nana Intelligence, vous bénéficiez d'un partenaire de proximité capable de scaler votre prospection au niveau national tout en gardant une agilité propre aux structures expertes. Notre rémunération s'appuie largement sur la performance : notre intérêt est aligné sur le vôtre, générer des rendez-vous qui se transforment en clients. La preuve par les chiffres : une campagne outbound bien structurée délivre typiquement un taux de réponse de 15 à 25 % et des premiers rendez-vous qualifiés dans les 10 à 15 jours, quand une prospection manuelle s'épuise après quelques dizaines d'appels.",
+      "Une agence de prospection commerciale B2B à Marseille combine trois leviers : le Cold Emailing pour engager les décideurs, le Scraping B2B pour constituer des bases locales fiables et l'Automatisation Sales pour relancer sans friction. Chez Nana Intelligence, ce trio a permis à des PME de PACA de remplir un pipeline de 20 à 30 opportunités par mois, avec des campagnes mesurées chaque semaine sur les rendez-vous obtenus."
     ],
     relatedServices: [
       { slug: "cold-emailing-b2b", label: "Cold Emailing B2B" },
@@ -48,6 +49,14 @@ export const agenciesData: Record<string, AgencyData> = {
       {
         question: "Le scraping LinkedIn est-il légal pour une entreprise marseillaise ?",
         answer: "Oui, tant qu'il respecte le RGPD. Nous ne collectons que des données professionnelles publiques et utilisons un intérêt légitime pour la prospection, incluant systématiquement un lien de désinscription."
+      },
+      {
+        question: "Quels secteurs ciblent le mieux une campagne B2B à Marseille ?",
+        answer: "Les secteurs Tech, SaaS, services aux entreprises, immobilier d'entreprise et logistique performent le mieux : leur panier moyen justifie une approche directe des décideurs plutôt qu'une publicité de masse."
+      },
+      {
+        question: "En combien de temps obtient-on les premiers rendez-vous ?",
+        answer: "Les premiers rendez-vous qualifiés arrivent généralement en 10 à 15 jours, après la définition de l'ICP, la constitution de la base locale et le warm-up de l'infrastructure d'envoi en première semaine."
       }
     ]
   },
@@ -57,8 +66,8 @@ export const agenciesData: Record<string, AgencyData> = {
     badge: "Agence Acquisition Aix-en-Provence",
     heroTitle: "Agence de Prospection Commerciale B2B à Aix-en-Provence",
     heroSubtitle: "Notre agence de prospection commerciale B2B à Aix-en-Provence aide les entreprises du Pays d'Aix et de la région PACA à générer des rendez-vous qualifiés via le Cold Emailing et le Scraping ciblé.",
-    metaTitle: "Prospection B2B Aix-en-Provence — C-Level | Audit Gratuit",
-    metaDescription: "Agence de prospection B2B à Aix-en-Provence & Pays d'Aix. Ciblez les décideurs C-Level en Cold Emailing haute délivrabilité. Audit 30 min offert.",
+    metaTitle: "Agence de Prospection Commerciale B2B à Aix-en-Provence — Audit Gratuit",
+    metaDescription: "Agence de prospection commerciale B2B à Aix-en-Provence et Pays d'Aix. Ciblez les décideurs C-Level en Cold Emailing haute délivrabilité. Audit 30 min offert.",
     detailedContent: [
       "Le bassin aixois regroupe des entreprises à forte valeur ajoutée technologique et tertiaire. Pour ces acteurs, le défi n'est pas le volume mais la qualité : trouver des interlocuteurs de haut niveau (C-Level, fondateurs, directeurs achats). En tant qu'agence de prospection commerciale B2B à Aix-en-Provence, nous nous spécialisons dans l'approche chirurgicale de ces décideurs difficiles à atteindre.",
       "Nous construisons des tunnels de prospection qui imitent le comportement humain tout en bénéficiant de la puissance de l'automatisation. Notre expertise en Cold Emailing haute délivrabilité garantit que vos messages arrivent en boîte de réception principale, et non en spam — un point critique quand on s'adresse à des dirigeants sur-sollicités.",
@@ -96,8 +105,8 @@ export const agenciesData: Record<string, AgencyData> = {
     badge: "Agence Acquisition Toulon & Var",
     heroTitle: "Agence Prospection Commerciale B2B à Toulon",
     heroSubtitle: "Agence spécialisée en lead generation B2B. Nous aidons les entreprises de Toulon et du Var à remplir leur agenda de rendez-vous qualifiés grâce au Cold Emailing et au Scraping B2B.",
-    metaTitle: "Agence Lead Generation Toulon et Var — RDV Qualifiés | Audit",
-    metaDescription: "Agence lead generation B2B à Toulon et dans le Var. Cold emailing et scraping : un flux de RDV qualifiés avec des décideurs ciblés. Audit offert.",
+    metaTitle: "Agence de Prospection Commerciale B2B à Toulon et Var — RDV Qualifiés",
+    metaDescription: "Agence de prospection commerciale B2B à Toulon et dans le Var. Cold emailing et scraping : un flux de RDV qualifiés avec des décideurs ciblés. Audit offert.",
     detailedContent: [
       "Le Var possède un tissu économique unique, porté par l'industrie navale, la défense, le tourisme et un secteur tertiaire en plein essor. À Toulon, notre agence de prospection commerciale B2B aide les chefs d'entreprise à sortir de la prospection « traditionnelle » — chronophage et aléatoire — pour adopter des méthodes data-driven, mesurables et scalables.",
       "Notre infrastructure permet de générer un flux régulier de rendez-vous qualifiés sans que vous ayez à décrocher votre téléphone ni à passer vos soirées sur LinkedIn. Nous nous occupons de toute la chaîne : de l'identification précise de la cible dans le Var et la métropole Toulon-Provence-Méditerranée jusqu'à la rédaction du premier message accrocheur et des relances.",
@@ -135,8 +144,8 @@ export const agenciesData: Record<string, AgencyData> = {
     badge: "Agence Acquisition Nice & Côte d'Azur",
     heroTitle: "Agence de Prospection Commerciale B2B à Nice",
     heroSubtitle: "Notre agence de prospection commerciale B2B à Nice aide les entreprises des Alpes-Maritimes et de la Côte d'Azur à générer des rendez-vous qualifiés grâce au Cold Emailing, au Scraping LinkedIn et à l'automatisation sales.",
-    metaTitle: "Agence Lead Generation Nice et Sophia Antipolis — Audit Gratuit",
-    metaDescription: "Agence lead generation B2B à Nice et Sophia Antipolis. Cold emailing ciblé pour startups Tech et PME : résultats dès 15 jours. Audit 30 min offert.",
+    metaTitle: "Agence de Prospection Commerciale B2B à Nice et Sophia Antipolis — Audit Gratuit",
+    metaDescription: "Agence de prospection commerciale B2B à Nice et Sophia Antipolis. Cold emailing ciblé pour startups Tech et PME : résultats dès 15 jours. Audit 30 min offert.",
     detailedContent: [
       "Nice et la Côte d'Azur concentrent un écosystème B2B singulier : la technopole de Sophia Antipolis, le tourisme d'affaires, l'immobilier haut de gamme, les services aux entreprises et un tissu dense de PME innovantes. Dans cet environnement très concurrentiel, notre agence de prospection commerciale B2B à Nice permet aux entreprises azuréennes de capter l'attention des bons décideurs avant leurs concurrents.",
       "La prospection traditionnelle (phoning à froid, salons, bouche-à-oreille) atteint vite ses limits sur un marché aussi étendu que les Alpes-Maritimes. Nous y répondons par une approche outbound automatisée : identification précise de votre client idéal, extraction et enrichissement d'une base de prospects locaux, puis séquences de Cold Emailing personnalisées qui déclenchent des conversations commerciales réelles.",

@@ -137,6 +137,14 @@ export default function AgencyCityPage({ params }: Props) {
                     </Link>
                   ))}
                 </div>
+                <div className="flex flex-col gap-3 pt-4 border-t border-ink/10">
+                  <span className="text-sm font-mono uppercase tracking-wider text-ink-2">Guides liés :</span>
+                  <div className="flex flex-wrap gap-x-6 gap-y-2">
+                    <Link href="/blog/strategie-lead-generation-pme-paca/" className="text-orange hover:underline">Stratégie de lead generation B2B pour PME en PACA</Link>
+                    <Link href="/blog/tendances-automatisation-ia-2026/" className="text-orange hover:underline">Tendances automatisation IA 2026</Link>
+                    <Link href="/blog/choisir-agence-prospection-commerciale-b2b/" className="text-orange hover:underline">Choisir son agence de prospection B2B</Link>
+                  </div>
+                </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
                  <div className="flex items-start gap-3">
