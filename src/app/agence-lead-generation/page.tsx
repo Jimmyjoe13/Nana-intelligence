@@ -10,9 +10,12 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/agence-lead-generation/" },
-  title: "Agence Lead Generation B2B — Prospection PACA & France",
-  description: "Agence de prospection B2B en PACA : cold emailing, scraping & automatisation sales. RDV qualifiés en 15 jours. Audit stratégique 30 min offert.",
+  title: "Agence de prospection B2B : RDV qualifiés en 15 jours | Nana",
+  description: "Agence de prospection B2B : cold emailing, scraping et automatisation sales. Premiers RDV qualifiés en 15 jours, partout en France. Audit 30 min offert.",
   keywords: [
+    "agence de prospection b2b",
+    "agence prospection commerciale b2b",
+    "agence lead generation b2b",
     "agence prospection commerciale b2b marseille",
     "agence prospection commerciale b2b aix en provence",
     "agence prospection commerciale b2b toulon",
@@ -67,7 +70,7 @@ export default function AgencyPage() {
         <div className="max-w-[1400px] mx-auto px-6 md:px-10">
           <PageHeader
             kicker="Réseau National"
-            title="Agence Lead Generation B2B"
+            title="Agence de prospection B2B"
             emphasis="de proximité"
             description="Cold emailing, scraping et automatisation sales : des rendez-vous qualifiés en 15 jours partout en France, avec un ancrage fort en région PACA. Audit stratégique 30 min offert."
           />

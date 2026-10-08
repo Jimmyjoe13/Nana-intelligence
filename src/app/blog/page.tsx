@@ -10,7 +10,7 @@ import { toIsoDate } from "@/lib/dates";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/blog/" },
-  title: "Blog Lead Generation B2B | Guides Cold Emailing & Scraping | Nana Intelligence",
+  title: "Blog prospection B2B : guides cold email et scraping | Nana",
   description: "Guides et analyses sur le cold emailing, le scraping B2B et l'automatisation sales. Stratégies éprouvées pour générer des RDV qualifiés. Audit gratuit.",
   keywords: [
     "blog lead generation b2b",

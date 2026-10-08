@@ -115,7 +115,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     kicker: "Infrastructure Commerciale",
     heroTitle: "Automatisation Sales & Commerciale B2B",
     heroSubtitle: "Notre service d'automatisation sales connecte votre CRM, automatise vos relances et votre nurturing, et libère vos commerciaux des tâches répétitives pour qu'ils se concentrent sur la vente.",
-    metaTitle: "Automatisation Sales B2B : CRM & Workflows | Nana Intelligence",
+    metaTitle: "Automatisation sales B2B : CRM et workflows | Nana",
     metaDescription: "Service d'automatisation sales B2B : connexion CRM (HubSpot, Pipedrive), workflows automatisés (Make/n8n) et nurturing. Libérez vos commerciaux.",
     keywords: ["automatisation des ventes", "sales automation", "automatisation prospection B2B", "agents IA commerciaux", "CRM automatisé"],
     features: [

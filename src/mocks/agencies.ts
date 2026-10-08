@@ -18,7 +18,7 @@ export const agenciesData: Record<string, AgencyData> = {
     badge: "Agence Acquisition Marseille",
     heroTitle: "Agence de Prospection Commerciale B2B à Marseille",
     heroSubtitle: "Notre agence de prospection commerciale B2B à Marseille aide les PME et startups phocéennes à remplir leur agenda de RDV qualifiés grâce au Cold Emailing, au Scraping LinkedIn et à l'automatisation sales.",
-    metaTitle: "Agence de Prospection Commerciale B2B à Marseille — RDV Qualifiés",
+    metaTitle: "Agence de prospection commerciale B2B à Marseille | Nana",
     metaDescription: "Agence de prospection commerciale B2B à Marseille. Cold emailing, scraping et automatisation : agenda de décideurs qualifiés en 15 jours. Audit offert.",
     detailedContent: [
       "Marseille est un hub économique dynamique, mais la concurrence y est féroce. Pour émerger dans la cité phocéenne, une simple présence digitale ne suffit plus. En tant qu'agence de prospection commerciale B2B à Marseille, nous déployons des stratégies d'acquisition sortante (Outbound) qui court-circuitent les cycles de vente traditionnels et placent vos commerciaux face à des décideurs réellement intéressés.",
@@ -66,7 +66,7 @@ export const agenciesData: Record<string, AgencyData> = {
     badge: "Agence Acquisition Aix-en-Provence",
     heroTitle: "Agence de Prospection Commerciale B2B à Aix-en-Provence",
     heroSubtitle: "Notre agence de prospection commerciale B2B à Aix-en-Provence aide les entreprises du Pays d'Aix et de la région PACA à générer des rendez-vous qualifiés via le Cold Emailing et le Scraping ciblé.",
-    metaTitle: "Agence de Prospection Commerciale B2B à Aix-en-Provence — Audit Gratuit",
+    metaTitle: "Agence de prospection B2B à Aix-en-Provence | Nana",
     metaDescription: "Agence de prospection commerciale B2B à Aix-en-Provence et Pays d'Aix. Ciblez les décideurs C-Level en Cold Emailing haute délivrabilité. Audit 30 min offert.",
     detailedContent: [
       "Le bassin aixois regroupe des entreprises à forte valeur ajoutée technologique et tertiaire. Pour ces acteurs, le défi n'est pas le volume mais la qualité : trouver des interlocuteurs de haut niveau (C-Level, fondateurs, directeurs achats). En tant qu'agence de prospection commerciale B2B à Aix-en-Provence, nous nous spécialisons dans l'approche chirurgicale de ces décideurs difficiles à atteindre.",
@@ -105,7 +105,7 @@ export const agenciesData: Record<string, AgencyData> = {
     badge: "Agence Acquisition Toulon & Var",
     heroTitle: "Agence Prospection Commerciale B2B à Toulon",
     heroSubtitle: "Agence spécialisée en lead generation B2B. Nous aidons les entreprises de Toulon et du Var à remplir leur agenda de rendez-vous qualifiés grâce au Cold Emailing et au Scraping B2B.",
-    metaTitle: "Agence de Prospection Commerciale B2B à Toulon et Var — RDV Qualifiés",
+    metaTitle: "Agence de prospection commerciale B2B à Toulon | Nana",
     metaDescription: "Agence de prospection commerciale B2B à Toulon et dans le Var. Cold emailing et scraping : un flux de RDV qualifiés avec des décideurs ciblés. Audit offert.",
     detailedContent: [
       "Le Var possède un tissu économique unique, porté par l'industrie navale, la défense, le tourisme et un secteur tertiaire en plein essor. À Toulon, notre agence de prospection commerciale B2B aide les chefs d'entreprise à sortir de la prospection « traditionnelle » — chronophage et aléatoire — pour adopter des méthodes data-driven, mesurables et scalables.",
@@ -144,7 +144,7 @@ export const agenciesData: Record<string, AgencyData> = {
     badge: "Agence Acquisition Nice & Côte d'Azur",
     heroTitle: "Agence de Prospection Commerciale B2B à Nice",
     heroSubtitle: "Notre agence de prospection commerciale B2B à Nice aide les entreprises des Alpes-Maritimes et de la Côte d'Azur à générer des rendez-vous qualifiés grâce au Cold Emailing, au Scraping LinkedIn et à l'automatisation sales.",
-    metaTitle: "Agence de Prospection Commerciale B2B à Nice et Sophia Antipolis — Audit Gratuit",
+    metaTitle: "Agence de prospection commerciale B2B à Nice | Nana",
     metaDescription: "Agence de prospection commerciale B2B à Nice et Sophia Antipolis. Cold emailing ciblé pour startups Tech et PME : résultats dès 15 jours. Audit 30 min offert.",
     detailedContent: [
       "Nice et la Côte d'Azur concentrent un écosystème B2B singulier : la technopole de Sophia Antipolis, le tourisme d'affaires, l'immobilier haut de gamme, les services aux entreprises et un tissu dense de PME innovantes. Dans cet environnement très concurrentiel, notre agence de prospection commerciale B2B à Nice permet aux entreprises azuréennes de capter l'attention des bons décideurs avant leurs concurrents.",

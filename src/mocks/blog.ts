@@ -13,6 +13,8 @@ export const blogPosts = [
     id: 1,
     slug: "agence-prospection-b2b-ou-commercial-interne",
     title: "Agence de prospection B2B ou commercial interne ?",
+    metaTitle: "Commercial interne ou agence externe : le comparatif",
+    metaDescription: "Recruter un commercial ou passer par une agence de prospection B2B ? Comparatif chiffré des coûts, délais et résultats pour choisir le bon modèle.",
     excerpt: "Comparatif complet des coûts et avantages entre commercial interne et agence prospection B2B. Quel choix pour vos ventes ?",
     category: "STRATÉGIE",
     date: "03 Mars 2026",
@@ -68,6 +70,7 @@ export const blogPosts = [
 
       <p>Chez <strong>Nana Intelligence</strong>, nous nous positionnons comme l'extension naturelle de votre force de vente. Prêt à transformer votre acquisition ?</p>
       <p>Découvrez nos <a href="/services/">services de lead generation B2B</a> : <a href="/services/cold-emailing-b2b/">campagne de cold emailing B2B</a>, <a href="/services/scraping-b2b/">service scraping de données B2B</a> et <a href="/services/automatisation-sales/">automatisation sales B2B</a>.</p>
+<p>Vous hésitez encore ? Découvrez comment travaille notre <a href="/agence-lead-generation/">agence de prospection B2B</a> : méthode, délais de démarrage et zones d'intervention.</p>
     `
   },
   {
@@ -307,6 +310,8 @@ export const blogPosts = [
     id: 6,
     slug: "lead-generation-linkedin-b2b-remplir-agenda",
     title: "Lead Generation LinkedIn B2B 2026 : La méthode pour remplir votre agenda sans spammer",
+    metaTitle: "Lead generation LinkedIn B2B : la méthode sans spam",
+    metaDescription: "Remplir votre agenda grâce à LinkedIn sans spammer : ciblage, data, IA et séquences. La méthode 2026 pour PME B2B, étape par étape.",
     excerpt: "Lead gen LinkedIn B2B en 2026 : data, IA et automatisation pour remplir votre agenda sans spammer. Méthode complète Nana Intelligence.",
     category: "IA / AUTOMATISATION",
     date: "23 Juillet 2026",
@@ -407,6 +412,7 @@ export const blogPosts = [
     id: 7,
     slug: "icp-b2b-methode-client-ideal",
     title: "ICP en B2B : la méthode pour définir votre client idéal (et arrêter de prospecter dans le vide)",
+    metaTitle: "ICP B2B : définir votre client idéal en 4 étapes",
     excerpt: "Définir votre ICP B2B en 4 étapes : cessez de prospecter dans le vide. Méthode pour remplir votre pipeline de leads qualifiés.",
     category: "STRATÉGIE",
     date: "24 Juillet 2026",
@@ -499,6 +505,8 @@ export const blogPosts = [
     id: 8,
     slug: "trouver-des-clients-b2b-5-methodes",
     title: "Comment trouver des clients B2B en 2026 : 5 méthodes qui marchent vraiment",
+    metaTitle: "Trouver des clients B2B : 5 méthodes qui marchent",
+    metaDescription: "Cold emailing, scraping LinkedIn, Google Maps, automatisation et SEO : 5 méthodes concrètes pour trouver des clients B2B qualifiés en 2026.",
     excerpt: "Découvrez les 5 méthodes data-driven pour générer des leads qualifiés en 2026 : Cold Emailing, Scraping LinkedIn, Google Maps, Automatisation et SEO.",
     category: "STRATÉGIE",
     date: "28 Juillet 2026",
@@ -580,6 +588,8 @@ export const blogPosts = [
     id: 9,
     slug: "externaliser-prospection-commerciale-b2b",
     title: "Externaliser sa prospection commerciale B2B : le guide complet 2026",
+    metaTitle: "Externaliser sa prospection B2B : guide complet 2026",
+    metaDescription: "Externaliser sa prospection commerciale B2B : coûts, avantages, pièges à éviter et critères pour choisir le bon prestataire. Guide 2026 pour PME.",
     excerpt: "Externaliser votre prospection B2B : avantages, pièges à éviter et critères de choix pour scaler vos ventes sans alourdir vos charges.",
     category: "STRATÉGIE",
     date: "28 Juillet 2026",
@@ -662,15 +672,16 @@ export const blogPosts = [
     🎯 Construisons votre machine à leads : Obtenir un audit gratuit 30 min
   </a>
 </p>
+<p>Pour voir concrètement ce que donne une prospection externalisée, découvrez notre <a href="/agence-lead-generation/">agence de prospection B2B</a> : méthode, premiers rendez-vous en 15 jours et zones d'intervention.</p>
     `
   },
   {
     id: 10,
     slug: "strategie-lead-generation-pme-paca",
     title: "Lead Generation en Région PACA : Stratégie B2B gagnante pour les PME régionales",
-    metaTitle: "Lead Generation PME PACA : Stratégie B2B Gagnante en Provence",
-    metaDescription: "Stratégies d'acquisition et de prospection commerciale B2B dédiées aux PME de la région PACA. Développez votre réseau et vos opportunités commerciales.",
-    excerpt: "Lead generation Marseille : trouvez des clients B2B qualifiés en PACA. Méthodes, outils et conseils pour booster votre acquisition locale.",
+    metaTitle: "Lead generation PME en région PACA : la stratégie B2B",
+    metaDescription: "Prospection B2B en région PACA : cartographier le tissu local, bâtir une base qualifiée et automatiser les relances. Méthode en 6 étapes pour PME.",
+    excerpt: "Lead generation en région PACA : trouvez des clients B2B qualifiés entre Marseille, Aix, Toulon et Nice. Méthodes, outils et conseils pour PME.",
     category: "STRATÉGIE",
     date: "30 Juillet 2026",
     readTime: "3 MIN",
@@ -680,7 +691,7 @@ export const blogPosts = [
       { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "cold emailing B2B" },
     ],
     content: `
-<p>La prospection B2B à Marseille présente des particularités : un tissu dense de PME industrielles, de services nautiques, de tourisme d’affaires et de technologies. Pour sortir du lot, il ne suffit pas d’envoyer des e‑mails génériques ; il faut une approche hyper‑ciblée, soutenue par des données précises et des scénarios d’automatisation qui résonnent avec la culture d’affaires du Sud.</p>
+<p>La prospection B2B en région PACA, et à Marseille en particulier, présente des particularités : un tissu dense de PME industrielles, de services nautiques, de tourisme d’affaires et de technologies. Pour sortir du lot, il ne suffit pas d’envoyer des e‑mails génériques ; il faut une approche hyper‑ciblée, soutenue par des données précises et des scénarios d’automatisation qui résonnent avec la culture d’affaires du Sud.</p>
 <h2>1. Comprendre le tissu économique marseillais</h2>
 <p>Le premier pas consiste à cartographier les décideurs : dirigeants de PME de 5 à 50 salariés, responsables croissance dans les secteurs du shipping, de la logistique portuaire, de la tech médicale et du tourisme d’affaires. En utilisant le scraping de sources locales (Chambre de commerce, réseaux professionnels LinkedIn groupes « Business Provence‑Alpes‑Côte d’Azur », événements comme le MIPIM ou le Salon nautique), on récupère des listes de contacts à jour, incluant fonction, taille d’entreprise et récente activité.</p>
 <h2>2. Constituer une base de données qualifiée</h2>
@@ -694,6 +705,7 @@ export const blogPosts = [
 <h2>6. Intégrer le scraping pour renouveler le pipeline</h2>
 <p>Le scraping n’est pas une opération ponctuelle. Chaque semaine, un script actualise la base avec les nouveaux dirigeants nommés, les récents financements levés ou les projets publics publiés sur la plateforme de la métropole. Cela garantit que votre équipe commerciale ne travaille jamais sur des données obsolètes.</p>
 <p>En combinant ces cinq leviers, une PME marseillaise peut passer de quelques leads qualifiés par mois à un pipeline régulier de 20‑30 opportunités, tout en réduisant le temps passé par les commerciaux sur la prospection manuelle.</p>
+<p>Vous ciblez d'abord la métropole marseillaise ? Notre page <a href="/agence-lead-generation/marseille/">agence de prospection commerciale B2B à Marseille</a> détaille le dispositif local, les délais et les résultats.</p>
 <p>Prêt à tester cette approche sur votre marché ? <a href="/contact/" name="Contactez Nana Intelligence">Contactez-nous</a> pour un audit gratuit de votre processus de prospection et découvrez comment nous pouvons remplir votre agenda de rendez‑vous qualifiés sans augmenter votre charge de travail.</p>
     `
   },
@@ -701,6 +713,7 @@ export const blogPosts = [
     id: 11,
     slug: "tendances-automatisation-ia-2026",
     title: "Actualité IA : les tendances majeures de l’automatisation en 2026",
+    metaTitle: "Tendances de l'automatisation IA en 2026",
     excerpt: "Actualités IA 2026 : agents autonomes, automatisation et tendances qui transforment les PME. Ce qu’il faut retenir pour votre business.",
     category: "IA / AUTOMATISATION",
     date: "02 Août 2026",
@@ -748,9 +761,9 @@ export const blogPosts = [
     id: 12,
     slug: "choisir-agence-prospection-commerciale-b2b",
     title: "Comment choisir son agence de lead generation B2B ? Les 7 critères décisifs",
-    metaTitle: "Comment Choisir son Agence de Prospection B2B ? 7 Critères Clés",
-    metaDescription: "Guide comparatif pour choisir le bon partenaire en lead generation et prospection commerciale B2B : méthodologie, stack tech et modèles de rémunération.",
-    excerpt: "Comment choisir une agence lead generation à Marseille ? Critères de sélection, erreurs fréquentes et méthodes pour trouver le bon partenaire B2B.",
+    metaTitle: "Choisir son agence de prospection B2B : 7 critères",
+    metaDescription: "Comment choisir une agence de prospection B2B ? 7 critères décisifs : méthode, données, délivrabilité, tarifs et preuves. Les erreurs à éviter.",
+    excerpt: "Comment choisir une agence de prospection B2B ? Critères de sélection, erreurs fréquentes et méthodes pour trouver le bon partenaire.",
     category: "STRATÉGIE",
     date: "03 Août 2026",
     readTime: "4 MIN",
@@ -763,7 +776,7 @@ export const blogPosts = [
       { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "Cold emailing B2B" },
     ],
     content: `
-<p>Vous dirigez une PME située dans la région Provence‑Alpes‑Côte d’Azur et vous peinez à remplir votre agenda de rendez‑vous qualifiés ? Vous avez déjà testé le cold emailing, le LinkedIn outreach ou même quelques campagnes publicitaires, mais les résultats restent en deçà de vos ambitions ? Dans ce contexte, faire appel à une <strong>agence lead generation Marseille</strong> peut devenir le levier décisif pour transformer votre prospection en une machine à rendez‑vous.</p>
+<p>Vous dirigez une PME située dans la région Provence‑Alpes‑Côte d’Azur et vous peinez à remplir votre agenda de rendez‑vous qualifiés ? Vous avez déjà testé le cold emailing, le LinkedIn outreach ou même quelques campagnes publicitaires, mais les résultats restent en deçà de vos ambitions ? Dans ce contexte, faire appel à une <strong>agence de prospection B2B</strong> peut devenir le levier décisif pour transformer votre prospection en une machine à rendez‑vous.</p>
 
 <p>Mais attention : toutes les agences ne se valent pas. Certaines promettent des volumes de leads impressionnants, puis livrent des contacts non qualifiés, voire obsolètes. D’autres appliquent des méthodes trop agressives qui nuisent à votre image de marque. Pour éviter ces écueils, il faut savoir <em>quels critères examiner</em> avant de signer un contrat.</p>
 
@@ -831,10 +844,11 @@ export const blogPosts = [
 </ul>
 <p>Cette synergie permet de transformer les leads en opportunités réelles et d’optimiser continuellement le ciblage.</p>
 
-<p>En suivant ces sept étapes, vous maximisez vos chances de dénicher une <em>agence lead generation Marseille</em> qui ne se contente pas de gonfler vos listes de contacts, mais qui alimente véritablement votre pipeline de ventes avec des prospects prêts à discuter. Le résultat ? Plus de rendez‑vous qualifiés, un cycle de vente raccourci et, finalement, une croissance de votre chiffre d’affaires.</p>
+<p>En suivant ces sept étapes, vous maximisez vos chances de dénicher une agence de prospection B2B qui ne se contente pas de gonfler vos listes de contacts, mais qui alimente véritablement votre pipeline de ventes avec des prospects prêts à discuter. Le résultat ? Plus de rendez‑vous qualifiés, un cycle de vente raccourci et, finalement, une croissance de votre chiffre d’affaires.</p>
 
 <hr>
-<p><strong>Prêt à faire décoller votre prospection B2B à Marseille ?</strong> Demandez dès maintenant un <a href="/contact/">audit gratuit de votre stratégie de lead generation</a> ou prenez rendez‑vous pour un appel découverte avec nos experts Nana Intelligence.</p>
+<p><strong>Prêt à faire décoller votre prospection B2B ?</strong> Demandez dès maintenant un <a href="/contact/">audit gratuit de votre stratégie de lead generation</a> ou prenez rendez‑vous pour un appel découverte avec nos experts Nana Intelligence.</p>
+<p>Pour comparer avec un cas concret, découvrez la méthode de notre <a href="/agence-lead-generation/">agence de prospection B2B</a> et ses résultats.</p>
     `
   },
   {
@@ -909,6 +923,7 @@ export const blogPosts = [
     id: 14,
     slug: "multiplier-rendez-vous-qualifies-linkedin-b2b",
     title: "Lead Generation LinkedIn B2B 2026 : stratégies éprouvées pour multiplier vos rendez-vous qualifiés",
+    metaTitle: "LinkedIn B2B : multiplier vos rendez-vous qualifiés",
     excerpt: "Transformer LinkedIn en machine à RDV qualifiés : tactiques de ciblage, séquences et automatisation éprouvées par Nana Intelligence.",
     category: "STRATÉGIE",
     date: "05 Août 2026",
@@ -958,6 +973,8 @@ export const blogPosts = [
     id: 15,
     slug: "generation-leads-b2b-automatisee-pipeline",
     title: "Génération leads B2B automatisée : le système qui remplit votre pipeline pendant que vous dormez",
+    metaTitle: "Génération de leads B2B automatisée : guide 2026",
+    metaDescription: "Un système qui scrape, enrichit et pousse vos leads B2B dans le CRM sans effort manuel. Architecture, outils et coût réel en 2026.",
     excerpt: "Génération leads B2B automatisée : construisez une machine qui scrape, enrichit et push dans votre CRM. Architecture, outils et coût réel.",
     category: "IA / AUTOMATISATION",
     date: "10 Août 2026",
@@ -1076,12 +1093,15 @@ export const blogPosts = [
 <p>La génération de leads B2B automatisée n'est pas de la magie. C'est de l'ingénierie : data propre, process rodés, outils connectés, deliverability blindée. Ça se construit. Ça se mesure. Ça s'optimise.</p>
 <p>Vous voulez voir à quoi ressemble votre machine sur mesure ? <strong><a href="/contact/">On en parle 30 min (audit gratuit, sans engagement)</a></strong>. Vous repartez avec un plan d'action clair — et la certitude que votre prochain RDV qualifié ne dépendra plus de votre capacité à envoyer des emails à 22h le dimanche.</p>
 <p><em>P.S. : Si vous préférez tester l'approche LinkedIn d'abord, notre article <a href="/blog/lead-generation-linkedin-b2b-remplir-agenda/">Lead Generation LinkedIn B2B 2026</a> détaille la méthode étape par étape.</em></p>
+<p>Vous préférez déléguer la construction de ce système ? C'est le métier de notre <a href="/agence-lead-generation/">agence de prospection B2B</a>.</p>
     `
   },
   {
     id: 16,
     slug: "orchestration-multi-agents-prospection-b2b",
     title: "Orchestration multi-agents : des équipes d'agents IA au service de votre prospection B2B",
+    metaTitle: "Orchestration multi-agents IA pour la prospection B2B",
+    metaDescription: "LangGraph, CrewAI, humain dans la boucle : comment l'orchestration multi-agents transforme la prospection B2B en 2026. Guide pour dirigeants de PME.",
     excerpt: "LangGraph, CrewAI, Human-in-the-Loop : comment l'orchestration multi-agents transforme la prospection B2B en 2026. Le guide des dirigeants de PME.",
     category: "IA / AUTOMATISATION",
     date: "12 Août 2026",
@@ -1134,6 +1154,7 @@ export const blogPosts = [
     id: 17,
     slug: "automatiser-veille-strategique-ia-2026",
     title: "Automatiser sa veille avec l’IA : le guide pratique pour ne plus rien rater en 2026",
+    metaTitle: "Automatiser sa veille avec l'IA : guide pratique 2026",
     excerpt: "Automatiser sa veille avec l’IA en 3 étapes : construisez un système qui surveille les sources et vous alerte sans temps perdu.",
     category: "IA / AUTOMATISATION",
     date: "19 Août 2026",
@@ -1207,6 +1228,8 @@ export const blogPosts = [
     id: 18,
     slug: "agents-ia-autonomes-b2b-gouvernance-donnees",
     title: "Agents IA autonomes en B2B : la gouvernance et l'hygiène des données, les 2 piliers oubliés de l'automatisation",
+    metaTitle: "Agents IA autonomes en B2B : gouvernance des données",
+    metaDescription: "Agents IA en prospection B2B : sans gouvernance ni hygiène des données, l'automatisation devient un risque. Les règles pour sécuriser votre stack.",
     excerpt: "Vous déployez des agents IA autonomes pour votre prospection B2B ? Sans gouvernance solide et hygiène des données, votre automation devient un risque. Voici comment sécuriser votre stack.",
     category: "IA / AUTOMATISATION",
     date: "26 Août 2026",
@@ -1323,6 +1346,7 @@ export const blogPosts = [
     id: 19,
     slug: "benchmarks-taux-ouverture-cold-email-2026",
     title: "Taux d'ouverture cold email : les benchmarks B2B par secteur en 2026",
+    metaTitle: "Taux d'ouverture cold email : benchmarks B2B 2026",
     excerpt: "Quel taux d'ouverture viser en cold email B2B ? Benchmarks réels par secteur SaaS, Immo, Services, Tech avec données comparatives 2026.",
     category: "COLD EMAIL",
     date: "08 Septembre 2026",
@@ -1451,6 +1475,8 @@ export const blogPosts = [
     id: 20,
     slug: "scraping-linkedin-legal-rgpd-b2b",
     title: "Scraping LinkedIn legale B2B 2026 : methodes, outils et cadre RGPD",
+    metaTitle: "Scraping LinkedIn légal en B2B : méthodes et RGPD",
+    metaDescription: "Extraire des leads LinkedIn en toute légalité RGPD en 2026 : méthodes, comparatif Phantombuster, Evaboot et Apollo, et alternatives pour la lead gen B2B.",
     excerpt: "Comment extraire des leads LinkedIn en toute legalite RGPD en 2026 : methodes, comparatif Phantombuster/Evaboot/Apollo/Manuela et alternatives lead gen.",
     category: "DATA / SCRAPING",
     date: "08 Septembre 2026",
@@ -1618,6 +1644,8 @@ export const blogPosts = [
     id: 21,
     slug: "audit-prospection-commerciale-pme-fuites-pipeline",
     title: "Audit prospection commerciale PME : comment identifier les fuites de votre pipeline et doubler vos RDV qualifiés",
+    metaTitle: "Audit prospection PME : les fuites de votre pipeline",
+    metaDescription: "Auditer votre prospection commerciale en 4 étapes : repérer les fuites du pipeline et doubler vos rendez-vous qualifiés. Méthode 2026 pour PME B2B.",
     excerpt: "Guide complet pour auditer votre prospection commerciale PME en 2026. Méthode en 4 étapes pour identifier les fuites de pipeline et doubler vos RDV qualifiés.",
     category: "STRATÉGIE",
     date: "08 Septembre 2026",
@@ -1837,6 +1865,8 @@ export const blogPosts = [
     id: 22,
     slug: "workflow-automatisation-sales-b2b-crm-enrichissement",
     title: "Workflow automatisation sales B2B : CRM + Cold Email + Enrichissement en 7 étapes",
+    metaTitle: "Workflow sales B2B : CRM, cold email et enrichissement",
+    metaDescription: "Le workflow d'automatisation sales B2B qui relie CRM, cold email et enrichissement. Comparatif HubSpot, Pipedrive, n8n et Make, avec données ROI.",
     excerpt: "Schéma complet du workflow d'automatisation sales B2B connectant CRM, cold email et enrichissement. Comparatif HubSpot, Pipedrive, n8n, Make avec données ROI.",
     category: "IA / AUTOMATISATION",
     date: "08 Septembre 2026",
@@ -2192,8 +2222,8 @@ export const blogPosts = [
     id: 24,
     slug: "agents-autonomes-veille-augmentee-automatisation-2026",
     title: "Actualité IA : agents autonomes et veille augmentée, la nouvelle donne de l'automatisation en 2026",
+    metaTitle: "Agents autonomes et veille augmentée : l'IA en 2026",
     excerpt: "En 2026, l'automatisation bascule vers la workforce agentique et la veille augmentée par l'IA. Découvrez les outils et la gouvernance à mettre en place.",
-    metaTitle: "Agents autonomes & veille augmentée : guide automatisation IA 2026",
     metaDescription: "Agents autonomes, veille augmentée et gouvernance : transformez votre automatisation en 2026. Outils, méthodo et audit gratuit.",
     category: "IA / AUTOMATISATION",
     date: "18 Septembre 2026",
@@ -2212,9 +2242,9 @@ export const blogPosts = [
     id: 25,
     slug: "prix-agence-prospection-commerciale-b2b",
     title: "Prix agence prospection commerciale B2B : grille tarifaire, modèles et ROI en 2026",
+    metaTitle: "Prix d'une agence de prospection B2B : tarifs 2026",
+    metaDescription: "Combien coûte une agence de prospection B2B en 2026 ? Grille tarifaire, forfait ou commission, pièges contractuels et calcul du ROI pour PME.",
     excerpt: "Grille tarifaire 2026, comparatif forfaits vs commission, pièges contractuels et méthode de calcul du ROI pour PME B2B. Guide chiffré complet.",
-    metaTitle: "Prix agence prospection commerciale B2B : tarifs & ROI 2026",
-    metaDescription: "Combien coûte une agence de prospection B2B en 2026 ? Grille tarifaire, forfaits vs commission, pièges et calcul du ROI pour PME.",
     keywords: ["prix agence prospection commerciale b2b", "tarif agence lead generation", "cout externalisation prospection b2b", "roi agence prospection"],
     category: "STRATÉGIE",
     date: "26 Septembre 2026",
@@ -2377,12 +2407,15 @@ export const blogPosts = [
       <p>Vous souhaitez évaluer le coût exact et le potentiel de rentabilité d'une campagne de prospection ciblée pour votre entreprise ?</p>
       <p>Réservez dès aujourd'hui un <strong>audit gratuit de votre pipeline commercial de 30 minutes</strong>. Nous analysons votre marché, vos cibles et nous vous fournissons une feuille de route chiffrée, sans engagement.</p>
       <p><a href="/contact/"><strong>Réserver mon audit gratuit de 30 minutes avec un expert Nana Intelligence →</strong></a></p>
+<p>Pour un devis adapté à votre cible, découvrez notre <a href="/agence-lead-generation/">agence de prospection B2B</a> : méthode, délais et modèles de tarification.</p>
     `
   },
   {
     id: 26,
     slug: "convergence-rpa-ia-automatisation-processus-2026",
     title: "Convergence RPA et IA : l'alliance qui transforme l'automatisation des processus métier en 2026",
+    metaTitle: "Convergence RPA et IA : l'automatisation en 2026",
+    metaDescription: "La RPA et l'IA fusionnent pour créer des workflows autonomes. Ce que cette convergence change pour les PME et comment en tirer un avantage en 2026.",
     excerpt: "En 2026, la RPA et l'IA fusionnent pour créer des workflows véritablement autonomes. Découvrez comment les PME peuvent transformer cette convergence en avantage concurrentiel.",
     category: "IA / AUTOMATISATION",
     date: "06 Octobre 2026",
@@ -2524,6 +2557,8 @@ export const blogPosts = [
     id: 27,
     slug: "hyper-automatisation-no-code-ia-2026",
     title: "Actualité IA : l'hyper-automatisation, quand la logique no-code épouse le raisonnement de l'IA",
+    metaTitle: "Hyper-automatisation : quand le no-code rencontre l'IA",
+    metaDescription: "L'automatisation ne se contente plus de chaînes figées : elle raisonne. Décryptage de l'hyper-automatisation no-code et IA, et des garde-fous à poser.",
     excerpt: "En 2026, l'automatisation ne se contente plus de chaînes figées : elle pense. Décryptage de l'hyper-automatisation et des garde-fous à poser.",
     category: "IA / AUTOMATISATION",
     date: "06 Octobre 2026",

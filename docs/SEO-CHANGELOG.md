@@ -31,6 +31,16 @@ Contexte : pic d'impressions du 29/09 au 02/10 puis redescente, lie a la migrati
 - Page cible unique pour « agence de prospection b2b » : `/agence-lead-generation/` (decision utilisateur du 08/10, application en phase 1).
 - Validation : `npx tsc --noEmit` et `npm run build` OK, 41 URL au sitemap, 0 JSON-LD invalide, 0 lien interne sans slash.
 
+## 2026-10-08 - Plan de redressement SEO/GEO, phase 1 (Jimmy)
+
+- GSC : reindexation demandee pour les 12 URL de la phase 0 (12/12 OK) et sitemap resoumis.
+- Titres : 22 titres d'articles depassaient 65 caracteres. Ajout d'un `metaTitle` court (55 car. max, + ` | Nana`) sur les articles 1, 6 a 12, 14 a 22 et 24 a 27, sans changer le H1 ni les URL. Titres raccourcis aussi pour les 4 pages villes, le hub agence, le blog, les services et l'automatisation sales.
+- Descriptions : `metaDescription` reecrite (158 car. max) pour les articles testes pendant le pic (1, 6, 8, 9, 12, 15, 25) et les longues (16, 18, 20 a 22, 26, 27).
+- Controle sur le build : 0 page avec titre > 65 ou description > 160 caracteres.
+- Requete � agence de prospection b2b � : page cible unique `/agence-lead-generation/` (title, H1, keywords). Les articles 1, 9, 12, 15 et 25 gardent leur angle (comparatif, externalisation, choix, automatisation, prix) et renvoient vers elle par un lien en fin d'article.
+- Cannibalisation Marseille : article 10 recentre sur la region PACA (title, extrait, intro) avec un lien vers la page Marseille ; article 12 n'emploie plus � agence lead generation Marseille �.
+- Validation : `npx tsc --noEmit` et `npm run build` OK.
+
 ## Actions manuelles restantes
 
 - Demander la reindexation dans GSC pour `/agence-lead-generation/marseille`, `/agence-lead-generation/nice`, `/agence-lead-generation/toulon` (et verifier la couverture).
