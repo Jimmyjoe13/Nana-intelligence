@@ -18,6 +18,19 @@ Ce fichier est la source de vérité pour la coordination SEO entre agents (Code
 - Fichiers modifies (P2, non commités a la date du journal) : `src/mocks/agencies.ts`, `src/mocks/blog.ts`, `src/app/agence-lead-generation/[slug]/page.tsx`.
 - Validation technique : `npm run build` et `npx tsc --noEmit` OK.
 
+## 2026-10-08 - Plan de redressement SEO/GEO, phase 0 (Jimmy)
+
+Contexte : pic d'impressions du 29/09 au 02/10 puis redescente, lie a la migration des slugs du 26/09 (voir `reports/Audit-SEO-GEO-2026-10-08.md`). Regle : aucun nouveau changement d'URL massif.
+
+- Commit des modifications P2 de Lea sur la page Marseille et le maillage villes (en attente depuis le 29/09).
+- Articles 26 et 27 passes en slug : `/blog/convergence-rpa-ia-automatisation-processus-2026/` et `/blog/hyper-automatisation-no-code-ia-2026/`. Les anciennes `/blog/26/` et `/blog/27/` redirigent (meta refresh + canonique, GitHub Pages ne gere pas les 301).
+- Liens internes sans slash final corriges dans les articles (11 liens) : plus aucun lien interne en 301.
+- JSON-LD Article : dates en ISO 8601 (`src/lib/dates.ts`), y compris dans l'ItemList du blog. Suppression des 3 blocs Article inline en doublon dans les articles 20, 21 et 26 (URL canoniques erronees, auteurs incoherents).
+- Autrice des articles : Juliette Masson (`Person`, LinkedIn en `sameAs`), affichee en tete d'article. Decision utilisateur du 08/10.
+- Sitemap : `lastmod` reel (date de publication pour les articles, date du dernier commit des sources pour les autres pages). Le workflow de deploiement recupere l'historique git complet.
+- Page cible unique pour « agence de prospection b2b » : `/agence-lead-generation/` (decision utilisateur du 08/10, application en phase 1).
+- Validation : `npx tsc --noEmit` et `npm run build` OK, 41 URL au sitemap, 0 JSON-LD invalide, 0 lien interne sans slash.
+
 ## Actions manuelles restantes
 
 - Demander la reindexation dans GSC pour `/agence-lead-generation/marseille`, `/agence-lead-generation/nice`, `/agence-lead-generation/toulon` (et verifier la couverture).

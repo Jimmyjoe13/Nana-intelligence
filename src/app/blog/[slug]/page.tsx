@@ -8,6 +8,15 @@ import { ArrowLeft, Clock, Calendar, Share2, Sparkles, ShieldCheck, Users } from
 import Link from "next/link";
 import Image from "next/image";
 import { EmptyState } from "@/components/ui/EmptyState";
+import { toIsoDate } from "@/lib/dates";
+
+const AUTHOR = {
+  "@type": "Person",
+  "name": "Juliette Masson",
+  "url": "https://www.linkedin.com/in/juliette-masson-ab8783427",
+  "sameAs": ["https://www.linkedin.com/in/juliette-masson-ab8783427"],
+  "worksFor": { "@type": "Organization", "name": "Nana Intelligence", "url": "https://nana-intelligence.fr" }
+};
 
 interface Props {
   params: { slug: string };
@@ -39,11 +48,7 @@ function getArticleJsonLd(post: typeof blogPosts[number], canonicalSlug: string)
     "@type": "Article",
     "headline": post.title,
     "description": post.excerpt,
-    "author": {
-      "@type": "Organization",
-      "name": "Nana Intelligence",
-      "url": "https://nana-intelligence.fr"
-    },
+    "author": AUTHOR,
     "publisher": {
       "@type": "Organization",
       "name": "Nana Intelligence",
@@ -53,8 +58,8 @@ function getArticleJsonLd(post: typeof blogPosts[number], canonicalSlug: string)
         "url": "https://nana-intelligence.fr/img/logo-icon.png"
       }
     },
-    "datePublished": post.date,
-    "dateModified": post.date,
+    "datePublished": toIsoDate(post.date),
+    "dateModified": toIsoDate(post.date),
     "image": post.image,
     "url": canonicalUrl,
     "mainEntityOfPage": {
@@ -199,7 +204,13 @@ export default function BlogPostPage({ params }: Props) {
             <div className="flex items-center gap-4">
               <Tag variant="orange">{post.category}</Tag>
               <div className="flex items-center gap-2 font-mono text-[10px] text-ink-4 uppercase">
-                <Calendar size={12} /> {post.date}
+                <Calendar size={12} /> <time dateTime={toIsoDate(post.date)}>{post.date}</time>
+              </div>
+              <div className="flex items-center gap-2 font-mono text-[10px] text-ink-4 uppercase">
+                Par{" "}
+                <a href={AUTHOR.url} target="_blank" rel="author noopener" className="hover:text-orange underline-offset-2 hover:underline">
+                  {AUTHOR.name}
+                </a>
               </div>
               <div className="flex items-center gap-2 font-mono text-[10px] text-ink-4 uppercase">
                 <Clock size={12} /> {post.readTime} READ

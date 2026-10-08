@@ -6,6 +6,7 @@ import { NewsletterForm } from "@/components/newsletter/NewsletterForm";
 import { blogPosts, blogCategories } from "@/mocks/blog";
 import { BlogList } from "@/components/blog/BlogList";
 import Link from "next/link";
+import { toIsoDate } from "@/lib/dates";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/blog/" },
@@ -34,7 +35,7 @@ function getBlogJsonLd() {
       "position": idx + 1,
       "name": post.title,
       "url": `https://nana-intelligence.fr/blog/${post.slug || post.id}/`,
-      "datePublished": post.date
+      "datePublished": toIsoDate(post.date)
     }))
   };
 }

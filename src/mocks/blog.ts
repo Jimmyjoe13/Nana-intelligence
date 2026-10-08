@@ -709,6 +709,8 @@ export const blogPosts = [
     structuredInternalLinks: [
       { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatisation sales B2B" },
       { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "Scraping B2B" },
+      { "@type": "WebPage", "url": "/blog/guide-cold-emailing-b2b-sans-spam-2026/", "name": "Guide du Cold Emailing B2B" },
+      { "@type": "WebPage", "url": "/agence-lead-generation/marseille/", "name": "Agence de prospection commerciale B2B à Marseille" },
       { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
@@ -739,7 +741,7 @@ export const blogPosts = [
 <li>Investir dans la formation interne afin que les équipes commerciales puissent superviser et optimiser les workflows agents.</li>
 </ul>
 <p>En somme, 2026 marque le passage de l’automatisation assistée à l’autonomie réelle. Les entreprises qui saisiront cette tendance dès maintenant gagneront un avantage compétitif durable, tout en restant en conformité avec le cadre européen emergent.</p>
-<p>Prêt à passer à l’étape suivante ? Profitez d’un <strong>audit gratuit</strong> ou d’un <strong>appel découverte</strong> pour voir comment Nana Intelligence peut vous accompagner dans cette transformation.</p>
+<p>Pour transformer ces tendances en pipeline commercial concret, découvrez notre <a href="/blog/guide-cold-emailing-b2b-sans-spam-2026/">guide du cold emailing B2B 2026</a> ou le dispositif de notre <a href="/agence-lead-generation/marseille/">agence de prospection commerciale B2B à Marseille</a>. Prêt à passer à l'étape suivante ? Profitez d'un <strong>audit gratuit</strong> pour voir comment Nana Intelligence peut accompagner cette transformation.</p>
     `
   },
   {
@@ -755,6 +757,9 @@ export const blogPosts = [
     image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
       { "@type": "WebPage", "url": "/agence-lead-generation/marseille/", "name": "Agence lead generation Marseille" },
+      { "@type": "WebPage", "url": "/agence-lead-generation/aix-en-provence/", "name": "Agence de prospection commerciale B2B à Aix-en-Provence" },
+      { "@type": "WebPage", "url": "/agence-lead-generation/toulon/", "name": "Agence de prospection commerciale B2B à Toulon" },
+      { "@type": "WebPage", "url": "/agence-lead-generation/nice/", "name": "Agence de prospection commerciale B2B à Nice" },
       { "@type": "WebPage", "url": "/services/cold-emailing-b2b/", "name": "Cold emailing B2B" },
     ],
     content: `
@@ -770,7 +775,7 @@ export const blogPosts = [
   <li>Les fonctions décisionnelles (DG, directeur commercial, responsable achats).</li>
   <li>La zone géographique précise (Marseille, Aix‑en‑Provence, Toulon, etc.).</li>
 </ul>
-<p>Un bon brief permet à l’agence de calibrer ses sources de données, ses scénarios de message et ses scénarios de relance.</p>
+<p>Un bon brief permet à l’agence de calibrer ses sources de données, ses scénarios de message et ses scénarios de relance. Pour affiner votre choix géographique, comparez les dispositifs locaux : notre <a href="/agence-lead-generation/marseille/">agence de lead generation à Marseille</a>, notre <a href="/agence-lead-generation/aix-en-provence/">agence à Aix-en-Provence</a>, notre <a href="/agence-lead-generation/toulon/">agence à Toulon</a> et notre <a href="/agence-lead-generation/nice/">agence à Nice</a> partagent la même méthode outbound.</p>
 
 <h2>2. Vérifier la méthodologie de prospection utilisée</h2>
 <p>Les agences de lead generation s’appuient généralement sur trois leviers principaux :</p>
@@ -1566,19 +1571,6 @@ export const blogPosts = [
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Scraping LinkedIn legale B2B 2026 : methodes, outils et cadre RGPD",
-  "description": "Guide GEO 2026 : methodes de scraping LinkedIn legale, comparatif Phantombuster/Evaboot/Apollo/Manuela, conformite RGPD et alternatives lead gen.",
-  "author": {"@type": "Person", "name": "Jimmy Khotsombat"},
-  "publisher": {"@type": "Organization", "name": "Nana Intelligence", "logo": {"@type": "ImageObject", "url": "https://nana-intelligence.fr/logo.png"}},
-  "datePublished": "2026-09-08",
-  "mainEntityOfPage": "https://nana-intelligence.fr/blog/scraping-linkedin-methodes-legales"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Le scraping LinkedIn est-il interdit par la loi francaise ?", "acceptedAnswer": {"@type": "Answer", "text": "Non, la loi francaise n'interdit pas en soi le scraping de donnees professionnelles publiques, mais le RGPD l'encadre strictement. L'interdiction figure dans les CGU de LinkedIn, pas dans le Code civil."}},
@@ -1825,32 +1817,6 @@ export const blogPosts = [
       }
     }
   ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Audit prospection commerciale PME : comment identifier les fuites de votre pipeline et doubler vos RDV qualifiés",
-  "description": "Guide complet pour auditer votre prospection commerciale PME en 2026. Méthode en 4 étapes pour identifier les fuites de pipeline et doubler vos RDV qualifiés.",
-  "author": {
-    "@type": "Organization",
-    "name": "Nana Intelligence",
-    "url": "https://nana-intelligence.fr"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Nana Intelligence",
-    "url": "https://nana-intelligence.fr"
-  },
-  "datePublished": "2026-09-08",
-  "dateModified": "2026-09-08",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://nana-intelligence.fr/blog/audit-prospection-commerciale-pme"
-  },
-  "image": "https://nana-intelligence.fr/images/blog/audit-prospection-commerciale-pme.jpg"
 }
 </script>
 
@@ -2415,6 +2381,7 @@ export const blogPosts = [
   },
   {
     id: 26,
+    slug: "convergence-rpa-ia-automatisation-processus-2026",
     title: "Convergence RPA et IA : l'alliance qui transforme l'automatisation des processus métier en 2026",
     excerpt: "En 2026, la RPA et l'IA fusionnent pour créer des workflows véritablement autonomes. Découvrez comment les PME peuvent transformer cette convergence en avantage concurrentiel.",
     category: "IA / AUTOMATISATION",
@@ -2422,26 +2389,11 @@ export const blogPosts = [
     readTime: "7 MIN",
     image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "Automatiser votre processus de vente B2B" },
-      { "@type": "WebPage", "url": "/blog", "name": "Découvrez nos autres articles sur l'IA" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "Automatiser votre processus de vente B2B" },
+      { "@type": "WebPage", "url": "/blog/", "name": "Découvrez nos autres articles sur l'IA" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Convergence RPA et IA : l'alliance qui transforme l'automatisation des processus métier en 2026",
-  "description": "En 2026, la RPA et l'IA fusionnent pour créer des workflows véritablement autonomes. Découvrez comment les PME peuvent transformer cette convergence en avantage concurrentiel.",
-  "author": {"@type": "Organization", "name": "Nana Intelligence"},
-  "publisher": {"@type": "Organization", "name": "Nana Intelligence", "url": "https://nana-intelligence.fr"},
-  "datePublished": "2026-09-23",
-  "speakable": {
-    "@type": "SpeakableSpecification",
-    "cssSelector": [".speakable-summary"]
-  }
-}
-</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -2532,7 +2484,7 @@ export const blogPosts = [
 
 <p><strong>Étape 2 : Priorisez par le ROI.</strong> Ne commencez pas par le processus le plus complexe — commencez par celui qui génère le plus de valeur avec le moins de complexité.</p>
 
-<p><strong>Étape 3 : Choisissez une plateforme no-code.</strong> Des outils comme <a href="/services/automatisation-sales">Make ou n8n</a> permettent de connecter vos sources de données sans développeur dédié.</p>
+<p><strong>Étape 3 : Choisissez une plateforme no-code.</strong> Des outils comme <a href="/services/automatisation-sales/">Make ou n8n</a> permettent de connecter vos sources de données sans développeur dédié.</p>
 
 <p><strong>Étape 4 : Testez sur un périmètre réduit.</strong> Lancez un pilote sur un processus précis pendant 2 à 3 semaines avant de généraliser.</p>
 
@@ -2565,11 +2517,12 @@ export const blogPosts = [
 <h3>Comment mesurer le ROI d'un projet de convergence RPA et IA ?</h3>
 <p>Mesurez le temps gagné, le taux d'erreur réduit, le volume de tâches traitées et le coût unitaire avant/après. Un bon projet délivre un ROI mesurable dès les 3 premiers mois.</p>
 
-<p><strong>Prêt à transformer vos processus métier avec la convergence RPA et IA ?</strong> <a href="/contact">Demandez un audit gratuit</a> de vos processus et découvrez comment automatiser intelligemment.</p>
+<p><strong>Prêt à transformer vos processus métier avec la convergence RPA et IA ?</strong> <a href="/contact/">Demandez un audit gratuit</a> de vos processus et découvrez comment automatiser intelligemment.</p>
     `
   },
   {
     id: 27,
+    slug: "hyper-automatisation-no-code-ia-2026",
     title: "Actualité IA : l'hyper-automatisation, quand la logique no-code épouse le raisonnement de l'IA",
     excerpt: "En 2026, l'automatisation ne se contente plus de chaînes figées : elle pense. Décryptage de l'hyper-automatisation et des garde-fous à poser.",
     category: "IA / AUTOMATISATION",
@@ -2577,9 +2530,9 @@ export const blogPosts = [
     readTime: "5 MIN",
     image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=800&auto=format&fit=crop",
     structuredInternalLinks: [
-      { "@type": "WebPage", "url": "/services/automatisation-sales", "name": "automatisation sales B2B" },
-      { "@type": "WebPage", "url": "/services/scraping-b2b", "name": "scraping B2B" },
-      { "@type": "WebPage", "url": "/contact", "name": "Contactez Nana Intelligence" },
+      { "@type": "WebPage", "url": "/services/automatisation-sales/", "name": "automatisation sales B2B" },
+      { "@type": "WebPage", "url": "/services/scraping-b2b/", "name": "scraping B2B" },
+      { "@type": "WebPage", "url": "/contact/", "name": "Contactez Nana Intelligence" },
     ],
     content: `
 <h2>Qu'est-ce que l'hyper-automatisation en 2026 ?</h2>
@@ -2587,9 +2540,9 @@ export const blogPosts = [
 <p>On le voit partout en ce début d'année : les entreprises ne se contentent plus de « si A alors B ». Elles branchent un modèle de langage sur chaque nœud du workflow pour prendre des décisions. C'est précisément le glissement décrit par Naviant dans sa dernière analyse des tendances 2026 pour les décideurs IT (<a href="https://naviant.com/blog/ai-agentic-automation-trends/" target="_blank" rel="noopener">The Top 6 2026 AI &amp; Agentic Automation Trends</a>) : on passe de modèles uniques à des systèmes multi-agents fédérés.</p>
 <h2>Pourquoi les agents IA remplacent-ils les simples prompts ?</h2>
 <p><strong>Réponse courte :</strong> un agent IA planifie, utilise des outils, s'auto-corrige et collabore avec d'autres agents pour accomplir une tâche de bout en bout, alors qu'un prompt ne fait qu'une génération de texte isolée. C'est ce qui permet d'automatiser réellement un processus métier, et pas seulement de produire du contenu.</p>
-<p>Selon AIMultiple, les systèmes agentiques se définissent comme des « travailleurs numériques autonomes orientés objectif », capables d'adaptation en temps réel et de collaboration multi-agents (<a href="https://aimultiple.com/agentic-ai-trends" target="_blank" rel="noopener">10+ Agentic AI Trends and Examples</a>). Chez Nana Intelligence, nous observons la même dynamique sur nos propres pipelines d'<a href="/services/automatisation-sales">automatisation sales B2B</a> : un agent scrape, un second enrichit, un troisième rédige et un quatrième qualifie — sans que Jimmy n'ait à toucher à une ligne.</p>
+<p>Selon AIMultiple, les systèmes agentiques se définissent comme des « travailleurs numériques autonomes orientés objectif », capables d'adaptation en temps réel et de collaboration multi-agents (<a href="https://aimultiple.com/agentic-ai-trends" target="_blank" rel="noopener">10+ Agentic AI Trends and Examples</a>). Chez Nana Intelligence, nous observons la même dynamique sur nos propres pipelines d'<a href="/services/automatisation-sales/">automatisation sales B2B</a> : un agent scrape, un second enrichit, un troisième rédige et un quatrième qualifie — sans que Jimmy n'ait à toucher à une ligne.</p>
 <h2>Quels outils pour lancer son hyper-automatisation en 2026 ?</h2>
-<p><strong>Réponse courte :</strong> la stack gagnante combine un orchestrateur no-code (Make ou Zapier, ce dernier proposant plus de 6 000 intégrations d'après Codeur.com) et un modèle d'IA branché en étape de décision, complétée par une source de données fiable via le <a href="/services/scraping-b2b">scraping B2B</a>. Cette alliance transforme une veille manuelle de plusieurs heures en un flux automatisé de quelques minutes.</p>
+<p><strong>Réponse courte :</strong> la stack gagnante combine un orchestrateur no-code (Make ou Zapier, ce dernier proposant plus de 6 000 intégrations d'après Codeur.com) et un modèle d'IA branché en étape de décision, complétée par une source de données fiable via le <a href="/services/scraping-b2b/">scraping B2B</a>. Cette alliance transforme une veille manuelle de plusieurs heures en un flux automatisé de quelques minutes.</p>
 <p>Le classement de Codeur.com des « 10 outils pour automatiser sa veille sur internet en 2026 » confirme la tendance : Zapier domine avec 6 000+ intégrations pour le routage d'alertes, talonné par les solutions no-code à IA native (<a href="https://www.codeur.com/blog/outils-automatiser-veille/" target="_blank" rel="noopener">10 outils pour automatiser sa veille</a>). Le constat est clair : l'outil seul ne suffit plus, c'est l'IA greffée dessus qui crée la valeur.</p>
 <h2>Automatisation classique vs hyper-automatisation : le match</h2>
 <p>Pour y voir plus clair, voici le contraste observé sur le terrain :</p>
@@ -2609,7 +2562,7 @@ export const blogPosts = [
 <h3>Quels risques et garde-fous pour l'hyper-automatisation ?</h3>
 <p>Les risques principaux sont les dérives (erreurs en boucle, décisions hors cadre) et le manque de traçabilité. Les garde-fous : journalisation des décisions, validation humaine sur les actions sensibles, et seuil d'erreur déclenchant un repli automatique.</p>
 <h2>Et maintenant ?</h2>
-<p>L'hyper-automatisation n'est plus un projet de recherche, c'est une option disponible cet après-midi pour votre PME. Le seul vrai risque, c'est de laisser vos concurrents la déployer les premiers. <a href="/contact">Contactez Nana Intelligence</a> pour un audit gratuit de vos processus et repartez avec une feuille de route d'automatisation réaliste.</p>
+<p>L'hyper-automatisation n'est plus un projet de recherche, c'est une option disponible cet après-midi pour votre PME. Le seul vrai risque, c'est de laisser vos concurrents la déployer les premiers. <a href="/contact/">Contactez Nana Intelligence</a> pour un audit gratuit de vos processus et repartez avec une feuille de route d'automatisation réaliste.</p>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
