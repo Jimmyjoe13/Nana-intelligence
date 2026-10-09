@@ -1,3 +1,17 @@
+# Nana Intelligence — Acquisition LeadGen boostée par IA
+
+Site officiel : **https://nana-intelligence.fr** — Agence IA & Growth à Marseille.
+
+Nana Intelligence aide les PME et commerciaux à générer des rendez-vous qualifiés
+grâce à l'IA : ciblage précis, prospection automatisée, relances et prise de RDV.
+
+- 🌐 Site : https://nana-intelligence.fr
+- 🚀 Service phare : Acquisition LeadGen boostée par IA — https://nana-intelligence.fr
+- 📍 Basée à Marseille, interventions en France
+- ✉️ Contact via le site : https://nana-intelligence.fr#contact
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
