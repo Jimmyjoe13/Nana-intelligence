@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+# slash final unique -> version avec slash
+RewriteCond %{REQUEST_URI} ^/([^.]+[^/])$
+RewriteRule ^(.*)$ /$1/ [R=301,L]
+Redirect 301 /blog/1 /blog/agence-prospection-b2b-ou-commercial-interne/
+Redirect 301 /blog/1/ /blog/agence-prospection-b2b-ou-commercial-interne/
+Redirect 301 /blog/11 /blog/tendances-automatisation-ia-2026/
+Redirect 301 /blog/11/ /blog/tendances-automatisation-ia-2026/
+Redirect 301 /blog/12 /blog/choisir-agence-prospection-commerciale-b2b/
+Redirect 301 /blog/12/ /blog/choisir-agence-prospection-commerciale-b2b/
+Redirect 301 /blog/21 /blog/audit-prospection-commerciale-pme-fuites-pipeline/
+Redirect 301 /blog/21/ /blog/audit-prospection-commerciale-pme-fuites-pipeline/
+Redirect 301 /blog/23 /blog/actualite-ia-septembre-2026-pivots-prospection/
+Redirect 301 /blog/23/ /blog/actualite-ia-septembre-2026-pivots-prospection/
+</IfModule>

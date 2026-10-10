@@ -13,7 +13,7 @@ export const blogPosts = [
     id: 1,
     slug: "agence-prospection-b2b-ou-commercial-interne",
     title: "Agence de prospection B2B ou commercial interne ?",
-    metaTitle: "Commercial interne ou agence externe : le comparatif",
+    metaTitle: "Agence prospection B2B ou commercial interne : comparatif 2026",
     metaDescription: "Recruter un commercial ou passer par une agence de prospection B2B ? Comparatif chiffré des coûts, délais et résultats pour choisir le bon modèle.",
     excerpt: "Comparatif complet des coûts et avantages entre commercial interne et agence prospection B2B. Quel choix pour vos ventes ?",
     category: "STRATÉGIE",

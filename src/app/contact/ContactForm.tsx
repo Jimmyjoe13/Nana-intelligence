@@ -40,6 +40,7 @@ export default function ContactForm() {
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
       trackEvent("generate_lead");
+      try { window.location.href = "/merci/"; } catch {}
       setStatus("success");
       form.reset();
       setFormStarted(false);
