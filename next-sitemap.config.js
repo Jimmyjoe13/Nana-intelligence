@@ -70,7 +70,7 @@ module.exports = {
   generateRobotsTxt: true,
   outDir: 'out',
   autoLastmod: false,
-  exclude: ['/design-system', '/icon.png', '/404', '/rdv-audit-seo', '/dummy'],
+  exclude: ['/merci', '/design-system', '/icon.png', '/404', '/rdv-audit-seo', '/dummy'],
   transform: async (config, path) => {
     // Ne pas inclure les anciens identifiants numériques dans le sitemap XML
     if (/^\/blog\/\d+\/?$/.test(path)) {

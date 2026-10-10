@@ -23,7 +23,7 @@ interface Props {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const post = blogPosts.find((p) => p.slug === params.slug || p.id.toString() === params.slug);
+  const post = blogPosts.find((p) => p.slug === params.slug);
   if (!post) return {};
 
   const targetSlug = post.slug || post.id.toString();
@@ -118,7 +118,7 @@ function getSpeakableJsonLd(post: typeof blogPosts[number]) {
 }
 
 export default function BlogPostPage({ params }: Props) {
-  const post = blogPosts.find((p) => p.slug === params.slug || p.id.toString() === params.slug);
+  const post = blogPosts.find((p) => p.slug === params.slug);
 
   if (!post) {
     return (
@@ -348,14 +348,6 @@ export default function BlogPostPage({ params }: Props) {
   );
 }
 
-export async function generateStaticParams() {
-  const params: { slug: string }[] = [];
-  for (const post of blogPosts) {
-    if (post.slug) {
-      params.push({ slug: post.slug });
-    }
-    // Rétrocompatibilité avec les 24 anciens identifiants indexés
-    params.push({ slug: post.id.toString() });
-  }
-  return params;
+export function generateStaticParams() {
+  return blogPosts.filter((p) => p.slug && !/^\d+$/.test(p.slug)).map((p) => ({ slug: p.slug }));
 }
