@@ -51,7 +51,7 @@ export default function ContactForm() {
   };
 
   return (
-    <Box id="contact-form" className="bg-cream p-10 md:p-16 flex flex-col gap-8">
+    <Box id="contact-form" className="bg-cream p-10 md:p-16 flex flex-col gap-8 scroll-mt-28">
       <div className="flex flex-col gap-2">
         <span className="font-mono text-[11px] text-orange uppercase tracking-[0.2em] font-bold">
           Audit stratégique offert

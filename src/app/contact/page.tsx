@@ -62,7 +62,6 @@ export default function ContactPage() {
             emphasis="audit gratuit"
             description="Parlez-nous de vos objectifs de croissance. On analyse votre potentiel et on vous montre comment automatiser votre acquisition B2B."
           />
-        </div>
           <div className="mt-6 flex flex-col sm:flex-row sm:justify-center">
             <Link href="#contact-form">
               <Button
@@ -75,6 +74,7 @@ export default function ContactPage() {
               </Button>
             </Link>
           </div>
+        </div>
       </section>
 
       {/* Main Contact Content */}
