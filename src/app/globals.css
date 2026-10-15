@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Ancres : défilement doux (désactivé si prefers-reduced-motion) */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
