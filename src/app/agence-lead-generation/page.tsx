@@ -10,8 +10,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/agence-lead-generation/" },
-  title: "Agence lead generation B2B : RDV qualifiés en 15 jours | Nana",
-  description: "Agence lead generation B2B partout en France : cold emailing, scraping et automatisation. RDV qualifiés en 15 jours. Audit stratégique 30 min offert.",
+  title: "Agence prospection B2B de proximité : 1er RDV en 15 jours | Nana",
+  description: "Agence prospection B2B de proximité : cold emailing, scraping, automatisation. 1ers RDV qualifiés en 15 jours partout en France. Audit 30 min offert.",
   keywords: [
     "agence de prospection b2b",
     "agence prospection commerciale b2b",
