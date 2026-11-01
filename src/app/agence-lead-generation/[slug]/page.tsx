@@ -102,11 +102,16 @@ export default function AgencyCityPage({ params }: Props) {
             title={data.heroTitle}
             description={data.heroSubtitle}
             actions={[
-              <Link key="cta" href="/contact/">
-                <Button variant="primary" size="lg" icon={<ArrowRight size={20} />}>
-                  Audit Gratuit {data.cityName}
-                </Button>
-              </Link>
+              <div key="cta-group" className="flex flex-col gap-3 items-start">
+                <Link href="/contact/">
+                  <Button variant="primary" size="lg" icon={<ArrowRight size={20} />}>
+                    Audit gratuit 30 min à {data.cityName}
+                  </Button>
+                </Link>
+                <span className="font-mono text-[11px] uppercase tracking-wider text-ink-3">
+                  Audit 30 min offert · Devis sous 24h
+                </span>
+              </div>
             ]}
           />
         </div>
@@ -175,6 +180,20 @@ export default function AgencyCityPage({ params }: Props) {
                </div>
             </Box>
           </div>
+        </div>
+      </section>
+
+      {/* Mid-page CTA */}
+      <section className="bg-cream py-12 border-b-[1.5px] border-ink">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <p className="font-display text-2xl md:text-3xl font-medium text-center md:text-left leading-tight">
+            Passez à l&apos;action : audit lead generation gratuit à {data.cityName}, réponse sous 24h.
+          </p>
+          <Link href="/contact/" className="shrink-0">
+            <Button variant="primary" size="lg" icon={<ArrowRight size={20} />}>
+              Réserver mon audit 30 min
+            </Button>
+          </Link>
         </div>
       </section>
 
