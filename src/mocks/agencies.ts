@@ -144,8 +144,8 @@ export const agenciesData: Record<string, AgencyData> = {
     badge: "Agence Acquisition Nice & Côte d'Azur",
     heroTitle: "Agence de Prospection Commerciale B2B à Nice",
     heroSubtitle: "Notre agence de prospection commerciale B2B à Nice aide les entreprises des Alpes-Maritimes et de la Côte d'Azur à générer des rendez-vous qualifiés grâce au Cold Emailing, au Scraping LinkedIn et à l'automatisation sales.",
-    metaTitle: "Prospection B2B Nice & Sophia : RDV qualifiés en 15 jours | Nana",
-    metaDescription: "Nice, Sophia, Côte d’Azur : startups Tech & PME, cold emailing ciblé, RDV dès 15 jours. Audit 30 min offert.",
+    metaTitle: "Agence Lead Generation Nice : RDV qualifiés en 15 jours | Nana",
+    metaDescription: "Prospection commerciale à Nice & Sophia : cold emailing haute délivrabilité, scraping B2B, premiers RDV qualifiés en 15 jours. Audit 30 min offert.",
     detailedContent: [
       "Nice et la Côte d'Azur concentrent un écosystème B2B singulier : la technopole de Sophia Antipolis, le tourisme d'affaires, l'immobilier haut de gamme, les services aux entreprises et un tissu dense de PME innovantes. Dans cet environnement très concurrentiel, notre agence de prospection commerciale B2B à Nice permet aux entreprises azuréennes de capter l'attention des bons décideurs avant leurs concurrents.",
       "La prospection traditionnelle (phoning à froid, salons, bouche-à-oreille) atteint vite ses limits sur un marché aussi étendu que les Alpes-Maritimes. Nous y répondons par une approche outbound automatisée : identification précise de votre client idéal, extraction et enrichissement d'une base de prospects locaux, puis séquences de Cold Emailing personnalisées qui déclenchent des conversations commerciales réelles.",
