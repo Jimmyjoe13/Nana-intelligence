@@ -104,7 +104,13 @@ export default function AgencyCityPage({ params }: Props) {
             actions={[
               <div key="cta-group" className="flex flex-col gap-3 items-start">
                 <Link href="/contact/">
-                  <Button variant="primary" size="lg" icon={<ArrowRight size={20} />}>
+                  <Button
+                    variant="primary"
+                    size="lg"
+                    icon={<ArrowRight size={20} />}
+                    trackLabel={`cta_hero_${data.slug}`}
+                    sectionId="agency_hero"
+                  >
                     Audit gratuit 30 min à {data.cityName}
                   </Button>
                 </Link>
@@ -190,7 +196,13 @@ export default function AgencyCityPage({ params }: Props) {
             Passez à l&apos;action : audit lead generation gratuit à {data.cityName}, réponse sous 24h.
           </p>
           <Link href="/contact/" className="shrink-0">
-            <Button variant="primary" size="lg" icon={<ArrowRight size={20} />}>
+            <Button
+              variant="primary"
+              size="lg"
+              icon={<ArrowRight size={20} />}
+              trackLabel={`cta_mid_${data.slug}`}
+              sectionId="agency_mid"
+            >
               Réserver mon audit 30 min
             </Button>
           </Link>
@@ -227,10 +239,19 @@ export default function AgencyCityPage({ params }: Props) {
                Obtenez une analyse gratuite de votre potentiel de génération de leads.
              </p>
              <Link href="/contact/">
-               <Button variant="primary" size="lg" icon={<Sparkles size={20} />}>
+               <Button
+                 variant="primary"
+                 size="lg"
+                 icon={<Sparkles size={20} />}
+                 trackLabel={`cta_final_${data.slug}`}
+                 sectionId="agency_final"
+               >
                  Obtenir mon audit gratuit 30 min
                </Button>
              </Link>
+             <p className="font-mono text-[11px] text-cream/50 uppercase tracking-wider">
+               Audit 30 min offert · Devis sous 24h · Sans engagement
+             </p>
           </Box>
         </div>
       </section>
