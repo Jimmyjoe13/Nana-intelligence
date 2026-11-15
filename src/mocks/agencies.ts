@@ -18,8 +18,8 @@ export const agenciesData: Record<string, AgencyData> = {
     badge: "Agence Acquisition Marseille",
     heroTitle: "Agence de Prospection Commerciale B2B à Marseille",
     heroSubtitle: "Notre agence de prospection commerciale B2B à Marseille aide les PME et startups phocéennes à remplir leur agenda de RDV qualifiés grâce au Cold Emailing, au Scraping LinkedIn et à l'automatisation sales.",
-    metaTitle: "Prospection B2B Marseille : 3 RDV qualifiés en 30 jours | Nana",
-    metaDescription: "PME marseillaises : cold emailing + scraping pour 3 RDV qualifiés en 30 jours. Délivrabilité 98%, réponse sous 24h. Audit 30 min offert.",
+    metaTitle: "Agence Lead Generation Marseille : 3 RDV en 30 jours | Nana",
+    metaDescription: "PME marseillaises : notre agence lead generation génère 3 RDV qualifiés en 30 jours via cold emailing et scraping. Délivrabilité 98%. Audit 30 min offert.",
     detailedContent: [
       "Marseille est un hub économique dynamique, mais la concurrence y est féroce. Pour émerger dans la cité phocéenne, une simple présence digitale ne suffit plus. En tant qu'agence de prospection commerciale B2B à Marseille, nous déployons des stratégies d'acquisition sortante (Outbound) qui court-circuitent les cycles de vente traditionnels et placent vos commerciaux face à des décideurs réellement intéressés.",
       "Nous maîtrisons les spécificités du marché local, des zones industrielles de l'Est marseillais aux startups de la French Tech Méditerranée, en passant par le port et la logistique du quartier d'affaires d'Euroméditerranée. Notre approche repose sur trois piliers : la qualité de la donnée extraite (Scraping), la pertinence du message (Copywriting) et la maîtrise technique de l'infrastructure d'envoi qui garantit une délivrabilité maximale.",
