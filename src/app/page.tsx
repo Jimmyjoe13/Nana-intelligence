@@ -86,6 +86,13 @@ export default function Home() {
              <p className="font-sans text-xl md:text-2xl text-ink-2 leading-relaxed max-w-2xl">
                Nana Intelligence automatise votre prospection commerciale B2B. Nous construisons votre machine d&apos;acquisition sur-mesure pour remplir votre agenda en automatique.
              </p>
+             <div className="flex items-center gap-3 bg-cream-2 border border-ink/10 px-5 py-3 mt-2 max-w-lg">
+               <span className="font-hand text-orange text-lg">&quot;</span>
+               <p className="font-sans text-sm text-ink-2 italic leading-snug">
+                 En 3 semaines, 12 RDV qualifiés C-Level. Le ROI a été immédiat.
+               </p>
+               <span className="font-mono text-[10px] text-ink-3 uppercase font-bold whitespace-nowrap">— PME Tech</span>
+             </div>
              <div className="flex flex-col sm:flex-row items-center gap-6">
                <Link href="/contact/">
                  <Button 
@@ -112,13 +119,6 @@ export default function Home() {
              <p className="font-sans text-sm text-ink-3 uppercase tracking-[0.12em] font-mono">
                Sans engagement · Réponse sous 24h · +40 audits réalisés en 2026
              </p>
-             <div className="flex items-center gap-3 bg-cream-2 border border-ink/10 px-5 py-3 mt-2 max-w-lg">
-               <span className="font-hand text-orange text-lg">&quot;</span>
-               <p className="font-sans text-sm text-ink-2 italic leading-snug">
-                 En 3 semaines, 12 RDV qualifiés C-Level. Le ROI a été immédiat.
-               </p>
-               <span className="font-mono text-[10px] text-ink-3 uppercase font-bold whitespace-nowrap">— PME Tech</span>
-             </div>
           </div>
 
           {/* Metric Strip */}
