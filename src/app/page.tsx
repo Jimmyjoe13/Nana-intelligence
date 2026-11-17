@@ -44,6 +44,26 @@ const jsonLdBreadcrumb = {
   ]
 };
 
+const jsonLdFaq = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqData.map((f) => ({
+    "@type": "Question",
+    "name": f.question,
+    "acceptedAnswer": { "@type": "Answer", "text": f.answer },
+  })),
+};
+
+const jsonLdSpeakable = {
+  "@context": "https://schema.org",
+  "@type": "Speakable",
+  "name": "Agence Lead Generation B2B — synthèse Nana Intelligence",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "section p"]
+  },
+};
+
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
   title: "Agence Lead Generation B2B | +250 RDV/mois | Nana Intelligence",
@@ -70,6 +90,14 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSpeakable) }}
       />
       {/* Hero Section */}
       <section className="bg-cream pt-20 pb-32 border-b-[1.5px] border-ink">
