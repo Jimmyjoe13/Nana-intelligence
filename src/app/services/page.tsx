@@ -9,7 +9,7 @@ import { detailedServices, processSteps } from "@/mocks/services";
 import { ArrowRight, Check, Zap, Sparkles } from "lucide-react";
 import Link from "next/link";
 
-// Mappe les blocs du hub vers leurs landing pages d\u00e9di\u00e9es (maillage interne / SEO)
+// Mappe les blocs du hub vers leurs landing pages dédiées (maillage interne / SEO)
 const serviceLinks: Record<string, { href: string; label: string }> = {
   "cold-email": { href: "/services/cold-emailing-b2b/", label: "Cold Emailing B2B" },
   "automation": { href: "/services/automatisation-sales/", label: "Automatisation Sales" },
@@ -57,7 +57,7 @@ const jsonLd = {
         "itemOffered": {
           "@type": "Service",
           "name": "Cold Emailing B2B",
-          "description": "S\u00e9quences de cold email personnalis\u00e9es avec setup technique complet (SPF, DKIM, warm-up) pour maximiser la d\u00e9livrabilit\u00e9."
+          "description": "Séquences de cold email personnalisées avec setup technique complet (SPF, DKIM, warm-up) pour maximiser la délivrabilité."
         }
       },
       {
@@ -65,7 +65,7 @@ const jsonLd = {
         "itemOffered": {
           "@type": "Service",
           "name": "Scraping & Enrichissement B2B",
-          "description": "Extraction de donn\u00e9es prospects sur LinkedIn et Google Maps, enrichissement avec emails professionnels v\u00e9rifi\u00e9s."
+          "description": "Extraction de données prospects sur LinkedIn et Google Maps, enrichissement avec emails professionnels vérifiés."
         }
       },
       {
@@ -73,7 +73,7 @@ const jsonLd = {
         "itemOffered": {
           "@type": "Service",
           "name": "Automatisation Sales",
-          "description": "Connexion CRM, workflows automatis\u00e9s et reporting en temps r\u00e9el pour lib\u00e9rer vos commerciaux des t\u00e2ches r\u00e9p\u00e9titives."
+          "description": "Connexion CRM, workflows automatisés et reporting en temps réel pour libérer vos commerciaux des tâches répétitives."
         }
       },
       {
@@ -103,7 +103,7 @@ export default function ServicesPage() {
             kicker="Nos expertises"
             title="Services de"
             emphasis="prospection B2B"
-            description="G\u00e9n\u00e9rez des opportunit\u00e9s qualifi\u00e9es sans effort gr\u00e2ce \u00e0 nos services de Lead Generation sp\u00e9cialis\u00e9s."
+            description="Générez des opportunités qualifiées sans effort grâce à nos services de Lead Generation spécialisés."
           />
           <div className="mt-6 flex flex-col sm:flex-row sm:justify-center items-center gap-4">
             <Link href="/contact/">
@@ -123,11 +123,11 @@ export default function ServicesPage() {
             {detailedServicePages.map((s) => (
               <Link key={s.href} href={s.href}>
                 <Tag variant="outline" className="hover:border-orange hover:text-orange transition-colors cursor-pointer">
-                  {s.label} \u2192
+                  {s.label} →
                 </Tag>
               </Link>
             ))}
-            <p className="text-cream/80 text-sm mt-2 w-full">Réponse sous 24 h, sans engagement.</p>
+            <p className="text-ink-3 text-sm mt-2 w-full">Réponse sous 24 h, sans engagement.</p>
           </div>
         </div>
       </section>
@@ -169,7 +169,7 @@ export default function ServicesPage() {
                         → {serviceLinks[service.id].label} : détail de l&apos;offre <ArrowRight size={14} />
                       </span>
                     </Link>
-                    <p className="text-cream/80 text-sm mt-2">Réponse sous 24 h, sans engagement.</p>
+                    <p className="text-ink-3 text-sm mt-2">Réponse sous 24 h, sans engagement.</p>
                   </>
                 )}
               </div>
@@ -192,9 +192,9 @@ export default function ServicesPage() {
                       « Notre machine d&apos;acquisition est maintenant 100% prévisible. »
                     </p>
                     <Link href="/contact/">
-                      <Button variant="primary" icon={<ArrowRight size={16} />} trackLabel="services_demarrer_projet" sectionId="services_offer">D\u00e9marrer mon projet</Button>
+                      <Button variant="primary" icon={<ArrowRight size={16} />} trackLabel="services_demarrer_projet" sectionId="services_offer">Démarrer mon projet</Button>
                     </Link>
-                <p className="text-cream/80 text-sm mt-2">Réponse sous 24 h, sans engagement.</p>
+                <p className="text-ink-3 text-sm mt-2">Réponse sous 24 h, sans engagement.</p>
                   </div>
                 </Box>
               </div>
@@ -207,7 +207,7 @@ export default function ServicesPage() {
       <section className="bg-cream py-32 border-b-[1.5px] border-ink">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex flex-col gap-20">
           <div className="flex flex-col items-center text-center gap-6">
-            <span className="font-mono text-[11px] text-orange uppercase tracking-[0.2em] font-bold">La M\u00e9thode</span>
+            <span className="font-mono text-[11px] text-orange uppercase tracking-[0.2em] font-bold">La Méthode</span>
             <h2 className="font-display text-[44px] md:text-[64px] leading-tight font-medium max-w-3xl">
               Comment on travaille <span className="italic font-normal">ensemble</span>.
             </h2>
@@ -238,16 +238,16 @@ export default function ServicesPage() {
           <h2 className="font-display text-[44px] md:text-[56px] text-center mb-12">Ce que disent nos clients</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Box variant="default" className="p-6">
-              <p className="italic">\u201cNana Intelligence a tripl\u00e9 nos RDV qualifi\u00e9s en 45 jours.\u201d</p>
-              <p className="mt-4 font-medium text-right">- PME marseillaise, 22 employ\u00e9s</p>
+              <p className="italic">“Nana Intelligence a triplé nos RDV qualifiés en 45 jours.”</p>
+              <p className="mt-4 font-medium text-right">- PME marseillaise, 22 employés</p>
             </Box>
             <Box variant="default" className="p-6">
-              <p className="italic">\u201cLeur automatisation nous a lib\u00e9r\u00e9 20h/semaine.\u201d</p>
+              <p className="italic">“Leur automatisation nous a libéré 20h/semaine.”</p>
               <p className="mt-4 font-medium text-right">- Startup SaaS</p>
             </Box>
             <Box variant="default" className="p-6">
-              <p className="italic">\u201cDes leads ultra\u2011qualifi\u00e9s, pr\u00eats \u00e0 acheter.\u201d</p>
-              <p className="mt-4 font-medium text-right">- Scale\u2011up B2B</p>
+              <p className="italic">“Des leads ultra‑qualifiés, prêts à acheter.”</p>
+              <p className="mt-4 font-medium text-right">- Scale‑up B2B</p>
             </Box>
           </div>
         </div>
@@ -264,7 +264,7 @@ export default function ServicesPage() {
                 </h2>
              </div>
              <p className="text-cream/60 max-w-xl text-lg leading-relaxed">
-               Discutons de vos besoins pour construire une solution adapt\u00e9e \u00e0 vos objectifs commerciaux.
+               Discutons de vos besoins pour construire une solution adaptée à vos objectifs commerciaux.
              </p>
              <Link href="/contact/">
                <Button variant="primary" size="lg" icon={<Sparkles size={20} />} trackLabel="services_final_audit" sectionId="services_final_cta">
